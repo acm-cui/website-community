@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<section class="main-body main-singleton">
+	<div class="main-title rounded-top px-lg-5 px-md-4 px-3 py-3">
+		<h1 class="m-0 p-0">{{ page.title | escape }}</h1>
+	</div>
+    <address class="m-0 px-lg-5 px-md-4 px-3 py-3">
+        Written by <span rel="author" class="d-inline">Martin Porcheron</span> on <time datetime="{{ page.date | date: "%G-%m-%d" }}" title="Published on {{ page.date | date: "%G-%m-%d" }}" class="d-inline-block">{{ page.date | date_to_long_string: "ordinal" }}</time>
+    </address>
+    <div class="main-content p-lg-5 p-md-4 p-3">
+		<article>
+			{{- content | replace: '<!--more-->', '<a id="readmore"></a>' -}}
+		</article>
+    </div>
+</section>

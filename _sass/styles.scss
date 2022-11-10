@@ -1,0 +1,93 @@
+
+// HEADER
+.site-title {
+  max-width: $title-mw;
+  height: $title-h;
+}
+
+.site-stripe > div {
+  height: $stripe-h;
+}
+
+.site-stripe-1 {
+  background: #51704E;
+}
+
+.site-stripe-2 {
+  background: #CB6A73;
+}
+
+.site-stripe-3 {
+  background: #B65191;
+}
+
+.site-stripe-4 {
+  background: #5169B6;
+}
+
+
+// NAVIGATION
+.nav-link {
+  .nav-dd-icon {
+    @include auto-transition(all);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &[aria-expanded="true"] .nav-dd-icon {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+.container {
+  @include auto-transition(width);
+}
+
+.mobile-nav.offcanvas .nav-item + ul {
+  flex-wrap: nowrap !important;
+}
+
+
+// WORKSHOPS
+.bg-always-white {
+  background: $bg-always-white !important;
+}
+
+.bg-always-light {
+  background: $bg-always-light !important;
+}
+
+.bg-always-dark {
+  background: $bg-always-dark !important;
+}
+
+
+// STEERING COMMITTEE MEMBERS
+.profile-photo {
+  max-width: 100px;
+}
+
+
+// WORKSHOPS
+.timeline {
+
+  & > li {
+    padding-left: 1rem;
+  }
+
+  .timeline-notch {
+    height: $timetable-w;
+    width: $timeline-notch-w;
+  }
+
+  .timeline-label {
+    margin-top: .6rem - $timetable-w;
+  }
+}

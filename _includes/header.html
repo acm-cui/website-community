@@ -1,0 +1,58 @@
+<header>
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = site.bootstrap.header_pages | default: default_paths -%}
+  {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+	
+  <div class="site-banner shadow">
+
+		<div class="container py-5 text-center">
+
+      <div class="d-flex flex-row align-items-center">
+
+  			<div class="display-5 flex-grow-1 site-title">
+          <a href="{{ site.url }}"class="site-title-text d-block w-100 h-100" alt="Go to the {{ site.title | escape }} homepage">
+            <span class="visually-hidden">{{ site.title | escape }}</span>
+          </a>
+        </div>
+  
+        {%- unless page.hide_nav -%}
+
+        <button class="btn border border-rounded site-toggler ms-4 d-md-none" type="button" id="mobile-nav-toggler" data-bs-toggle="offcanvas" data-bs-target="#mobile-nav" aria-controls="mobile-nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        {%- endunless -%}
+      
+      </div>
+
+		</div>
+
+    <div class="d-flex flex-row site-stripe" aria-hidden="true" role="presentation">
+      <div class="site-stripe-1 flex-grow-1" aria-hidden="true" role="presentation"></div>
+      <div class="site-stripe-2 flex-grow-1" aria-hidden="true" role="presentation"></div>
+      <div class="site-stripe-3 flex-grow-1" aria-hidden="true" role="presentation"></div>
+      <div class="site-stripe-4 flex-grow-1" aria-hidden="true" role="presentation"></div>
+    </div>
+
+	</div>
+
+</header>
+
+{%- unless page.hide_nav -%}
+
+<div class="mobile-nav offcanvas offcanvas-end" tabindex="-1" id="mobile-nav" aria-labelledby="mobile-nav-toggler">
+
+  <div class="offcanvas-header" aria-hidden="true"  role="presentation">
+    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">{{ site.title | escape }}</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+  <div class="offcanvas-body">
+
+    {%- include nav.html expandable=true -%}
+
+  </div>
+
+</div>
+
+{%- endunless -%}

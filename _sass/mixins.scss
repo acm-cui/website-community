@@ -1,0 +1,14 @@
+
+@mixin auto-transition($property, $duration: $transition-duration, $alt_properties...) {
+	transition-timing-function: $transition-function;
+	transition-duration: $duration;
+	transition-property: $property;
+  
+  @each $alt_property in $alt_properties {
+    transition-property: $alt_property;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}

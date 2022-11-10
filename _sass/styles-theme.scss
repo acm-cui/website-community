@@ -1,0 +1,81 @@
+
+
+// GLOBAL
+body {
+  background: $body-bg;
+  color: $body-fg;
+}
+
+
+// HEADER
+.site-banner {
+  background: $banner-bg;
+}
+
+.site-title {
+  background: $title-bg;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+// NAVIGATION
+.site-toggler {
+  &:hover {
+    background: $toggler-active-bg;
+    box-shadow: $toggler-active-shadow;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: escape-svg($toggler-icon);
+}
+
+.nav .nav-item a {
+  border: $nav-item-b;
+
+  &.active, &:hover {
+    background: $nav-item-active-bg;
+    border: $nav-item-active-b;
+  }
+}
+
+.nav-link {
+  .nav-dd-icon {
+    background-image: escape-svg($nav-dd-img);
+  }
+}
+
+.mobile-nav {
+ background: $body-bg;
+ color: $body-fg;
+
+ .nav .nav-item a {
+   border: $mobile-nav-item-b;
+
+   &.active, &:hover {
+     border: $mobile-nav-item-active-b;
+     background: $mobile-nav-item-active-bg;
+   }
+ }
+}
+
+// MAIN
+main {
+  background: $main-bg;
+}
+
+
+// WORKSHOPS
+.timeline {
+  border-right: $timetable-b-s;
+
+  .timeline-notch {
+    background: $timetable-color;
+  }
+
+  .timeline-label {
+    color: $timeline-label-fg;
+  }
+}

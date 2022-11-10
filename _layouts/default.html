@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="d-flex flex-column">
+
+    {%- include header.html -%}
+
+    <main class="page-content py-5 flex-grow-1">
+
+      <div class="container">
+
+        <div class="row">
+  
+          {%- unless page.hide_nav -%}
+
+          <div class="d-md-block d-none col-lg-3 col-md-4 pt-md-0 pt-3 pe-lg-5 pe-md-3 border-end sidebar" aria-hidden="true">
+
+            {%- include nav.html -%}
+
+          </div>
+  
+          <section class="col-lg-9 col-md-8 ps-lg-5 ps-md-3" aria-label="Content">
+
+          {%- else -%}
+  
+          <section class="col-12" aria-label="Content">
+          
+          {%- endunless -%}
+  
+            {{ content }}
+
+          </section>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    {%- include footer.html -%}
+
+    <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+
+  </body>
+
+</html>
