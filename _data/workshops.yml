@@ -1,3 +1,10 @@
+- year: 2023
+  workshops:
+    - name: 'Human-Robot Conversational Interaction'
+      location: Stockholm, Sweden
+      description: A workshop to be held at HRI 2023
+      url: https://www.conversationaluserinterfaces.org/workshops/HRI2023/
+
 - year: 2022
   workshops:
     - name: 'Ethics of Conversational User Interfaces'
