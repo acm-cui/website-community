@@ -1,6 +1,6 @@
 ---
 label: Nominate yourself for the Steering Committee
-description: Join the Conversational User Interfaces announcements mailing list
+description: Join the Conversational User Interfaces Steering Committee
 layout: page
 
 menus:
