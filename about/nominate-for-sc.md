@@ -14,7 +14,6 @@ menus:
 The Conversational User Interfaces (CUI) Steering Committee invites nominations to serve as a member of the CUI Steering Committee. In particular we are looking for candidates to nominate themselves or a colleague for the following roles:
 
 * CUI Steering Committee Co-Chair
-* CUI Steering Committee Secretary
 * CUI Steering Committee Treasurer
 * CUI Steering Committee Outreach/Publicity Chair
 * CUI Steering Committee Industry/NGO Liaison
