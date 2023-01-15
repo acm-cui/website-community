@@ -1,5 +1,9 @@
 - year: 2023
   workshops:
+    - name: 'Inclusive Design of CUIs Across Modalities and Mobilities'
+      location: Hamburg, Germany
+      description: A workshop to be held at CHI 2023
+      url: https://www.conversationaluserinterfaces.org/workshops/CHI2023/
     - name: 'Human-Robot Conversational Interaction'
       location: Stockholm, Sweden
       description: A workshop to be held at HRI 2023
