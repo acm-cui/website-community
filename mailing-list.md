@@ -11,8 +11,6 @@ menus:
 
 # Mailing list
 
-<!--Sign up to receive announcements from the **Conversational User Interfaces community** and we will periodically send you the details of upcoming conferences, workshops, special issue journals and other relevant events. This is not a public mailing list thus it is expected that the number of emails will be very low.
+Sign up to receive announcements from the **Conversational User Interfaces community** and we will periodically send you the details of upcoming conferences, workshops, special issue journals and other relevant events. This is a moderated list so emails can only be distributed with approval of an administrator or moderator.
 
-Please complete this form to give your consent to be on the mailing list.-->
-
-The CUI mailing list is down for maintenance. We will be launching a new mailing list soon.
+Please register for the mailing list on [ACM listserv](https://listserv.acm.org/SCRIPTS/WA-ACMLPX.CGI?A0=CUI-ANNOUNCEMENTS "ACM listserv page for ACM CUI community announcements").
