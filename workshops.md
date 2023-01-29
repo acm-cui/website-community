@@ -10,7 +10,7 @@ menus:
 
 # Workshops
 
-Members and friends of the Conversational User Interfaces community organise satellite workshops, often located at events outside of the CUI conference series.
+Members and friends of the ACM Conversational User Interfaces community organise satellite workshops, often located at events outside of the CUI conference series.
 
 <ol class="list-unstyled timeline mt-lg-4 mt-3 me-3 pb-3">
 

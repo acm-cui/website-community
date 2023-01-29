@@ -11,7 +11,7 @@ menus:
 
 # Conferences
 
-The following conferences are part of the Conversational User Interfaces series. Each conference is overseen by a dedicated organising committee, details of which can be found on each conference website.
+The following conferences are part of the ACM Conversational User Interfaces series. Each conference is overseen by a dedicated organising committee, details of which can be found on each conference website.
 
 <ol class="d-flex flex-wrap list-unstyled">
   {% for conference in site.data.conferences %}
