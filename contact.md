@@ -10,4 +10,4 @@ menus:
 
 # Contact us
 
-To contact the CUI Steering Committee, please email us at <a href="mailto:contact@conversationaluserinterfaces.org" title="Email the CUI Steering Commitee">contact@conversationaluserinterfaces.org</a>.
+To contact the CUI Steering Committee, please email us at <a href="mailto:contact@cui.acm.org" title="Email the CUI Steering Commitee">contact@cui.acm.org</a>.
