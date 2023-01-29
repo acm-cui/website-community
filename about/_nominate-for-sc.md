@@ -3,10 +3,10 @@ label: Nominate yourself for the Steering Committee
 description: Join the Conversational User Interfaces Steering Committee
 layout: page
 
-menus:
-  about:
-    title: Call for Nominations
-    weight: 1
+#menus:
+#  about:
+#    title: Call for Nominations
+#    weight: 1
 ---
 
 # Call for Nominations
