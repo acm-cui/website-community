@@ -1,6 +1,6 @@
 ---
 label: Steering Committee
-description: The Conversational User Interfaces Conference is the leading venue for research and design of 'interactive AI' natural language technologies.
+description: The ACM Conversational User Interfaces Conference is the leading venue for research and design of 'interactive AI' natural language technologies.
 
 menus:
   main:
