@@ -11,11 +11,11 @@ menus:
 
 # Community
 
-Connect with the ACM SICHI **Conversational User Interfaces community** through our mailing list, Discord, or social media channels.
+Connect with the ACM Conversational User Interfaces community through our mailing list, Discord, or social media channels.
 
 ## Mailing list
 
-Sign up to receive announcements from the **Conversational User Interfaces community** and we will periodically send you the details of upcoming conferences, workshops, special issue journals and other relevant events. This is a moderated list so emails can only be distributed with approval of an administrator or moderator.
+Sign up to receive announcements from the Conversational User Interfaces community and we will periodically send you the details of upcoming conferences, workshops, special issue journals and other relevant events. This is a moderated list so emails can only be distributed with approval of an administrator or moderator.
 
 Please register for the mailing list on [ACM listserv](https://listserv.acm.org/SCRIPTS/WA-ACMLPX.CGI?SUBED1=CUI-ANNOUNCEMENTS "Subscribe to ACM CUI community announcements on the ACM listserv").
 
