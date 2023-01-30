@@ -4,6 +4,7 @@
       location: Hamburg, Germany
       description: A workshop to be held at CHI 2023
       url: https://cui.acm.org/workshops/CHI2023/
+
     - name: 'Human-Robot Conversational Interaction'
       location: Stockholm, Sweden
       description: A workshop to be held at HRI 2023
@@ -36,33 +37,33 @@
     - name: "Let's Talk About CUIs: Putting Conversational User Interface Design Into Practice"
       location: Virtual Event
       description: A workshop previously held at CHI 2021
-      url: https://cui.acm.org/CHI2021/
+      url: https://cui.acm.org/workshops/CHI2021/
 
     - name: 'Theoretical and Methodological Challenges in Intelligent Conversational User Interface Interactions'
       location: Virtual Event
       description: A workshop previously held at IUI 2021
-      url: https://cui.acm.org/IUI2021/
+      url: https://cui.acm.org/workshops/IUI2021/
 
 - year: 2020
   workshops:
     - name: 'Collaborating through Conversational User Interfaces'
       location: Virtual Event
       description: A workshop previously held at CSCW 2020
-      url: https://cui.acm.org/CSCW2020/
+      url: https://cui.acm.org/workshops/CSCW2020/
 
     - name: 'Mapping Grand Challenges for the Conversational User Interface Community'
       location: Virtual Event
       description: A workshop previously held at CHI 2020
-      url: https://cui.acm.org/CHI2020/
+      url: https://cui.acm.org/workshops/CHI2020/
 
     - name: 'New Theoretical and Methodological Perspectives for Researching Speech-based Conversational Interactions'
       location: Virtual Event
       description: A workshop previously held at IUI 2020
-      url: https://cui.acm.org/IUI2020/
+      url: https://cui.acm.org/workshops/IUI2020/
 
 - year: 2019
   workshops:
     - name: 'Mapping Theoretical and Methodological Perspectives for Understanding Speech Interface Interactions'
       location: Glasgow, UK
       description: A workshop previously held at CHI 2019
-      url: https://cui.acm.org/CHI2019/
+      url: https://cui.acm.org/workshops/CHI2019/
