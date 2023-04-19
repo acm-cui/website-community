@@ -34,9 +34,9 @@ jobs:
           JEKYLL_ENV: production
       - name: 🌎 Upload to cui.acm.org
         uses: sebastianpopp/ftp-action@releases/v2
-        if: github.event_name != 'pull_request'
         with:
           host: ${{ secrets.FTP_HOST }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           localDir: ./_site
+        if: needs.pr-check.outputs.number != 'null'
