@@ -4,6 +4,8 @@ on:
   # Runs on pushes and merged pull requests targeting the default branch
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -37,3 +39,4 @@ jobs:
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           localDir: ./_site
+        if: needs.pr-check.outputs.number != 'null'
