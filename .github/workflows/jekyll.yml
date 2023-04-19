@@ -39,3 +39,4 @@ jobs:
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           localDir: ./_site
+        if: needs.pr-check.outputs.number != 'null'
