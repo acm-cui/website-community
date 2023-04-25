@@ -25,7 +25,7 @@ The Conversational User Interfaces conference (ACM CUI) and workshop series was 
 Further details of the community and current activities can be found on this website.
 
 ## Nomination Process
-To be eligible to be nominated you must be a member of SIGCHI. Please submit nominations, for yourself or another, by January 27, 2023, Anywhere on Earth (AoE) through <a href="https://forms.gle/jYhVcXGdLVk9PkFv6">the application form</a>.
+To be eligible to be nominated you must be a member of SIGCHI. Please submit nominations, for yourself or another, by May 27, 2023, Anywhere on Earth (AoE) through <a href="https://forms.gle/jYhVcXGdLVk9PkFv6">the application form</a>.
 
 Once nominations are closed, nominees will be informed as to the following steps in the election process.
 
