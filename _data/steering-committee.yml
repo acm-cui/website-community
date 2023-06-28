@@ -3,13 +3,15 @@
   photo: assets/img/sc/cosmin-munteanu.jpg
   url: http://www.cs.utoronto.ca/~mcosmin/
   role: Co-Chair
+  term: 2019–2024
   bio: >
     Cosmin is an Associate Professor at the Institute for Communication, Culture, Information, and Technology at the University of Toronto Mississauga, and Director of the Technologies for Ageing Gracefully lab. His research is focused on investigating information-rich media and intelligent technologies, such as speech interfaces, for several applications: mobile devices, mixed reality systems, and learning and assistive technologies for marginalized users. With almost a quarter century of research at the intersection of Human-Computer Interaction, Automatic Speech Recognition, Natural User Interfaces, Mobile Computing, Ethics, and Assistive Technologies.
 
 - name: Benjamin R Cowan
   photo: assets/img/sc/benjamin-cowan.jpg
   url: http://www.benjamincowan.com/
-  role: Co-Chair<br>Conference Liaison
+  role: Co-Chair </strong><small>(2019–2023)</small><strong><br>Conference Liaison
+  term: 2019–2024
   bio: >
     Benjamin is an Associate Professor at University College Dublin’s School of Information & Communication Studies. His research lies at the juncture between psychology, HCI and computer science in investigating how theoretical perspectives in human communication can be applied to understand phenomena in speech based human-machine communication. He has published widely on user centered issues in conversational and speech interface interaction, is co-founder of the international Conversational User Interfaces (CUI) conference series and has been involved in a number of workshops on this topic at CHI and Mobile HCI on designing speech and language technologies. He is also Co-PI on the Science Foundation Ireland ADAPT Centre, a €100 million world leading research centre on AI-driven digital content technologies.
 
@@ -17,6 +19,7 @@
   photo: assets/img/sc/leigh-clark.jpg
   url: https://lmhclark.com/
   role: Secretary/Treasurer
+  term: 2019–2024
   bio: >
     Leigh is a Lecturer in Human-Computer Interaction at the Computational Foundry in Swansea University. His research examines the effects of voice and language design on speech interface interactions and how linguistic theories can be implemented and redefined in this context. He is co-founder of the international Conversational User Interfaces (CUI) conference series.
 
@@ -24,13 +27,15 @@
   photo: assets/img/sc/christine-murad.jpg
   url: http://www.cs.toronto.edu/~cmurad/
   role: Student Representative
+  term: 2019–2024
   bio: >
     Christine is a PhD candidate in the Department of Computer Science at the University of Toronto. Her research looks at the usability and design of conversational voice interfaces, the development of different tools and resources to aid designers in CUI & VUI design and education, and bridging the industry-academia gap in CUI & VUI design. She’s published research and organized CUI workshops across several international SIGCHI venues such as CHI, IUI, MobileHCI, CSCW, CUI, etc. She has been part of the steering committee since it’s inception in 2019, and was the Shortcases chair at CUI ’20, Demos Chair at ’21, and is now Provocations Chair at CUI ’23.
 
 - name: Martin Porcheron
   photo: assets/img/sc/martin-porcheron.jpg
   url: https://www.porcheron.uk/
-  role: Outreach/Publicity Chair<br>Technical Support Chair
+  role: Outreach/Publicity Chair </strong><small>(2019–2023)</small><strong><br>Technical Support Chair
+  term: 2019–2024
   bio: >
     Martin is a Senior UX Researcher at Bold Insight UK. His recent work focuses on the user experience of interactive “AI” systems—from voice interfaces through to robot interfaces. In his PhD, he also studied public places like cafés and pubs, to understand how we use devices like smartphones while we are socialising. As well as organising a number of workshops at international conferences, he was Full Papers Chair for the inaugural CUI '19 conference and Programme Chair for CUI '20 and '21, and is General Chair for CUI '23.
 
@@ -38,12 +43,14 @@
   photo: assets/img/sc/heloisa-candello.png
   url: https://researcher.watson.ibm.com/researcher/view.php?person=br-heloisacandello
   role: Industry/NGO Liaison
+  term: 2019–2024
   bio: >
     Heloisa is an interaction designer and a research scientist at the IBM Research laboratory in Brazil. She is also a research scientist at ACM SIGCHI Volunteer Development Committee. She has experience in leading and conducting design research activities to understand people's contexts and motivations to use conversational technologies. She recently co-organized a related workshop at CSCW '17, CHI '18, and the prior workshop CUI@CHI '20.
 
 - name: Philip R Doyle
   photo: assets/img/sc/philip-doyle.jpg
   role: Student Representative
+  term: 2019–2023
   bio: >
     Philip is a PhD candidate in Human-Computer Interaction at University College Dublin, specialising in studying user perceptions of CUIs as dialogue partners. Adopting theory and methodological practices from cognitive psychology, Philip has published research at CHI, CUI, MobileHCI, IJHCI and is also a member of the current CUI steering committee. In addition to his main area of research, Philip also has a strong interest in ethics and transparency in CUI design.
 
@@ -51,6 +58,7 @@
   photo: assets/img/sc/stephan-schloegl.jpg
   url: https://www.mci.edu/faculty/stephan.schloegl_en.html
   role: Previous Conference General Chair
+  term: 2021–2024
   bio: >
     Stephan is an Associate Professor in the Dept. Management, Communication IT at theMCI Management Center Innsbruck. His main research interest lies in human-computer interaction, particularly focusing on conversational user interfaces and other types of AI supported interaction modalities. He was one of the general chairs for the CUI 2020 conference.
 
@@ -58,5 +66,6 @@
   photo: assets/img/sc/manes-torres.jpeg
   url: https://www.ehu.eus/en/web/speech-interactive/m-ines-torres
   role: Previous Conference General Chair
+  term: 2021–2024
   bio: >
     María is Full Professor at UPV/EHU Univeridad del Pais Vasco and director of the SPIN RG Speech Interactive Research Group. Her research focuses on statistical approaches to deal with spoken dialog systems, aiming to learn from human interaction to generate artificial interaction. Furthermore, she and her group look at methods to identify emotions in speech. She is one of the general chairs for the CUI 2020 conference.

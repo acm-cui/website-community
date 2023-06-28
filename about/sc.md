@@ -26,10 +26,10 @@ The ACM Conversational User Interfaces Steering Committee is responsibile for th
     <div class="flex-grow-1 ms-3">
 			{% if member.url %}
 			<h5 class="mt-0 mb-1"><a href="{{ member.url }}" title="Go to {{ member.name }}'s website" target="_blank">{{ member.name }}</a></h5>
-			<p><strong>{{ member.role }}</strong></p>
+			<p><strong>{{ member.role }}</strong> <small>({{ member.term }})</small></p>
 			{% else %}
 			<h5 class="mt-0 mb-1">{{ member.name }}</h5>
-			<p><strong>{{ member.role }}</strong></p>
+			<p><strong>{{ member.role }}</strong> <small>({{ member.term }})</small></p>
 			{% endif %}
 			{{ member.bio }}
     </div>
