@@ -8,6 +8,14 @@ a {
   }
 }
 
+.d-dark-none {
+	display: none !important;
+}
+
+.d-light-none {
+	display: block !important;
+}
+
 .nav-link {
   color: $nav-link-color;
   
