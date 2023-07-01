@@ -47,9 +47,8 @@ body > div {
 // HEADER
 header {
 	img {
-		border: $header-logo-border;
 		height: $header-logo-height;
-		width: $header-logo-width;
+		max-width: 90%;
 	}
 }
 
