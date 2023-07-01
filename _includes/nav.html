@@ -1,5 +1,5 @@
 				<div class="container-fluid">
-					<button class="d-flex justify-contents-center navbar-toggler mx-auto my-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<button class="d-md-none d-flex align-items-center navbar-toggler mx-auto my-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span> <span>MENU</span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -17,8 +17,8 @@
 								{%- endfor -%}
 							{%- endif -%}
 
-							<li class="nav-item {% if item.children -%}dropdown{% endif %} mx-md-2 my-md-0 my-1 text-md-start text-center">
-								<a class="nav-link px-3 rounded-pill {% if item.children -%}dropdown-toggle{% endif %}{% if is_active %} active" aria-current="page{%- endif -%}" {%- if item.children -%}data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"{% else %}href="{{ item.url | relative_url }}{% endif %}">
+							<li class="nav-item {% if item.children -%}dropdown{% endif %} mx-lg-2 mx-md-1 my-md-0 my-1 text-md-start text-center">
+								<a class="nav-link px-lg-3 px-2 rounded-pill {% if item.children -%}dropdown-toggle{% endif %}{% if is_active %} active" aria-current="page{%- endif -%}" {%- if item.children -%}data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"{% else %}href="{{ item.url | relative_url }}{% endif %}">
 									{{- item.title | escape -}}
 								</a>
 								{%- if item.children -%}
