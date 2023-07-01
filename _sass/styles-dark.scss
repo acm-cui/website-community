@@ -47,7 +47,7 @@ nav {
 		color: $nav-link-color-dark;
 
 		&.active {
-			color: $nav-link-active-color-dark;
+			color: $nav-link-active-color-dark !important;
 		}
 	}
 	
