@@ -1,10 +1,10 @@
 ---
-label: Nominate yourself for the Steering Committee
 description: Join the Conversational User Interfaces Steering Committee
-layout: page
+
+lastmod: page
 
 #menus:
-#  about:
+#  sc:
 #    title: Call for Nominations
 #    weight: 1
 ---

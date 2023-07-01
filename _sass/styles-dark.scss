@@ -1,0 +1,101 @@
+// GLOBAL
+
+a, a:active, a:visited, a:hover {
+	color: $link-color-dark;
+}
+
+.text-muted {
+	color: $text-muted-dark !important;
+}
+
+
+
+// LAYOUT
+body {
+	background: $body-bg-dark;
+	background: $body-bg-gradient-dark;
+	color: $body-color-dark;
+}
+
+body > div {
+	background: $content-bg-dark;
+	border: $content-border-dark;
+}
+
+
+
+// HEADER
+header {
+	img {
+		border: $header-logo-border-dark;
+	}
+}
+
+
+
+// NAVIGATION
+nav {
+	background: $nav-bg-dark;
+	border-bottom: $content-border-dark;
+	border-top: $content-border-dark;
+	
+	.nav-link {
+		color: $nav-link-color-dark;
+	}
+	
+	.navbar-toggler {
+		color: $body-color-dark;
+		border: var(--bs-border-width) solid $navbar-toggler-border-color-dark !important;
+		
+		.navbar-toggler-icon {
+			background-image: $navbar-dark-toggler-icon-bg;
+		}
+	}
+	
+	.dropdown-menu {
+		background: $dropdown-bg-dark;
+		border: var(--bs-dropdown-border-width) solid $border-color-dark;
+			
+		.dropdown-item {
+			color: $dropdown-link-color-dark;
+		}
+	}
+}
+
+
+
+// CONTENT
+aside {
+	border-top: var(--bs-border-width) var(--bs-border-style) $border-color-dark;
+	
+	.border-bottom {
+		border-bottom: var(--bs-border-width) var(--bs-border-style) $border-color-dark !important;
+	}
+}
+
+main {
+	background: $main-bg-dark;
+	border-bottom: $content-border-dark;
+
+	.timeline {
+		.timeline-label {
+			color: $timeline-label-color-dark;
+		}
+	}
+}
+
+
+
+// FOOTER
+footer {
+	background: $footer-bg-dark;
+}
+
+
+
+@include media-breakpoint-up(md) {
+	aside {
+		border-top: 0;
+		border-right: var(--bs-border-width) var(--bs-border-style) $border-color-dark;
+	}
+}

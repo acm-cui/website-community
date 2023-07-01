@@ -1,0 +1,78 @@
+<aside class="flex-shrink-0 me-md-4 pe-md-4 pt-md-0 pt-3 mt-md-0 mt-3">
+	<div class="border-bottom pb-md-4 pb-3">
+		<h6 class="fw-bold">Next conference</h6>
+		<div class="d-flex flex-column last-md-0">
+			{%- assign no_conferences = true -%}
+			{%- for conference in site.data.conferences -%}
+				{%- capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture -%}
+				{%- capture conferenceunix %}{{ conference.dates.end | date: '%s' }}{% endcapture -%}
+				{%- if nowunix > conferenceunix -%}
+					{%- if no_workshops -%}
+						<small><em>No conference planned.</em></small>
+					{%- endif -%}
+					{%- break -%}
+				{%- else -%}
+					{%- assign no_conferences = false -%}
+					{%- if conference.url -%}
+						<small class="mb-2"><a href="{{ conference.url }}" title="Visit the website for {{ conference.name }}" target="_blank">{{ conference.name }}</a><br>{{ conference.location }}<br>{%- include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</small>
+					{%- else -%}
+						<small class="mb-2">{{ workshop.name }}<br>{{ conference.location }}<br>{%- include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</small>
+					{%- endif -%}
+				{%- endif -%}
+			{%- else -%}
+				<small><em>No conference planned.</em></small>
+			{%- endfor -%}
+		</div>
+	</div>
+	
+	<div class="border-bottom pb-md-4 pb-3">
+		<h6 class="mt-md-4 mt-3 fw-bold">Upcoming workshops</h6>
+		<div class="d-flex flex-column">
+			{%- assign no_workshops = true -%}
+			{%- for workshop in site.data.workshops -%}
+				{%- capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture -%}
+				{%- if workshop.dates -%}
+					{%- capture workshopunix %}{{ workshop.dates.start | date: '%s' }}{% endcapture -%}
+				{%- elsif workshop.date -%}
+					{%- capture workshopunix %}{{ workshop.date | date: '%s' }}{% endcapture -%}
+				{%- endif -%}
+				{%- if nowunix > workshopunix -%}
+					{%- if no_workshops -%}
+						<small><em>No workshops planned.</em></small>
+					{%- endif -%}
+					{%- break -%}
+				{%- else -%}
+					{%- assign no_workshops = false -%}
+					{%- if workshop.url -%}
+						<small class="mb-2"><a href="{{ workshop.url }}" title="Visit the website for the workshop '{{ workshop.title }}'" target="_blank">CUI@{{ workshop.conference }}</a><br>
+					{%- else -%}
+						<small class="mb-2">CUI@{{ workshop.event }}<br>
+					{%- endif -%}
+					{%- if workshop.dates -%}
+					{% include daterange.html startdate=workshop.dates.start enddate=workshop.dates.end -%}
+					{%- elsif workshop.date -%}
+					{% include date.html date=workshop.date -%}
+					{%- endif -%}</small>
+				{%- endif -%}
+			{%- else -%}
+				<small><em>No workshops planned.</em></small>
+			{%- endfor -%}
+		</div>
+	</div>
+	
+	<div class="d-flex flex-column my-md-4 my-3 text-md-start text-center">
+		<a href="https://www.acm.org" title="CUI is an Association for Computing Machinery conference">
+			<picture>
+				<source srcset="{{ "/assets/img/acm/logo-acm-dark.png" | relative_url }}" media="(prefers-color-scheme: dark)">
+				<img src="{{ "/assets/img/acm/logo-acm.png" | relative_url }}" alt="ACM logo" title="Association of Computing Machinery">
+			</picture>
+		</a>
+		
+		<a href="https://www.sigchi.org" title="CUI is an ACM Special Interest Group on Human-Computer Interaction specialised conference" class="mt-md-4 mt-3">
+			<picture>
+				<source srcset="{{ "/assets/img/acm/logo-sigchi-dark.png" | relative_url }}" media="(prefers-color-scheme: dark)">
+				<img src="{{ "/assets/img/acm/logo-sigchi.png" | relative_url }}" alt="SIGCHI logo" title="Special Interest Group in Human-Computer Interaction">
+			</picture>
+		</a>
+	</div>
+</aside>

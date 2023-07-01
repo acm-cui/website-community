@@ -1,23 +1,11 @@
-# ACM Conversational User Interfaces
+# ACM Conversational User Interfaces community website
 
-This is a template for building a website part of the ACM CUI conference/workshop series. The website will be hosted at www.conversationaluserinterfaces.org in a custom directory (e.g., _www.conversationaluserinterfaces.org/mywebsite_).
+The ACM CUI community website is build using Jekyll.
 
-This template repository is for websites built with the [Jekyll](http://jekyllrb.com/ "Go to the Jekyll Static Website Generator website") Static Website Generator.
+## Conferences list
 
-# Requirements/instructions
+Conferences can be added and modified in the `_data/conferences.yml` file. Logos are stored in the `assets/img/conferences/` directory. The newest conference should be at the top of the list.
 
-1. Put your Jekyll website in the root of this repository in the `main` branch
+## Workshops list
 
-2. Your `_config.yml` can be configured for local host testing, but you should have a `_config_production.yml` file for settings you want to deploy at deployment
-
-    * A sample file has been provided
-    * It is important that you insert a correct `baseurl` parameter
-    * Every time you commit, everything in this directory will be replaced!
-    
-3. Change the `name` parameter of the GitHub Action workflow in `.github/workflows/jekyll.yml` to something appropriate
-
-4. Change the `target-directory` parameter in `.github/workflows/jekyll.yml` to match the one you set in step 2 (minus the forward slash)
-
-5. Ask the CUI Technical Chair to grant your repository permissions to push to the `conversationaluserinterfaces.org` repository
-
-6. Ensure Actions are enabled in this repository in the GitHub repository settings
+Workshops can be added and modified in the `_data/workshops.yml` file. The newest conference should be at the top of the list.

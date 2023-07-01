@@ -1,37 +1,71 @@
-// https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss
-
-
-// OVERRIDES
-$enable-shadows              : true;
-$enable-responsive-font-size : true;
-
-$link-decoration             : none;
-$link-shade-percentage       : 0%;
-$link-hover-decoration       : underline;
-
-
 // GLOBAL
-$transition-duration         : .3s;
-$transition-function         : ease;
+$primary: #C73D4D;
+
+$font-family-sans-serif: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$h1-font-size: 1.7rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.3rem;
+
+$transition-duration: .5s;
+$transition-function: ease;
+
+$glass-backdrop-filter: saturate(180%) blur(20px);
+
+$border-color: rgba(22,22,22,.3);
+
+
+
+// LAYOUT
+$body-bg: rgb(238,238,238);
+$body-bg-gradient: linear-gradient(220deg, rgba($body-bg,1) 0%, rgba($body-bg,1) 20%, rgba(81,112,78,1) 20%, rgba(81,112,78,1) 25%, rgba(203,106,115,1) 25%, rgba(203,106,115,1) 30%, rgba(182,81,145,1) 30%, rgba(182,81,145,1) 35%, rgba(81,105,182,1) 35%, rgba(81,105,182,1) 40%, rgba(255,117,11,1) 40%, rgba(255,117,11,1) 45%, rgba($body-bg,1) 45%);
+
+$content-bg: rgba($body-bg,.7);
+$content-border: 3px double $border-color;
+$content-max-width: 1000px;
+
 
 
 // HEADER
-$title-mw                    : 1060px;
-$title-h                     : 100px;
-$stripe-h                    : .75rem; 
+$header-logo-border: $content-border;
+$header-logo-height: 100px;
+$header-logo-width: 100px;
 
 
-// COMMITTEE MEMBERS
-$organiser-image-w           : (
-  xs                         : 100px,
-  sm                         : 100px,
-  md                         : 200px,
-  lg                         : 200px,
-  xl                         : 200px
-);
 
-// WORKSHOPS
-$bg-always-white             : #ffffff;
-$bg-always-light             : #f8f9fa;
-$bg-always-dark              : #202124;
+// NAVIGATION
+$nav-bg: rgba($body-bg,.85);
 
+$nav-link-border-width: 3px;
+$nav-link-border-color-active: $primary;
+$nav-link-hover-color: #fff;
+$nav-link-active-color: #fff;
+
+$navbar-light-hover-bg: $primary;
+$navbar-light-hover-color: #fff;
+$navbar-light-expanded-color: $navbar-light-hover-color;
+
+$dropdown-min-width: 100%;
+$dropdown-bg: rgba($body-bg, 0.4);
+$dropdown-link-hover-bg: rgba($primary, 0.9);
+$dropdown-link-hover-color: #fff;
+
+
+
+// CONTENT
+$sidebar-image-width: 200px;
+
+$main-bg: $nav-bg;
+
+$profile-photo-width: 100px;
+
+$timeline-color: #777;
+$timeline-notch-width: 1rem;
+$timeline-width: .25rem;
+$timeline-border-end: $timeline-width solid $timeline-color;
+$timeline-label-color: #111;
+
+
+
+// FOOTER
+$footer-bg: $nav-bg;

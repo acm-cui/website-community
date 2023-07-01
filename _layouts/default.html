@@ -1,62 +1,30 @@
+---
+---
+{%- assign cache = site.time | date: '%s%N' -%}
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-  {%- include head.html -%}
-
-  <body class="d-flex flex-column">
-
-    {%- include header.html -%}
-
-    <main class="page-content py-5 flex-grow-1">
-
-      <div class="container">
-
-        <div class="row">
-  
-          {%- unless page.hide_nav -%}
-
-          <div class="d-md-block d-none col-lg-3 col-md-4 pt-md-0 pt-3 pe-lg-5 pe-md-3 border-end sidebar" aria-hidden="true">
-
-            {%- include nav.html -%}
-
-			<div class="acm w-100 mt-3">
-
-			<a href="https://www.acm.org" title="CUI is an Association for Computing Machinery conference">
-				<img src="{{ "assets/img/acm/logo-acm.png" | relative_url }}" alt="ACM logo" title="Association of Computing Machinery" class="d-dark-none">
-				<img src="{{ "assets/img/acm/logo-acm-dk.png" | relative_url }}" alt="ACM logo" title="Association of Computing Machinery" class="d-dark-block d-light-none">
-			</a>
-
-			<a href="https://www.sigchi.org" title="CUI is an ACM Special Interest Group on Human-Computer Interaction specialised conference">
-				<img src="{{ "assets/img/acm/logo-sigchi.png" | relative_url }}" alt="SIGCHI logo" title="SIGCHI" class="d-dark-none mt-3">
-				<img src="{{ "assets/img/acm/logo-sigchi-dk.png" | relative_url }}" alt="SIGCHI logo" title="SIGCHI" class="d-dark-block d-light-none mt-3">
-			</a>
-			
-			</div>
-
-          </div>
-  
-          <section class="col-lg-9 col-md-8 ps-lg-5 ps-md-3" aria-label="Content">
-
-          {%- else -%}
-  
-          <section class="col-12" aria-label="Content">
-          
-          {%- endunless -%}
-  
-            {{ content }}
-
-          </section>
-
-        </div>
-
-      </div>
-
-    </main>
-
-    {%- include footer.html -%}
-
-    <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
-
-  </body>
-
+<html lang="{{ page.lang | default: site.lang | default: " en" }}" class="h-100">
+    <head>
+		{%- include head.html -%}
+	</head>
+    <body class="p-xl-5 p-md-4 p-2">
+    	<div class="container h-100 mx-auto p-0 d-flex flex-column rounded-2 shadow">
+    		<header class="d-flex flex-row align-items-center justify-content-center p-lg-4 p-3">
+    			<img src="{{ "/assets/img/logo.svg" | relative_url }}" alt="The text CUI against a pink background with abstract waves" title="ACM CUI logo" class="rounded-circle" />
+				<h1 class="m-0 p-0 px-3 fw-normal">
+					ACM Conversational User Interfaces
+				</h1>
+    		</header>
+    		<nav class="navbar navbar-expand-md px-lg-4 p-3">
+				{%- include nav.html -%}
+    		</nav>
+    		<main class="d-flex flex-md-row-reverse flex-column p-lg-4 p-3">
+    			{{ content }}
+    		</main>
+    		<footer class="px-lg-4 p-3 small text-center text-muted">
+				&copy; {{ site.time | date: "%Y" }} ACM conference on Conversational User Interfaces<br>
+				<a href="https://www.acm.org/about-acm/privacy-policy" title="Association for Computing Machinery Privacy Policy" class="text-muted">ACM Privacy Policy</a>
+    		</footer>
+    	</div>
+		<script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}?{{ cache }}"></script>
+    </body>
 </html>
