@@ -12,10 +12,10 @@
   photo: assets/img/sc/benjamin-cowan.jpg
   url: http://www.benjamincowan.com/
   roles:
-    - role: Co-Chair
-      term: 2019–2023
     - role: Conference Liaison
       term: 2019–2024
+    - role: Co-Chair
+      term: 2019–2023
   bio: >
     Benjamin is an Associate Professor at University College Dublin’s School of Information & Communication Studies. His research lies at the juncture between psychology, HCI and computer science in investigating how theoretical perspectives in human communication can be applied to understand phenomena in speech based human-machine communication. He has published widely on user centered issues in conversational and speech interface interaction, is co-founder of the international Conversational User Interfaces (CUI) conference series and has been involved in a number of workshops on this topic at CHI and Mobile HCI on designing speech and language technologies. He is also Co-PI on the Science Foundation Ireland ADAPT Centre, a €100 million world leading research centre on AI-driven digital content technologies.
 
@@ -41,10 +41,10 @@
   photo: assets/img/sc/martin-porcheron.jpg
   url: https://www.porcheron.uk/
   roles:
-    - role: Outreach/Publicity Chair
-      term: 2019–2023
     - role: Technical Support Chair
       term: 2019–2024
+    - role: Outreach/Publicity Chair
+      term: 2019–2023
   bio: >
     Martin is a Senior UX Researcher at Bold Insight UK. His recent work focuses on the user experience of interactive “AI” systems—from voice interfaces through to robot interfaces. In his PhD, he also studied public places like cafés and pubs, to understand how we use devices like smartphones while we are socialising. As well as organising a number of workshops at international conferences, he was Full Papers Chair for the inaugural CUI '19 conference and Programme Chair for CUI '20 and '21, and is General Chair for CUI '23.
 
@@ -69,10 +69,10 @@
   photo: assets/img/sc/stephan-schloegl.jpg
   url: https://www.mci.edu/faculty/stephan.schloegl_en.html
   roles:
-    - role: CUI 2020 General Chair
-      term: 2020–2023
     - role:  CUI 2021 General Chair
       term: 2021–2024
+    - role: CUI 2020 General Chair
+      term: 2020–2023
   bio: >
     Stephan is an Associate Professor in the Dept. Management, Communication IT at theMCI Management Center Innsbruck. His main research interest lies in human-computer interaction, particularly focusing on conversational user interfaces and other types of AI supported interaction modalities. He was one of the general chairs for the CUI 2020 conference.
 
@@ -80,9 +80,9 @@
   photo: assets/img/sc/manes-torres.jpeg
   url: https://www.ehu.eus/en/web/speech-interactive/m-ines-torres
   roles:
-    - role: CUI 2020 General Chair
-      term: 2020–2023
     - role:  CUI 2021 General Chair
       term: 2021–2024
+    - role: CUI 2020 General Chair
+      term: 2020–2023
   bio: >
     María is Full Professor at UPV/EHU Univeridad del Pais Vasco and director of the SPIN RG Speech Interactive Research Group. Her research focuses on statistical approaches to deal with spoken dialog systems, aiming to learn from human interaction to generate artificial interaction. Furthermore, she and her group look at methods to identify emotions in speech. She is one of the general chairs for the CUI 2020 conference.

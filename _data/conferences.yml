@@ -1,32 +1,40 @@
 - name: CUI 2023
-  location: Eindhoven, The Netherlands
-  description: CUI 2023 will be held in Eindhoven, The Netherlands
+  location: Eindhoven, Netherlands
   url: https://cui.acm.org/2023/
+  dates:
+    start: 2023-07-18
+    end: 2023-07-21
   logo: cui2023.png
 
 - name: CUI 2022
-  location: Glasgow, Scotland, UK
-  description: CUI 2022 was held in Glasgow, Scotland
+  location: Glasgow, UK
   url: https://cui.acm.org/2022/
+  dates:
+    start: 2022-07-26
+    end: 2022-07-28
   logo: cui2022.png
 
 - name: CUI 2021
   location: Virtual Event
-  description: CUI 2021 was a virtual event due to the COVID-19 pandemic
+  dates:
+    start: 2021-07-27
+    end: 2021-07-29
   url: https://cui.acm.org/2021/
   logo: cui2021.png
-  past: true
   
 - name: CUI 2020
   location: Virtual Event
-  description: CUI 2020 was a virtual event due to the COVID-19 pandemic
+  dates: 
+    start: 2020-07-22
+    end: 2020-07-24
   url: https://cui.acm.org/2020/
   logo: cui2020.png
-  past: true
 
 - name: CUI 2019
   location: Dublin, Ireland
-  description: The inaugral CUI conference was held in Dublin, Ireland
+  dates: 22–23th August 2019
+  dates: 
+    start: 2019-08-22
+    end: 2019-08-23
   url: https://cui.acm.org/2019/
   logo: cui2019.png
-  past: true

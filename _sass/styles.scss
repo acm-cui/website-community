@@ -1,103 +1,140 @@
-
-// HEADER
-.site-title {
-  max-width: $title-mw;
-  height: $title-h;
+// GLOBAL
+a[href^="https://doi.org"], a[href^="https://cronfa.swan.ac.uk"] {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
 }
 
-.site-stripe > div {
-  height: $stripe-h;
+h1, h2 {
+	font-weight: bold;
 }
 
-.site-stripe-1 {
-  background: #51704E;
+p:last-child, ol:last-child, ul:last-child {
+    margin-bottom: 0;
 }
 
-.site-stripe-2 {
-  background: #CB6A73;
-}
-
-.site-stripe-3 {
-  background: #B65191;
-}
-
-.site-stripe-4 {
-  background: #5169B6;
-}
-
-.site-stripe-5 {
-  background: #ff750b;
-}
-
-
-// NAVIGATION
-.nav-link {
-  .nav-dd-icon {
-    @include auto-transition(all);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
-  &[aria-expanded="true"] .nav-dd-icon {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
-}
-
-.container {
-  @include auto-transition(width);
-}
-
-.mobile-nav.offcanvas .nav-item + ul {
-  flex-wrap: nowrap !important;
-}
-
-.acm {
-	img {
-		max-width: 100%;
+.last-md-0 {
+	& *:last-child {
+		margin-bottom: 0 !important;
 	}
 }
 
 
-// WORKSHOPS
-.bg-always-white {
-  background: $bg-always-white !important;
+
+// LAYOUT
+body {
+	background: $body-bg-gradient;
+	background-attachment: fixed;
 }
 
-.bg-always-light {
-  background: $bg-always-light !important;
-}
-
-.bg-always-dark {
-  background: $bg-always-dark !important;
-}
-
-
-// STEERING COMMITTEE MEMBERS
-.profile-photo {
-  max-width: 100px;
+body > div {
+	background: $content-bg;
+	border: $content-border;
+	-webkit-backdrop-filter: $glass-backdrop-filter;
+	backdrop-filter: $glass-backdrop-filter;
+	max-width: $content-max-width !important;
 }
 
 
-// WORKSHOPS
-.timeline {
 
-  & > li {
-    padding-left: 1rem;
-  }
+// HEADER
+header {
+	img {
+		border: $header-logo-border;
+		height: $header-logo-height;
+		width: $header-logo-width;
+	}
+}
 
-  .timeline-notch {
-    height: $timetable-w;
-    width: $timeline-notch-w;
-  }
 
-  .timeline-label {
-    margin-top: .6rem - $timetable-w;
-  }
+
+// NAVIGATION
+nav {
+	background: $nav-bg;
+	-webkit-backdrop-filter: $glass-backdrop-filter;
+	backdrop-filter: $glass-backdrop-filter;
+	border-bottom: $content-border;
+	border-top: $content-border;
+	position: relative;
+	@include auto-transition(background, box-shadow);
+	z-index: 1000;
+	
+	a.nav-link {	
+		border: $nav-link-border-width solid transparent;
+
+		&.active {
+			border: $nav-link-border-width solid $nav-link-border-color-active;
+		}
+	
+		&:hover, &[aria-expanded="true"] {
+			background: $navbar-light-hover-bg;
+			color: $navbar-light-expanded-color !important;
+		}
+	}
+	
+	
+	.dropdown-menu {
+		-webkit-backdrop-filter: $glass-backdrop-filter;
+		backdrop-filter: $glass-backdrop-filter;
+	}
+}
+
+
+
+// CONTENT
+aside {
+	border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+	
+	picture, img {
+		max-width: $sidebar-image-width;
+	}
+}
+
+main {
+	background: $main-bg;
+	-webkit-backdrop-filter: $glass-backdrop-filter;
+	backdrop-filter: $glass-backdrop-filter;
+	border-bottom: $content-border;
+
+	.profile-photo {
+		max-width: $profile-photo-width;
+	}
+
+	.timeline {
+		border-right: $timeline-border-end;
+
+		& > li {
+			padding-left: 1rem;
+		}
+
+		.timeline-notch {
+			background: $timeline-color;
+			height: $timeline-width;
+			width: $timeline-notch-width;
+		}
+
+		.timeline-label {
+			color: $timeline-label-color;
+			margin-top: .6rem - $timeline-width;
+		}
+	}
+}
+
+
+
+// FOOTER
+footer {
+	background: $footer-bg;
+	-webkit-backdrop-filter: $glass-backdrop-filter;
+	backdrop-filter: $glass-backdrop-filter;
+}
+
+
+
+@include media-breakpoint-up(md) {
+	aside {
+		border-top: 0;
+		border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+	}
 }

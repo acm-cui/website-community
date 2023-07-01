@@ -1,12 +1,12 @@
 ---
-label: Constitution
 description: The Constitution for the ACM Conversational User Interfaces conference.
 
+lastmod: page
 redirect_from:
-  - /sc/constitution/
+  - /about/constitution/
   
 menus:
-  about:
+  sc:
     title: Constitution
     weight: 2
 ---

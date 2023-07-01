@@ -1,69 +1,68 @@
-- year: 2023
-  workshops:
-    - name: 'Inclusive Design of CUIs Across Modalities and Mobilities'
-      location: Hamburg, Germany
-      description: A workshop previously held at CHI 2023
-      url: https://cui.acm.org/workshops/CHI2023/
+- title: 'Inclusive Design of CUIs Across Modalities and Mobilities'
+  location: Hamburg, Germany
+  conference: CHI 2023
+  date: 2023-04-23
+  url: https://cui.acm.org/workshops/CHI2023/
 
-    - name: 'Human-Robot Conversational Interaction'
-      location: Stockholm, Sweden
-      description: A workshop previously held at HRI 2023
-      url: https://cui.acm.org/workshops/HRI2023/
+- title: 'Human-Robot Conversational Interaction'
+  location: Stockholm, Sweden
+  conference: HRI 2023
+  date: 2023-03-13
+  url: https://cui.acm.org/workshops/HRI2023/
 
-- year: 2022
-  workshops:
-    - name: 'Ethics of Conversational User Interfaces'
-      location: Virtual Event
-      description: A workshop previously held at CHI 2022
-      url: https://cui.acm.org/workshops/CHI2022/
+- title: 'Ethics of Conversational User Interfaces'
+  location: Virtual Event
+  conference: CHI 2022
+  date: 2021-04-21
+  url: https://cui.acm.org/workshops/CHI2022/
       
-- year: 2021
-  workshops:
-    - name: CONVERSATIONS 2021
-      location: Virtual Event
-      description: The 5th international workshop on chatbot research and design
-      url: https://conversations2021.wordpress.com
-    
-    - name: 'Inclusive and Collaborative Child-facing Voice Technologies'
-      location: Virtual Event
-      description: A workshop previously held at CSCW 2021
-      url: https://cui.acm.org/workshops/CSCW2021/
+- title: 'Inclusive and Collaborative Child-facing Voice Technologies'
+  location: Virtual Event
+  conference: CSCW 2021
+  date: 2021-10-23
+  url: https://cui.acm.org/workshops/CSCW2021/
 
-    - name: 'Exploring the Fortunate and Unfortunate Futures of Conversational Automotive User Interfaces'
-      location: Virtual Event
-      description: A workshop previously held at AutoUI 2021
-      url: https://cui.acm.org/workshops/AutoUI2021/
+- title: 'Exploring the Fortunate and Unfortunate Futures of Conversational Automotive User Interfaces'
+  location: Virtual Event
+  conference: AutoUI 2021
+  dates:
+    start: 2021-09-09
+    end: 2021-09-10
+  url: https://cui.acm.org/workshops/AutoUI2021/
 
-    - name: "Let's Talk About CUIs: Putting Conversational User Interface Design Into Practice"
-      location: Virtual Event
-      description: A workshop previously held at CHI 2021
-      url: https://cui.acm.org/workshops/CHI2021/
+- title: "Let's Talk About CUIs: Putting Conversational User Interface Design Into Practice"
+  location: Virtual Event
+  conference: CHI 2021
+  date: 2021-05-08
+  url: https://cui.acm.org/workshops/CHI2021/
 
-    - name: 'Theoretical and Methodological Challenges in Intelligent Conversational User Interface Interactions'
-      location: Virtual Event
-      description: A workshop previously held at IUI 2021
-      url: https://cui.acm.org/workshops/IUI2021/
+- title: 'Theoretical and Methodological Challenges in Intelligent Conversational User Interface Interactions'
+  location: Virtual Event
+  conference: IUI 2021
+  date: 2021-04-13
+  url: https://cui.acm.org/workshops/IUI2021/
 
-- year: 2020
-  workshops:
-    - name: 'Collaborating through Conversational User Interfaces'
-      location: Virtual Event
-      description: A workshop previously held at CSCW 2020
-      url: https://cui.acm.org/workshops/CSCW2020/
+- title: 'Collaborating through Conversational User Interfaces'
+  location: Virtual Event
+  conference: CSCW 2020
+  date: 2020-10-17
+  url: https://cui.acm.org/workshops/CSCW2020/
 
-    - name: 'Mapping Grand Challenges for the Conversational User Interface Community'
-      location: Virtual Event
-      description: A workshop previously held at CHI 2020
-      url: https://cui.acm.org/workshops/CHI2020/
+- title: 'Mapping Grand Challenges for the Conversational User Interface Community'
+  location: Virtual Event
+  conference: CHI 2020
+  date: 2020-05-29
+  url: https://cui.acm.org/workshops/CHI2020/
 
-    - name: 'New Theoretical and Methodological Perspectives for Researching Speech-based Conversational Interactions'
-      location: Virtual Event
-      description: A workshop previously held at IUI 2020
-      url: https://cui.acm.org/workshops/IUI2020/
+- title: 'New Theoretical and Methodological Perspectives for Researching Speech-based Conversational Interactions'
+  location: Virtual Event
+  conference: IUI 2020
+  date: 2020-03-17
+  url: https://cui.acm.org/workshops/IUI2020/
 
-- year: 2019
-  workshops:
-    - name: 'Mapping Theoretical and Methodological Perspectives for Understanding Speech Interface Interactions'
-      location: Glasgow, UK
-      description: A workshop previously held at CHI 2019
-      url: https://cui.acm.org/workshops/CHI2019/
+- title: 'Mapping Theoretical and Methodological Perspectives for Understanding Speech Interface Interactions'
+  location: Glasgow, UK
+  conference: CHI 2019
+  date: 2019-05-05
+  url: https://cui.acm.org/workshops/CHI2019/
+      

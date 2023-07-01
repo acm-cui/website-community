@@ -1,6 +1,7 @@
 ---
-label: Host
 description: Expression of Interest to the Conversational User Interfaces 2023 conference.
+
+lastmod: page
 
 menus:
   conferences:
