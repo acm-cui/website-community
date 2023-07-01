@@ -25,7 +25,7 @@
 									<ul class="dropdown-menu mt-2 rounded-4" id="nav-sub-{{ forloop.index }}">
 										{%- for item in item.children -%}
 											<li class="py-1 text-center">
-												<a class="dropdown-item {% if page.url == item.url %} active" aria-current="page{%- endif -%}" href="{{ item.url | relative_url }}">{{ item.title | escape }}</a>
+												<a class="dropdown-item py-2 {% if page.url == item.url %} active" aria-current="page{%- endif -%}" href="{{ item.url | relative_url }}">{{ item.title | escape }}</a>
 											</li>
 										{%- endfor -%}
 									</ul>
