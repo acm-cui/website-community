@@ -1,0 +1,26 @@
+---
+description: Periodically, there are elections to the ACM CUI Steering Committee. At these times, all those nominated for a role are listed, and a vote of members of the CUI community will take place.
+
+lastmod: page
+
+menus:
+  sc:
+    title: Elections
+    weight: 1
+---
+
+<h2>Election to the Steering Committee</h2>
+
+<p>Periodically, there are elections to the ACM CUI Steering Committee. The following elections are currently undergoing.</p>
+
+{%- for role in site.data.elections -%}
+	<h3>{{ role.title }}</h3>
+	<p>The following people have stood for the role of <em>{{ role.title }}</em>, to serve in the <em>{{ role.term }}</em> term.</p>
+
+	{%- for person in role.nominations %}
+	<h4>{{ person.name }}</h4>
+	<p>{{ person.bio }}</p>
+	{%- endfor -%}
+{%- else -%}
+	<p>Periodically, there are elections to the ACM CUI Steering Committee. However, there are no elections at the moment.</p>
+{%- endfor -%}

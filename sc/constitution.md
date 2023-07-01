@@ -8,7 +8,7 @@ redirect_from:
 menus:
   sc:
     title: Constitution
-    weight: 2
+    weight: 10
 ---
 
 # Constitution

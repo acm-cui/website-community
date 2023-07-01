@@ -12,7 +12,7 @@ redirect_from:
 menus:
   sc:
     title: Members
-    weight: 1
+    weight: 0
 ---
 
 # Steering Committee
