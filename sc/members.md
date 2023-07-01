@@ -7,9 +7,14 @@ redirect_from:
   - /about/
   - /about/sc/
   - /about/members/
+  - /sc/
   - /steering-committee/
 
 menus:
+  main:
+    title: Steering Committee
+    weight: 1
+    identifier: sc
   sc:
     title: Members
     weight: 1
