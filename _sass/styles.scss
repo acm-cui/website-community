@@ -26,6 +26,7 @@ p:last-child, ol:last-child, ul:last-child {
 body {
 	background: $body-bg-gradient;
 	background-attachment: fixed;
+	background-position: top;
 }
 
 body > div {
