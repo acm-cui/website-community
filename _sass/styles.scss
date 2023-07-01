@@ -23,6 +23,10 @@ p:last-child, ol:last-child, ul:last-child {
 
 
 // LAYOUT
+html {
+	background: $body-bg;
+}
+
 body {
 	background: $body-bg-gradient;
 	background-attachment: scroll;

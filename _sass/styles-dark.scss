@@ -11,6 +11,10 @@ a, a:active, a:visited, a:hover {
 
 
 // LAYOUT
+html {
+	background: $body-bg-dark;
+}
+
 body {
 	background: $body-bg-dark;
 	background: $body-bg-gradient-dark;
