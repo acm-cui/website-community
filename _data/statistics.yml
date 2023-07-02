@@ -77,6 +77,9 @@ tracks:
       2022:
         submissions: 2
         acceptances: 1
+      2023:
+        submissions: 6
+        acceptances: 5
   
   - title: Doctoral Consortium
     data:
