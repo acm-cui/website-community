@@ -50,7 +50,8 @@ menus:
 						{%- if track["data"][year]["submissions"] -%}
 							<td>
 								{%- assign submissions_float = track["data"][year]["submissions"] | times: 1.0 -%}
-								{{ track["data"][year]["acceptances"] }}/{{ track["data"][year]["submissions"] }}<br><small>({{ track["data"][year]["acceptances"] | divided_by: submissions_float | times: 100 | round: 1 }}%)</small>
+								{{ track["data"][year]["acceptances"] }}/{{ track["data"][year]["submissions"] }}<br>
+								<small class="text-muted">({{ track["data"][year]["acceptances"] | divided_by: submissions_float | times: 100 | round: 1 }}%)</small>
 							</td>
 						{%- else -%}
 							<td></td>
