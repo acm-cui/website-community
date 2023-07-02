@@ -1,4 +1,5 @@
 ---
+title: CUI 2023 Expression of Interest
 description: Expression of Interest to the Conversational User Interfaces 2023 conference.
 
 lastmod: page
@@ -9,8 +10,6 @@ menus:
     weight: 4
     sep_before: true
 ---
-
-# CUI 2023 Expression of Interest
 
 For its fifth iteration, the Conversational User Interfaces conference steering committee are looking for expressions of interest to host the conference in 2023. This In-CoOperation with ACM SIGCHI conference attracts over 100--150 delegates and focuses on showcasing cutting edge human-computer interaction research in the field of speech interfaces, chatbots and other language based interaction paradigms.
 

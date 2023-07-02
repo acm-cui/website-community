@@ -1,4 +1,5 @@
 ---
+title: Workshops
 description: Current and past workshops organised by members of the Conversational User Interfaces community.
 
 lastmod:
@@ -10,8 +11,6 @@ menus:
     title: Workshops
     weight: 3
 ---
-
-# Workshops
 
 The ACM Conversational User Interfaces community organises satellite workshops co-located at other conferences as a way of building friendships and strengthening collaboration between communities.
 

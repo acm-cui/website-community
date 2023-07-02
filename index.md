@@ -1,7 +1,8 @@
 ---
-permalink: /
+title: Welcome to CUI
 description: The Conversational User Interfaces conference and workshop series.
 
+permalink: /
 lastmod: page
 
 menus:
@@ -9,8 +10,6 @@ menus:
     title: Home
     weight: 0
 ---
-
-# Welcome to CUI
 
 Welcome to the [ACM](https://www.acm.org/ "Association for Computing Machinery") [SIGCHI](https://sigchi.org "ACM Special Interest Group on Computer-Human Interaction") Conversational User Interfaces (CUI) community website. CUI was founded in 2018 to bring together researchers and practitioners from a wide range of disciplines examining the design of speech and language technologies. 
 

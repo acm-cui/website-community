@@ -1,4 +1,5 @@
 ---
+title: Connect with us
 description: Join the Conversational User Interfaces announcements mailing list and Discord server
 
 layout: page
@@ -15,11 +16,9 @@ menus:
     weight: 5
 ---
 
-## Connect
-
 Connect with the ACM Conversational User Interfaces community through our mailing list, Discord, or social media channels.
 
-### Announcemments
+### Announcements
 
 Sign up to receive announcements from the Conversational User Interfaces community and we will periodically send you the details of upcoming conferences, workshops, special issue journals and other relevant events. This is a moderated list so emails can only be distributed with approval of an administrator or moderator.
 
