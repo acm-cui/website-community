@@ -34,7 +34,7 @@ menus:
 		<thead>
 			<tr class="fw-bold">
 				<td rowspan="2">Track</td>
-				<td colspan="{{ num_years_this_table }}">Acceptances/Submissions<br><small>(Acceptance Rate)</small></td>
+				<td colspan="{{ num_years_this_table }}">Acceptances / Submissions<br><small>(Acceptance Rate)</small></td>
 			</tr>
 			<tr>
 				{%- for year in site.data.statistics.years offset:start_years_at limit:max_years_per_table  -%}
@@ -50,7 +50,7 @@ menus:
 						{%- if track["data"][year]["submissions"] -%}
 							<td>
 								{%- assign submissions_float = track["data"][year]["submissions"] | times: 1.0 -%}
-								{{ track["data"][year]["acceptances"] }}/{{ track["data"][year]["submissions"] }}<br>
+								{{ track["data"][year]["acceptances"] }} / {{ track["data"][year]["submissions"] }}<br>
 								<small class="text-muted">({{ track["data"][year]["acceptances"] | divided_by: submissions_float | times: 100 | round: 1 }}%)</small>
 							</td>
 						{%- else -%}
