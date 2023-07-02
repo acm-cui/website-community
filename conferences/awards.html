@@ -14,26 +14,36 @@ menus:
 	At every annual CUI conference, Honourable Mention awards are awarded given to the top 10% of papers submitted to the conference (approximately), while Best Paper awards are given to the top 5% of papers submitted (approximately). Nominations for awards are made through the peer review process, and the final decision is made either by the General Chairs of the conference, or a specially convened subcommittee.
 </p>
 	
-{%- for conference in site.data.conferences -%}
-	{%- if site.data.awards.honourable_mentions[conference.year] or site.data.awards.best_papers[conference.year] -%}
-		<h3>{{ conference.name }}</h3>
-		<p>{{ site.data.awards.best_papers[conference.year] | size }} Best Paper awards and {{ site.data.awards.honourable_mentions[conference.year] | size }} Honourable Mention awards were given in {{ conference.year }}.</p>
-		<h4>Best Paper awards</h4>
-		<ul>
-			{%- assign data = site.data.awards.best_papers[conference.year] | sort: "title" -%}
-			{%- for award in data -%}
-				<li><a href="{{ award.dl }}" title="View '{{ award.title }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
-			{%- endfor -%}
-		</ul>
-		<h4>Honourable Mention awards</h4>
-		<ul>
-			{%- assign data = site.data.awards.honourable_mentions[conference.year] | sort: "title" -%}
-			{%- for award in data -%}
-				<li><a href="{{ award.dl }}" title="View '{{ award.title }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
-			{%- endfor -%}
-		</ul>
-	{%- endif -%}
-	{%- unless forloop.last -%}
-		<hr>
-	{%- endunless -%}
-{%- endfor -%}
+<div class="awards">
+	{%- for conference in site.data.conferences -%}
+		{%- if site.data.awards.honourable_mentions[conference.year] or site.data.awards.best_papers[conference.year] -%}
+			<div class="d-flex flex-row mb-3">
+				<div class="flex-grow-0">
+					{%- assign image_url = "/assets/img/conferences/" | append: conference.logo -%}
+					<img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded" alt="{{ conference.name }} logo">
+				</div>
+				<div class="flex-grow-1 ms-3">
+					<h3>{{ conference.name }}</h3>
+					<p>{{ site.data.awards.best_papers[conference.year] | size }} Best Paper awards and {{ site.data.awards.honourable_mentions[conference.year] | size }} Honourable Mention awards were given in {{ conference.year }}.</p>
+				</div>
+			</div>
+			<h4>Best Paper awards</h4>
+			<ul>
+				{%- assign data = site.data.awards.best_papers[conference.year] | sort: "title" -%}
+				{%- for award in data -%}
+					<li><a href="{{ award.dl }}" title="View '{{ award.title }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
+				{%- endfor -%}
+			</ul>
+			<h4>Honourable Mention awards</h4>
+			<ul>
+				{%- assign data = site.data.awards.honourable_mentions[conference.year] | sort: "title" -%}
+				{%- for award in data -%}
+					<li><a href="{{ award.dl }}" title="View '{{ award.title }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
+				{%- endfor -%}
+			</ul>
+		{%- endif -%}
+		{%- unless forloop.last -%}
+			<hr>
+		{%- endunless -%}
+	{%- endfor -%}
+</div>

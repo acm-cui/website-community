@@ -137,6 +137,12 @@ main {
 			border-bottom: $table-thead-border;
 		}
 	}
+	
+	.awards {
+		img {
+			width: $awards-image-width;
+		}
+	}
 }
 
 
