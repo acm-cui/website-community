@@ -129,6 +129,14 @@ main {
 			margin-top: .6rem - $timeline-width;
 		}
 	}
+	
+	table {
+		border: $table-border;
+		
+		thead {
+			border-bottom: $table-border;
+		}
+	}
 }
 
 

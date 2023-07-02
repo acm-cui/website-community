@@ -6,7 +6,8 @@ lastmod: page
 menus:
   conferences:
     title: Host CUI 2023
-    weight: 1
+    weight: 4
+    sep_before: true
 ---
 
 # CUI 2023 Expression of Interest

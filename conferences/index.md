@@ -10,6 +10,10 @@ menus:
     title: Conferences
     weight: 2
     identifier: conferences
+  conferences:
+    title: All conferences
+    weight: 1
+    identifier: conferences
 ---
 
 # Conferences

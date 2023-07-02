@@ -1,0 +1,82 @@
+years:
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+
+tracks:
+  - title: Papers
+    data:
+      2019:
+        submissions: 28
+        acceptances: 9
+      2020:
+        submissions: 39
+        acceptances: 13
+      2021:
+        submissions: 41
+        acceptances: 12
+      2022:
+        submissions: 36
+        acceptances: 12
+      2023:
+        submissions: 60
+        acceptances: 22
+  
+  - title: Provocations
+    data:
+      2019:
+        submissions: 36
+        acceptances: 17
+      2020:
+        submissions: 32
+        acceptances: 15
+      2021:
+        submissions: 25
+        acceptances: 12
+      2022:
+        submissions: 32
+        acceptances: 14
+      2023:
+        submissions: 21
+        acceptances: 14
+  
+  - title: Posters
+    data:
+      2020:
+        submissions: 23
+        acceptances: 21
+      2021:
+        submissions: 15
+        acceptances: 12
+      2022:
+        submissions: 23
+        acceptances: 12
+      2023:
+        submissions: 30
+        acceptances: 18
+  
+  - title: Demostrations
+    data:
+      2020:
+        submissions: 8
+        acceptances: 8
+      2021:
+        submissions: 5
+        acceptances: 2
+      2022:
+        submissions: 2
+        acceptances: 2
+      2023:
+        submissions: 3
+        acceptances: 3
+  
+  - title: SIGs/Workshops
+    data:
+      2022:
+        submissions: 2
+        acceptances: 1
+  
+  - title: Doctoral Consortium
+    data:
