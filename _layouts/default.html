@@ -6,15 +6,17 @@
     <head>
 		{%- include head.html -%}
 	</head>
-    <body class="p-xl-5 p-md-4 p-2">
+    <body class="p-xl-5 p-md-4 p-3">
     	<div class="container h-100 mx-auto p-0 d-flex flex-column rounded-2 shadow">
-    		<header class="d-flex flex-row align-items-center justify-content-center p-lg-4 p-3">
-    			<img src="{{ "/assets/img/logo.svg" | relative_url }}" alt="The text CUI against a pink background with abstract waves" title="ACM CUI logo" class="rounded-circle" />
-				<h1 class="m-0 p-0 px-3 fw-normal">
-					ACM Conversational User Interfaces
-				</h1>
+    		<header class="d-flex flex-row align-items-center justify-content-center text-center p-lg-4 p-3">
+				<a href="{{ "/" | relative_url }}" title="ACM Conversational User Interfaces community">
+					<picture>
+						<source srcset="{{ "/assets/img/logo-full-dark.svg" | relative_url }}" media="(prefers-color-scheme: dark)">
+		    			<img src="{{ "/assets/img/logo-full.svg" | relative_url }}" alt="The text CUI against a pink background with abstract waves" title="ACM Conversational User Interfaces community">
+					</picture>
+				</a>
     		</header>
-    		<nav class="navbar navbar-expand-md px-lg-4 p-3">
+    		<nav class="navbar navbar-expand-md p-0">
 				{%- include nav.html -%}
     		</nav>
     		<main class="d-flex flex-md-row-reverse flex-column p-lg-4 p-3">

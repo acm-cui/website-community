@@ -1,4 +1,5 @@
 ---
+title: Constitution
 description: The Constitution for the ACM Conversational User Interfaces conference.
 
 lastmod: page
@@ -11,9 +12,7 @@ menus:
     weight: 10
 ---
 
-# Constitution
-
-The Constitution for the ACM Conversational User Interfaces conference sets out the organisation and procedures that govern the conference and workshop series, as well as the overarching series steeering committee.
+The constitution for the ACM Conversational User Interfaces conference sets out the organisation and procedures that govern the conference and workshop series, as well as the overarching series steeering committee.
 
 Download the [constitution]({{ '/assets/pdf/cui-conference-constitution.pdf' | relative_url }} "International Conference on Conversational User Interfaces Constitution").
 

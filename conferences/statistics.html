@@ -1,0 +1,63 @@
+---
+title: Programme statistics
+description: Statistics from past CUI conferences.
+
+lastmod: page
+
+menus:
+  conferences:
+    title: Programme statistics
+    weight: 2
+---
+
+{%- assign max_years_per_table = 3.0 -%}
+{%- assign num_years = site.data.statistics.years | size -%}
+{%- assign num_tables = num_years | divided_by: max_years_per_table | ceil -%}
+{%- assign num_tables_loop = num_tables | minus: 1 -%}
+
+<p>
+	Below are the statistics of publication submission and acceptances for all <a href="{{ "/conferences/" | relative_url }}" title="All CUI conferences">annual CUI conferences</a>.
+</p>
+
+{%- for table in (0..num_tables_loop) -%}
+	{%- assign start_years_at = max_years_per_table | times: table -%}
+	{%- assign end_years_at = start_years_at | plus: max_years_per_table -%}
+	{%- if end_years_at > num_years -%}
+		{%- assign end_years_at = num_years -%}
+	{%- endif -%}
+	{%- assign num_years_this_table = end_years_at | minus: start_years_at | round -%}
+	{%- assign start_year = site.data.statistics.years[start_years_at] -%}
+	{%- assign end_years_at_minus_one = end_years_at | minus: 1 -%}
+	{%- assign end_year = site.data.statistics.years[end_years_at_minus_one] -%}
+	<table class="w-100 mb-2 text-center">
+		<thead>
+			<tr class="fw-bold">
+				<td rowspan="2">Track</td>
+				<td colspan="{{ num_years_this_table }}">Acceptances / Submissions<br><small>(Acceptance Rate)</small></td>
+			</tr>
+			<tr>
+				{%- for year in site.data.statistics.years offset:start_years_at limit:max_years_per_table  -%}
+					<td>{{ year }}</td>
+				{%- endfor -%}
+			</tr>
+		</thead>
+		<tbody >
+			{%- for track in site.data.statistics.tracks -%}
+				<tr class="border-top">
+					<td>{{ track["title"] }}</td>
+					{%- for year in site.data.statistics.years offset:start_years_at limit:max_years_per_table  -%}
+						{%- if track["data"][year]["submissions"] -%}
+							<td>
+								{%- assign submissions_float = track["data"][year]["submissions"] | times: 1.0 -%}
+								{{ track["data"][year]["acceptances"] }} / {{ track["data"][year]["submissions"] }}<br>
+								<small class="text-muted">({{ track["data"][year]["acceptances"] | divided_by: submissions_float | times: 100 | round: 1 }}%)</small>
+							</td>
+						{%- else -%}
+							<td></td>
+						{% endif -%}
+					{%- endfor -%}
+				</tr>
+			{%- endfor -%}
+		</tbody>
+	</table>
+{%- endfor -%}

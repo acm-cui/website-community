@@ -1,4 +1,5 @@
 ---
+title: Conferences
 description: Conferences in the Conversational User Interfaces series.
 
 lastmod: 
@@ -10,9 +11,11 @@ menus:
     title: Conferences
     weight: 2
     identifier: conferences
+  conferences:
+    title: All conferences
+    weight: 1
+    identifier: conferences
 ---
-
-# Conferences
 
 The following conferences are part of the ACM Conversational User Interfaces series. Each conference is run by a dedicated group of volunteers, with oversight and support provided by the Steering Committee.
 

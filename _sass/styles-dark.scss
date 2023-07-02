@@ -11,6 +11,10 @@ a, a:active, a:visited, a:hover {
 
 
 // LAYOUT
+html {
+	background: $body-bg-dark;
+}
+
 body {
 	background: $body-bg-dark;
 	background: $body-bg-gradient-dark;
@@ -27,7 +31,6 @@ body > div {
 // HEADER
 header {
 	img {
-		border: $header-logo-border-dark;
 	}
 }
 
@@ -41,11 +44,19 @@ nav {
 	
 	.nav-link {
 		color: $nav-link-color-dark;
+
+		&.active {
+			color: $nav-link-active-color-dark !important;
+		}
 	}
-	
+
 	.navbar-toggler {
-		color: $body-color-dark;
+		color: $navbar-toggler-color-dark;
 		border: var(--bs-border-width) solid $navbar-toggler-border-color-dark !important;
+		
+		&:hover {
+			background: $navbar-toggler-border-color-dark;
+		}
 		
 		.navbar-toggler-icon {
 			background-image: $navbar-dark-toggler-icon-bg;
@@ -80,6 +91,18 @@ main {
 	.timeline {
 		.timeline-label {
 			color: $timeline-label-color-dark;
+		}
+	}
+	
+	table {
+		border: $table-outer-border-dark;
+		
+		thead {
+			border-bottom: $table-thead-border-dark;
+		}
+		
+		tr.border-top {
+			border-top: $table-line-border-dark !important;
 		}
 	}
 }

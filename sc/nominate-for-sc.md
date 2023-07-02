@@ -1,4 +1,5 @@
 ---
+title: Steering Committee Call for Nominations
 description: Join the Conversational User Interfaces Steering Committee
 
 lastmod: page
@@ -8,8 +9,6 @@ lastmod: page
 #    title: Call for Nominations
 #    weight: 1
 ---
-
-# Call for Nominations
 
 The Conversational User Interfaces (CUI) Steering Committee invites nominations to serve as a member of the CUI Steering Committee. In particular we are looking for candidates to nominate themselves or a colleague for the following roles:
 

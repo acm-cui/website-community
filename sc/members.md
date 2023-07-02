@@ -1,4 +1,5 @@
 ---
+title: CUI Steering Committee
 description: The ACM Conversational User Interfaces Steering Committee are responsibile for the overall organisation of the CUI conference and workshop series.
 
 lastmod: page
@@ -7,15 +8,18 @@ redirect_from:
   - /about/
   - /about/sc/
   - /about/members/
+  - /sc/
   - /steering-committee/
 
 menus:
+  main:
+    title: Steering Committee
+    weight: 1
+    identifier: sc
   sc:
     title: Members
     weight: 0
 ---
-
-# Steering Committee
 
 The ACM Conversational User Interfaces Steering Committee is responsibile for the overall organisation of the annual ACM CUI conference and workshop series. The following people are current members of the steering committee.
 

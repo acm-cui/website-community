@@ -1,0 +1,39 @@
+---
+title: Best Paper and Honourable Mention awards
+description: Honourable Mention and Best Paper awards are given at each annual CUI conference.
+
+lastmod: page
+
+menus:
+  conferences:
+    title: Awards
+    weight: 4
+---
+
+<p>
+	At every annual CUI conference, Honourable Mention awards are awarded given to the top 10% of papers submitted to the conference (approximately), while Best Paper awards are given to the top 5% of papers submitted (approximately). Nominations for awards are made through the peer review process, and the final decision is made either by the General Chairs of the conference, or a specially convened subcommittee.
+</p>
+	
+{%- for conference in site.data.conferences -%}
+	{%- if site.data.awards.honourable_mentions[conference.year] or site.data.awards.best_papers[conference.year] -%}
+		<h3>{{ conference.name }}</h3>
+		<p>{{ site.data.awards.best_papers[conference.year] | size }} Best Paper awards and {{ site.data.awards.honourable_mentions[conference.year] | size }} Honourable Mention awards were given in {{ conference.year }}.</p>
+		<h4>Best Paper awards</h4>
+		<ul>
+			{%- assign data = site.data.awards.best_papers[conference.year] | sort: "title" -%}
+			{%- for award in data -%}
+				<li><a href="{{ award.dl }}" title="View '{{ award.title }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
+			{%- endfor -%}
+		</ul>
+		<h4>Honourable Mention awards</h4>
+		<ul>
+			{%- assign data = site.data.awards.honourable_mentions[conference.year] | sort: "title" -%}
+			{%- for award in data -%}
+				<li><a href="{{ award.dl }}" title="View '{{ award.title }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
+			{%- endfor -%}
+		</ul>
+	{%- endif -%}
+	{%- unless forloop.last -%}
+		<hr>
+	{%- endunless -%}
+{%- endfor -%}

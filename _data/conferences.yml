@@ -1,40 +1,50 @@
 - name: CUI 2023
+  year: 2023
   location: Eindhoven, Netherlands
   url: https://cui.acm.org/2023/
   dates:
-    start: 2023-07-18
+    start: 2023-07-19
     end: 2023-07-21
   logo: cui2023.png
+  dl: 
 
 - name: CUI 2022
+  year: 2022
   location: Glasgow, UK
   url: https://cui.acm.org/2022/
+  dl: https://dl.acm.org/doi/proceedings/10.1145/3543829
   dates:
     start: 2022-07-26
     end: 2022-07-28
   logo: cui2022.png
 
 - name: CUI 2021
+  year: 2021
   location: Virtual Event
   dates:
     start: 2021-07-27
     end: 2021-07-29
   url: https://cui.acm.org/2021/
+  dl: https://dl.acm.org/doi/proceedings/10.1145/3469595
   logo: cui2021.png
   
 - name: CUI 2020
+  year: 2020
   location: Virtual Event
   dates: 
     start: 2020-07-22
     end: 2020-07-24
   url: https://cui.acm.org/2020/
+  dl: https://dl.acm.org/doi/proceedings/10.1145/3405755
   logo: cui2020.png
 
 - name: CUI 2019
+  year: 2019
   location: Dublin, Ireland
   dates: 22–23th August 2019
   dates: 
     start: 2019-08-22
     end: 2019-08-23
   url: https://cui.acm.org/2019/
+  dl: https://dl.acm.org/doi/proceedings/10.1145/3342775
   logo: cui2019.png

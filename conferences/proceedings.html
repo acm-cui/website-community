@@ -1,0 +1,25 @@
+---
+title: Conference proceedings
+description: Past CUI conference proceedings are published in the ACM Digital Library.
+
+lastmod: page
+
+menus:
+  conferences:
+    title: Proceedings
+    weight: 3
+---
+
+<p>
+	All CUI conference proceedings are published in the ACM Digital Library and can be retrieved below.
+</p>
+
+<ol class="list-unstyled">
+{%- for conference in site.data.conferences -%}
+	{%- if conference.dl -%}
+		<li><a href="{{ conference.dl }}" title="View the proceedings of {{ conference.name }} in the ACM Digital Library">{{ conference.name }} proceedings</a></li>
+	{%- else -%}
+		<li><em>{{ conference.name }} proceedings are not yet available</em></li>
+	{%- endif -%}
+{%- endfor -%}
+</ol>

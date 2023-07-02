@@ -6,7 +6,7 @@ a[href^="https://doi.org"], a[href^="https://cronfa.swan.ac.uk"] {
     word-break: break-all;
 }
 
-h1, h2, h4 {
+h1, h2, h4, h5 {
 	font-weight: bold;
 }
 
@@ -23,9 +23,15 @@ p:last-child, ol:last-child, ul:last-child {
 
 
 // LAYOUT
+html {
+	background: $body-bg;
+}
+
 body {
 	background: $body-bg-gradient;
-	background-attachment: fixed;
+	background-attachment: scroll;
+	background-position: top;
+	background-repeat: no-repeat;
 }
 
 body > div {
@@ -41,9 +47,8 @@ body > div {
 // HEADER
 header {
 	img {
-		border: $header-logo-border;
 		height: $header-logo-height;
-		width: $header-logo-width;
+		max-width: 90%;
 	}
 }
 
@@ -60,6 +65,12 @@ nav {
 	@include auto-transition(background, box-shadow);
 	z-index: 1000;
 	
+	.navbar-toggler {
+		&:hover {
+			background: var(--bs-navbar-toggler-border-color);
+		}
+	}
+	
 	a.nav-link {	
 		border: $nav-link-border-width solid transparent;
 
@@ -72,7 +83,6 @@ nav {
 			color: $navbar-light-expanded-color !important;
 		}
 	}
-	
 	
 	.dropdown-menu {
 		-webkit-backdrop-filter: $glass-backdrop-filter;
@@ -117,6 +127,14 @@ main {
 		.timeline-label {
 			color: $timeline-label-color;
 			margin-top: .6rem - $timeline-width;
+		}
+	}
+	
+	table {
+		border: $table-outer-border;
+		
+		thead {
+			border-bottom: $table-thead-border;
 		}
 	}
 }
