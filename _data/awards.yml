@@ -1,0 +1,80 @@
+honourable_mentions:
+  2022:
+    - title: A Blueprint for Integrating Task-Oriented Conversational Agents in Education Poster
+      authors: Juan Carlos Farah, Basile Spaenlehauer, Sandy Ingram, and Denis Gillet
+      dl: https://dl.acm.org/doi/abs/10.1145/3543829.3544525
+    - title: Should Alexa be a Police Officer, a Doctor, or a Priest?
+      authors: James Simpson and Cassandra Crone
+      dl: https://dl.acm.org/doi/10.1145/3543829.3544522
+  2021:
+    - title: Can I Talk to You about Your Social Needs? Understanding Preference for Conversational User Interface in Health
+      authors: Rafal Kocielnik, Raina Langevin, James S George, Shota Akenaga, Amelia Wang, Darwin P Jones, Alexander Argyle, Callan Fockele, Layla Anderson, Dennis T Hsieh, Kabir Yadav, Herbert Duber, Gary Hsieh, and Andrea L Hartzler
+      dl: https://doi.org/10.1145/3469595.3469599
+    - title: "Leaving the Butler Behind: The Future of Role Reproduction in CUI" 
+      authors: Donald McMillan and Razan Jaber
+      dl: https://doi.org/10.1145/3469595.3469606
+    - title: Hey Google, Do You Have a Personality? Designing Personality and Personas for Conversational Agents 
+      authors: Alisha Pradhan and Amanda Lazar
+      dl: https://doi.org/10.1145/3469595.3469607
+    - title: '"Try, Try, Try Again": Sequence Analysis of Interactions with a Voice User Interface'
+      authors: Chelsea Myers, Luis Fernando Laris Pardo, Ana Acosta-Ruiz, Alessandro Canossa, and Jichen Zhu
+      dl: https://doi.org/10.1145/3469595.3469613
+  2020:
+    - title: What Can I Say? Effects of Discoverability in VUIs on Task Performance and User Experience
+      authors: Philipp Kirschthaler, Martin Porcheron, and Joel E Fischer
+      dl: https://dl.acm.org/doi/10.1145/3405755.3406119
+    - title: "Persuasive Synthetic Speech: Voice Perception and User Behaviour"
+      authors: Mateusz Dubiel, Pilar Oplustil, Martin Halvey, and Simon King
+      dl: https://dl.acm.org/doi/10.1145/3405755.3406120
+    - title: Is your chatbot GDPR compliant? Open issues in agent design
+      authors: Rahime Belen Sağlam and Jason Nurse
+      dl: https://dl.acm.org/doi/abs/10.1145/3405755.3406131
+    - title: Decision Trees as Sociotechnical Objects in Chatbot Design
+      authors: Teresa Castle-Green, Stuart Reeves, Joel E Fischer, and Boriana Koleva
+      dl: https://dl.acm.org/doi/abs/10.1145/3405755.3406133
+  2019:
+    - title: Crowdsourcing a self-evolving dialog graph
+      authors: Patrik Jonell, Per Fallgren, Fethiye Irmak Doğan, José Lopes, Ulme Wennberg, and Gabriel Skantze
+      dl: https://dl.acm.org/doi/abs/10.1145/3342775.3342790
+    - title: What’s in an accent? The impact of accented synthetic speech on lexical choice in human-machine dialogue
+      authors: Benjamin R Cowan, Philip Doyle, Justin Edwards, Diego Garaialde, Ali Hayes-Brady, Holly P Branigan, João Cabral, and Leigh Clark
+      dl: https://dl.acm.org/doi/10.1145/3342775.3342786
+    - title: Who owns your voice? Ethically sourced voices for non-commercial TTS applications
+      authors: Kristen Scott, Simone Ashby, David Braude, and Matthew Aylett
+      dl: https://dl.acm.org/doi/10.1145/3342775.3342793
+    - title: I Don’t Know What You’re Talking About, HALexa
+      authors: Christine Murad and Cosmin Muntenau
+      dl: https://dl.acm.org/doi/10.1145/3342775.3342795
+      
+best_papers:
+  2022:
+    - title: Where is Vincent? Expanding our emotional selves with AI 
+      authors: Minha Lee, Lily Frank, Yvonne De Kort, and Wijnand Ijsselsteijn
+      dl: https://dl.acm.org/doi/10.1145/3543829.3543835
+    - title: Effects of Wording and Gendered Voices on Acceptability of Voice Assistants in Future Autonomous Vehicles
+      authors: Iris Jestin, Joel E Fischer, Maria Jose Galvez Trigo, David Large, and Gary Burnett
+      dl: https://dl.acm.org/doi/10.1145/3543829.3543836
+  2021:
+    - title: "VUI Influencers: How the Media Portrays Voice User Interfaces for Older Adults"
+      authors: Jaisie Sin, Cosmin Munteanu, Numrita Ramanand, and Yi Rong Tan
+      dl: https://doi.org/10.1145/3469595.3469603
+    - title: Synthesizing a human-like voice is the easy way
+      authors: Sébastien Le Maguer and Benjamin Cowan
+      dl: https://doi.org/10.1145/3469595.3469614
+  2020:
+    - title: Mental Workload and Language Production in Non-Native Speaker IPA Interaction
+      authors:  Yunhan Wu, Justin Edwards, Orla Cooney, Anna Bleakley, Philip R Doyle, Leigh Clark, Daniel Rough, and Benjamin R Cowan 
+      dl: https://doi.org/10.1145/3405755.3406118
+    - title: "The Lord of the (speaking) Rings: An interdisciplinary Fellowship to deal with 7 legal issues"
+      authors: Gianluigi Maria Riva and Marguerite Barry
+      dl: https://dl.acm.org/doi/abs/10.1145/3405755.3406132
+  2019:
+    - title: Progressivity for Voice Interface Design
+      authors: Joel E Fischer, Stuart Reeves, Martin Porcheron, and Rein Sikveland
+      dl: https://dl.acm.org/doi/10.1145/3342775.3342788
+    - title: Shoehorning in the Name of Science
+      authors: Jens Edlund
+      dl: https://dl.acm.org/doi/10.1145/3342775.3342794
+    
+      
+      
