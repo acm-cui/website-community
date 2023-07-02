@@ -19,19 +19,19 @@ menus:
 		<h3>{{ conference.name }}</h3>
 		<p>{{ site.data.awards.best_papers[conference.year] | size }} Best Paper awards and {{ site.data.awards.honourable_mentions[conference.year] | size }} Honourable Mention awards were given in {{ conference.year }}.</p>
 		<h4>Best Paper awards</h4>
-		<ol>
+		<ul>
 			{%- assign data = site.data.awards.best_papers[conference.year] | sort: "title" -%}
 			{%- for award in data -%}
 				<li><a href="{{ award.dl }}" title="View '{{ award.title }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
 			{%- endfor -%}
-		</ol>
+		</ul>
 		<h4>Honourable Mention awards</h4>
-		<ol>
+		<ul>
 			{%- assign data = site.data.awards.honourable_mentions[conference.year] | sort: "title" -%}
 			{%- for award in data -%}
 				<li><a href="{{ award.dl }}" title="View '{{ award.title }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
 			{%- endfor -%}
-		</ol>
+		</ul>
 	{%- endif -%}
 	{%- unless forloop.last -%}
 		<hr>
