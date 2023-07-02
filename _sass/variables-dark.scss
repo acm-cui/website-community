@@ -42,6 +42,10 @@ $main-bg-dark: $nav-bg-dark;
 
 $timeline-label-color-dark: #ccc;
 
+$table-outer-border-dark: var(--bs-border-width) var(--bs-border-style) $border-color-dark;
+$table-thead-border-dark: $content-border-dark;
+$table-line-border-dark: $table-outer-border-dark;
+
 
 
 // FOOTER

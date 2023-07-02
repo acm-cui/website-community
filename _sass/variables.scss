@@ -65,7 +65,8 @@ $timeline-width: .25rem;
 $timeline-border-end: $timeline-width solid $timeline-color;
 $timeline-label-color: #111;
 
-$table-border: $content-border;
+$table-outer-border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+$table-thead-border: $content-border;
 
 
 // FOOTER

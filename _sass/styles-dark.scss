@@ -93,6 +93,18 @@ main {
 			color: $timeline-label-color-dark;
 		}
 	}
+	
+	table {
+		border: $table-outer-border-dark;
+		
+		thead {
+			border-bottom: $table-thead-border-dark;
+		}
+		
+		tr.border-top {
+			border-top: $table-line-border-dark !important;
+		}
+	}
 }
 
 

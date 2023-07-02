@@ -131,10 +131,10 @@ main {
 	}
 	
 	table {
-		border: $table-border;
+		border: $table-outer-border;
 		
 		thead {
-			border-bottom: $table-border;
+			border-bottom: $table-thead-border;
 		}
 	}
 }
