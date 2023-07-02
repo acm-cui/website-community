@@ -65,6 +65,12 @@ nav {
 	@include auto-transition(background, box-shadow);
 	z-index: 1000;
 	
+	.navbar-toggler {
+		&:hover {
+			background: var(--bs-navbar-toggler-border-color);
+		}
+	}
+	
 	a.nav-link {	
 		border: $nav-link-border-width solid transparent;
 
@@ -77,7 +83,6 @@ nav {
 			color: $navbar-light-expanded-color !important;
 		}
 	}
-	
 	
 	.dropdown-menu {
 		-webkit-backdrop-filter: $glass-backdrop-filter;
