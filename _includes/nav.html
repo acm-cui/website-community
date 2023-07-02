@@ -3,7 +3,7 @@
 						<span class="navbar-toggler-icon"></span> <span class="ms-2">MENU</span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mx-auto pb-4">
+						<ul class="navbar-nav mx-auto py-md-3 pb-4">
 							{% for item in site.menus.main %}
 								{%- assign is_active = false -%}
 								{%- if page.url == item.url -%}
