@@ -12,7 +12,7 @@ menus:
 
 <p>Below are summary registration and programme statistics for each <a href="{{ "/conferences/" | relative_url }}" title="All CUI conferences">annual CUI conference</a>.</p>
 
-<h3 class="mt-5 mb-4">Registration<sup>*</sup> statistics</h3>
+<h3 class="mt-5 mb-4" id="registration-statistics">Registration<sup>*</sup> statistics</h3>
 
 {%- assign footnote_symbols = "**,***,†,††,‡‡" | split: ',' -%}
 {%- assign footnote_index = 0 -%}
@@ -76,7 +76,7 @@ menus:
 </small>
 
 
-<h3 class="mt-5 mb-4">Programme statistics</h3>
+<h3 class="mt-5 mb-4" id="programme-statistics">Programme statistics</h3>
 
 {%- assign max_years_per_table = 3.0 -%}
 {%- assign num_years = site.data.statistics.years | size -%}
