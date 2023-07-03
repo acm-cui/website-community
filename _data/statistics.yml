@@ -7,15 +7,15 @@ years:
 
 attendance:
   2019:
-    footnote: "Attendance was only possible in-person"
+    footnote: "Attendance was only possible in-person."
     total: 67
     virtual: 0
   2020:
-    footnote: "Attendance was free and only possible virtually due to the COVID-19 pandemic"
+    footnote: "Attendance was free and only possible virtually due to the COVID-19 pandemic."
     total: 492
     virtual: 492
   2021:
-    footnote: "Attendance was only possible virtually due to the COVID-19 pandemic"
+    footnote: "Attendance was only possible virtually due to the COVID-19 pandemic."
     total: 125
     virtual: 125
   2022:
