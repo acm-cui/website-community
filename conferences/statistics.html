@@ -1,23 +1,75 @@
 ---
-title: Programme statistics
-description: Statistics from past CUI conferences.
+title: Statistics
+description: Programme and attendance statistics from past CUI conferences.
 
 lastmod: page
 
 menus:
   conferences:
-    title: Programme statistics
+    title: Statistics
     weight: 2
 ---
+
+<p>We record summary attendance and programme statistics for each <a href="{{ "/conferences/" | relative_url }}" title="All CUI conferences">annual CUI conference</a>. We log all registrations and not attendance as this can be difficult to accurately count.</p>
+
+<h3 class="mt-5 mb-4">Attendance statistics</h3>
+
+{%- assign footnote_symbols = "*,**,***,†,‡" | split: ',' -%}
+{%- assign footnote_index = 0 -%}
+
+{%- for table in (0..num_tables_loop) -%}
+	{%- assign start_years_at = max_years_per_table | times: table -%}
+	{%- assign end_years_at = start_years_at | plus: max_years_per_table -%}
+	{%- if end_years_at > num_years -%}
+		{%- assign end_years_at = num_years -%}
+	{%- endif -%}
+	{%- assign num_years_this_table = end_years_at | minus: start_years_at | round -%}
+	{%- assign start_year = site.data.statistics.years[start_years_at] -%}
+	{%- assign end_years_at_minus_one = end_years_at | minus: 1 -%}
+	{%- assign end_year = site.data.statistics.years[end_years_at_minus_one] -%}
+	<table class="w-100 mb-2 text-center">
+		<thead>
+			<tr class="fw-bold">
+				<td>Conference</td>
+				<td>Total registrations</td>
+				<td>Virtual registrations</td>
+				<td>In-person registrations</td>
+			</tr>
+		</thead>
+		<tbody>
+			{%- for year in site.data.statistics.years offset:start_years_at limit:max_years_per_table  -%}
+				{%- if site.data.statistics.attendance[year]["total"] -%}
+					<tr class="border-top">
+						<td>CUI {{ year }}{% if site.data.statistics.attendance[year]["footnote"] %}<sup>{{ footnote_symbols[footnote_index] }}</sup>{% assign footnote_index = footnote_index | plus: 1 %}{% endif %}</td>
+						<td>{{ site.data.statistics.attendance[year]["total"] }}</td>
+						<td>{% if site.data.statistics.attendance[year]["virtual"] %}{{ site.data.statistics.attendance[year]["virtual"] }}{% endif %}</td>
+						<td>{{  site.data.statistics.attendance[year]["total"] | minus: site.data.statistics.attendance[year]["virtual"] }}</td>
+					</tr>
+				{%- endif -%}
+			{%- endfor -%}
+		</tbody>
+	</table>
+{%- endfor -%}
+
+{%- assign footnote_index = 0 -%}
+{%- for year in site.data.statistics.years offset:start_years_at limit:max_years_per_table  -%}
+	{% if site.data.statistics.attendance[year]["footnote"] %}
+		{%- if footnote_index == 0 -%}<small>{%- endif -%}
+		<span>
+			<sup>{{ footnote_symbols[footnote_index] }}</sup>&nbsp;{{ site.data.statistics.attendance[year]["footnote"] }}<br>
+			{%- assign footnote_index = footnote_index | plus: 1 -%}
+		</span>
+	{% endif %}
+{%- endfor -%}
+{%- if footnote_index > 0 -%}</small>{%- endif -%}
+
+
+<h3 class="mt-5 mb-4">Programme statistics</h3>
 
 {%- assign max_years_per_table = 3.0 -%}
 {%- assign num_years = site.data.statistics.years | size -%}
 {%- assign num_tables = num_years | divided_by: max_years_per_table | ceil -%}
 {%- assign num_tables_loop = num_tables | minus: 1 -%}
-
-<p>
-	Below are the statistics of publication submission and acceptances for all <a href="{{ "/conferences/" | relative_url }}" title="All CUI conferences">annual CUI conferences</a>.
-</p>
 
 {%- for table in (0..num_tables_loop) -%}
 	{%- assign start_years_at = max_years_per_table | times: table -%}
@@ -41,7 +93,7 @@ menus:
 				{%- endfor -%}
 			</tr>
 		</thead>
-		<tbody >
+		<tbody>
 			{%- for track in site.data.statistics.tracks -%}
 				<tr class="border-top">
 					<td>{{ track["title"] }}</td>
