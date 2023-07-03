@@ -45,7 +45,7 @@ menus:
 					<tr class="border-top">
 						<td>CUI {{ year }}{% if site.data.statistics.attendance[year]["footnote"] %}<sup>{{ footnote_symbols[footnote_index] }}</sup>{% assign footnote_index = footnote_index | plus: 1 %}{% endif %}</td>
 						<td>{{ site.data.statistics.attendance[year]["total"] }}</td>
-						<td>{% if site.data.statistics.attendance[year]["virtual"] %}{{ site.data.statistics.attendance[year]["virtual"] }}{% endif %}</td>
+						<td>{{ site.data.statistics.attendance[year]["virtual"] }}</td>
 						<td>{{ site.data.statistics.attendance[year]["total"] | minus: site.data.statistics.attendance[year]["virtual"] }}</td>
 					</tr>
 				{%- endif -%}
