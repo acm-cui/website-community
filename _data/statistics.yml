@@ -20,7 +20,7 @@ attendance:
     virtual: 125
   2022:
     total: 100
-    virtual: 81
+    virtual: 19
 
 tracks:
   - title: Papers
