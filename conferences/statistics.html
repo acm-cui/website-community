@@ -65,7 +65,7 @@ menus:
 	{%- for year in site.data.statistics.years offset:start_years_at limit:max_years_per_table  -%}
 		{% if site.data.statistics.attendance[year]["footnote"] %}
 			<div class="d-flex flex-row">
-				<p class="flex-grow-0 me-1 m-0 text-end" style="width: 1rem">{{ footnote_symbols[footnote_index] }}</p> 
+				<p class="flex-shrink-0 me-1 m-0 text-end" style="width: 1rem">{{ footnote_symbols[footnote_index] }}</p> 
 				<p>
 					{{ site.data.statistics.attendance[year]["footnote"] }}
 				</p>
