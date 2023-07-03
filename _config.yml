@@ -98,6 +98,7 @@ jekyll-minifier:
   compress_css: false
   exclude: 'feed.xml'
   exclude: 'sitemap.xml'
+  exclude: '*.csv'
 
 # Sitemap configutation
 defaults:
