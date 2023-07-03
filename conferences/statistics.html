@@ -10,11 +10,11 @@ menus:
     weight: 2
 ---
 
-<p>We record summary attendance and programme statistics for each <a href="{{ "/conferences/" | relative_url }}" title="All CUI conferences">annual CUI conference</a>. We log all registrations and not attendance as this can be difficult to accurately count.</p>
+<p>We record summary attendance and programme statistics for each <a href="{{ "/conferences/" | relative_url }}" title="All CUI conferences">annual CUI conference</a>.</p>
 
-<h3 class="mt-5 mb-4">Attendance statistics</h3>
+<h3 class="mt-5 mb-4">Registration<sup>*</sup> statistics</h3>
 
-{%- assign footnote_symbols = "*,**,***,†,‡" | split: ',' -%}
+{%- assign footnote_symbols = "**,***,†,††,‡‡" | split: ',' -%}
 {%- assign footnote_index = 0 -%}
 
 {%- for table in (0..num_tables_loop) -%}
@@ -43,7 +43,7 @@ menus:
 						<td>CUI {{ year }}{% if site.data.statistics.attendance[year]["footnote"] %}<sup>{{ footnote_symbols[footnote_index] }}</sup>{% assign footnote_index = footnote_index | plus: 1 %}{% endif %}</td>
 						<td>{{ site.data.statistics.attendance[year]["total"] }}</td>
 						<td>{% if site.data.statistics.attendance[year]["virtual"] %}{{ site.data.statistics.attendance[year]["virtual"] }}{% endif %}</td>
-						<td>{{  site.data.statistics.attendance[year]["total"] | minus: site.data.statistics.attendance[year]["virtual"] }}</td>
+						<td>{{  ite.data.statistics.attendance[year]["total"] | minus: site.data.statistics.attendance[year]["virtual"] }}</td>
 					</tr>
 				{%- endif -%}
 			{%- endfor -%}
@@ -51,17 +51,26 @@ menus:
 	</table>
 {%- endfor -%}
 
-{%- assign footnote_index = 0 -%}
-{%- for year in site.data.statistics.years offset:start_years_at limit:max_years_per_table  -%}
-	{% if site.data.statistics.attendance[year]["footnote"] %}
-		{%- if footnote_index == 0 -%}<small>{%- endif -%}
-		<span>
-			<sup>{{ footnote_symbols[footnote_index] }}</sup>&nbsp;{{ site.data.statistics.attendance[year]["footnote"] }}<br>
-			{%- assign footnote_index = footnote_index | plus: 1 -%}
-		</span>
-	{% endif %}
-{%- endfor -%}
-{%- if footnote_index > 0 -%}</small>{%- endif -%}
+<small>
+	<div class="d-flex flex-row">
+		<p class="flex-grow-0 me-1 m-0 text-end" style="width: 1.5rem">*</p> 
+		<p>
+			We record <em>registrations</em> and not attendance as attendance can be difficult to accurately count, especially taking into account partial attendance.
+		</p>
+	</div>
+	{%- assign footnote_index = 0 -%}
+	{%- for year in site.data.statistics.years offset:start_years_at limit:max_years_per_table  -%}
+		{% if site.data.statistics.attendance[year]["footnote"] %}
+			<div class="d-flex flex-row">
+				<p class="flex-grow-0 me-1 m-0 text-end" style="width: 1rem">{{ footnote_symbols[footnote_index] }}</p> 
+				<p>
+					{{ site.data.statistics.attendance[year]["footnote"] }}
+				</p>
+				{%- assign footnote_index = footnote_index | plus: 1 -%}
+			</div>
+		{% endif %}
+	{%- endfor -%}
+</small>
 
 
 <h3 class="mt-5 mb-4">Programme statistics</h3>
