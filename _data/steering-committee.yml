@@ -23,8 +23,10 @@
   photo: assets/img/sc/leigh-clark.jpg
   url: https://lmhclark.com/
   roles:
-    - role: Secretary/Treasurer
+    - role: Secretary
       term: 2019–2024
+    - role: Treasurer
+      term: 2019–2023
   bio: >
     Leigh is a Lecturer in Human-Computer Interaction at the Computational Foundry in Swansea University. His research examines the effects of voice and language design on speech interface interactions and how linguistic theories can be implemented and redefined in this context. He is co-founder of the international Conversational User Interfaces (CUI) conference series.
 
