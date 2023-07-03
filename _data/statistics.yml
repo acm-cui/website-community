@@ -57,7 +57,7 @@ tracks:
         submissions: 30
         acceptances: 18
   
-  - title: Demostrations
+  - title: Demonstrations
     data:
       2020:
         submissions: 8
@@ -69,7 +69,7 @@ tracks:
         submissions: 2
         acceptances: 2
       2023:
-        submissions: 3
+        submissions: 5
         acceptances: 3
   
   - title: SIGs/Workshops
