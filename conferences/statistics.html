@@ -30,10 +30,13 @@ menus:
 	<table class="w-100 mb-2 text-center">
 		<thead>
 			<tr class="fw-bold">
-				<td>Conference</td>
-				<td>Total registrations</td>
-				<td>Virtual registrations</td>
-				<td>In-person registrations</td>
+				<td rowspan="2">Conference</td>
+				<td colspan="3">Registrations</td>
+			</tr>
+			<tr>
+				<td>Total</td>
+				<td>Virtual</td>
+				<td>In-person</td>
 			</tr>
 		</thead>
 		<tbody>
@@ -43,7 +46,7 @@ menus:
 						<td>CUI {{ year }}{% if site.data.statistics.attendance[year]["footnote"] %}<sup>{{ footnote_symbols[footnote_index] }}</sup>{% assign footnote_index = footnote_index | plus: 1 %}{% endif %}</td>
 						<td>{{ site.data.statistics.attendance[year]["total"] }}</td>
 						<td>{% if site.data.statistics.attendance[year]["virtual"] %}{{ site.data.statistics.attendance[year]["virtual"] }}{% endif %}</td>
-						<td>{{  ite.data.statistics.attendance[year]["total"] | minus: site.data.statistics.attendance[year]["virtual"] }}</td>
+						<td>{{ site.data.statistics.attendance[year]["total"] | minus: site.data.statistics.attendance[year]["virtual"] }}</td>
 					</tr>
 				{%- endif -%}
 			{%- endfor -%}
