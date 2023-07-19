@@ -9,7 +9,7 @@ redirect_from:
 menus:
   sc:
     title: Constitution
-    weight: 2
+    weight: 10
 ---
 
 The constitution for the ACM Conversational User Interfaces conference sets out the organisation and procedures that govern the conference and workshop series, as well as the overarching series steeering committee.
