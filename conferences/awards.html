@@ -41,6 +41,13 @@ menus:
 					<li><a href="{{ award.dl }}" title="View '{{ award.title }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
 				{%- endfor -%}
 			</ul>
+			{%- if site.data.awards.outstanding_service[conference.year] -%}
+			<h4>Outstanding Service award</h4>
+			{%- assign data = site.data.awards.outstanding_service[conference.year] | sort: "recipient" -%}
+			{%- for award in data -%}
+			<strong>{{ award.recipient }}</strong> ({{ award.role }})<br>{{ award.explanation }}</li>
+			{%- endfor -%}
+		{%- endif -%}
 		{%- endif -%}
 		{%- unless forloop.last -%}
 			<hr>
