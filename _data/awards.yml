@@ -61,9 +61,9 @@ best_papers:
     - title: Self-imposed Filter Bubble Model for Argumentative Dialogues
       authors: Annalena Bea Aicher, Daniel Kornmüller, Wolfgang Minker, and Stefan Ultes
       dl: https://doi.org/10.1145/3571884.3597131
-    - title: Voice Assistant Use in Long-Term Care
-      authors: Bruna Oewel, Tawfiq Ammari, and Robin N Brewer
-      dl: https://doi.org/10.1145/3571884.3597135
+    - title: Who are CUIs Really For? Representation and Accessibility in the Conversational User Interface Literature
+      authors: William Seymour, Xiao Zhan, Mark Cote, and Jose Such
+      dl: https://doi.org/10.1145/3571884.3603760
   2022:
     - title: Where is Vincent? Expanding our emotional selves with AI 
       authors: Minha Lee, Lily Frank, Yvonne De Kort, and Wijnand IJsselsteijn
