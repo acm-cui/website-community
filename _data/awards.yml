@@ -1,4 +1,11 @@
 honourable_mentions:
+  2023:
+     - title: "From Writing Dialogue to Designing Conversation: Considering the potential of Conversation Analysis for Voice User Interfaces"
+       authors: Adam Brandt, Spencer Hazel, Rory McKinnon, Kleopatra Sideridou, Joe Tindale, and Nikoletta Ventoura
+       dl: https://doi.org/10.1145/3571884.3603758
+     - title: Enabling Semi-Structured Knowledge Access via a Question-Answering Module in Task-oriented Dialogue Systems
+       authors: Norbert Braunschweiler, Rama Sanand Doddipatla, Simon Keizer, and Svetlana Stoyanchev
+       dl: https://doi.org/10.1145/3571884.3597138
   2022:
     - title: A Blueprint for Integrating Task-Oriented Conversational Agents in Education Poster
       authors: Juan Carlos Farah, Basile Spaenlehauer, Sandy Ingram, and Denis Gillet
@@ -47,6 +54,16 @@ honourable_mentions:
       dl: https://dl.acm.org/doi/10.1145/3342775.3342795
       
 best_papers:
+  2023:
+    - title: Voice Assistant Use in Long-Term Care
+      authors: Bruna Oewel, Tawfiq Ammari, and Robin N Brewer
+      dl: https://doi.org/10.1145/3571884.3597135
+    - title: Self-imposed Filter Bubble Model for Argumentative Dialogues
+      authors: Annalena Bea Aicher, Daniel Kornmüller, Wolfgang Minker, and Stefan Ultes
+      dl: https://doi.org/10.1145/3571884.3597131
+    - title: Voice Assistant Use in Long-Term Care
+      authors: Bruna Oewel, Tawfiq Ammari, and Robin N Brewer
+      dl: https://doi.org/10.1145/3571884.3597135
   2022:
     - title: Where is Vincent? Expanding our emotional selves with AI 
       authors: Minha Lee, Lily Frank, Yvonne De Kort, and Wijnand IJsselsteijn
