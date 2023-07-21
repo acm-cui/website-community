@@ -1,3 +1,11 @@
+- name: CUI 2024
+  year: 2024
+  location: Luxembourg, Luxembourg
+  dates:
+    start: 2024-07-08
+    end: 2024-07-10
+  logo: cui2024.png
+
 - name: CUI 2023
   year: 2023
   location: Eindhoven, Netherlands

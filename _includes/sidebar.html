@@ -16,7 +16,7 @@
 					{%- if conference.url -%}
 						<small class="mb-2"><a href="{{ conference.url }}" title="Visit the website for {{ conference.name }}" target="_blank">{{ conference.name }}</a><br>{{ conference.location }}<br>{%- include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</small>
 					{%- else -%}
-						<small class="mb-2">{{ workshop.name }}<br>{{ conference.location }}<br>{%- include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</small>
+						<small class="mb-2">{{ conference.name }}<br>{{ conference.location }}<br>{%- include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</small>
 					{%- endif -%}
 				{%- endif -%}
 			{%- else -%}
