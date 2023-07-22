@@ -6,6 +6,9 @@ honourable_mentions:
      - title: Enabling Semi-Structured Knowledge Access via a Question-Answering Module in Task-oriented Dialogue Systems
        authors: Norbert Braunschweiler, Rama Sanand Doddipatla, Simon Keizer, and Svetlana Stoyanchev
        dl: https://doi.org/10.1145/3571884.3597138
+     - title: "Developing a Conversational Interface for an ACT-based Online Program: Understanding Adolescents’ Expectations of Conversational Style"
+       authors: Johanna Peltola, Kirsikka Kaipainen, Katariina Keinonen,  Noona Kiuru, and Markku Turunen
+       dl: https://doi.org/10.1145/3571884.3597142
   2022:
     - title: A Blueprint for Integrating Task-Oriented Conversational Agents in Education Poster
       authors: Juan Carlos Farah, Basile Spaenlehauer, Sandy Ingram, and Denis Gillet
@@ -64,6 +67,9 @@ best_papers:
     - title: Who are CUIs Really For? Representation and Accessibility in the Conversational User Interface Literature
       authors: William Seymour, Xiao Zhan, Mark Cote, and Jose Such
       dl: https://doi.org/10.1145/3571884.3603760
+    - title: Unified Conversational Models with System-Initiated Transitions between Chit-Chat and Task-Oriented Dialogues
+      authors: Ye Liu, Stefan Ultes, Wolfgang Minker, and Wolfgang Maier
+      dl: https://doi.org/10.1145/3571884.3597125
   2022:
     - title: Where is Vincent? Expanding our emotional selves with AI 
       authors: Minha Lee, Lily Frank, Yvonne De Kort, and Wijnand IJsselsteijn
