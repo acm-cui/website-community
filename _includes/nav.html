@@ -18,7 +18,7 @@
 								{%- endif -%}
 
 								<li class="nav-item {% if item.children -%}dropdown{% endif %} mx-lg-2 mx-md-1 my-md-0 my-1 text-md-start text-center">
-									<a class="nav-link px-lg-3 px-2 rounded-pill {% if item.children -%}dropdown-toggle{% endif %}{% if is_active %} active" aria-current="page{%- endif -%}" {%- if item.children -%}data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"{% else %}href="{{ item.url | relative_url }}{% endif %}">
+									<a class="nav-link px-lg-3 px-2 rounded-pill {% if item.children -%}dropdown-toggle{% endif %}{% if is_active %} active" aria-current="page{%- endif -%}" {%- if item.children -%}data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"{% else %}href="{{ item.url | relative_url }}{% endif %}" tabindex="0">
 										{{- item.title | escape -}}
 									</a>
 									{%- if item.children -%}
