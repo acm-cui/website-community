@@ -11,7 +11,8 @@ $text-muted-dark: rgba(283,283,283,.8);
 
 // LAYOUT
 $body-bg-dark: #222;
-$body-bg-gradient-dark: linear-gradient(220deg, rgba($body-bg-dark,1) 0%, rgba($body-bg-dark,1) 200px, rgba(81,112,78,1) 200px, rgba(81,112,78,1) 300px, rgba(203,106,115,1) 300px, rgba(203,106,115,1) 400px, rgba(182,81,145,1) 400px, rgba(182,81,145,1) 500px, rgba(81,105,182,1) 500px, rgba(81,105,182,1) 600px, rgba(255,117,11,1) 600px, rgba(255,117,11,1) 700px, rgba($body-bg-dark,1) 700px);
+$body-bg-gradient: linear-gradient(220deg, rgba($body-bg-dark,1) 0%, rgba($body-bg-dark,1) 200px, rgba(81,112,78,1) 200px, rgba(81,112,78,1) 300px, rgba(203,106,115,1) 300px, rgba(203,106,115,1) 400px, rgba(182,81,145,1) 400px, rgba(182,81,145,1) 500px, rgba(81,105,182,1) 500px, rgba(81,105,182,1) 600px, rgba(255,117,11,1) 600px, rgba(255,117,11,1) 700px, rgba(0,161,222,1) 700px, rgba(0,161,222,1) 800px, rgba($body-bg-dark,1) 800px);
+
 $body-color-dark: #fff;
 
 $content-bg-dark: rgba($body-bg-dark,.7);
