@@ -46,12 +46,12 @@
 					{%- if workshop.url -%}
 						<small class="mb-2"><a href="{{ workshop.url }}" title="Visit the website for the workshop '{{ workshop.title }}'" target="_blank">CUI@{{ workshop.conference }}</a><br>
 					{%- else -%}
-						<small class="mb-2">CUI@{{ workshop.event }}<br>
+						<small class="mb-2">CUI@{{ workshop.conference }}<br>
 					{%- endif -%}
 					{%- if workshop.dates -%}
-					{% include daterange.html startdate=workshop.dates.start enddate=workshop.dates.end -%}
+					{% include daterange.html startdate=workshop.dates.start enddate=workshop.dates.end date_tentative=workshop.date_tentative -%}
 					{%- elsif workshop.date -%}
-					{% include date.html date=workshop.date -%}
+					{% include date.html date=workshop.date date_tentative=workshop.date_tentative -%}
 					{%- endif -%}</small>
 				{%- endif -%}
 			{%- else -%}

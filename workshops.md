@@ -42,9 +42,9 @@ The ACM Conversational User Interfaces community organises satellite workshops c
 			{%- capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture -%}
 			{%- capture workshopunix %}{{ workshop.date | date: '%s' }}{% endcapture -%}
 			{%- if workshop.dates -%}
-				<span class="small">{%- if nowunix > workshopunix -%}A workshop previously held at{% else %}A workshop due to be held at{% endif %} {{ workshop.conference }} on {% include daterange.html startdate=workshop.dates.start enddate=workshop.dates.end -%}</span>
+				<span class="small">{%- if nowunix > workshopunix -%}A workshop previously held at{% else %}A workshop due to be held at{% endif %} {{ workshop.conference }} on {% include daterange.html startdate=workshop.dates.start enddate=workshop.dates.end date_tentative=workshop.date_tentative -%}</span>
 			{%- elsif workshop.date -%}
-				<span class="small">{%- if nowunix > workshopunix -%}A workshop previously held at{% else %}A workshop due to be held at{% endif %} {{ workshop.conference }} on {% include date.html date=workshop.date -%}</span>
+				<span class="small">{%- if nowunix > workshopunix -%}A workshop previously held at{% else %}A workshop due to be held at{% endif %} {{ workshop.conference }} on {% include date.html date=workshop.date date_tentative=workshop.date_tentative -%}</span>
 			{%- else -%}
 				<span class="small">{%- if nowunix > workshopunix -%}A workshop previously held at{% else %}A workshop due to be held at{% endif %} {{ workshop.conference }}</span>
 			{%- endif -%}
