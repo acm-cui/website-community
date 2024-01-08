@@ -22,7 +22,7 @@ Connect with the ACM Conversational User Interfaces community through our mailin
 
 Sign up to receive announcements from the Conversational User Interfaces community and we will periodically send you the details of upcoming conferences, workshops, special issue journals and other relevant events. This is a moderated list so emails can only be distributed with approval of an administrator or moderator.
 
-Please register for the mailing list on [ACM listserv](https://listserv.acm.org/SCRIPTS/WA-ACMLPX.CGI?SUBED1=CUI-ANNOUNCEMENTS "Subscribe to ACM CUI community announcements on the ACM listserv").
+Please register for the mailing list on [ACM listserv](https://listserv.acm.org/SCRIPTS/WA-ACMLPX.CGI?A0=CUI-ANNOUNCEMENTS&X=DA00202F15E5DE0C2A "Subscribe to ACM CUI community announcements on the ACM listserv").
 
 ACM CUI can be found on [Twitter](https://twitter.com/ACM_CUI "ACM CUI on Twitter") and [hci.social (Mastodon)](https://hci.social/@cui "ACM CUI on Mastodon").
 
