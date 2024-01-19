@@ -29,19 +29,16 @@
 		<h6 class="mt-md-4 mt-3 fw-bold">Upcoming workshops</h6>
 		<div class="d-flex flex-column">
 			{%- assign no_workshops = true -%}
-			{%- for workshop in site.data.workshops reversed -%}
+			{%- assign workshops_sorted = site.data.workshops | sort: 'date' -%}
+
+			{%- for workshop in workshops_sorted -%}
 				{%- capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture -%}
 				{%- if workshop.dates -%}
 					{%- capture workshopunix %}{{ workshop.dates.start | date: '%s' }}{% endcapture -%}
 				{%- elsif workshop.date -%}
 					{%- capture workshopunix %}{{ workshop.date | date: '%s' }}{% endcapture -%}
 				{%- endif -%}
-				{%- if nowunix > workshopunix -%}
-					{%- if no_workshops -%}
-						<small><em>No workshops planned.</em></small>
-					{%- endif -%}
-					{%- break -%}
-				{%- else -%}
+				{%- if nowunix <= workshopunix -%}
 					{%- assign no_workshops = false -%}
 					{%- if workshop.url -%}
 						<small class="mb-2"><a href="{{ workshop.url }}" title="Visit the website for the workshop '{{ workshop.title }}'" target="_blank">CUI@{{ workshop.conference }}</a><br>
@@ -57,6 +54,9 @@
 			{%- else -%}
 				<small><em>No workshops planned.</em></small>
 			{%- endfor -%}
+			{%- if no_workshops -%}
+				<small><em>No workshops planned.</em></small>
+			{%- endif -%}
 		</div>
 	</div>
 	
