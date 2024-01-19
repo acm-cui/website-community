@@ -29,7 +29,7 @@
 		<h6 class="mt-md-4 mt-3 fw-bold">Upcoming workshops</h6>
 		<div class="d-flex flex-column">
 			{%- assign no_workshops = true -%}
-			{%- for workshop in site.data.workshops -%}
+			{%- for workshop in site.data.workshops reversed -%}
 				{%- capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture -%}
 				{%- if workshop.dates -%}
 					{%- capture workshopunix %}{{ workshop.dates.start | date: '%s' }}{% endcapture -%}
