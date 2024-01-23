@@ -10,6 +10,17 @@
   bio: >
     Cosmin is an Associate Professor at the Institute for Communication, Culture, Information, and Technology at the University of Toronto Mississauga, and Director of the Technologies for Ageing Gracefully lab. His research is focused on investigating information-rich media and intelligent technologies, such as speech interfaces, for several applications: mobile devices, mixed reality systems, and learning and assistive technologies for marginalized users. With almost a quarter century of research at the intersection of Human-Computer Interaction, Automatic Speech Recognition, Natural User Interfaces, Mobile Computing, Ethics, and Assistive Technologies.
 
+- name: Minha Lee
+  photo: assets/img/sc/minha-lee.png
+  url: https://minha-lee.github.io
+  roles:
+    - role:  Co-Chair
+      term: 2024–2027
+    - role:  CUI 2023 General Chair
+      term: 2023–2026
+  bio: >
+    Minha Lee is an Assistant Professor at the Eindhoven University of Technology's Industrial Design Department with a background in philosophy, digital arts, and HCI. Lee's research on moral emotions targets mental well-being by exploring conversational agents like robots or chatbots as our moral mirrors that extend who we are. A major application area for her research is in exploring conversational agents for dementia care to foster compassionate conversations, which has been funded by Alzheimer Nederland. Lee is the general co-chair of the 2023 ACM Conversational User Interface (CUI) Conference (Eindhoven), after being a Full papers and Provocation papers co-chair (2021, 2020). The 2023 CUI conference theme highlights diversity, equity, and inclusion (DEI), which relates to various workshops Lee has led at major HCI conferences, e.g., CHI 2022 workshop on CUI Ethics, CSCW 2022 workshop on Activism in Academia, and HRI 2021 workshop on Artificial Identity. 
+
 - name: Leigh Clark
   photo: assets/img/sc/leigh-clark.jpg
   url: https://lmhclark.com/
@@ -64,15 +75,6 @@
       term: 2019–2024
   bio: >
     Christine is a PhD candidate in the Department of Computer Science at the University of Toronto. Her research looks at the usability and design of conversational voice interfaces, the development of different tools and resources to aid designers in CUI & VUI design and education, and bridging the industry-academia gap in CUI & VUI design. She’s published research and organized CUI workshops across several international SIGCHI venues such as CHI, IUI, MobileHCI, CSCW, CUI, etc. She has been part of the steering committee since it’s inception in 2019, and was the Shortcases chair at CUI ’20, Demos Chair at ’21, and is now Provocations Chair at CUI ’23.
-
-- name: Minha Lee
-  photo: assets/img/sc/minha-lee.png
-  url: https://minha-lee.github.io
-  roles:
-    - role:  CUI 2023 General Chair
-      term: 2023–2026
-  bio: >
-    Minha Lee is an Assistant Professor at the Eindhoven University of Technology's Industrial Design Department with a background in philosophy, digital arts, and HCI. Lee's research on moral emotions targets mental well-being by exploring conversational agents like robots or chatbots as our moral mirrors that extend who we are. A major application area for her research is in exploring conversational agents for dementia care to foster compassionate conversations, which has been funded by Alzheimer Nederland. Lee is the general co-chair of the 2023 ACM Conversational User Interface (CUI) Conference (Eindhoven), after being a Full papers and Provocation papers co-chair (2021, 2020). The 2023 CUI conference theme highlights diversity, equity, and inclusion (DEI), which relates to various workshops Lee has led at major HCI conferences, e.g., CHI 2022 workshop on CUI Ethics, CSCW 2022 workshop on Activism in Academia, and HRI 2021 workshop on Artificial Identity. 
 
 - name: Martin Halvey
   photo: assets/img/sc/martin-halvey.jpg
