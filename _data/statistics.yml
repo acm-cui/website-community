@@ -1,4 +1,5 @@
 years:
+  - 2024
   - 2023
   - 2022
   - 2021
@@ -43,6 +44,9 @@ tracks:
       2023:
         submissions: 60
         acceptances: 22
+      2024:
+        submissions: 87
+        acceptances: "-"
   
   - title: Provocations
     data:
