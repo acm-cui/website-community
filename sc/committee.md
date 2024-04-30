@@ -17,7 +17,7 @@ menus:
     weight: 1
     identifier: sc
   sc:
-    title: Members
+    title: Committee
     weight: 0
 ---
 
