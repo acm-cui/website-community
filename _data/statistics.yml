@@ -67,6 +67,7 @@ tracks:
         acceptances: 14
       2024:
         submissions: 23
+        acceptances: "-"
   
   - title: Posters
     data:
@@ -84,6 +85,7 @@ tracks:
         acceptances: 18
       2024:
         submissions: 39
+        acceptances: "-"
   
   - title: Demonstrations
     data:
@@ -101,6 +103,7 @@ tracks:
         acceptances: 3
       2024:
         submissions: 3
+        acceptances: "-"
 
   - title: SIGs/Workshops
     data:
@@ -121,3 +124,4 @@ tracks:
         acceptances: 9
       2024:
         submissions: 11
+        acceptances: "-"
