@@ -65,6 +65,8 @@ tracks:
       2023:
         submissions: 21
         acceptances: 14
+      2024:
+        submissions: 23
   
   - title: Posters
     data:
@@ -80,6 +82,8 @@ tracks:
       2023:
         submissions: 30
         acceptances: 18
+      2024:
+        submissions: 39
   
   - title: Demonstrations
     data:
@@ -95,7 +99,9 @@ tracks:
       2023:
         submissions: 5
         acceptances: 3
-  
+      2024:
+        submissions: 3
+
   - title: SIGs/Workshops
     data:
       2022:
@@ -113,3 +119,5 @@ tracks:
       2023:
         submissions: 9
         acceptances: 9
+      2024:
+        submissions: 11
