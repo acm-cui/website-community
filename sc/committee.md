@@ -70,5 +70,7 @@ The ACM Conversational User Interfaces Steering Committee is responsibile for th
 				{{- member.bio -}}
 			</div>
 		</li>
+	{% else %}
+		<em>There are no invited memebers on the CUI Steering Committee at the moment.</em>
 	{% endfor %}
 </ul>
