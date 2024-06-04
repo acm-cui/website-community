@@ -1,15 +1,4 @@
 officers:
-  - name: Cosmin Munteanu
-    photo: assets/img/sc/cosmin-munteanu.jpg
-    url: http://www.cs.utoronto.ca/~mcosmin/
-    roles:
-      - role: Co-Chair
-        term: 2019–2024
-      - role:  CUI 2023 General Chair
-        term: 2023–2026
-    bio: >
-      Cosmin is an Associate Professor at the Institute for Communication, Culture, Information, and Technology at the University of Toronto Mississauga, and Director of the Technologies for Ageing Gracefully lab. His research is focused on investigating information-rich media and intelligent technologies, such as speech interfaces, for several applications: mobile devices, mixed reality systems, and learning and assistive technologies for marginalized users. With almost a quarter century of research at the intersection of Human-Computer Interaction, Automatic Speech Recognition, Natural User Interfaces, Mobile Computing, Ethics, and Assistive Technologies.
-
   - name: Minha Lee
     photo: assets/img/sc/minha-lee.png
     url: https://minha-lee.github.io
@@ -20,6 +9,15 @@ officers:
         term: 2023–2026
     bio: >
       Minha Lee is an Assistant Professor at the Eindhoven University of Technology's Industrial Design Department with a background in philosophy, digital arts, and HCI. Lee's research on moral emotions targets mental well-being by exploring conversational agents like robots or chatbots as our moral mirrors that extend who we are. A major application area for her research is in exploring conversational agents for dementia care to foster compassionate conversations, which has been funded by Alzheimer Nederland. Lee is the general co-chair of the 2023 ACM Conversational User Interface (CUI) Conference (Eindhoven), after being a Full papers and Provocation papers co-chair (2021, 2020). The 2023 CUI conference theme highlights diversity, equity, and inclusion (DEI), which relates to various workshops Lee has led at major HCI conferences, e.g., CHI 2022 workshop on CUI Ethics, CSCW 2022 workshop on Activism in Academia, and HRI 2021 workshop on Artificial Identity. 
+
+  - name: Heloisa Candello
+    photo: assets/img/sc/heloisa-candello.png
+    url: https://researcher.watson.ibm.com/researcher/view.php?person=br-heloisacandello
+    roles:
+      - role:  Co-Chair
+        term: 2024–2027
+    bio: >
+      Heloisa is an interaction designer and a research scientist at the IBM Research laboratory in Brazil. She is also a research scientist at ACM SIGCHI Volunteer Development Committee. She has experience in leading and conducting design research activities to understand people's contexts and motivations to use conversational technologies. She recently co-organized a related workshop at CSCW '17, CHI '18, and the prior workshop CUI@CHI '20.
 
   - name: Leigh Clark
     photo: assets/img/sc/leigh-clark.jpg
@@ -85,6 +83,15 @@ officers:
     bio: >
       Martin Halvey is a Reader (Associate Professor) in the Department of Computer and Information Sciences (CIS). His research interests are in multimodel interaction, interactive information retrieval and human computer interaction (HCI). He is particularly interested in novel uses of multimodal technology to facilitate appropriate search and interaction with information. Martin is also the one of the theme leaders for the Scottish Informatics and Computer Science Alliance (SICSA) HCI theme and the Vice Chaire of the ACM SIGIR CHIIR Steering Committee.
 
+  - name: Cosmin Munteanu
+    photo: assets/img/sc/cosmin-munteanu.jpg
+    url: http://www.cs.utoronto.ca/~mcosmin/
+    roles:
+      - role:  CUI 2023 General Chair
+        term: 2023–2026
+    bio: >
+      Cosmin is an Associate Professor at the Institute for Communication, Culture, Information, and Technology at the University of Toronto Mississauga, and Director of the Technologies for Ageing Gracefully lab. His research is focused on investigating information-rich media and intelligent technologies, such as speech interfaces, for several applications: mobile devices, mixed reality systems, and learning and assistive technologies for marginalized users. With almost a quarter century of research at the intersection of Human-Computer Interaction, Automatic Speech Recognition, Natural User Interfaces, Mobile Computing, Ethics, and Assistive Technologies.
+
   - name: Stephan Schlögl
     photo: assets/img/sc/stephan-schloegl.jpg
     url: https://www.mci.edu/faculty/stephan.schloegl_en.html
@@ -104,9 +111,3 @@ officers:
       María is Full Professor at UPV/EHU Univeridad del Pais Vasco and director of the SPIN RG Speech Interactive Research Group. Her research focuses on statistical approaches to deal with spoken dialog systems, aiming to learn from human interaction to generate artificial interaction. Furthermore, she and her group look at methods to identify emotions in speech. She is one of the general chairs for the CUI 2020 conference.
 
 members:
-  - name: Heloisa Candello
-    photo: assets/img/sc/heloisa-candello.png
-    url: https://researcher.watson.ibm.com/researcher/view.php?person=br-heloisacandello
-    invited: Jan. 2024
-    bio: >
-      Heloisa is an interaction designer and a research scientist at the IBM Research laboratory in Brazil. She is also a research scientist at ACM SIGCHI Volunteer Development Committee. She has experience in leading and conducting design research activities to understand people's contexts and motivations to use conversational technologies. She recently co-organized a related workshop at CSCW '17, CHI '18, and the prior workshop CUI@CHI '20.
