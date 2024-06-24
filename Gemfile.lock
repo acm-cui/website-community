@@ -120,7 +120,7 @@ DEPENDENCIES
   jekyll (~> 4.3.3)
   jekyll-datapage-generator (~> 1.4.0)
   jekyll-feed (~> 0.12)
-  jekyll-last-modified-at
+  jekyll-last-modified-at (= 1.3.0)
   jekyll-menus!
   jekyll-minifier
   jekyll-optional-front-matter
