@@ -6,25 +6,37 @@ years:
   - 2020
   - 2019
 
+attendance_footnotes:
+  - "Registration was only possible for in-person attendance."
+  - "Registration was free and attendance was only possible virtually due to the COVID-19 pandemic."
+  - "Registration and attendance was only possible virtually due to the COVID-19 pandemic."
+
 attendance:
   2019:
     footnote: "Registration was only possible in-person attendance."
     total: 67
     virtual: 0
+    footnote_id: 1
   2020:
     footnote: "Registration was free and attendance was only possible virtually due to the COVID-19 pandemic."
     total: 492
     virtual: 492
+    footnote_id: 2
   2021:
     footnote: "Registration and attendance was only possible virtually due to the COVID-19 pandemic."
     total: 125
     virtual: 125
+    footnote_id: 3
   2022:
     total: 100
     virtual: 19
   2023:
     total: 152
     virtual: 36
+  2024:
+    total: 101
+    virtual: 0
+    footnote_id: 1
 
 tracks:
   - title: Papers
