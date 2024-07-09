@@ -6,6 +6,7 @@
     start: 2024-07-08
     end: 2024-07-10
   logo: cui2024.png
+  dl: https://dl.acm.org/doi/proceedings/10.1145/3640794
 
 - name: CUI 2023
   year: 2023
