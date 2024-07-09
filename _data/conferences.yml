@@ -1,3 +1,12 @@
+- name: CUI 2025
+  year: 2025
+  location: Waterloo, ON, Canada
+  url: https://cui.acm.org/2025/
+  dates:
+    start: 2024-07-08
+    end: 2024-07-10
+  logo: cui2025.png
+
 - name: CUI 2024
   year: 2024
   location: Luxembourg City, Luxembourg
