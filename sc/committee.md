@@ -23,7 +23,7 @@ menus:
 
 The ACM Conversational User Interfaces Steering Committee is responsibile for the overall organisation of the annual ACM CUI conference and workshop series.
 
-The following people are current Officers and members of the committee. Officers are elected by the community and undertake a specific role on the committee, while members are invited to serve on the committee on the basis of their expertise and community participation.
+The following people are the current _Officers_ and _Members_ of the steering committee. Officers are elected by the community and undertake a specific role on the committee, while members are invited to serve on the committee on the basis of their expertise and community participation.
 
 ## Officers
 
