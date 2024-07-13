@@ -92,22 +92,22 @@ officers:
     bio: >
       Cosmin is an Associate Professor at the Institute for Communication, Culture, Information, and Technology at the University of Toronto Mississauga, and Director of the Technologies for Ageing Gracefully lab. His research is focused on investigating information-rich media and intelligent technologies, such as speech interfaces, for several applications: mobile devices, mixed reality systems, and learning and assistive technologies for marginalized users. With almost a quarter century of research at the intersection of Human-Computer Interaction, Automatic Speech Recognition, Natural User Interfaces, Mobile Computing, Ethics, and Assistive Technologies.
 
-  - name: Stephan Schlögl
-    photo: assets/img/sc/stephan-schloegl.jpg
-    url: https://www.mci.edu/faculty/stephan.schloegl_en.html
-    roles:
-      - role:  CUI 2021 General Chair
-        term: 2021–2024
-    bio: >
-      Stephan is an Associate Professor in the Dept. Management, Communication IT at the MCI Management Center Innsbruck. His main research interest lies in human-computer interaction, particularly focusing on conversational user interfaces and other types of AI supported interaction modalities. He was one of the general chairs for the CUI 2020 conference.
+#  - name: Stephan Schlögl
+#    photo: assets/img/sc/stephan-schloegl.jpg
+#    url: https://www.mci.edu/faculty/stephan.schloegl_en.html
+#    roles:
+#      - role:  CUI 2021 General Chair
+#        term: 2021–2024
+#    bio: >
+#      Stephan is an Associate Professor in the Dept. Management, Communication IT at the MCI Management Center Innsbruck. His main research interest lies in human-computer interaction, particularly focusing on conversational user interfaces and other types of AI supported interaction modalities. He was one of the general chairs for the CUI 2020 conference.
 
-  - name: María Inés Torres
-    photo: assets/img/sc/manes-torres.jpeg
-    url: https://www.ehu.eus/en/web/speech-interactive/m-ines-torres
-    roles:
-      - role:  CUI 2021 General Chair
-        term: 2021–2024
-    bio: >
-      María is Full Professor at UPV/EHU Univeridad del Pais Vasco and director of the SPIN RG Speech Interactive Research Group. Her research focuses on statistical approaches to deal with spoken dialog systems, aiming to learn from human interaction to generate artificial interaction. Furthermore, she and her group look at methods to identify emotions in speech. She is one of the general chairs for the CUI 2020 conference.
+#  - name: María Inés Torres
+#    photo: assets/img/sc/manes-torres.jpeg
+#    url: https://www.ehu.eus/en/web/speech-interactive/m-ines-torres
+#    roles:
+#      - role:  CUI 2021 General Chair
+#        term: 2021–2024
+#    bio: >
+#      María is Full Professor at UPV/EHU Univeridad del Pais Vasco and director of the SPIN RG Speech Interactive Research Group. Her research focuses on statistical approaches to deal with spoken dialog systems, aiming to learn from human interaction to generate artificial interaction. Furthermore, she and her group look at methods to identify emotions in speech. She is one of the general chairs for the CUI 2020 conference.
 
 members:
