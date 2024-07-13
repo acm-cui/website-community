@@ -4,11 +4,12 @@ description: The Conversational User Interfaces conference in the ACM Digital Li
 
 lastmod: page
 
-layout: redirection
+layout: redirect
 target: https://dl.acm.org/conference/cui
 
 menus:
   conferences:
     title: ACM Digital Library
     weight: 5
+    sep_before: true
 ---
