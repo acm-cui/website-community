@@ -8,7 +8,6 @@ redirect_from:
   - /about/
   - /about/sc/
   - /about/members/
-  - /sc/
   - /steering-committee/
 
 menus:
