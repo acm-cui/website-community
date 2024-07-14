@@ -3,8 +3,6 @@ title: Constitution
 description: The Constitution for the ACM Conversational User Interfaces conference.
 
 lastmod: page
-redirect_from:
-  - /about/constitution/
   
 menus:
   sc:

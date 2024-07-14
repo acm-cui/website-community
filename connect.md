@@ -5,11 +5,6 @@ description: Join the Conversational User Interfaces announcements mailing list 
 layout: page
 lastmod: page
 
-redirect_from:
-  - /community/
-  - /contact/
-  - /mailing-list/
-
 menus:
   main:
     title: Connect
