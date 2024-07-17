@@ -38,6 +38,7 @@ body > div > div {
 	background: $content-bg;
 	-webkit-backdrop-filter: $glass-backdrop-filter;
 	backdrop-filter: $glass-backdrop-filter;
+	background-attachment: fixed;
 	padding: $content-margin-y;
 }
 

@@ -18,6 +18,7 @@ html, body {
 body>div {
 	background: $body-bg-dark;
 	background: $body-bg-gradient-dark;
+	background-attachment: fixed;
 	color: $body-color-dark;
 }
 
