@@ -70,6 +70,10 @@ nav {
 		.dropdown-item {
 			color: $dropdown-link-color-dark;
 		}
+
+		.dropdown-divider {
+			border-top: var(--bs-dropdown-border-width) solid $border-color-dark;
+		}
 	}
 }
 
