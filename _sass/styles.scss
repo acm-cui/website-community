@@ -29,7 +29,7 @@ html, body {
 
 body > div {
 	background: $body-bg-gradient;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-position: top;
 	background-repeat: no-repeat;
 }
@@ -38,7 +38,6 @@ body > div > div {
 	background: $content-bg;
 	-webkit-backdrop-filter: $glass-backdrop-filter;
 	backdrop-filter: $glass-backdrop-filter;
-	background-attachment: fixed;
 	padding: $content-margin-y;
 }
 
