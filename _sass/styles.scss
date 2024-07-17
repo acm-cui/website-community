@@ -23,23 +23,22 @@ p:last-child, ol:last-child, ul:last-child {
 
 
 // LAYOUT
-html {
+html, body {
 	background: $body-bg;
 }
 
-body {
+body > div {
 	background: $body-bg-gradient;
 	background-attachment: scroll;
 	background-position: top;
 	background-repeat: no-repeat;
 }
 
-body > div {
+body > div > div {
 	background: $content-bg;
-	border: $content-border;
 	-webkit-backdrop-filter: $glass-backdrop-filter;
 	backdrop-filter: $glass-backdrop-filter;
-	max-width: $content-max-width !important;
+	padding: $content-margin-y;
 }
 
 
@@ -59,8 +58,8 @@ nav {
 	background: $nav-bg;
 	-webkit-backdrop-filter: $glass-backdrop-filter;
 	backdrop-filter: $glass-backdrop-filter;
-	border-bottom: $content-border;
-	border-top: $content-border;
+	margin-top: $content-margin-y;
+	margin-bottom: $content-margin-y;
 	position: relative;
 	@include auto-transition(background, box-shadow);
 	z-index: 1000;
@@ -105,7 +104,7 @@ main {
 	background: $main-bg;
 	-webkit-backdrop-filter: $glass-backdrop-filter;
 	backdrop-filter: $glass-backdrop-filter;
-	border-bottom: $content-border;
+	border-bottom: $outer-content-border;
 
 	.profile-photo {
 		max-width: $profile-photo-width;
@@ -152,6 +151,7 @@ footer {
 	background: $footer-bg;
 	-webkit-backdrop-filter: $glass-backdrop-filter;
 	backdrop-filter: $glass-backdrop-filter;
+	margin-top: 3px;
 }
 
 

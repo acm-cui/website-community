@@ -11,19 +11,19 @@ a, a:active, a:visited, a:hover {
 
 
 // LAYOUT
-html {
+html, body {
 	background: $body-bg-dark;
 }
 
-body {
+body>div {
 	background: $body-bg-dark;
 	background: $body-bg-gradient-dark;
 	color: $body-color-dark;
 }
 
-body > div {
+body > div > div {
 	background: $content-bg-dark;
-	border: $content-border-dark;
+	padding: $content-margin-y;
 }
 
 
@@ -39,8 +39,8 @@ header {
 // NAVIGATION
 nav {
 	background: $nav-bg-dark;
-	border-bottom: $content-border-dark;
-	border-top: $content-border-dark;
+	margin-top: $content-margin-y;
+	margin-bottom: $content-margin-y;
 	
 	.nav-link {
 		color: $nav-link-color-dark;
@@ -90,7 +90,7 @@ aside {
 
 main {
 	background: $main-bg-dark;
-	border-bottom: $content-border-dark;
+	border-bottom: $outer-content-border-dark;
 
 	.timeline {
 		.timeline-label {
