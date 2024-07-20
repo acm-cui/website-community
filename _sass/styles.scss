@@ -66,7 +66,7 @@ nav {
 	z-index: 1000;
 	
 	.navbar-toggler {
-		&:hover {
+		&:hover, &[aria-expanded="true"] {
 			background: var(--bs-navbar-toggler-border-color);
 		}
 
