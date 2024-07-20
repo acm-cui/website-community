@@ -59,7 +59,7 @@ nav {
 	background: $nav-bg;
 	-webkit-backdrop-filter: $glass-backdrop-filter;
 	backdrop-filter: $glass-backdrop-filter;
-	margin-top: $content-border-width $content-border-width $content-border-width 0;
+	margin: $content-border-width 0 $content-border-width 0;
 	position: relative;
 	@include auto-transition(background, box-shadow);
 	z-index: 1000;
