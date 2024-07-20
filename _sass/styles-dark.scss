@@ -27,7 +27,7 @@ body>div {
 
 body > div > div {
 	background: $content-bg-dark;
-	padding: $content-margin-y;
+	padding: $content-border-width;
 }
 
 
@@ -43,8 +43,8 @@ header {
 // NAVIGATION
 nav {
 	background: $nav-bg-dark;
-	margin-top: $content-margin-y;
-	margin-bottom: $content-margin-y;
+	margin-top: $content-border-width;
+	margin-bottom: $content-border-width;
 	
 	.nav-link {
 		color: $nav-link-color-dark;
