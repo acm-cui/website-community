@@ -95,7 +95,7 @@ nav {
 // CONTENT
 aside {
 	border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
-	margin-right: $content-margin-width;
+	margin-top: $content-margin-width;
 
 	picture, img {
 		max-width: $sidebar-image-width;
@@ -161,5 +161,7 @@ footer {
 	aside {
 		border-top: 0;
 		border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+        margin-right: $content-margin-width;
+        margin-top: 0;
 	}
 }
