@@ -58,9 +58,13 @@ nav {
 		color: $navbar-toggler-color-dark;
 		border: var(--bs-border-width) solid $navbar-toggler-border-color-dark !important;
 		
-		&:hover {
+		&:hover, &[aria-expanded="true"] {
 			background: $navbar-toggler-border-color-dark;
 		}
+
+        &[aria-expanded="false"] {
+            background: transparent;
+        }
 		
 		.navbar-toggler-icon {
 			background-image: $navbar-dark-toggler-icon-bg;
