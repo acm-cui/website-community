@@ -99,8 +99,12 @@ aside {
     & > div {
         background: $main-bg;
         -webkit-backdrop-filter: $glass-backdrop-filter;
-    	    backdrop-filter: $glass-backdrop-filter;
+        backdrop-filter: $glass-backdrop-filter;
         margin-bottom: $content-border-width;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
 	picture, img {
