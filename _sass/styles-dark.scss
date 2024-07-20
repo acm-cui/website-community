@@ -88,10 +88,6 @@ aside {
 	aside > div {
 		background: $main-bg-dark;
 	}
-
-	.border-bottom {
-		border-bottom: var(--bs-border-width) var(--bs-border-style) $border-color-dark !important;
-	}
 }
 
 article {
