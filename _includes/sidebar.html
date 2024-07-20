@@ -1,5 +1,5 @@
 <aside class="flex-shrink-0">
-	<div class="border-bottom p-md-4 p-3 text-md-start text-center">
+	<div class="p-md-4 p-3 text-md-start text-center">
 		<h6 class="fw-bold">Next conference</h6>
 		<div class="d-flex flex-column last-md-0">
 			{%- assign no_conferences = true -%}
@@ -25,8 +25,8 @@
 		</div>
 	</div>
 	
-	<div class="border-bottom p-lg-4 p-3 text-md-start text-center">
-		<h6 class="mt-md-4 mt-3 fw-bold">Upcoming workshops</h6>
+	<div class="p-lg-4 p-3 text-md-start text-center">
+		<h6 class="fw-bold">Upcoming workshops</h6>
 		<div class="d-flex flex-column">
 			{%- assign no_workshops = true -%}
 			{%- assign workshops_sorted = site.data.workshops | sort: 'date' -%}
