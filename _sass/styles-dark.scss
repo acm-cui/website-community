@@ -85,7 +85,7 @@ nav {
 
 // CONTENT
 aside {
-	aside > div {
+	& > div {
 		background: $main-bg-dark;
 	}
 }
