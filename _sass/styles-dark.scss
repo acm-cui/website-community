@@ -85,14 +85,16 @@ nav {
 
 // CONTENT
 aside {
-	border-top: var(--bs-border-width) var(--bs-border-style) $border-color-dark;
-	
+	aside > div {
+		background: $main-bg-dark;
+	}
+
 	.border-bottom {
 		border-bottom: var(--bs-border-width) var(--bs-border-style) $border-color-dark !important;
 	}
 }
 
-main {
+article {
 	background: $main-bg-dark;
 
 	.timeline {
