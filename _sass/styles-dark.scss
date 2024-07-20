@@ -123,11 +123,3 @@ footer {
 	background: $footer-bg-dark;
 }
 
-
-
-@include media-breakpoint-up(md) {
-	aside {
-		border-top: 0;
-		border-right: var(--bs-border-width) var(--bs-border-style) $border-color-dark;
-	}
-}
