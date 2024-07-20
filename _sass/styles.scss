@@ -69,6 +69,10 @@ nav {
 		&:hover {
 			background: var(--bs-navbar-toggler-border-color);
 		}
+
+        &[aria-expanded="false"] {
+            background: transparent;
+        }
 	}
 	
 	a.nav-link {	
