@@ -7,7 +7,7 @@ lastmod: page
 
 menus:
   main:
-    title: Home
+    title: About
     weight: 0
 ---
 
