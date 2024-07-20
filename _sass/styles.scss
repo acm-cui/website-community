@@ -97,6 +97,12 @@ aside {
 	border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
 	margin-top: $content-border-width;
 
+    & > div {
+        background: $main-bg;
+        	-webkit-backdrop-filter: $glass-backdrop-filter;
+        	backdrop-filter: $glass-backdrop-filter;
+    }
+
 	picture, img {
 		max-width: $sidebar-image-width;
 	}
