@@ -39,7 +39,7 @@ body > div > div {
 	background: $content-bg;
 	-webkit-backdrop-filter: $glass-backdrop-filter;
 	backdrop-filter: $glass-backdrop-filter;
-	padding: $content-margin-y;
+	padding: $content-border-width;
 }
 
 
@@ -59,8 +59,7 @@ nav {
 	background: $nav-bg;
 	-webkit-backdrop-filter: $glass-backdrop-filter;
 	backdrop-filter: $glass-backdrop-filter;
-	margin-top: $content-margin-y;
-	margin-bottom: $content-margin-y;
+	margin-top: $content-border-width $content-margin-width $content-border-width 0;
 	position: relative;
 	@include auto-transition(background, box-shadow);
 	z-index: 1000;
