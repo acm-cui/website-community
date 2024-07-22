@@ -16,6 +16,8 @@ menus:
 
 The ACM Conversational User Interfaces Steering Committee is responsibile for the overall organisation of the annual ACM CUI conference and workshop series.
 
+The constitution for the ACM Conversational User Interfaces conference sets out the organisation and procedures that govern the conference and workshop series, as well as the overarching series steeering committee. Download the [constitution]({{ '/assets/pdf/cui-conference-constitution.pdf' | relative_url }} "International Conference on Conversational User Interfaces Constitution"), which was approved and last updated on 19th April 2024.
+
 The following people are the current _Officers_ and _Members_ of the steering committee. Officers are elected by the community and undertake a specific role on the committee, while members are invited to serve on the committee on the basis of their expertise and community participation.
 
 ## Officers

@@ -1,17 +1,4 @@
 ---
-title: Constitution
-description: The Constitution for the ACM Conversational User Interfaces conference.
-
-lastmod: page
-  
-menus:
-  about:
-    title: Constitution
-    weight: 10
+layout: redirect
+target: https://cui.acm.org/community/sc/
 ---
-
-The constitution for the ACM Conversational User Interfaces conference sets out the organisation and procedures that govern the conference and workshop series, as well as the overarching series steeering committee.
-
-Download the [constitution]({{ '/assets/pdf/cui-conference-constitution.pdf' | relative_url }} "International Conference on Conversational User Interfaces Constitution").
-
-The constitution was approved and last updated on 19th April 2024.
