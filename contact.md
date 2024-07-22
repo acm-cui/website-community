@@ -1,4 +1,4 @@
 ---
 layout: redirect
-target: https://cui.acm.org/community/connect/
+target: https://cui.acm.org/community/about/contact/
 ---
