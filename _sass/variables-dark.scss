@@ -48,6 +48,8 @@ $table-outer-border-dark: var(--bs-border-width) var(--bs-border-style) $border-
 $table-thead-border-dark: $content-border-dark;
 $table-line-border-dark: $table-outer-border-dark;
 
+$conference-list-bg-hover-dark: rgba(lighten($body-bg-dark, 10%), .4);
+
 
 
 // FOOTER

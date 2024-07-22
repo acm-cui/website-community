@@ -114,6 +114,12 @@ article {
 			border-top: $table-line-border-dark !important;
 		}
 	}
+
+	.conference-list > div {
+		&:hover {
+			background: $conference-list-bg-hover-dark;
+		}
+	}
 }
 
 
