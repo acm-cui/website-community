@@ -1,6 +1,6 @@
 ---
-title: Conferences
-description: Conferences in the Conversational User Interfaces series.
+title: Conference
+description: The annual ACM SIGCHI Conversational User Interfaces series.
 
 lastmod: 
   type: data
@@ -12,20 +12,20 @@ menus:
     weight: 2
 ---
 
-The annual ACM Conversational User Interfaces conference is held in locations across the world, bringing together researchers and practitioners to explore and discuss the state-of-the-art in conversational technologies. Each conference is run by a dedicated group of volunteers, with oversight and support provided by the Steering Committee.
+The annual ACM Conversational User Interfaces conference is held in locations across the world, bringing together researchers and practitioners to explore and discuss the state-of-the-art in conversational technologies. Each conference is run by a dedicated group of volunteers, with oversight and support provided by the [CUI Steering Committee]({{ "/sc/" | relative_url }}).
 
 <div class="mx-auto text-center">
   <div class="d-inline-flex flex-column text-start justify-content-center align-items-center border rounded-1 shadow mx-auto conference-list">
     {% for conference in site.data.conferences %}
-    <div class="d-flex flex-column p-3 border-bottom flex-grow-0 flex-shrink-1">
-      <div class="d-flex flex-row">
-        <div class="flex-shrink-0">
+    <div class="d-flex flex-column p-3 border-bottom w-100">
+      <div class="d-flex flex-row justify-content-start align-items-start flex-fill">
+        <div class="flex-shrink-0 align-self-start">
           {%- assign image_url = "/assets/img/conferences/" | append: conference.logo -%}
           <a href="{{ conference.url }}" title="{{ conference.title }}" target="_blank">
             <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 75px" alt="{{ conference.name }} logo">
           </a>
         </div>
-        <div class="flex-grow-0 ms-4 pt-1 small" style="width: 500px">
+        <div class="flex-grow-1 flex-fill ms-4 pt-1 small" style="max-width: 500px">
           <h3 class="mb-1">{{ conference.name }}</h3>
           {{ conference.location }} &bull; {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}
           <div class="d-flex flex-wrap mt-1 small" style="line-height: 150%">
