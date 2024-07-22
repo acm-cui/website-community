@@ -10,7 +10,7 @@ menus:
     weight: 1
 #    identifier: sc
 #  sc:
-#    title: Committee
+#    title: Committee Members
 #    weight: 0
 ---
 
