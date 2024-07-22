@@ -157,6 +157,14 @@ article {
 			width: $awards-image-width;
 		}
 	}
+
+	.conference-list > div {
+		@include auto-transition(background);
+		
+		&:hover {
+			background: $conference-list-bg-hover;
+		}
+	}
 }
 
 

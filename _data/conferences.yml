@@ -16,6 +16,7 @@
     end: 2024-07-10
   logo: cui2024.png
   dl: https://dl.acm.org/doi/proceedings/10.1145/3640794
+  programme: https://programs.sigchi.org/cui/2023
 
 - name: CUI 2023
   year: 2023
@@ -26,12 +27,14 @@
     end: 2023-07-21
   logo: cui2023.png
   dl: https://dl.acm.org/doi/proceedings/10.1145/3571884
+  programme: https://programs.sigchi.org/cui/2023
 
 - name: CUI 2022
   year: 2022
   location: Glasgow, UK
   url: https://cui.acm.org/2022/
   dl: https://dl.acm.org/doi/proceedings/10.1145/3543829
+  programme: https://cui.acm.org/2022/programme/
   dates:
     start: 2022-07-26
     end: 2022-07-28
@@ -45,6 +48,7 @@
     end: 2021-07-29
   url: https://cui.acm.org/2021/
   dl: https://dl.acm.org/doi/proceedings/10.1145/3469595
+  programme: https://cui.acm.org/2021/programme/
   logo: cui2021.png
   
 - name: CUI 2020
@@ -55,6 +59,7 @@
     end: 2020-07-24
   url: https://cui.acm.org/2020/
   dl: https://dl.acm.org/doi/proceedings/10.1145/3405755
+  programme: https://cui.acm.org/2020/programme/
   logo: cui2020.png
 
 - name: CUI 2019
@@ -66,4 +71,5 @@
     end: 2019-08-23
   url: https://cui.acm.org/2019/
   dl: https://dl.acm.org/doi/proceedings/10.1145/3342775
+  programme: https://cui.acm.org/2019/programme.html
   logo: cui2019.png

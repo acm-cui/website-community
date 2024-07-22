@@ -20,7 +20,7 @@
 // @import "bootstrap/images";
 @import "bootstrap/containers";
 @import "bootstrap/grid";
-// @import "bootstrap/tables";
+@import "bootstrap/tables";
 // @import "bootstrap/forms";
 @import "bootstrap/buttons";
 @import "bootstrap/transitions";
@@ -28,7 +28,7 @@
 // @import "bootstrap/button-group";
 @import "bootstrap/nav";
 @import "bootstrap/navbar";
-// @import "bootstrap/card";
+@import "bootstrap/card";
 // @import "bootstrap/accordion";
 // @import "bootstrap/breadcrumb";
 // @import "bootstrap/pagination";
@@ -58,3 +58,5 @@
 @media (prefers-color-scheme: dark) {
 	@import "styles-dark"; // CUI COMMUNITY
 }
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");

@@ -17,7 +17,7 @@ menus:
 <div class="awards">
 	{%- for conference in site.data.conferences -%}
 		{%- if site.data.awards.honourable_mentions[conference.year] or site.data.awards.best_papers[conference.year] -%}
-			<div class="d-flex flex-row mb-3">
+			<div class="d-flex flex-row mb-3" id="{{ conference.name | uri_escape }}">
 				<div class="flex-grow-0">
 					{%- assign image_url = "/assets/img/conferences/" | append: conference.logo -%}
 					<img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded" alt="{{ conference.name }} logo">
