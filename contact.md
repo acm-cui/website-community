@@ -1,14 +1,10 @@
 ---
-title: Contact us
-description: Contact the ACM Conversational User Interfaces community
-
-layout: page
-lastmod: page
+layout: redirect
+target: mailto:contact@cui.acm.org
 
 menus:
   main:
     title: Contact
+    url: mailto:contact@cui.acm.org 
     weight: 10
 ---
-
-To contact the CUI Steering Committee directly, please email us at <a href="mailto:contact@cui.acm.org" title="Email the CUI Steering Commitee">contact@cui.acm.org</a>.
