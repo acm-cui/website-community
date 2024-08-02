@@ -114,11 +114,11 @@ article {
 			border-top: $table-line-border-dark !important;
 		}
 	}
+}
 
-	.conference-list > div {
-		&:hover {
-			background: $conference-list-bg-hover-dark;
-		}
+.conference-list {
+	.conference-year {
+		background: $main-bg-dk;
 	}
 }
 
