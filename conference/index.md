@@ -24,7 +24,7 @@ menus:
     The CUI comuninity also maintains records regarding the <a href="{{ "/conference/statistics/" | relative_url }}" title="CUI Conference Statistics">annual conference programme and registrations for each year</a>.
     </p>
   </article>
-  <div class="flex-grow-1 d-inline-flex flex-column text-start justify-content-center align-items-center shadow mx-auto conference-list w-100">
+  <div class="flex-grow-1 d-inline-flex flex-column text-start justify-content-center align-items-center mx-auto conference-list w-100">
       {% for conference in site.data.conferences %}
       <div class="d-flex flex-column p-md-4 p-3 w-100 conference-year">
         <div class="d-flex flex-row justify-content-start align-items-start flex-fill">
