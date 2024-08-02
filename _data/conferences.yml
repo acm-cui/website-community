@@ -1,44 +1,51 @@
-- name: CUI 2025
+- name: ACM CUI 2025
   year: 2025
   location: Waterloo, ON, Canada
-  url: https://cui.acm.org/2025/
   dates:
     start: 2025-07-08
     end: 2025-07-10
   logo: cui2025.png
+  urls:
+    website: https://cui.acm.org/2025/
 
-- name: CUI 2024
+- name: ACM CUI 2024
   year: 2024
   location: Luxembourg City, Luxembourg
-  url: https://cui.acm.org/2024/
   dates:
     start: 2024-07-08
     end: 2024-07-10
   logo: cui2024.png
-  dl: https://dl.acm.org/doi/proceedings/10.1145/3640794
-  programme: https://programs.sigchi.org/cui/2023
+  urls:
+    website: https://cui.acm.org/2024/
+    proceedings: https://dl.acm.org/doi/proceedings/10.1145/3640794
+    programme: https://programs.sigchi.org/cui/2023
+    workshops: https://cui.acm.org/2024/programme/workshops/
 
-- name: CUI 2023
+- name: ACM CUI 2023
   year: 2023
   location: Eindhoven, Netherlands
-  url: https://cui.acm.org/2023/
   dates:
     start: 2023-07-19
     end: 2023-07-21
   logo: cui2023.png
-  dl: https://dl.acm.org/doi/proceedings/10.1145/3571884
-  programme: https://programs.sigchi.org/cui/2023
+  urls:
+    website: https://cui.acm.org/2023/
+    proceedings: https://dl.acm.org/doi/proceedings/10.1145/3571884
+    programme: https://programs.sigchi.org/cui/2023
+    workshops: https://cui.acm.org/2023/programme/workshops/
 
 - name: CUI 2022
   year: 2022
   location: Glasgow, UK
-  url: https://cui.acm.org/2022/
-  dl: https://dl.acm.org/doi/proceedings/10.1145/3543829
-  programme: https://cui.acm.org/2022/programme/
   dates:
     start: 2022-07-26
     end: 2022-07-28
   logo: cui2022.png
+  urls:
+    website: https://cui.acm.org/2022/
+    proceedings: https://dl.acm.org/doi/proceedings/10.1145/3543829
+    programme: https://cui.acm.org/2022/programme/
+    sigs: https://cui.acm.org/2022/programme/
 
 - name: CUI 2021
   year: 2021
@@ -46,10 +53,11 @@
   dates:
     start: 2021-07-27
     end: 2021-07-29
-  url: https://cui.acm.org/2021/
-  dl: https://dl.acm.org/doi/proceedings/10.1145/3469595
-  programme: https://cui.acm.org/2021/programme/
   logo: cui2021.png
+  urls:
+    website: https://cui.acm.org/2021/
+    proceedings: https://dl.acm.org/doi/proceedings/10.1145/3469595
+    programme: https://cui.acm.org/2021/programme/
   
 - name: CUI 2020
   year: 2020
@@ -57,19 +65,20 @@
   dates: 
     start: 2020-07-22
     end: 2020-07-24
-  url: https://cui.acm.org/2020/
-  dl: https://dl.acm.org/doi/proceedings/10.1145/3405755
-  programme: https://cui.acm.org/2020/programme/
   logo: cui2020.png
+  urls:
+    website: https://cui.acm.org/2020/
+    proceedings: https://dl.acm.org/doi/proceedings/10.1145/3405755
+    programme: https://cui.acm.org/2020/programme/
 
 - name: CUI 2019
   year: 2019
   location: Dublin, Ireland
-  dates: 22–23th August 2019
   dates: 
     start: 2019-08-22
     end: 2019-08-23
-  url: https://cui.acm.org/2019/
-  dl: https://dl.acm.org/doi/proceedings/10.1145/3342775
-  programme: https://cui.acm.org/2019/programme.html
   logo: cui2019.png
+  urls:
+    website: https://cui.acm.org/2019/
+    proceedings: https://dl.acm.org/doi/proceedings/10.1145/3342775
+    programme: https://cui.acm.org/2019/programme.html

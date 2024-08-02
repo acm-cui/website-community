@@ -157,6 +157,15 @@ article {
 			width: $awards-image-width;
 		}
 	}
+}
+
+.conference-list {
+	.conference-year {
+		background: $main-bg;
+		-webkit-backdrop-filter: $glass-backdrop-filter;
+		backdrop-filter: $glass-backdrop-filter;
+		margin-top: 3px;
+	}
 
 	.conference-list > div {
 		@include auto-transition(background);

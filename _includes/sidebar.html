@@ -13,8 +13,8 @@
 					{%- break -%}
 				{%- else -%}
 					{%- assign no_conferences = false -%}
-					{%- if conference.url -%}
-						<small class="mb-2"><a href="{{ conference.url }}" title="Visit the website for {{ conference.name }}" target="_blank">{{ conference.name }}</a><br>{{ conference.location }}<br>{%- include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</small>
+					{%- if conference.urls.website -%}
+						<small class="mb-2"><a href="{{ conference.urls.website }}" title="Visit the website for {{ conference.name }}" target="_blank">{{ conference.name }}</a><br>{{ conference.location }}<br>{%- include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</small>
 					{%- else -%}
 						<small class="mb-2">{{ conference.name }}<br>{{ conference.location }}<br>{%- include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</small>
 					{%- endif -%}
