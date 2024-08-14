@@ -165,6 +165,24 @@ article {
 		-webkit-backdrop-filter: $glass-backdrop-filter;
 		backdrop-filter: $glass-backdrop-filter;
 		margin-top: 3px;
+
+		.conference-chevron {
+			opacity: $conference-chevron-o;
+			font-size: $conference-chevron-font-size;
+			@include auto-transition(opacity);
+			
+			&:hover, .conference-year:hover .conference-chevron {
+				opacity: 1;
+			}
+		}
+	}
+
+	.conference-year:hover .conference-chevron {
+		opacity: 1;
+	}
+
+	.conference-year > a[aria-expanded="true"] {
+		max-width: 105px !important;
 	}
 
 	.conference-list > div {
