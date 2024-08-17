@@ -151,19 +151,13 @@ article {
 			margin-top: .6rem - $timeline-width;
 		}
 	}
+}
+
+table {
+	border: $table-outer-border;
 	
-	table {
-		border: $table-outer-border;
-		
-		thead {
-			border-bottom: $table-thead-border;
-		}
-	}
-	
-	.awards {
-		img {
-			width: $awards-image-width;
-		}
+	thead {
+		border-bottom: $table-thead-border;
 	}
 }
 
