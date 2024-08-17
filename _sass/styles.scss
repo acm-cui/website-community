@@ -55,7 +55,7 @@ header {
 
 
 // NAVIGATION
-nav {
+nav.navbar {
 	background: $nav-bg;
 	-webkit-backdrop-filter: $glass-backdrop-filter;
 	backdrop-filter: $glass-backdrop-filter;
@@ -94,6 +94,14 @@ nav {
 	}
 }
 
+button.nav-link {
+	@include auto-transition((color, background));
+
+	&:hover {
+		color: $nav-link-button-fg;
+		background: $nav-link-button-bg-hover;
+	}
+}
 
 
 // CONTENT
@@ -169,7 +177,7 @@ article {
 		.conference-chevron {
 			opacity: $conference-chevron-o;
 			font-size: $conference-chevron-font-size;
-			@include auto-transition(opacity);
+			@include auto-transition((opacity, transform));
 			
 			&:hover, .conference-year:hover .conference-chevron {
 				opacity: 1;
@@ -181,16 +189,12 @@ article {
 		opacity: 1;
 	}
 
-	.conference-year > a[aria-expanded="true"] {
-		max-width: 105px !important;
+	.conference-year > a[aria-expanded="true"] .conference-chevron {
+		transform: rotate(90deg);
 	}
 
-	.conference-list > div {
-		@include auto-transition(background);
-		
-		&:hover {
-			background: $conference-list-bg-hover;
-		}
+	.conference-expanded {
+		background: $conference-expanded-bg;
 	}
 }
 

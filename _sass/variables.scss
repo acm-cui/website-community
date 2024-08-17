@@ -72,9 +72,12 @@ $table-thead-border: $content-border;
 
 $awards-image-width: 50px;
 
-$conference-list-bg-hover: rgba(lighten($body-bg, 10%), .4);
 $conference-chevron-o: 50%;
 $conference-chevron-font-size: 3.2rem;
+$conference-expanded-bg: rgba(darken($body-bg, 20%), .15);
+
+$nav-link-button-fg: $primary;
+$nav-link-button-bg-hover: rgba(#ccc, .6);
 
 
 // FOOTER

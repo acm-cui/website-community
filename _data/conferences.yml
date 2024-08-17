@@ -20,6 +20,22 @@
     proceedings: https://dl.acm.org/doi/proceedings/10.1145/3640794
     programme: https://programs.sigchi.org/cui/2023
     workshops: https://cui.acm.org/2024/programme/workshops/
+  sponsors:
+    - name: SIGIR
+      link: https://www.sigir.org/
+    - name: LuxAI
+      link: https://www.luxai.com/
+    - name: LIST
+      link: hhttps://www.list.lu/
+    - name: Université Du Luxembourg
+      link: https://www.uni.lu/
+    - name: SIGCHI
+      link: https://www.sigchi.org/
+  listdetails:
+    proceedings:
+      isacmdl: true
+    programme:
+      issigchi: true
 
 - name: ACM CUI 2023
   year: 2023
@@ -33,6 +49,22 @@
     proceedings: https://dl.acm.org/doi/proceedings/10.1145/3571884
     programme: https://programs.sigchi.org/cui/2023
     workshops: https://cui.acm.org/2023/programme/workshops/
+  sponsors:
+    - name: Bold Insight
+      link: https://www.boldinsight.com/
+    - name: Eindhoven AI Systems Institute
+      link: https://www.tue.nl/en/research/institutes/eindhoven-artificial-intelligence-systems-institute
+    - name: HMD Research
+      link: https://hmduxresearch.com/
+    - name: TU/e
+      link: https://www.tue.nl/en/
+    - name: SIGCHI
+      link: https://www.sigchi.org/
+  listdetails:
+    proceedings:
+      isacmdl: true
+    programme:
+      issigchi: true
 
 - name: CUI 2022
   year: 2022
@@ -46,9 +78,18 @@
     proceedings: https://dl.acm.org/doi/proceedings/10.1145/3543829
     programme: https://cui.acm.org/2022/programme/
     sigs: https://cui.acm.org/2022/programme/
+  sponsors:
+    - name: SICSA
+      link: https://www.sicsa.ac.uk
+    - name: SIGCHI
+      link: https://www.sigchi.org/
+  listdetails:
+    proceedings:
+      isacmdl: true
 
 - name: CUI 2021
   year: 2021
+  covid19virtual: true
   location: Virtual Event
   dates:
     start: 2021-07-27
@@ -58,9 +99,24 @@
     website: https://cui.acm.org/2021/
     proceedings: https://dl.acm.org/doi/proceedings/10.1145/3469595
     programme: https://cui.acm.org/2021/programme/
+  sponsors:
+    - name: University College Dublin
+      link: http://www.hci.ucd.ie/
+    - name: ADAPT Centre
+      link: https://www.adaptcentre.ie/
+    - name: Swansea University
+      link: http://www.swansea.ac.uk/
+    - name: MCI – The Entrepreneurial School
+      link: http://www.empathic-project.eu/
+    - name: SIGCHI
+      link: https://www.sigchi.org/
+  listdetails:
+    proceedings:
+      isacmdl: true
   
 - name: CUI 2020
   year: 2020
+  covid19virtual: true
   location: Virtual Event
   dates: 
     start: 2020-07-22
@@ -70,6 +126,20 @@
     website: https://cui.acm.org/2020/
     proceedings: https://dl.acm.org/doi/proceedings/10.1145/3405755
     programme: https://cui.acm.org/2020/programme/
+  sponsors:
+    - name: University of the Basque Country
+      link: https://www.ehu.eus/en/en-home
+    - name: H2020 RIA project EMPATHIC
+      link: http://www.empathic-project.eu/
+    - name: MCI – The Entrepreneurial School
+      link: http://www.empathic-project.eu/
+    - name: H2020 MCSCA-RISE action MENHIR
+      link: http://menhir-project.eu/
+    - name: SIGCHI
+      link: https://www.sigchi.org/
+  listdetails:
+    proceedings:
+      isacmdl: true
 
 - name: CUI 2019
   year: 2019
@@ -82,3 +152,29 @@
     website: https://cui.acm.org/2019/
     proceedings: https://dl.acm.org/doi/proceedings/10.1145/3342775
     programme: https://cui.acm.org/2019/programme.html
+  sponsors:
+    - name: TAGLab
+      link: http://www.taglab.utoronto.ca/
+    - name: Accenture/The Dock
+      link: https://www.accenture.com/
+    - name: Fjord
+      link: https://www.fjordnet.com/
+    - name: Voysis
+      link: https://voysis.com/
+    - name: Microsoft
+      link: https://www.microsoft.com/en-us/research/
+    - name: Botmock
+      link: https://botmock.com/
+    - name: Irish Research Council
+      link: http://research.ie/
+    - name: ADAPT Centre
+      link: https://www.adaptcentre.ie/
+    - name: University College Dublin
+      link: http://www.hci.ucd.ie/
+    - name: SIGCHI
+      link: https://www.sigchi.org/
+  listdetails:
+    preamble: >
+      Where it all begin!
+    proceedings:
+      isacmdl: true
