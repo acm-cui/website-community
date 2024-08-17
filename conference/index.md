@@ -21,11 +21,11 @@ menus:
       The annual ACM Conversational User Interfaces conference is held in locations across the world, bringing together researchers and practitioners to explore and discuss the state-of-the-art in conversational technologies. Each conference is run by a dedicated group of volunteers, with oversight and support provided by the <a href="{{ "/sc/" | relative_url }}">CUI Steering Committee</a>.
     </p>
   </article>
-  <div class="flex-grow-1 d-inline-flex flex-column text-start justify-content-center align-items-center mx-auto conference-list w-100">
+  <div class="flex-grow-1 d-inline-flex flex-column text-start justify-content-center align-items-center mx-auto accordion accordion-flush conference-list w-100" id="conferenceList">
       {% for conference in site.data.conferences %}
         {%- assign has_hm_awards =  site.data.awards['honourable_mentions'][conference.year] | size -%}
         {%- assign has_bp_awards =  site.data.awards['best_papers'][conference.year] | size -%}
-        <div class="d-flex flex-column w-100 conference-year">
+        <div class="d-flex flex-column w-100 accordion-item conference-year">
           {%- if has_hm_awards > 0 or has_bp_awards > 0 or site.data.statistics.years contains conference.year -%}
           <a href="#conference-{{ conference.year }}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="conference-{{ conference-year}}" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black">
             <div class="flex-shrink-0 align-self-start">
@@ -39,7 +39,7 @@ menus:
             </div>
             <i class="bi bi-chevron-compact-right conference-chevron"></i>
           </a>
-          <div class="collapse conference-expanded" id="conference-{{ conference.year }}">
+          <div class="accordion-collapse collapse conference-expanded" id="conference-{{ conference.year }}" data-bs-parent="#conferenceList">
             <div class="p-md-4 p-3">
               <div class="d-flex align-items-start">
                 <div class="nav flex-column nav-pills me-3" id="conference-{{ conference.year }}-tab" role="tablist" aria-orientation="vertical">
