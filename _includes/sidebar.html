@@ -7,7 +7,7 @@
 				{%- capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture -%}
 				{%- capture conferenceunix %}{{ conference.dates.end | date: '%s' }}{% endcapture -%}
 				{%- if nowunix > conferenceunix -%}
-					{%- if no_workshops -%}
+					{%- if no_conferences -%}
 						<small><em>No conference planned.</em></small>
 					{%- endif -%}
 					{%- break -%}

@@ -41,12 +41,12 @@ menus:
 		</thead>
 		<tbody>
 			{%- for year in site.data.statistics.years offset:start_years_at limit:max_years_per_table  -%}
-				{%- if site.data.statistics.attendance[year]["total"] -%}
+				{%- if site.data.statistics.registrations[year]["total"] -%}
 					<tr class="border-top">
-						<td>CUI {{ year }}{% if site.data.statistics.attendance[year]["footnote_id"] %}{% assign symbol_id = site.data.statistics.attendance[year]["footnote_id"] | minus: 1 %}<sup>{{ footnote_symbols[symbol_id] }}</sup>{% endif %}</td>
-						<td>{{ site.data.statistics.attendance[year]["total"] }}</td>
-						<td>{{ site.data.statistics.attendance[year]["virtual"] }}</td>
-						<td>{{ site.data.statistics.attendance[year]["total"] | minus: site.data.statistics.attendance[year]["virtual"] }}</td>
+						<td>CUI {{ year }}{% if site.data.statistics.registrations[year]["footnote_id"] %}{% assign symbol_id = site.data.statistics.registrations[year]["footnote_id"] | minus: 1 %}<sup>{{ footnote_symbols[symbol_id] }}</sup>{% endif %}</td>
+						<td>{{ site.data.statistics.registrations[year]["total"] }}</td>
+						<td>{{ site.data.statistics.registrations[year]["virtual"] }}</td>
+						<td>{{ site.data.statistics.registrations[year]["total"] | minus: site.data.statistics.registrations[year]["virtual"] }}</td>
 					</tr>
 				{%- endif -%}
 			{%- endfor -%}
@@ -62,7 +62,7 @@ menus:
 		</p>
 	</div>
 	{%- assign footnote_index = 0 -%}
-	{%- for footnote in site.data.statistics.attendance_footnotes -%}
+	{%- for footnote in site.data.statistics.registrations_footnotes -%}
 		<div class="d-flex flex-row">
 			<p class="flex-shrink-0 me-1 m-0 text-end" style="width: 1rem">{{ footnote_symbols[footnote_index] }}</p> 
 			<p>

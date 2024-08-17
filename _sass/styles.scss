@@ -55,7 +55,7 @@ header {
 
 
 // NAVIGATION
-nav {
+nav.navbar {
 	background: $nav-bg;
 	-webkit-backdrop-filter: $glass-backdrop-filter;
 	backdrop-filter: $glass-backdrop-filter;
@@ -94,6 +94,14 @@ nav {
 	}
 }
 
+button.nav-link {
+	@include auto-transition((color, background));
+
+	&:hover {
+		color: $nav-link-button-fg;
+		background: $nav-link-button-bg-hover;
+	}
+}
 
 
 // CONTENT
@@ -143,19 +151,13 @@ article {
 			margin-top: .6rem - $timeline-width;
 		}
 	}
+}
+
+table {
+	border: $table-outer-border;
 	
-	table {
-		border: $table-outer-border;
-		
-		thead {
-			border-bottom: $table-thead-border;
-		}
-	}
-	
-	.awards {
-		img {
-			width: $awards-image-width;
-		}
+	thead {
+		border-bottom: $table-thead-border;
 	}
 }
 
@@ -165,14 +167,29 @@ article {
 		-webkit-backdrop-filter: $glass-backdrop-filter;
 		backdrop-filter: $glass-backdrop-filter;
 		margin-top: 3px;
+
+		.conference-chevron {
+			color: $conference-chevron-color;
+			opacity: $conference-chevron-o;
+			font-size: $conference-chevron-font-size;
+			@include auto-transition((opacity, transform));
+			
+			&:hover, .conference-year:hover .conference-chevron {
+				opacity: 1;
+			}
+		}
 	}
 
-	.conference-list > div {
-		@include auto-transition(background);
-		
-		&:hover {
-			background: $conference-list-bg-hover;
-		}
+	.conference-year:hover .conference-chevron {
+		opacity: 1;
+	}
+
+	.conference-year > a[aria-expanded="true"] .conference-chevron {
+		transform: rotate(90deg);
+	}
+
+	.conference-expanded {
+		background: $conference-expanded-bg;
 	}
 }
 

@@ -41,7 +41,7 @@ header {
 
 
 // NAVIGATION
-nav {
+nav.navbar {
 	background: $nav-bg-dark;
 	margin-top: $content-border-width;
 	margin-bottom: $content-border-width;
@@ -85,6 +85,15 @@ nav {
 	}
 }
 
+button.nav-link {
+	@include auto-transition((color, background));
+
+	&:hover {
+		color: $nav-link-button-fg-dark;
+		background: $nav-link-button-bg-hover-dark;
+	}
+}
+
 
 
 // CONTENT
@@ -102,23 +111,27 @@ article {
 			color: $timeline-label-color-dark;
 		}
 	}
+}
+
+table {
+	border: $table-outer-border-dark;
 	
-	table {
-		border: $table-outer-border-dark;
-		
-		thead {
-			border-bottom: $table-thead-border-dark;
-		}
-		
-		tr.border-top {
-			border-top: $table-line-border-dark !important;
-		}
+	thead {
+		border-bottom: $table-thead-border-dark;
+	}
+	
+	tr.border-top {
+		border-top: $table-line-border-dark !important;
 	}
 }
 
 .conference-list {
 	.conference-year {
 		background: $main-bg-dark;
+	}
+
+	.conference-expanded {
+		background: $conference-expanded-bg-dark;
 	}
 }
 
