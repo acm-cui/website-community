@@ -33,7 +33,7 @@ menus:
               <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 50px" alt="{{ conference.name }} logo">
             </div>
             <div class="flex-grow-1 flex-fill ps-md-2 ms-4 small">
-              <h3 class="m-0 mt-lg-2 pt-1 fw-semibold">{{ conference.name }}</h3>
+              <h3 class="m-0 pt-1 fw-semibold">{{ conference.name }}</h3>
               <p class="mb-0 mt-1">{{ conference.location }} </p>
             </div>
             <i class="bi bi-chevron-compact-right conference-chevron"></i>
@@ -213,7 +213,7 @@ menus:
               <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 50px" alt="{{ conference.name }} logo">
             </div>
             <div class="flex-grow-1 flex-fill ps-md-2 ms-4 small">
-              <h3 class="m-0 mt-lg-2 pt-1 fw-semibold">{{ conference.name }}</h3>
+              <h3 class="m-0 pt-1 fw-semibold">{{ conference.name }}</h3>
               <p class="mb-0 mt-1">{{ conference.location }} </p>
             </div>
             <i class="bi bi-box-arrow-up-right conference-chevron"></i>
@@ -225,7 +225,7 @@ menus:
               <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 50px" alt="{{ conference.name }} logo">
             </div>
             <div class="flex-grow-1 flex-fill ps-md-2 ms-4 small">
-              <h3 class="m-0 mt-lg-2 pt-1 fw-semibold">{{ conference.name }}</h3>
+              <h3 class="m-0 pt-1 fw-semibold">{{ conference.name }}</h3>
               <p class="mb-0 mt-1">{{ conference.location }} </p>
             </div>
           </div>
