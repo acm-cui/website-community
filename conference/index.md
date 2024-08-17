@@ -57,7 +57,7 @@ menus:
                   </button>
                   {%- endif -%}
                 </div>
-                <div class="tab-content flex-grow-1 ms-3" id="conference-{{ conference.year }}-tabContent">
+                <div class="tab-content overflow-x-auto flex-grow-1 ms-3" id="conference-{{ conference.year }}-tabContent">
                   <div class="tab-pane fade show active" id="conference-{{ conference.year }}-about" role="tabpanel" aria-labelledby="conference-{{ conference.year }}-about-tab" tabindex="0">
                     <p>
                       {{ conference.listdetails.preamble }}
