@@ -222,7 +222,7 @@ menus:
             </div>
           </div>
         {%- elsif conference.urls.website -%}
-          <a href="{{ conference.urls.website }}" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black" title="Visit the {{ conference.name }} website" target="_blank">
+          <a href="{{ conference.urls.website.link }}" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black" title="Visit the {{ conference.name }} website" target="_blank">
             <div class="flex-shrink-0 align-self-start">
               {%- assign image_url = "/assets/img/conferences/" | append: conference.logo -%}
               <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 50px" alt="{{ conference.name }} logo">
