@@ -67,10 +67,10 @@ menus:
                         {%- if conference.covid19virtual -%}
                         {{ conference.name }} was held as a virtual event due to the COVID-19 pandemic. The conference was held on {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}.
                         {%- else -%}
-                        {{ conference.name }} was held in {{ conference.location }}, on {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}.
+                        {{ conference.name }} was held in {{ conference.location }} on {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}.
                         {%- endif -%}
                       {%- else -%}
-                        {{ conference.name }} will be held in {{ conference.location }}, {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}.
+                        {{ conference.name }} will be held in {{ conference.location }} on {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}.
                       {%- endif -%}
                     </p>
                     {%- if site.data.statistics.years contains conference.year -%}
