@@ -132,7 +132,7 @@ menus:
                     <ul>
                       {%- assign data = site.data.awards.honourable_mentions[conference.year] | sort: "title" -%}
                       {%- for award in data -%}
-                        <li><a href="{{ award.dl }}" title="View '{{ award.title }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
+                        <li><a href="{{ award.dl }}" title="View '{{ award.title | escape }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
                       {%- endfor -%}
                     </ul>
                     {%- if site.data.awards.outstanding_service[conference.year] -%}
