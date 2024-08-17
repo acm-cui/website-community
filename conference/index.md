@@ -108,7 +108,7 @@ menus:
                       <p>
                         The CUI community is grateful to 
                         {% for sponsor in conference.sponsors -%}
-                          {% unless forloop.first %}{% unless forloop.last %}, {% else %}, and {% endunless %}{% endunless %}<a href="{{ sponsor.link }}" title="Visit the {{ sponsor.name }} website" target="_blank">{{ sponsor.name }}</a>
+                          {% unless forloop.first %}{% unless forloop.last %}, {% else %}{% if forloop.length > 2 %},{% endif %} and {% endunless %}{% endunless %}<a href="{{ sponsor.link }}" title="Visit the {{ sponsor.name }} website" target="_blank">{{ sponsor.name }}</a>
                         {%- endfor %} for their generous support towards {{ conference.name }}.
                       </p>
                     {%- endif -%}
