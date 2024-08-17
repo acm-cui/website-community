@@ -134,7 +134,7 @@ menus:
                     <li><a href="{{ award.dl }}" title="View '{{ award.title | escape }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
                   {%- endfor -%}
                 </ul>
-                <h4 class="fw-medium">Honourable Mention awards</h4>
+                <h4 class="pt-4 fw-medium">Honourable Mention awards</h4>
                 <ul>
                   {%- assign data = site.data.awards.honourable_mentions[year] | sort: "title" -%}
                   {%- for award in data -%}
@@ -142,7 +142,7 @@ menus:
                   {%- endfor -%}
                 </ul>
                 {%- if site.data.awards.outstanding_service[year] -%}
-                  <h4 class="fw-medium">Outstanding Service award</h4>
+                  <h4 class="pt-4 fw-medium">Outstanding Service award</h4>
                   {%- assign data = site.data.awards.outstanding_service[year] | sort: "recipient" -%}
                   {%- for award in data -%}
                     <strong>{{ award.recipient }}</strong> ({{ award.role }})<br>{{ award.explanation }}</li>
@@ -165,16 +165,16 @@ menus:
                   <table class="w-100 mb-2 text-center">
                     <thead>
                       <tr class="fw-medium border-bottom">
-                        <td>Virtual</td>
-                        <td>In-person</td>
+                        <td style="width: 33%">Virtual</td>
+                        <td style="width: 33%">In-person</td>
                         <td>Total</td>
                       </tr>
                     </thead>
                     <tbody>
                       <tr class="border-top">
-                        <td>{{ site.data.statistics.registrations[year].virtual }} registrations</td>
-                        <td>{{ site.data.statistics.registrations[year].total | minus: site.data.statistics.registrations[year].virtual }} registrations</td>
-                        <td>{{ site.data.statistics.registrations[year].total }}  registrations</td>
+                        <td style="width: 33%">{{ site.data.statistics.registrations[year].virtual }}</td>
+                        <td style="width: 33%">{{ site.data.statistics.registrations[year].total | minus: site.data.statistics.registrations[year].virtual }}</td>
+                        <td>{{ site.data.statistics.registrations[year].total }}</td>
                       </tr>
                     </tbody>
                   </table>
@@ -185,9 +185,9 @@ menus:
                     <thead>
                       <tr class="fw-medium border-bottom">
                         <td>Track</td>
-                        <td>Submissions</td>
-                        <td>Acceptances</td>
-                        <td>Acceptance Rate</td>
+                        <td><span class="d-md-inline-block d-none">Submissions</span><span class="d-md-none">Subs.</span></td>
+                        <td>Accepted</td>
+                        <td><span class="d-md-inline-block d-none">Acceptance rate</span><span class="d-md-none">%</span></td>
                       </tr>
                     </thead>
                     <tbody>
