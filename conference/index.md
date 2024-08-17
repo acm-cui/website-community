@@ -16,7 +16,7 @@ menus:
 
 <section>
   <article class="flex-grow-1 p-md-4 p-3">
-    <h2 class="fw-bold mb-2 m-0 p-0">{{ page.title | escape }}</h2>
+    <h2 class="fw-semibold mb-2 m-0 p-0">{{ page.title | escape }}</h2>
     <p>
       The annual ACM Conversational User Interfaces conference is held in locations across the world, bringing together researchers and practitioners to explore and discuss the state-of-the-art in conversational technologies. Each conference is run by a dedicated group of volunteers, with oversight and support provided by the <a href="{{ "/sc/" | relative_url }}">CUI Steering Committee</a>.
     </p>
@@ -36,7 +36,7 @@ menus:
               <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 75px" alt="{{ conference.name }} logo">
             </div>
             <div class="flex-grow-1 flex-fill ps-md-2 ms-4 small">
-              <h3 class="m-0 mt-lg-2 pt-1">{{ conference.name }}</h3>
+              <h3 class="m-0 mt-lg-2 pt-1 fw-semibold">{{ conference.name }}</h3>
               <p class="mb-0 mt-1 d-lg-block d-none">{{ conference.location }} &bull; {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</p>
               <p class="mb-0 mt-1 d-lg-none d-block">{{ conference.location }}<br>{% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</p>
             </div>
@@ -124,7 +124,27 @@ menus:
                   </div>
                   {%- if has_hm_awards > 0 or has_bp_awards > 0 -%}
                   <div class="tab-pane fade" id="conference-{{ conference.year }}-awards" role="tabpanel" aria-labelledby="conference-{{ conference.year }}-awards-tab" tabindex="0">
-                    Awards
+                    <h4 class="fw-medium">Best Paper awards</h4>
+                    <ul>
+                      {%- assign data = site.data.awards.best_papers[conference.year] | sort: "title" -%}
+                      {%- for award in data -%}
+                        <li><a href="{{ award.dl }}" title="View '{{ award.title | escape }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
+                      {%- endfor -%}
+                    </ul>
+                    <h4 class="fw-medium">Honourable Mention awards</h4>
+                    <ul>
+                      {%- assign data = site.data.awards.honourable_mentions[conference.year] | sort: "title" -%}
+                      {%- for award in data -%}
+                        <li><a href="{{ award.dl }}" title="View '{{ award.title }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
+                      {%- endfor -%}
+                    </ul>
+                    {%- if site.data.awards.outstanding_service[conference.year] -%}
+                      <h4 class="fw-medium">Outstanding Service award</h4>
+                      {%- assign data = site.data.awards.outstanding_service[conference.year] | sort: "recipient" -%}
+                      {%- for award in data -%}
+                        <strong>{{ award.recipient }}</strong> ({{ award.role }})<br>{{ award.explanation }}</li>
+                      {%- endfor -%}
+                    {%- endif -%}
                   </div>
                   {%- endif -%}
                   {%- if site.data.statistics.years contains conference.year -%}
@@ -143,7 +163,7 @@ menus:
               <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 75px" alt="{{ conference.name }} logo">
             </div>
             <div class="flex-grow-1 flex-fill ps-md-2 ms-4 small">
-              <h3 class="m-0 mt-lg-2 pt-1">{{ conference.name }}</h3>
+              <h3 class="m-0 mt-lg-2 pt-1 fw-semibold">{{ conference.name }}</h3>
               <p class="mb-0 mt-1 d-lg-block d-none">{{ conference.location }} &bull; {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</p>
               <p class="mb-0 mt-1 d-lg-none d-block">{{ conference.location }}<br>{% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</p>
             </div>
@@ -156,7 +176,7 @@ menus:
               <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 75px" alt="{{ conference.name }} logo">
             </div>
             <div class="flex-grow-1 flex-fill ps-md-2 ms-4 small">
-              <h3 class="m-0 mt-lg-2 pt-1">{{ conference.name }}</h3>
+              <h3 class="m-0 mt-lg-2 pt-1 fw-semibold">{{ conference.name }}</h3>
               <p class="mb-0 mt-1 d-lg-block d-none">{{ conference.location }} &bull; {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</p>
               <p class="mb-0 mt-1 d-lg-none d-block">{{ conference.location }}<br>{% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</p>
             </div>
