@@ -175,6 +175,7 @@ article {
 		margin-top: 3px;
 
 		.conference-chevron {
+			color: $conference-chevron-color;
 			opacity: $conference-chevron-o;
 			font-size: $conference-chevron-font-size;
 			@include auto-transition((opacity, transform));
