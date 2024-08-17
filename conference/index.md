@@ -20,9 +20,6 @@ menus:
     <p>
       The annual ACM Conversational User Interfaces conference is held in locations across the world, bringing together researchers and practitioners to explore and discuss the state-of-the-art in conversational technologies. Each conference is run by a dedicated group of volunteers, with oversight and support provided by the <a href="{{ "/sc/" | relative_url }}">CUI Steering Committee</a>.
     </p>
-    <p>
-    The CUI comuninity also maintains records regarding the <a href="{{ "/conference/statistics/" | relative_url }}" title="CUI Conference Statistics">annual conference programme and registrations for each year</a>.
-    </p>
   </article>
   <div class="flex-grow-1 d-inline-flex flex-column text-start justify-content-center align-items-center mx-auto conference-list w-100">
       {% for conference in site.data.conferences %}
@@ -60,7 +57,7 @@ menus:
                   </button>
                   {%- endif -%}
                 </div>
-                <div class="tab-content ms-3" id="conference-{{ conference.year }}-tabContent">
+                <div class="tab-content flex-grow-1 ms-3" id="conference-{{ conference.year }}-tabContent">
                   <div class="tab-pane fade show active" id="conference-{{ conference.year }}-about" role="tabpanel" aria-labelledby="conference-{{ conference.year }}-about-tab" tabindex="0">
                     <p>
                       {{ conference.listdetails.preamble }}
@@ -148,8 +145,62 @@ menus:
                   </div>
                   {%- endif -%}
                   {%- if site.data.statistics.years contains conference.year -%}
-                    <div class="tab-pane fade" id="conference-{{ conference.year }}-statistics" role="tabpanel" aria-labelledby="conference-{{ conference.year }}-statistics-tab" tabindex="0">
-                      Statistics
+                    <div class="tab-pane fade w-100" id="conference-{{ conference.year }}-statistics" role="tabpanel" aria-labelledby="conference-{{ conference.year }}-statistics-tab" tabindex="0">
+                      <h4 class="fw-medium">Registration statistics</h4>
+                      <p>
+                        We record <em>registrations</em> and not attendance as attendance can be difficult to accurately count. Registrations do typically include "comped" registrations—such as those given to student volunteers and keynotes—as well as registrations in return for sponsorship of the conference.
+                        {% if site.data.statistics.registrations[conference.year].footnote_id -%}
+                          {%- assign footnote_id = site.data.statistics.registrations[conference.year].footnote_id | minus: 1 -%}
+                          {%- assign footnote_length = site.data.statistics.registrations_footnotes[footnote_id] | size -%}
+                          {%- assign footnote_offset = footnote_length | minus: 1 -%}
+                          For {{ conference.name }}, {{ site.data.statistics.registrations_footnotes[footnote_id] | slice: 0, 1 | downcase }}{{ site.data.statistics.registrations_footnotes[footnote_id] | slice: 1, footnote_offset }}
+                        {%- endif -%}
+                      </p>
+                      <table class="w-100 mb-2 text-center">
+                        <thead>
+                          <tr class="fw-medium border-bottom">
+                            <td>Virtual</td>
+                            <td>In-person</td>
+                            <td>Total</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="border-top">
+                            <td>{{ site.data.statistics.registrations[conference.year].virtual }} registrations</td>
+                            <td>{{ site.data.statistics.registrations[conference.year].total | minus: site.data.statistics.registrations[conference.year].virtual }} registrations</td>
+                            <td>{{ site.data.statistics.registrations[conference.year].total }}  registrations</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <h4 class="pt-4 fw-medium">Programme statistics</h4>
+                      <p>Numbers exclude submissions which were incomplete at the submission deadline but do include those which were desk rejected without entering the peer review process.</p>
+                      <table class="w-100 mb-2 text-center">
+                        <thead>
+                          <tr class="fw-medium border-bottom">
+                            <td>Track</td>
+                            <td>Submissions</td>
+                            <td>Acceptances</td>
+                            <td>Acceptance Rate</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {%- for track in site.data.statistics.tracks -%}
+                            {%- if track["data"][conference.year]["submissions"] > 0 -%}
+                              <tr class="border-top">
+                                <td>{{ track["title"] }}</td>
+                                <td>{{ track["data"][conference.year]["submissions"] }}</td>
+                                <td>{{ track["data"][conference.year]["acceptances"] }}</td>
+                                {%- assign submissions_float = track["data"][conference.year]["submissions"] | times: 1.0 -%}
+                                <td>{{ track["data"][conference.year]["acceptances"] | divided_by: submissions_float | times: 100 | round: 1 }}%</td>
+                              </tr>
+                            {%- endif -%}
+                          {%- endfor -%}
+                        </tbody>
+                      </table>
+                      <p class="pt-4">
+                        You can also compare and download registration and programme statistics <a href="{{ "/conference/statistics/" | relative_url }}" title="CUI Conference Statistics">across different years</a>.
+                      </p>
                     </div>
                   {%- endif -%}
                 </div>
