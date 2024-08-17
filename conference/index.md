@@ -145,7 +145,7 @@ menus:
                   <h4 class="pt-4 fw-medium">Outstanding Service award</h4>
                   {%- assign data = site.data.awards.outstanding_service[year] | sort: "recipient" -%}
                   {%- for award in data -%}
-                    <strong>{{ award.recipient }}</strong> ({{ award.role }})<br>{{ award.explanation }}</li>
+                    <strong>{{ award.recipient }}</strong> ({{ award.role }})<br>{{ award.explanation }}
                   {%- endfor -%}
                 {%- endif -%}
               </div>
