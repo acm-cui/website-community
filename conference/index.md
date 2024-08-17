@@ -30,12 +30,11 @@ menus:
           <a href="#conference-{{ conference.year }}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="conference-{{ conference-year}}" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black">
             <div class="flex-shrink-0 align-self-start">
               {%- assign image_url = "/assets/img/conferences/" | append: conference.logo -%}
-              <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 75px" alt="{{ conference.name }} logo">
+              <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 50px" alt="{{ conference.name }} logo">
             </div>
             <div class="flex-grow-1 flex-fill ps-md-2 ms-4 small">
               <h3 class="m-0 mt-lg-2 pt-1 fw-semibold">{{ conference.name }}</h3>
-              <p class="mb-0 mt-1 d-lg-block d-none">{{ conference.location }} &bull; {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</p>
-              <p class="mb-0 mt-1 d-lg-none d-block">{{ conference.location }}<br>{% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</p>
+              <p class="mb-0 mt-1">{{ conference.location }} </p>
             </div>
             <i class="bi bi-chevron-compact-right conference-chevron"></i>
           </a>
@@ -211,12 +210,11 @@ menus:
           <a href="{{ conference.urls.website }}" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black" title="Visit the {{ conference.name }} website" target="_blank">
             <div class="flex-shrink-0 align-self-start">
               {%- assign image_url = "/assets/img/conferences/" | append: conference.logo -%}
-              <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 75px" alt="{{ conference.name }} logo">
+              <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 50px" alt="{{ conference.name }} logo">
             </div>
             <div class="flex-grow-1 flex-fill ps-md-2 ms-4 small">
               <h3 class="m-0 mt-lg-2 pt-1 fw-semibold">{{ conference.name }}</h3>
-              <p class="mb-0 mt-1 d-lg-block d-none">{{ conference.location }} &bull; {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</p>
-              <p class="mb-0 mt-1 d-lg-none d-block">{{ conference.location }}<br>{% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</p>
+              <p class="mb-0 mt-1">{{ conference.location }} </p>
             </div>
             <i class="bi bi-box-arrow-up-right conference-chevron"></i>
           </a>
@@ -224,12 +222,11 @@ menus:
           <div class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black">
             <div class="flex-shrink-0 align-self-start">
               {%- assign image_url = "/assets/img/conferences/" | append: conference.logo -%}
-              <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 75px" alt="{{ conference.name }} logo">
+              <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 50px" alt="{{ conference.name }} logo">
             </div>
             <div class="flex-grow-1 flex-fill ps-md-2 ms-4 small">
               <h3 class="m-0 mt-lg-2 pt-1 fw-semibold">{{ conference.name }}</h3>
-              <p class="mb-0 mt-1 d-lg-block d-none">{{ conference.location }} &bull; {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</p>
-              <p class="mb-0 mt-1 d-lg-none d-block">{{ conference.location }}<br>{% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</p>
+              <p class="mb-0 mt-1">{{ conference.location }} </p>
             </div>
           </div>
           {%- endif -%}
