@@ -85,12 +85,14 @@ nav.navbar {
 	}
 }
 
-button.nav-link {
-	@include auto-transition((color, background));
+.nav-pills {
+	.nav-link {
+		@include auto-transition((color, background));
 
-	&:hover {
-		color: $nav-link-button-fg-dark;
-		background: $nav-link-button-bg-hover-dark;
+		&:hover {
+			color: $nav-link-button-fg-dark;
+			background: $nav-link-button-bg-hover-dark;
+		}
 	}
 }
 

@@ -16,8 +16,15 @@
     end: 2024-07-10
   logo: cui2024.png
   urls:
-    website: https://cui.acm.org/2024/
-    proceedings: https://dl.acm.org/doi/proceedings/10.1145/3640794
+    website:
+      name: Website
+      link: https://cui.acm.org/2024/
+    proceedings:
+      name: Proceedings
+      link: https://dl.acm.org/doi/proceedings/10.1145/3640794
+    programme: 
+      name: Programme
+      link: https://programs.sigchi.org/cui/2024
   sponsors:
     - name: SIGIR
       link: https://www.sigir.org/
@@ -43,8 +50,15 @@
     end: 2023-07-21
   logo: cui2023.png
   urls:
-    website: https://cui.acm.org/2023/
-    proceedings: https://dl.acm.org/doi/proceedings/10.1145/3571884
+    website:
+      name: Website
+      link: https://cui.acm.org/2023/
+    proceedings:
+      name: Proceedings
+      link: https://dl.acm.org/doi/proceedings/10.1145/3571884
+    programme: 
+      name: Programme
+      link: https://programs.sigchi.org/cui/2023
   sponsors:
     - name: Bold Insight
       link: https://www.boldinsight.com/
@@ -72,8 +86,15 @@
     end: 2022-07-28
   logo: cui2022.png
   urls:
-    website: https://cui.acm.org/2022/
-    proceedings: https://dl.acm.org/doi/proceedings/10.1145/3543829
+    website:
+      name: Website
+      link: https://cui.acm.org/2022/
+    proceedings:
+      name: Proceedings
+      link: https://dl.acm.org/doi/proceedings/10.1145/3543829
+    programme: 
+      name: Programme
+      link: https://cui.acm.org/2022/programme/
   sponsors:
     - name: SICSA
       link: https://www.sicsa.ac.uk
@@ -92,8 +113,15 @@
     end: 2021-07-29
   logo: cui2021.png
   urls:
-    website: https://cui.acm.org/2021/
-    proceedings: https://dl.acm.org/doi/proceedings/10.1145/3469595
+    website:
+      name: Website
+      link: https://cui.acm.org/2021/
+    proceedings:
+      name: Proceedings
+      link: https://dl.acm.org/doi/proceedings/10.1145/3469595
+    programme: 
+      name: Programme
+      link: https://cui.acm.org/2021/programme/
   sponsors:
     - name: University College Dublin
       link: http://www.hci.ucd.ie/
@@ -118,8 +146,15 @@
     end: 2020-07-24
   logo: cui2020.png
   urls:
-    website: https://cui.acm.org/2020/
-    proceedings: https://dl.acm.org/doi/proceedings/10.1145/3405755
+    website:
+      name: Website
+      link: https://cui.acm.org/2020/
+    proceedings:
+      name: Proceedings
+      link: https://dl.acm.org/doi/proceedings/10.1145/3405755
+    programme: 
+      name: Programme
+      link: https://cui.acm.org/2020/programme/
   sponsors:
     - name: University of the Basque Country
       link: https://www.ehu.eus/en/en-home
@@ -143,8 +178,15 @@
     end: 2019-08-23
   logo: cui2019.png
   urls:
-    website: https://cui.acm.org/2019/
-    proceedings: https://dl.acm.org/doi/proceedings/10.1145/3342775
+    website:
+      name: Website
+      link: https://cui.acm.org/2019/
+    proceedings:
+      name: Proceedings
+      link: https://dl.acm.org/doi/proceedings/10.1145/3342775
+    programme: 
+      name: Programme
+      link: https://cui.acm.org/2019/programme.html
   sponsors:
     - name: TAGLab
       link: http://www.taglab.utoronto.ca/
