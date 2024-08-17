@@ -6,7 +6,9 @@
     end: 2025-07-10
   logo: cui2025.png
   urls:
-    website: https://cui.acm.org/2025/
+    website:
+      name: Website
+      link: https://cui.acm.org/2025/
 
 2024:
   name: ACM CUI 2024
