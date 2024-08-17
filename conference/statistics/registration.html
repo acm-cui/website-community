@@ -3,7 +3,6 @@ permalink: /conference/statistics/registration.csv
 layout: none
 ---
 Conference,Total registrations,Virtual registrations,In-person registrations
-{% for year in site.data.statistics.years offset:start_years_at limit:max_years_per_table  -%}
-{% if site.data.statistics.attendance[year]["total"] -%}
-CUI {{ year }},{{ site.data.statistics.attendance[year]["total"] }},{{ site.data.statistics.attendance[year]["virtual"] }},{{ site.data.statistics.attendance[year]["total"] | minus: site.data.statistics.attendance[year]["virtual"] }}
-{% endif %}{% endfor %}
+{%- for year in site.data.statistics.years offset:start_years_at limit:max_years_per_table -%}{%- if site.data.statistics.registrations[year]["total"] %}
+{{ site.data.conferences[year].name }},{{ site.data.statistics.registrations[year]['total'] }},{{ site.data.statistics.registrations[year]['virtual'] }},{{ site.data.statistics.registrations[year]['total'] | minus: site.data.statistics.registrations[year]['virtual'] }}
+{%- endif -%}{% endfor -%}

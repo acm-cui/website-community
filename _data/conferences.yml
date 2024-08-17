@@ -1,4 +1,5 @@
-- name: ACM CUI 2025
+2025:
+  name: ACM CUI 2025
   year: 2025
   location: Waterloo, ON, Canada
   dates:
@@ -8,7 +9,8 @@
   urls:
     website: https://cui.acm.org/2025/
 
-- name: ACM CUI 2024
+2024:
+  name: ACM CUI 2024
   year: 2024
   location: Luxembourg City, Luxembourg
   dates:
@@ -18,8 +20,6 @@
   urls:
     website: https://cui.acm.org/2024/
     proceedings: https://dl.acm.org/doi/proceedings/10.1145/3640794
-    programme: https://programs.sigchi.org/cui/2023
-    workshops: https://cui.acm.org/2024/programme/workshops/
   sponsors:
     - name: SIGIR
       link: https://www.sigir.org/
@@ -37,7 +37,8 @@
     programme:
       issigchi: true
 
-- name: ACM CUI 2023
+2023:
+  name: ACM CUI 2023
   year: 2023
   location: Eindhoven, Netherlands
   dates:
@@ -47,8 +48,6 @@
   urls:
     website: https://cui.acm.org/2023/
     proceedings: https://dl.acm.org/doi/proceedings/10.1145/3571884
-    programme: https://programs.sigchi.org/cui/2023
-    workshops: https://cui.acm.org/2023/programme/workshops/
   sponsors:
     - name: Bold Insight
       link: https://www.boldinsight.com/
@@ -66,7 +65,8 @@
     programme:
       issigchi: true
 
-- name: CUI 2022
+2022:
+  name: CUI 2022
   year: 2022
   location: Glasgow, UK
   dates:
@@ -76,8 +76,6 @@
   urls:
     website: https://cui.acm.org/2022/
     proceedings: https://dl.acm.org/doi/proceedings/10.1145/3543829
-    programme: https://cui.acm.org/2022/programme/
-    sigs: https://cui.acm.org/2022/programme/
   sponsors:
     - name: SICSA
       link: https://www.sicsa.ac.uk
@@ -87,7 +85,8 @@
     proceedings:
       isacmdl: true
 
-- name: CUI 2021
+2021:
+  name: CUI 2021
   year: 2021
   covid19virtual: true
   location: Virtual Event
@@ -98,7 +97,6 @@
   urls:
     website: https://cui.acm.org/2021/
     proceedings: https://dl.acm.org/doi/proceedings/10.1145/3469595
-    programme: https://cui.acm.org/2021/programme/
   sponsors:
     - name: University College Dublin
       link: http://www.hci.ucd.ie/
@@ -113,8 +111,9 @@
   listdetails:
     proceedings:
       isacmdl: true
-  
-- name: CUI 2020
+
+2020:
+  name: CUI 2020
   year: 2020
   covid19virtual: true
   location: Virtual Event
@@ -125,7 +124,6 @@
   urls:
     website: https://cui.acm.org/2020/
     proceedings: https://dl.acm.org/doi/proceedings/10.1145/3405755
-    programme: https://cui.acm.org/2020/programme/
   sponsors:
     - name: University of the Basque Country
       link: https://www.ehu.eus/en/en-home
@@ -141,7 +139,8 @@
     proceedings:
       isacmdl: true
 
-- name: CUI 2019
+2019:
+  name: CUI 2019
   year: 2019
   location: Dublin, Ireland
   dates: 
@@ -151,7 +150,6 @@
   urls:
     website: https://cui.acm.org/2019/
     proceedings: https://dl.acm.org/doi/proceedings/10.1145/3342775
-    programme: https://cui.acm.org/2019/programme.html
   sponsors:
     - name: TAGLab
       link: http://www.taglab.utoronto.ca/
