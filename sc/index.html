@@ -13,6 +13,7 @@ redirect_from:
   - /sc/members/
   - /sc/committee/
   - /sc/constitution/
+  - /sc/elections/
   - /steering-committee/
 
 menus:
@@ -90,8 +91,8 @@ menus:
       {%- endif -%}
       
       {%- if site.data.sc.elections -%}
-        <p>The following elections are ongoing.</p>
-        {%- for role in site.data.elections -%}
+        <p>The following elections are ongoing. All members of the <a href="https://listserv.acm.org/SCRIPTS/WA-ACMLPX.CGI?A0=CUI-ANNOUNCEMENTS&X=DA00202F15E5DE0C2A">CUI Announcements</a> mailing list have been emailed instructions on how to vote.</p>
+        {%- for role in site.data.sc.elections -%}
           <h4>{{ role.title }}</h4>
           <p>The following people are standing for the role of <em>{{ role.title }}</em>, to serve in the <em>{{ role.term }}</em> term.</p>
           {%- for person in role.nominations %}
