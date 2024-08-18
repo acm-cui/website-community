@@ -4,7 +4,7 @@ The ACM CUI community website is build using Jekyll, on GitHub Pages.
 
 ## Steering Commmitee data
 
-Information about officers and members of the Steering Commmittee is stored in `_data/steering_committee.yml` in two lists, one for _Officers_ and one for _Members_. Each list item consists of an associative array with the following structure:
+Information about officers and members of the Steering Commmittee is stored in `_data/sc.yml` in two lists, one for _Officers_ and one for _Members_. Each list item consists of an associative array with the following structure:
 
 | **Key** | **Required?** | **Type** | **Explanation**                                                                                                                                         | **Example**                              |
 |---------|---------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
@@ -12,7 +12,6 @@ Information about officers and members of the Steering Commmittee is stored in `
 | photo   | Yes           | string   | Filename of a square profile photo the Officer/Member, stored in `assets/img/sc/`                                                                       | `minha-lee.png`                          |
 | url     | No            | string   | URL/personal website for the Officer/Member                                                                                                             | `https://minha-lee.github.io`            |
 | roles   | No            | list     | List of associate arrays, for each role the Officer/Member holds on the committee. Each array consists of two keys: `role` (string) and `term` (string) | `role: Co-Chair`<br>`term: 2024–2027`    |
-| bio     | Yes           | string   | Biography for the Officer/Member                                                                                                                        | `Minha Lee is an Assistant Professor...` |
 
 ## Conference data
 

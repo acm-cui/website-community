@@ -163,12 +163,16 @@ table {
 	}
 }
 
+article + article {
+	margin-top: $content-border-size;
+}
+
 .conference-list {
 	.conference-year {
 		background: $main-bg;
 		-webkit-backdrop-filter: $glass-backdrop-filter;
 		backdrop-filter: $glass-backdrop-filter;
-		margin-top: 3px;
+		margin-top: $content-border-size;
 
 		.conference-chevron {
 			color: $conference-chevron-color;
@@ -195,6 +199,15 @@ table {
 	}
 }
 
+.sc-list {
+	.sc-person {
+		width: 100%;
+
+		& > div {
+			background: $sc-person-bg;
+		}
+	}
+}
 
 
 // FOOTER
@@ -202,7 +215,7 @@ footer {
 	background: $footer-bg;
 	-webkit-backdrop-filter: $glass-backdrop-filter;
 	backdrop-filter: $glass-backdrop-filter;
-	margin-top: 3px;
+	margin-top: $content-border-size;
 }
 
 
@@ -211,5 +224,12 @@ footer {
 	aside {
         margin-right: $content-border-width;
         margin-top: 0;
+	}
+}
+@include media-breakpoint-up(xl) {
+	.sc-list {
+		.sc-person {
+			width: 50%;
+		}
 	}
 }

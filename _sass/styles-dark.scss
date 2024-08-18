@@ -137,6 +137,14 @@ table {
 	}
 }
 
+.sc-list {
+	.sc-person {
+		& > div {
+			background: $sc-person-bg-dark;
+		}
+	}
+}
+
 
 
 // FOOTER
