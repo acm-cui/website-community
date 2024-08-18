@@ -189,7 +189,7 @@ menus:
                     </table>
 
                     <h4 class="pt-4 fw-medium">Programme statistics</h4>
-                    <p>Numbers exclude submissions which were incomplete at the submission deadline but do include those which were desk rejected without entering the peer review process.</p>
+                    <p>Submission numbers exclude those which were incomplete at the time of the submission deadline. Submissions which were desk or early rejected, e.g., due to incorrect formatting or inclusion of author details during anonymous peer review, are included in the overall numbers.</p>
                     <table class="w-100 mb-2 text-center">
                       <thead>
                         <tr class="fw-medium border-bottom">
