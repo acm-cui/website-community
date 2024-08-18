@@ -79,5 +79,21 @@ menus:
       {%- endfor -%}
     </ul>
   </article>
+  <article>
+    <h3 class="fw-semibold mb-2 m-0 p-0">Steering Committee Elections</h3>
+
+    <p>Periodically, there are elections to the ACM CUI Steering Committee.</p>
+
+    {%- for role in site.data.elections -%}
+      <h4>{{ role.title }}</h4>
+      <p>The following people are standing for the role of <em>{{ role.title }}</em>, to serve in the <em>{{ role.term }}</em> term.</p>
+      {%- for person in role.nominations %}
+        <h5>{{ person.name }}</h5>
+        <p>{{ person.bio }}</p>
+      {%- endfor -%}
+    {%- else -%}
+	    <p><em>There are no elections at the moment.</em></p>
+    {%- endfor -%}
+  </article>
 </section>
 {%- include sidebar.html -%}
