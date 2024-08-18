@@ -1,0 +1,66 @@
+---
+title: Workshops
+description: Current and past workshops organised by members of the Conversational User Interfaces community.
+
+layout: default
+
+lastmod:
+  type: data
+  file: workshops.yml
+
+redirect_from:
+  - /ws/
+
+menus:
+  main:
+    title: Workshops
+    weight: 3
+---
+<section>
+  <article class="flex-grow-1 p-md-4 p-3">
+    <h2 class="fw-semibold mb-2 m-0 p-0">{{ page.title | escape }}</h2>
+    <p>
+      The ACM Conversational User Interfaces community organises satellite workshops co-located at other conferences as a way of building friendships and strengthening collaboration between communities.
+    </p>
+  </article>
+  {%- assign last_year = 'none' -%}
+  {%- for workshop in site.data.workshops -%}
+    {%- if workshop.dates -%}
+      {%- assign year = workshop.dates.start | date: "%Y" -%}
+    {%- elsif workshop.date -%}
+      {%- assign year = workshop.date | date: "%Y" -%}
+    {%- endif -%}
+      
+    {%- unless last_year == year -%}
+      {%- assign last_year = year -%}
+      {%- unless forloop.first -%}
+          </ol>
+        </article>
+      {%- endunless -%}
+      <article class="flex-grow-1 d-flex flex-column p-md-4 p-3">
+        <h3 class="workshop-year ms-auto">{{- year -}}</h3>
+        <ol class="list-unstyled">
+    {% endunless -%}
+    
+    <li class="mb-md-4 mb-3">
+      <h3 class="fw-medium ws-title">
+        {%- if workshop.url -%}
+            <a href="{{ workshop.url }}" title="Visit the website for the workshop '{{ workshop.title }}'" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ workshop.title }}</span> <i class="bi bi-box-arrow-up-right"></i></a>
+        {%- else -%}
+          {{ workshop.title }}
+        {%- endif -%}
+      </h3>
+
+      {%- capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture -%}
+      {%- capture workshopunix %}{{ workshop.date | date: '%s' }}{% endcapture -%}
+      {%- if workshop.dates -%}
+        <p>{%- if nowunix > workshopunix -%}A workshop previously held at{% else %}A workshop due to be held at{% endif %} {{ workshop.conference }} on {% include daterange.html startdate=workshop.dates.start enddate=workshop.dates.end date_tentative=workshop.date_tentative -%}</p>
+      {%- elsif workshop.date -%}
+        <p>{%- if nowunix > workshopunix -%}A workshop previously held at{% else %}A workshop due to be held at{% endif %} {{ workshop.conference }} on {% include date.html date=workshop.date date_tentative=workshop.date_tentative -%}</p>
+      {%- else -%}
+        <p>{%- if nowunix > workshopunix -%}A workshop previously held at{% else %}A workshop due to be held at{% endif %} {{ workshop.conference }}</p>
+      {%- endif -%}
+    </li>
+  {%- endfor -%}
+</section>
+{%- include sidebar.html -%}
