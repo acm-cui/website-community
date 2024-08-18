@@ -140,7 +140,7 @@ menus:
                   <ul>
                     {%- assign data = conference.awards.best_papers | sort: "title" -%}
                     {%- for award in data -%}
-                      <li><a href="{{ award.dl }}" title="View '{{ award.title | escape }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
+                      <li><a href="{{ award.dl }}" title="View '{{ award.title | escape }}' in the ACM Digital Library" target="_blank">{{ award.title }}</a><br>{{ award.authors }}</li>
                     {%- endfor -%}
                   </ul>
                   <h4 class="pt-4 fw-medium">Honourable Mention awards</h4>
