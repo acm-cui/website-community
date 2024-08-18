@@ -194,9 +194,9 @@ menus:
                       <thead>
                         <tr class="fw-medium border-bottom">
                           <td>Track</td>
-                          <td><span class="d-md-inline-block d-none">Submissions</span><span class="d-md-none">Subs.</span></td>
+                          <td>Submitted</td>
                           <td>Accepted</td>
-                          <td><span class="d-xl-inline-block d-none">Acceptance rate</span><span class="d-xl-none">%</span></td>
+                          <td>%</td>
                         </tr>
                       </thead>
                       <tbody>
