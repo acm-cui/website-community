@@ -96,4 +96,23 @@ elections:
   #     - name: Heloisa Candello
   #       bio: Dr. Heloisa Candello is a research scientist and a manager of the Human-centered & Responsible Tech group, at the IBM Research laboratory in Brazil. She holds a Ph.D. in Computer Science in Interactive Technologies from the University of Brighton, UK. Her main research interest is applying design methods to understand how people interact with Artificial Intelligence-based systems, particularly conversational systems. Heloisa leads and conducts research activities in Human-Computer Interaction (HCI) to understand the social impact, context, and motivations of using conversational technologies. Her research has resulted in numerous conference publications (ACM CHI, CUI, CSCW, DRS, DUXU, IUI) and recognition in the HCI field. Heloisa was also part of several organizing, scientific, and executive committee in ACM SIGCHI conferences. From 2019-2021, she served the ACM SIGCHI Volunteer Development Committee, as a Research Scientist. Currently, she also serves the SIGCHI LATAM executive committee, and CUI Steering Committee.   <br><br><em>Serving the CUI Community</em><br>She co-organized CUI focused workshops since 2017 at CSCW, CHI and IUI . Presented at past CUI conferences (full-paper, provocation paper, demo, showcase paper). And co-chaired Full papers (CUI’20), Demos (CUI’21), Short papers (CUI’22) and Doctor Consortium (CUI’23). She is a member of the CUI conference steering committee since 2019. 
  
- 
+nominations:
+  # - title: Co-Chair
+  #   term: 2023–2026
+  #   explanation:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc bibendum dui fringilla scelerisque viverra. Nulla vehicula bibendum arcu eget varius. Mauris odio neque, aliquam a pretium eget, tincidunt et urna. Curabitur sed sapien ut arcu imperdiet faucibus in facilisis mi. Nam efficitur placerat semper. Vivamus convallis blandit turpis, ultricies rutrum magna posuere et. Nunc vitae nibh posuere, sollicitudin enim scelerisque, blandit massa. In at egestas nisi.
+  # - title: Treasurer
+  #   term: 2023–2026
+  #   explanation:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc bibendum dui fringilla scelerisque viverra. Nulla vehicula bibendum arcu eget varius. Mauris odio neque, aliquam a pretium eget, tincidunt et urna. Curabitur sed sapien ut arcu imperdiet faucibus in facilisis mi. Nam efficitur placerat semper. Vivamus convallis blandit turpis, ultricies rutrum magna posuere et. Nunc vitae nibh posuere, sollicitudin enim scelerisque, blandit massa. In at egestas nisi.
+  # - title: Outreach/Publicity Chair
+  #   term: 2023–2026
+  #   explanation:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc bibendum dui fringilla scelerisque viverra. Nulla vehicula bibendum arcu eget varius. Mauris odio neque, aliquam a pretium eget, tincidunt et urna. Curabitur sed sapien ut arcu imperdiet faucibus in facilisis mi. Nam efficitur placerat semper. Vivamus convallis blandit turpis, ultricies rutrum magna posuere et. Nunc vitae nibh posuere, sollicitudin enim scelerisque, blandit massa. In at egestas nisi.
+  # - title: Industry/NGO Liaison
+  #   term: 2023–2026
+  #   explanation:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc bibendum dui fringilla scelerisque viverra. Nulla vehicula bibendum arcu eget varius. Mauris odio neque, aliquam a pretium eget, tincidunt et urna. Curabitur sed sapien ut arcu imperdiet faucibus in facilisis mi. Nam efficitur placerat semper. Vivamus convallis blandit turpis, ultricies rutrum magna posuere et. Nunc vitae nibh posuere, sollicitudin enim scelerisque, blandit massa. In at egestas nisi.
+
+nominations_settings:
+  link: https://forms.gle/jYhVcXGdLVk9PkFv6"
+  deadline: 2023-05-27
+  contact:
+    name: Benjamin Cowan
+    email: benjamin.cowan@ucd.ie

@@ -4,7 +4,7 @@ The ACM CUI community website is build using Jekyll, on GitHub Pages.
 
 ## Steering Commmitee data
 
-Information about officers and members of the Steering Commmittee is stored in `_data/sc.yml` in threelists, one for _officers_ of the Steering Committee (`officers`), one for _members_ of the Steering Committee (`members`), and one for elections to the Steering Committee (`elections`).
+Information about officers and members of the Steering Commmittee is stored in `_data/sc.yml` in four lists, one for _officers_ of the Steering Committee (`officers`), one for _members_ of the Steering Committee (`members`), one for elections to the Steering Committee (`elections`), and one for nominations for elections to the Steering Committee (`nominations`). There is additionally one associative array, `nominations_settings`, which contains information used in the Call for Nominations.
 
 Each item in the `officers` and `members` lists consists of an associative array with the following structure:
 
@@ -17,11 +17,27 @@ Each item in the `officers` and `members` lists consists of an associative array
 
 Each item in the `elections` list consists of an associative array with the following structure:
 
-| **Key**       	| **Required?** 	| **Type**     	| **Explanation**                                                                                                                                          	| **Example**                                     	|
-|---------------	|---------------	|--------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------	|-------------------------------------------------	|
-| `title`       	| Yes           	| string       	| Name of the office                                                                                                                                       	| `CoChair`                                       	|
-| `term`        	| Yes           	| string       	| Years the elected individual will serve                                                                                                                  	| `2023–2026`                                     	|
-| `nominations` 	| Yes           	| assoc. array 	| A list of all those nominated, where each list item is an associative array.<br><br>Each item consists of two keys: name (`name`) and biography (`bio`). 	| `name: Minha Lee`<br><br>`bio: Minha Lee is...` 	|
+| **Key**       | **Required?** | **Type**     | **Explanation**                                                                                                                                          | **Example**                                     |
+|---------------|---------------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
+| `title`       | Yes           | string       | Name of the office                                                                                                                                       | `CoChair`                                       |
+| `term`        | Yes           | string       | Years the elected individual will serve                                                                                                                  | `2023–2026`                                     |
+| `nominations` | Yes           | assoc. array | A list of all those nominated, where each list item is an associative array.<br><br>Each item consists of two keys: name (`name`) and biography (`bio`). | `name: Minha Lee`<br><br>`bio: Minha Lee is...` |
+
+Each item in the `nominations` list consists of an associative array with the following structure:
+
+| **Key**       | **Required?** | **Type** | **Explanation**                         | **Example**        |
+|---------------|---------------|----------|-----------------------------------------|--------------------|
+| `title`       | Yes           | string   | Name of the office                      | `Co-Chair`         |
+| `term`        | Yes           | string   | Years the elected individual will serve | `2023–2026`        |
+| `explanation` | Yes           | string   | An explanation of what the role entails | `The Co-Chair....` |
+
+The `nominations_settings` associative array consists of the following data:
+
+| **Key**    | **Required?** | **Type**     | **Explanation**                                                                                                                                                                                             | **Example**                                             |
+|------------|---------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| `link`     | Yes           | string       | Link to the nomination form                                                                                                                                                                                 | `CoChair`                                               |
+| `deadline` | Yes           | string       | Deadline for nominations in the format YYYY-MM-DD                                                                                                                                                           | `2023-05-27`                                            |
+| `contact`  | Yes           | assoc. array | Who individuals should contact, should they have any questions.<br><br>This consists of two required keys: the name of the individual to contact (`name`, string) and their email address (`email`, string) | `name: Benjamin Cowan`<br>`email:benjamin.cowan@ucd.ie` |
 
 
 ## Conference data
