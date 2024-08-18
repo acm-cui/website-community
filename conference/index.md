@@ -114,7 +114,7 @@ menus:
                           {%- if totaltracks > 2 %}{%- unless forloop.first %}, {% endunless %}{% endif %}{% if forloop.index == totaltracks %} and {% endif %}{{ track.data[year].acceptances }} {{ track.lang }}
                         {%- endif -%}
                       {%- endfor %}.
-                      {%- if conference.urls.proceedings and conference.listdetails.proceedings.isacmdl %}
+                      {%- if conference.urls.proceedings %}
                         The {{ conference.name }} proceedings were published in the <a href="{{ conference.urls.proceedings.link }}" title="View the proceedings of {{ conference.name }} in the ACM Digital Library" target="_blank">ACM Digital Library</a>.
                       {%- endif -%}
                     </p>

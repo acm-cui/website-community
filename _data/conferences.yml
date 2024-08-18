@@ -38,11 +38,6 @@
       link: https://www.uni.lu/
     - name: SIGCHI
       link: https://www.sigchi.org/
-  listdetails:
-    proceedings:
-      isacmdl: true
-    programme:
-      issigchi: true
 
 2023:
   name: ACM CUI 2023
@@ -75,10 +70,6 @@
   listdetails:
     preamble: >
       From 2023 onwards, CUI officially joined the ACM SIGCHI family of conferences.
-    proceedings:
-      isacmdl: true
-    programme:
-      issigchi: true
 
 2022:
   name: CUI 2022
@@ -102,9 +93,6 @@
       link: https://www.sicsa.ac.uk
     - name: SIGCHI
       link: https://www.sigchi.org/
-  listdetails:
-    proceedings:
-      isacmdl: true
 
 2021:
   name: CUI 2021
@@ -135,9 +123,6 @@
       link: http://www.empathic-project.eu/
     - name: SIGCHI
       link: https://www.sigchi.org/
-  listdetails:
-    proceedings:
-      isacmdl: true
 
 2020:
   name: CUI 2020
@@ -168,9 +153,6 @@
       link: http://menhir-project.eu/
     - name: SIGCHI
       link: https://www.sigchi.org/
-  listdetails:
-    proceedings:
-      isacmdl: true
 
 2019:
   name: CUI 2019
@@ -213,5 +195,3 @@
   listdetails:
     preamble: >
       Where it all began!
-    proceedings:
-      isacmdl: true

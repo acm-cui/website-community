@@ -13,17 +13,14 @@ registrations_footnotes:
 
 registrations:
   2019:
-    footnote: "Registration was only possible in-person attendance."
     total: 67
     virtual: 0
     footnote_id: 1
   2020:
-    footnote: "Registration was free and attendance was only possible virtually due to the COVID-19 pandemic."
     total: 492
     virtual: 492
     footnote_id: 2
   2021:
-    footnote: "Registration and attendance was only possible virtually due to the COVID-19 pandemic."
     total: 125
     virtual: 125
     footnote_id: 3
