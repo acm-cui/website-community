@@ -19,10 +19,6 @@ menus:
   main:
     title: Steering Committee
     weight: 1
-#    identifier: sc
-#  sc:
-#    title: Committee Members
-#    weight: 0
 ---
 <section>
   <article class="flex-grow-1 p-md-4 p-3">
@@ -41,7 +37,7 @@ menus:
        <i class="bi bi-file-earmark-arrow-down-fill"></i>
         Download the latest constitution
       </a>
-      <span class="text-secondary small">
+      <span class="text-secondary small d-xl-inline-block mt-xl-0 d-block mt-3">
         Last updated and approved: 19th April 2024
       </span>
     </p>
@@ -65,17 +61,17 @@ menus:
               <img src="{{ "assets/img/sc/" | append: member.photo | relative_url }}" class="profile-photo rounded-circle" alt="A photo of {{ member.name }}" title="{{ member.name }}" style="width: 60px">
             </div>
             <div class="ms-3">
-              {% if member.url %}
+              {%- if member.url -%}
                 <span class="mt-0 mb-1 fw-semibold"><a href="{{ member.url }}" title="Go to {{ member.name }}'s website" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ member.name }}</span> <i class="bi bi-box-arrow-up-right conference-chevron"></i></a></span>
-              {% else %}
+              {%- else -%}
                 <span class="mt-0 mb-1 fw-semibold">{{ member.name }}</span>
-              {% endif %}
+              {%- endif -%}
               <ul class="list-unstyled">
-                {% for role in member.roles %}
+                {%- for role in member.roles -%}
                   <li>
-                    <span class="fw-medium small">{{ role["role"] }}</span> <small>({{ role["term"] }})</small>
+                    <span class="fw-medium small">{{- role["role"] -}}</span> <small>({{- role["term"] -}})</small>
                   </li>
-                {% endfor %}
+                {%- endfor -%}
               </ul>
             </div>
           </div>
@@ -84,61 +80,4 @@ menus:
     </ul>
   </article>
 </section>
-
-<!--
-
-
-
-## Officers
-
-<ul class="list-unstyled">
-  {% for member in site.data.steering-committee.officers %}
-    <li class="d-flex flex-md-row flex-column my-5">
-      <div class="flex-shrink-0">
-        <img src="{{ member.photo | relative_url }}" class="profile-photo mr-md-3 mb-md-0 mb-3 rounded-circle shadow" alt="A photo of {{ member.name }}" title="{{ member.name }}">
-      </div>
-      <div class="flex-grow-1 ms-md-3">
-        {% if member.url %}
-          <h4 class="mt-0 mb-1"><a href="{{ member.url }}" title="Go to {{ member.name }}'s website" target="_blank">{{ member.name }}</a></h4>
-        {% else %}
-          <h4 class="mt-0 mb-1">{{ member.name }}</h4>
-        {% endif %}
-        <ul class="list-unstyled mb-2">
-          {% for role in member.roles %}
-            <li>
-              <strong>{{ role["role"] }}</strong> <small>({{ role["term"] }})</small>
-            </li>
-          {% endfor %}
-        </ul>
-        {{- member.bio -}}
-      </div>
-    </li>
-  {% endfor %}
-</ul>
-
-## Members
-
-<ul class="list-unstyled">
-  {% for member in site.data.steering-committee.members %}
-    <li class="d-flex flex-md-row flex-column my-5">
-      <div class="flex-shrink-0">
-        <img src="{{ member.photo | relative_url }}" class="profile-photo mr-md-3 mb-md-0 mb-3 rounded-circle shadow" alt="A photo of {{ member.name }}" title="{{ member.name }}">
-      </div>
-      <div class="flex-grow-1 ms-md-3">
-        {% if member.url %}
-          <h4 class="mt-0 mb-1"><a href="{{ member.url }}" title="Go to {{ member.name }}'s website" target="_blank">{{ member.name }}</a></h4>
-        {% else %}
-          <h4 class="mt-0 mb-1">{{ member.name }}</h4>
-        {% endif %}
-        <p>
-          <strong>Member since {{ member.invited }}</strong>
-        </p>
-        {{- member.bio -}}
-      </div>
-    </li>
-  {% else %}
-    <em>There are no invited memebers on the CUI Steering Committee at the moment.</em>
-  {% endfor %}
-</ul>
--->
 {%- include sidebar.html -%}
