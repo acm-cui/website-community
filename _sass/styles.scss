@@ -98,7 +98,7 @@ nav.navbar {
 	.nav-link {
 		@include auto-transition((color, background));
 
-		&:hover {
+		&:hover, &.active {
 			color: $nav-link-button-fg;
 			background: $nav-link-button-bg-hover;
 		}
@@ -187,7 +187,7 @@ table {
 	}
 
 	.conference-year > a[aria-expanded="true"] .conference-chevron {
-		transform: rotate(90deg);
+		transform: translate(-(calc($conference-chevron-font-size/2), -1rem)) rotate(90deg);
 	}
 
 	.conference-expanded {

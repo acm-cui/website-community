@@ -42,30 +42,30 @@ menus:
           </a>
           <div class="accordion-collapse collapse conference-expanded" id="conference-{{ year }}" data-bs-parent="#conferenceList">
             <div class="p-md-4 p-3 d-flex flex-lg-row flex-column overflow-hidden">
-              <ul class="nav nav-pills flex-lg-column flex-row mx-lg-0 mx-auto flex-nowrap" id="conference-{{ year }}-tab" role="tablist">
-                <li class="nav-item">
-                  <button class="nav-link active mx-lg-0 mx-2 w-100" id="conference-{{ year }}-about-tab" data-bs-toggle="pill" data-bs-target="#conference-{{ year }}-about" type="button" role="tab" aria-controls="conference-{{ year }}-about" aria-selected="true">
+              <ul class="nav nav-pills flex-lg-column justify-content-lg-start flex-row justify-content-center mx-lg-0 mx-auto flex-wrap" id="conference-{{ year }}-tab" role="tablist">
+                <li class="nav-item mt-lg-2 m-lg-0 m-1">
+                  <button class="nav-link active w-100" id="conference-{{ year }}-about-tab" data-bs-toggle="pill" data-bs-target="#conference-{{ year }}-about" type="button" role="tab" aria-controls="conference-{{ year }}-about" aria-selected="true">
                     About
                   </button>
                 </li>
                 {%- if has_hm_awards > 0 or has_bp_awards > 0 -%}
-                  <li class="nav-item">
-                    <button class="nav-link mt-lg-2 mx-lg-0 mx-2 w-100" id="conference-{{ year }}-awards-tab" data-bs-toggle="pill" data-bs-target="#conference-{{ year }}-awards" type="button" role="tab" aria-controls="conference-{{ year }}-awards" aria-selected="false">
+                  <li class="nav-item mt-lg-2 m-lg-0 m-1">
+                    <button class="nav-link w-100" id="conference-{{ year }}-awards-tab" data-bs-toggle="pill" data-bs-target="#conference-{{ year }}-awards" type="button" role="tab" aria-controls="conference-{{ year }}-awards" aria-selected="false">
                       Awards
                     </button>
                   </li>
                 {%- endif -%}
                 {%- if site.data.statistics.years contains year -%}
-                  <li class="nav-item">
-                    <button class="nav-link mt-lg-2 mx-lg-0 mx-2 w-100" id="conference-{{ year }}-statistics-tab" data-bs-toggle="pill" data-bs-target="#conference-{{ year }}-statistics" type="button" role="tab" aria-controls="conference-{{ year }}-statistics" aria-selected="false">
+                  <li class="nav-item mt-lg-2 m-lg-0 m-1">
+                    <button class="nav-link w-100" id="conference-{{ year }}-statistics-tab" data-bs-toggle="pill" data-bs-target="#conference-{{ year }}-statistics" type="button" role="tab" aria-controls="conference-{{ year }}-statistics" aria-selected="false">
                       Statistics
                     </button>
                   </li>
                 {%- endif -%}
                 {%- for url in conference.urls -%}
                   {%- if url[1].name -%}
-                  <li class="nav-item d-lg-block d-none">
-                    <a class="nav-link btn mt-lg-2 mx-lg-0 mx-2 w-100 link-primary" href="{{ url[1].link }}" target="_blank">
+                  <li class="nav-item mt-lg-2 m-lg-0 m-1">
+                    <a class="nav-link btn w-100 link-primary" href="{{ url[1].link }}" target="_blank">
                       <span>{{ url[1].name }}&nbsp;<i class="bi bi-box-arrow-up-right fs-6"></i></span>
                     </a>
                   </li>

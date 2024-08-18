@@ -89,7 +89,7 @@ nav.navbar {
 	.nav-link {
 		@include auto-transition((color, background));
 
-		&:hover {
+		&:hover, &.active {
 			color: $nav-link-button-fg-dark;
 			background: $nav-link-button-bg-hover-dark;
 		}
