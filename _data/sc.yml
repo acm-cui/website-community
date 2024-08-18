@@ -1,4 +1,11 @@
 officers:
+  - name: Heloisa Candello
+    photo: heloisa-candello.png
+    url: https://researcher.watson.ibm.com/researcher/view.php?person=br-heloisacandello
+    roles:
+      - role:  Co-Chair
+        term: 2024–2027
+
   - name: Minha Lee
     photo: minha-lee.png
     url: https://minha-lee.github.io
@@ -7,13 +14,6 @@ officers:
         term: 2024–2027
       - role:  CUI 2023 General Chair
         term: 2023–2026
-
-  - name: Heloisa Candello
-    photo: heloisa-candello.png
-    url: https://researcher.watson.ibm.com/researcher/view.php?person=br-heloisacandello
-    roles:
-      - role:  Co-Chair
-        term: 2024–2027
 
   - name: Leigh Clark
     photo: leigh-clark.jpg
