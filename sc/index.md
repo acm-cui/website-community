@@ -4,6 +4,16 @@ description: The ACM Conversational User Interfaces Steering Committee are respo
 
 lastmod: page
 
+redirect_from:
+  - /about/
+  - /about/constitution/
+  - /about/members/
+  - /about/sc/
+  - /sc/members/
+  - /sc/committee/
+  - /sc/constitution/
+  - /steering-committee/
+
 menus:
   main:
     title: Steering Committee

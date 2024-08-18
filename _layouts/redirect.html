@@ -1,5 +1,7 @@
-{% if page.target %}
-<meta http-equiv="refresh" content="0; URL='{{ page.target }}'" /> 
-{% else %}
-<meta http-equiv="refresh" content="0; URL='{{ site.url }}/404.html'" /> 
-{% endif %}
+{%- if page.target -%}
+<meta http-equiv="refresh" content="0; URL='{{ page.target }}'"> 
+{%- elsif page.redirect.from -%}
+<meta http-equiv="refresh" content="0; URL='{{ page.redirect.to }}'"> 
+{%- else -%}
+<meta http-equiv="refresh" content="0; URL='{{ site.url }}/404.html'"> 
+{%- endif -%}

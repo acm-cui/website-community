@@ -8,6 +8,12 @@ lastmod:
   type: data
   file: conferences.yml
 
+redirect_from:
+  - /conference/awards/
+  - /conferences/
+  - /conferences/awards/
+  - /conferences/proceedings/
+
 menus:
   main:
     title: Conference
