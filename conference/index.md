@@ -196,7 +196,7 @@ menus:
                           <td>Track</td>
                           <td><span class="d-md-inline-block d-none">Submissions</span><span class="d-md-none">Subs.</span></td>
                           <td>Accepted</td>
-                          <td><span class="d-md-inline-block d-none">Acceptance rate</span><span class="d-md-none">%</span></td>
+                          <td><span class="d-xl-inline-block d-none">Acceptance rate</span><span class="d-xl-none">%</span></td>
                         </tr>
                       </thead>
                       <tbody>
