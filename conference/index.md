@@ -25,8 +25,8 @@ menus:
     {%- for datum in site.data.conferences -%}
       {%- assign year = datum[0] -%}
       {%- assign conference = datum[1] -%}
-      {%- assign has_hm_awards =  site.data.awards['honourable_mentions'][year] | size -%}
-      {%- assign has_bp_awards =  site.data.awards['best_papers'][year] | size -%}
+      {%- assign has_hm_awards = conference.awards.hon_mentions | size -%}
+      {%- assign has_bp_awards = conference.awards.best_papers | size -%}
       <div class="d-flex flex-column w-100 accordion-item conference-year">
         {%- if has_hm_awards > 0 or has_bp_awards > 0 or site.data.statistics.years contains year -%}
           <a href="#conference-{{ year }}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="conference-{{ conference-year}}" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black">
@@ -138,21 +138,21 @@ menus:
                 <div class="tab-pane fade" id="conference-{{ year }}-awards" role="tabpanel" aria-labelledby="conference-{{ year }}-awards-tab" tabindex="0">
                   <h4 class="fw-medium">Best Paper awards</h4>
                   <ul>
-                    {%- assign data = site.data.awards.best_papers[year] | sort: "title" -%}
+                    {%- assign data = conference.awards.best_papers | sort: "title" -%}
                     {%- for award in data -%}
                       <li><a href="{{ award.dl }}" title="View '{{ award.title | escape }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
                     {%- endfor -%}
                   </ul>
                   <h4 class="pt-4 fw-medium">Honourable Mention awards</h4>
                   <ul>
-                    {%- assign data = site.data.awards.honourable_mentions[year] | sort: "title" -%}
+                    {%- assign data = conference.awards.hon_mentions | sort: "title" -%}
                     {%- for award in data -%}
                       <li><a href="{{ award.dl }}" title="View '{{ award.title | escape }}' in the ACM Digital Library">{{ award.title }}</a><br>{{ award.authors }}</li>
                     {%- endfor -%}
                   </ul>
-                  {%- if site.data.awards.outstanding_service[year] -%}
-                    <h4 class="pt-4 fw-medium">Outstanding Service award</h4>
-                    {%- assign data = site.data.awards.outstanding_service[year] | sort: "recipient" -%}
+                  {%- if conference.awards.outstanding_service -%}
+                    <h4 class="pt-4 fw-medium">Outstanding Service awards</h4>
+                    {%- assign data = conference.awards.outstanding_service | sort: "recipient" -%}
                     {%- for award in data -%}
                       <strong>{{ award.recipient }}</strong> ({{ award.role }})<br>{{ award.explanation }}
                     {%- endfor -%}

@@ -38,6 +38,33 @@
       link: https://www.uni.lu/
     - name: SIGCHI
       link: https://www.sigchi.org/
+  awards:
+    hon_mentions:
+      - title: "Explaining the Wait: How Justifying Chatbot Response Delays Impact User Trust"
+        authors: Zhengquan Zhang, Konstantinos Tsiakas, and Christina Schneegass
+        dl: https://doi.org/10.1145/3640794.3665550
+      - title: "Towards Interactive Guidance for Writing Training Utterances for Conversational Agents"
+        authors: David Piorkowski, Rachel Ostrand, Kristina Brimijoin, Jessica He, Erica Albert, and Stephanie Houde
+        dl: https://doi.org/10.1145/3640794.3665553
+      - title: "Findings from Studies on English-Based Conversational AI Agents (including ChatGPT) Are Not Universal"
+        authors: Casey C. Bennett
+        dl: https://doi.org/10.1145/3640794.3665879
+      - title: "A Not So Chatty “Chatbot”: Co-designing to support First-Time Parents in South Africa and Portugal"
+        authors: Leina Meoli, Francisco Nunes, Beatriz Félix, Joana Couto da Silva, Xolani Ntinga, and Melissa Densmore
+        dl: https://doi.org/10.1145/3640794.3665571
+    best_papers:
+      - title: "System and User Strategies to Repair Conversational Breakdowns of Spoken Dialogue Systems: A Scoping Review"
+        authors: Essam Alghamdi, Martin Halvey, and Emma Nicol
+        dl: https://doi.org/10.1145/3640794.3665558
+      - title: "The Impact of Perceived Tone, Age, and Gender on Voice Assistant Persuasiveness in the Context of Product Recommendations"
+        authors: Sabid Bin Habib Pias, Ran Huang, Donald S. Williamson, Minjeong Kim, and Apu Kapadia
+        dl: https://doi.org/10.1145/3640794.3665545
+      - title: "Building Better AI Agents: A Provocation on the Utilisation of Persona in LLM-based Conversational Agents"
+        authors: Guangzhi Sun, Xiao Zhan, and Jose Such
+        dl: https://doi.org/10.1145/3640794.3665887
+      - title: '"¿Te vienes? Sure!" Joint Fine-tuning of Language Detection and Transcription Improves Automatic Recognition of Code-Switching Speech'
+        authors: Leopold Hillah, Mateusz Dubiel, and Luis A. Leiva
+        dl: https://doi.org/10.1145/3640794.3665579
 
 2023:
   name: ACM CUI 2023
@@ -67,6 +94,35 @@
       link: https://www.tue.nl/en/
     - name: SIGCHI
       link: https://www.sigchi.org/
+  awards:
+    hon_mentions:
+      - title: "From Writing Dialogue to Designing Conversation: Considering the potential of Conversation Analysis for Voice User Interfaces"
+        authors: Adam Brandt, Spencer Hazel, Rory McKinnon, Kleopatra Sideridou, Joe Tindale, and Nikoletta Ventoura
+        dl: https://doi.org/10.1145/3571884.3603758
+      - title: Enabling Semi-Structured Knowledge Access via a Question-Answering Module in Task-oriented Dialogue Systems
+        authors: Norbert Braunschweiler, Rama Sanand Doddipatla, Simon Keizer, and Svetlana Stoyanchev
+        dl: https://doi.org/10.1145/3571884.3597138
+      - title: "Developing a Conversational Interface for an ACT-based Online Program: Understanding Adolescents’ Expectations of Conversational Style"
+        authors: Johanna Peltola, Kirsikka Kaipainen, Katariina Keinonen,  Noona Kiuru, and Markku Turunen
+        dl: https://doi.org/10.1145/3571884.3597142
+    best_papers:
+      - title: Voice Assistant Use in Long-Term Care
+        authors: Bruna Oewel, Tawfiq Ammari, and Robin N Brewer
+        dl: https://doi.org/10.1145/3571884.3597135
+      - title: Self-imposed Filter Bubble Model for Argumentative Dialogues
+        authors: Annalena Bea Aicher, Daniel Kornmüller, Wolfgang Minker, and Stefan Ultes
+        dl: https://doi.org/10.1145/3571884.3597131
+      - title: Who are CUIs Really For? Representation and Accessibility in the Conversational User Interface Literature
+        authors: William Seymour, Xiao Zhan, Mark Cote, and Jose Such
+        dl: https://doi.org/10.1145/3571884.3603760
+      - title: Unified Conversational Models with System-Initiated Transitions between Chit-Chat and Task-Oriented Dialogues
+        authors: Ye Liu, Stefan Ultes, Wolfgang Minker, and Wolfgang Maier
+        dl: https://doi.org/10.1145/3571884.3597125
+    outstanding_service:
+      - recipient: Justin Edwards
+        role: Hybrid Chair
+        explanation: The CUI 2023 General Chairs awarded Justin Edwards an Outstanding Service award for his unparalleled commitment to supporting and running the conference audio-video as well as all hybrid and virtual attendance activities. Justin went above and beyond to make CUI 2023 a success and we are ever so grateful to his kindness and dedication.
+
   listdetails:
     preamble: >
       From 2023 onwards, CUI officially joined the ACM SIGCHI family of conferences.
@@ -93,6 +149,24 @@
       link: https://www.sicsa.ac.uk
     - name: SIGCHI
       link: https://www.sigchi.org/
+  awards:
+    hon_mentions:
+      - title: A Blueprint for Integrating Task-Oriented Conversational Agents in Education Poster
+        authors: Juan Carlos Farah, Basile Spaenlehauer, Sandy Ingram, and Denis Gillet
+        dl: https://doi.org/abs/10.1145/3543829.3544525
+      - title: Should Alexa be a Police Officer, a Doctor, or a Priest?
+        authors: James Simpson and Cassandra Crone
+        dl: https://doi.org/10.1145/3543829.3544522
+    best_papers:
+      - title: Where is Vincent? Expanding our emotional selves with AI 
+        authors: Minha Lee, Lily Frank, Yvonne De Kort, and Wijnand IJsselsteijn
+        dl: https://doi.org/10.1145/3543829.3543835
+      - title: Effects of Wording and Gendered Voices on Acceptability of Voice Assistants in Future Autonomous Vehicles
+        authors: Iris Jestin, Joel E Fischer, Maria Jose Galvez Trigo, David Large, and Gary Burnett
+        dl: https://doi.org/10.1145/3543829.3543836
+      - title: "Can you meaningfully consent in eight seconds? Identifying Ethical Issues with Verbal Consent for Voice Assistants"
+        authors: William Seymour, Mark Coté and Jose Such
+        dl: https://doi.org/10.1145/3543829.3544521
 
 2021:
   name: CUI 2021
@@ -123,6 +197,27 @@
       link: http://www.empathic-project.eu/
     - name: SIGCHI
       link: https://www.sigchi.org/
+  awards:
+    hon_mentions:
+      - title: Can I Talk to You about Your Social Needs? Understanding Preference for Conversational User Interface in Health
+        authors: Rafal Kocielnik, Raina Langevin, James S George, Shota Akenaga, Amelia Wang, Darwin P Jones, Alexander Argyle, Callan Fockele, Layla Anderson, Dennis T Hsieh, Kabir Yadav, Herbert Duber, Gary Hsieh, and Andrea L Hartzler
+        dl: https://doi.org/10.1145/3469595.3469599
+      - title: "Leaving the Butler Behind: The Future of Role Reproduction in CUI" 
+        authors: Donald McMillan and Razan Jaber
+        dl: https://doi.org/10.1145/3469595.3469606
+      - title: Hey Google, Do You Have a Personality? Designing Personality and Personas for Conversational Agents 
+        authors: Alisha Pradhan and Amanda Lazar
+        dl: https://doi.org/10.1145/3469595.3469607
+      - title: '"Try, Try, Try Again": Sequence Analysis of Interactions with a Voice User Interface'
+        authors: Chelsea Myers, Luis Fernando Laris Pardo, Ana Acosta-Ruiz, Alessandro Canossa, and Jichen Zhu
+        dl: https://doi.org/10.1145/3469595.3469613
+    best_papers:
+      - title: "VUI Influencers: How the Media Portrays Voice User Interfaces for Older Adults"
+        authors: Jaisie Sin, Cosmin Munteanu, Numrita Ramanand, and Yi Rong Tan
+        dl: https://doi.org/10.1145/3469595.3469603
+      - title: Synthesizing a human-like voice is the easy way
+        authors: Sébastien Le Maguer and Benjamin Cowan
+        dl: https://doi.org/10.1145/3469595.3469614
 
 2020:
   name: CUI 2020
@@ -153,6 +248,27 @@
       link: http://menhir-project.eu/
     - name: SIGCHI
       link: https://www.sigchi.org/
+  awards:
+    hon_mentions:
+      - title: What Can I Say? Effects of Discoverability in VUIs on Task Performance and User Experience
+        authors: Philipp Kirschthaler, Martin Porcheron, and Joel E Fischer
+        dl: https://doi.org/10.1145/3405755.3406119
+      - title: "Persuasive Synthetic Speech: Voice Perception and User Behaviour"
+        authors: Mateusz Dubiel, Pilar Oplustil, Martin Halvey, and Simon King
+        dl: https://doi.org/10.1145/3405755.3406120
+      - title: Is your chatbot GDPR compliant? Open issues in agent design
+        authors: Rahime Belen Sağlam and Jason Nurse
+        dl: https://doi.org/abs/10.1145/3405755.3406131
+      - title: Decision Trees as Sociotechnical Objects in Chatbot Design
+        authors: Teresa Castle-Green, Stuart Reeves, Joel E Fischer, and Boriana Koleva
+        dl: https://doi.org/abs/10.1145/3405755.3406133
+    best_papers:
+      - title: Mental Workload and Language Production in Non-Native Speaker IPA Interaction
+        authors:  Yunhan Wu, Justin Edwards, Orla Cooney, Anna Bleakley, Philip R Doyle, Leigh Clark, Daniel Rough, and Benjamin R Cowan 
+        dl: https://doi.org/10.1145/3405755.3406118
+      - title: "The Lord of the (speaking) Rings: An interdisciplinary Fellowship to deal with 7 legal issues"
+        authors: Gianluigi Maria Riva and Marguerite Barry
+        dl: https://doi.org/abs/10.1145/3405755.3406132
 
 2019:
   name: CUI 2019
@@ -192,6 +308,27 @@
       link: http://www.hci.ucd.ie/
     - name: SIGCHI
       link: https://www.sigchi.org/
+  awards:
+    hon_mentions:
+      - title: Crowdsourcing a self-evolving dialog graph
+        authors: Patrik Jonell, Per Fallgren, Fethiye Irmak Doğan, José Lopes, Ulme Wennberg, and Gabriel Skantze
+        dl: https://doi.org/abs/10.1145/3342775.3342790
+      - title: What’s in an accent? The impact of accented synthetic speech on lexical choice in human-machine dialogue
+        authors: Benjamin R Cowan, Philip Doyle, Justin Edwards, Diego Garaialde, Ali Hayes-Brady, Holly P Branigan, João Cabral, and Leigh Clark
+        dl: https://doi.org/10.1145/3342775.3342786
+      - title: Who owns your voice? Ethically sourced voices for non-commercial TTS applications
+        authors: Kristen Scott, Simone Ashby, David Braude, and Matthew Aylett
+        dl: https://doi.org/10.1145/3342775.3342793
+      - title: I Don’t Know What You’re Talking About, HALexa
+        authors: Christine Murad and Cosmin Muntenau
+        dl: https://doi.org/10.1145/3342775.3342795
+    best_papers:
+      - title: Progressivity for Voice Interface Design
+        authors: Joel E Fischer, Stuart Reeves, Martin Porcheron, and Rein Sikveland
+        dl: https://doi.org/10.1145/3342775.3342788
+      - title: Shoehorning in the Name of Science
+        authors: Jens Edlund
+        dl: https://doi.org/10.1145/3342775.3342794
   listdetails:
     preamble: >
       Where it all began!
