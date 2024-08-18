@@ -1,40 +1,38 @@
-				<div class="container-fluid">
-					<button class="d-md-none d-flex align-items-center navbar-toggler mx-auto my-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span> <span class="ms-2">MENU</span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mx-auto py-md-3 pb-4">
-							{% for item in site.menus.main %}
-								{%- assign is_active = false -%}
-								{%- if page.url == item.url -%}
-									{%- assign is_active = true -%}
-								{%- else -%}
-									{%- for item in item.children -%}
-										{%- if page.url == item.url -%}
-											{%- assign is_active = true -%}
-											{%- break -%}
-										{%- endif -%}
-									{%- endfor -%}
-								{%- endif -%}
-
-								<li class="nav-item {% if item.children -%}dropdown{% endif %} mx-md-2 mx-md-1 my-md-0 my-1 text-md-start text-center">
-									<a class="nav-link px-lg-3 px-2 rounded-pill {% if item.children -%}dropdown-toggle{% endif %}{% if is_active %} active" aria-current="page{%- endif -%}" {%- if item.children -%}data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"{% else %}href="{{ item.url | relative_url }}{% endif %}" tabindex="0">
-										{{- item.title | escape -}}
-									</a>
-									{%- if item.children -%}
-										<ul class="dropdown-menu mt-2 rounded-4" id="nav-sub-{{ forloop.index }}">
-											{%- for item in item.children -%}
-												{%- if item.sep_before -%}
-													<li><hr class="dropdown-divider"></li>
-												{%- endif -%}
-												<li class="py-1 text-center">
-													<a class="dropdown-item py-2 {% if page.url == item.url %} active" aria-current="page{%- endif -%}" href="{{ item.url | relative_url }}">{{ item.title | escape }}</a>
-												</li>
-											{%- endfor -%}
-										</ul>
-									{%- endif -%}
-								</li>
-							{%- endfor -%}
-						</ul>
-					</div>
-				</div>
+        <div class="container-fluid">
+          <ul class="navbar-nav align-items-center justify-content-center flex-wrap mx-auto py-2">
+            {%- for item in site.menus.main -%}
+              {%- assign is_active = false -%}
+              {%- if page.url == item.url -%}
+                {%- assign is_active = true -%}
+              {%- else -%}
+                {%- for item in item.children -%}
+                  {%- if page.url == item.url -%}
+                    {%- assign is_active = true -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
+              <li class="nav-item {%- if is_active %} active {%- endif %} m-2 p-0 text-md-start text-center rounded-3">
+                <div class="h-100 m-0 rounded-3">
+                  <a class="nav-link rounded-2 {%- if item.children -%}dropdown-toggle{%- endif %}{%- if is_active %} active" aria-current="page{%- endif -%}" {%- if item.children -%}data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"{%- else %}href="{{ item.url | relative_url }}{%- endif %}" tabindex="0">
+                    <span class="d-block py-2 px-3">
+                      {{- item.title | escape -}}
+                    </span>
+                  </a>
+                  {%- if item.children -%}
+                    <ul class="dropdown-menu mt-2 rounded-3" id="nav-sub-{{ forloop.index }}">
+                    {%- for item in item.children -%}
+                      {%- if item.sep_before -%}
+                      <li><hr class="dropdown-divider"></li>
+                      {%- endif -%}
+                      <li class="py-1 text-center">
+                      <a class="dropdown-item py-2 {%- if page.url == item.url %} active" aria-current="page{%- endif -%}" href="{{ item.url | relative_url }}">{{ item.title | escape }}</a>
+                      </li>
+                    {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                </div>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>

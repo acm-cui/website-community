@@ -62,7 +62,6 @@ nav.navbar {
 	margin-top: $content-border-width;
     margin-bottom: $content-border-width;
 	position: relative;
-	@include auto-transition(background, box-shadow);
 	z-index: 1000;
 	
 	.navbar-toggler {
@@ -74,17 +73,30 @@ nav.navbar {
             background: transparent;
         }
 	}
-	
-	a.nav-link {	
-		border: $nav-link-border-width solid transparent;
+
+	.nav-item {
+		transition: none;
+
+		& > div {
+			-webkit-backdrop-filter: $nav-link-glass-backdrop-filter;
+			backdrop-filter: $nav-link-glass-backdrop-filter;
+			padding: calc($nav-link-border-width/2)  calc($nav-link-border-width/2);
+		}
 
 		&.active {
-			border: $nav-link-border-width solid $nav-link-border-color-active;
+			background: $body-bg-gradient;
 		}
-	
-		&:hover, &[aria-expanded="true"] {
-			background: $navbar-light-hover-bg;
-			color: $navbar-light-expanded-color !important;
+
+		.nav-link {
+			transition: none;
+			color: $nav-link-color;
+			margin: 0;
+			padding: $nav-link-border-width;
+		}
+
+		&.active .nav-link, &:active .nav-link, &:hover .nav-link, &:focus .nav-link {
+			color: $nav-link-active-color;
+			background: $nav-link-bg;
 		}
 	}
 	

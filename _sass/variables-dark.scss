@@ -28,8 +28,11 @@ $content-border-dark: 3px solid $border-color-dark;
 // NAVIGATION
 $nav-bg-dark: rgba($body-bg-dark,.85);
 
+$nav-link-active-bg-dark: rgba(darken($body-bg-dark, 90%), 0.75);
+$nav-link-bg-dark: rgba(darken($body-bg-dark, 90%), 0.25);
 $nav-link-color-dark: #fff;
 $nav-link-active-color-dark: #fff;
+$nav-link-glass-backdrop-filter-dark: saturate(180%) blur(20px) brightness(95%);
 
 $navbar-toggler-color-dark: rgba($body-color-dark, 0.7);
 $navbar-toggler-border-color-dark: $border-color-dark; 
