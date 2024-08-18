@@ -11,7 +11,8 @@ Information about officers and members of the Steering Commmittee is stored in `
 | name    | Yes           | string   | Name of the Officer/Member                                                                                                                              | `Minha Lee`                              |
 | photo   | Yes           | string   | Filename of a square profile photo the Officer/Member, stored in `assets/img/sc/`                                                                       | `minha-lee.png`                          |
 | url     | No            | string   | URL/personal website for the Officer/Member                                                                                                             | `https://minha-lee.github.io`            |
-| roles   | No            | list     | List of associate arrays, for each role the Officer/Member holds on the committee. Each array consists of two keys: `role` (string) and `term` (string) | `role: Co-Chair<br>term: 2024–2027`      |                   |
+| roles   | No            | list     | List of associate arrays, for each role the Officer/Member holds on the committee. Each array consists of two keys: `role` (string) and `term` (string) | `role: Co-Chair\
+                                                                                                                                                                                                  term: 2024–2027`                        |
 | bio     | Yes           | string   | Biography for the Officer/Member                                                                                                                        | `Minha Lee is an Assistant Professor...` |
 
 ## Conference data
