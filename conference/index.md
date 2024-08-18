@@ -38,7 +38,7 @@ menus:
               <h3 class="m-0 p-0 pt-1 fw-semibold">{{ conference.name }}</h3>
               <p class="mb-0 mt-1 p-0">{{ conference.location }} </p>
             </div>
-            <i class="bi bi-chevron-compact-right conference-chevron"></i>
+            <i class="bi bi-chevron-compact-right conference-chevron" style="margin-bottom: -1rem"></i>
           </a>
           <div class="accordion-collapse collapse conference-expanded" id="conference-{{ year }}" data-bs-parent="#conferenceList">
             <div class="p-md-4 p-3 d-flex flex-lg-row flex-column overflow-hidden">
@@ -231,7 +231,7 @@ menus:
               <h3 class="m-0 p-0 pt-1 fw-semibold">{{ conference.name }}</h3>
               <p class="mb-0 mt-1 p-0">{{ conference.location }} </p>
             </div>
-            <i class="bi bi-box-arrow-up-right conference-chevron"></i>
+            <i class="bi bi-box-arrow-up-right conference-chevron" style="margin-bottom: -1rem"></i>
           </a>
         {%- else -%}
           <div class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black">
