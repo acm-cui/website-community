@@ -5,5 +5,5 @@ layout: none
 Conference{%- for track in site.data.statistics.tracks -%}
 ,{{- track["title"] }} submissions,{{ track["title"] }} acceptances,{{ track["title"] }} acceptance rate
 {%- endfor %}{% for year in site.data.statistics.years %}
-CUI {{ year }},{% for track in site.data.statistics.tracks %}{% if track["data"][year] %}{%- assign submissions_float = track["data"][year]["submissions"] | times: 1.0 -%}{{ track["data"][year]["submissions"] }},{{ track["data"][year]["acceptances"] }},{{ track["data"][year]["acceptances"] | divided_by: submissions_float | times: 100 | round: 1 }}%{% else %},,{% endif %}{% unless forloop.last %},{% endunless %}{% endfor %}{% endfor %}
+{{ site.data.conferences[year].name }},{% for track in site.data.statistics.tracks %}{% if track["data"][year] %}{%- assign submissions_float = track["data"][year]["submissions"] | times: 1.0 -%}{{ track["data"][year]["submissions"] }},{{ track["data"][year]["acceptances"] }},{{ track["data"][year]["acceptances"] | divided_by: submissions_float | times: 100 | round: 1 }}%{% else %},,{% endif %}{% unless forloop.last %},{% endunless %}{% endfor %}{% endfor %}
 
