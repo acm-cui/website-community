@@ -63,7 +63,7 @@ menus:
             </div>
             <div class="ms-3">
               {%- if member.url -%}
-                <span class="mt-0 mb-1 fw-semibold"><a href="{{ member.url }}" title="Go to {{ member.name }}'s website" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ member.name }}</span> <i class="bi bi-box-arrow-up-right conference-chevron"></i></a></span>
+                <span class="mt-0 mb-1 fw-semibold"><a href="{{ member.url }}" title="Go to {{ member.name }}'s website" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ member.name }}</span> <i class="bi bi-box-arrow-up-right"></i></a></span>
               {%- else -%}
                 <span class="mt-0 mb-1 fw-semibold">{{ member.name }}</span>
               {%- endif -%}
@@ -81,7 +81,7 @@ menus:
     </ul>
   </article>
   <article class="flex-grow-1 p-md-4 p-3">
-    <h3 id="election" class="fw-semibold mb-2 m-0 p-0">Steering Committee Elections</h3>
+    <h3 id="elections" class="fw-semibold mb-2 m-0 p-0">Steering Committee Elections</h3>
 
     {%- unless site.data.sc.elections or site.data.sc.nominations -%}
       <p>There are curently no ongoing elections or calls for nomination to the CUI Steering Committee. Subscribe to <a href="https://listserv.acm.org/SCRIPTS/WA-ACMLPX.CGI?A0=CUI-ANNOUNCEMENTS&X=DA00202F15E5DE0C2A">CUI Announcements</a> to be informed of when nominations are opened or an election is called.</p>
@@ -92,14 +92,25 @@ menus:
       
       {%- if site.data.sc.elections -%}
         <p>The following elections are ongoing. All members of the <a href="https://listserv.acm.org/SCRIPTS/WA-ACMLPX.CGI?A0=CUI-ANNOUNCEMENTS&X=DA00202F15E5DE0C2A">CUI Announcements</a> mailing list have been emailed instructions on how to vote.</p>
-        {%- for role in site.data.sc.elections -%}
-          <h4>{{ role.title }}</h4>
-          <p>The following people are standing for the role of <em>{{ role.title }}</em>, to serve in the <em>{{ role.term }}</em> term.</p>
-          {%- for person in role.nominations %}
-            <h5>{{ person.name }}</h5>
-            <p>{{ person.bio }}</p>
-          {%- endfor -%}
+        <ul class="list-unstyled mx-lg-4 mx-3" id="elections">
+          {%- for role in site.data.sc.elections -%}
+            <li class="mb-3">
+              <h4 class="fw-medium election-role" type="button" data-bs-toggle="collapse" data-bs-target="#election-{{ forloop.index0 }}" aria-expanded="false" aria-controls="election-{{ forloop.index0 }}">
+                <i class="d-inline-block bi bi-chevron-compact-right"></i>&nbsp;<span>{{ role.title }} (<em>{{ role.term }}</em>)</span>
+              </h4>
+              <div id="election-{{ forloop.index0 }}" class="collapse">
+                <ul>
+                  {%- for person in role.nominations %}
+                    <li class="pt-2">
+                      <h5>{{ person.name }}</h5>
+                      <p>{{ person.bio }}</p>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            </li>
         {%- endfor -%}
+      </ul>
       {%- endif -%}
     {%- endunless -%}
   </article>

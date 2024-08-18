@@ -221,6 +221,16 @@ article + article {
 	}
 }
 
+.election-role  {
+	i {
+		@include auto-transition((opacity, transform));
+	}
+	
+	&[aria-expanded="true"] i {
+		transform: translate($conference-chevron-translate-x, $conference-chevron-translate-y) rotate(90deg);
+	}
+}
+
 
 // FOOTER
 footer {

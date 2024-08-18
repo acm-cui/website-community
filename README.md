@@ -4,7 +4,9 @@ The ACM CUI community website is build using Jekyll, on GitHub Pages.
 
 ## Steering Commmitee data
 
-Information about officers and members of the Steering Commmittee is stored in `_data/sc.yml` in two lists, one for _Officers_ and one for _Members_. Each list item consists of an associative array with the following structure:
+Information about officers and members of the Steering Commmittee is stored in `_data/sc.yml` in threelists, one for _officers_ of the Steering Committee (`officers`), one for _members_ of the Steering Committee (`members`), and one for elections to the Steering Committee (`elections`).
+
+Each item in the `officers` and `members` lists consists of an associative array with the following structure:
 
 | **Key** | **Required?** | **Type** | **Explanation**                                                                                                                                         | **Example**                              |
 |---------|---------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
@@ -12,6 +14,15 @@ Information about officers and members of the Steering Commmittee is stored in `
 | photo   | Yes           | string   | Filename of a square profile photo the Officer/Member, stored in `assets/img/sc/`                                                                       | `minha-lee.png`                          |
 | url     | No            | string   | URL/personal website for the Officer/Member                                                                                                             | `https://minha-lee.github.io`            |
 | roles   | No            | list     | List of associate arrays, for each role the Officer/Member holds on the committee. Each array consists of two keys: `role` (string) and `term` (string) | `role: Co-Chair`<br>`term: 2024–2027`    |
+
+Each item in the `elections` list consists of an associative array with the following structure:
+
+| **Key**       	| **Required?** 	| **Type**     	| **Explanation**                                                                                                                                          	| **Example**                                     	|
+|---------------	|---------------	|--------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------	|-------------------------------------------------	|
+| `title`       	| Yes           	| string       	| Name of the office                                                                                                                                       	| `CoChair`                                       	|
+| `term`        	| Yes           	| string       	| Years the elected individual will serve                                                                                                                  	| `2023–2026`                                     	|
+| `nominations` 	| Yes           	| assoc. array 	| A list of all those nominated, where each list item is an associative array.<br><br>Each item consists of two keys: name (`name`) and biography (`bio`). 	| `name: Minha Lee`<br><br>`bio: Minha Lee is...` 	|
+
 
 ## Conference data
 

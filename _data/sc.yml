@@ -84,3 +84,16 @@ members:
 #  - name: Stephan Schlögl
 #    photo: stephan-schloegl.jpg
 #    url: https://www.mci.edu/faculty/stephan.schloegl_en.html
+
+elections:
+  # - title: Co-Chair
+  #   term: 2023–2026
+  #   nominations:
+  #     - name: Mateusz Dubiel
+  #       bio: Mateusz Dubiel is a Research Associate in the Department of Computer Science at the University of Luxembourg, where he works on the development and evaluation of conversational agents. Specifically, his current research focuses on the assessment of cognitive and usability implications of interfaces that feature speech, and exploration of their potential to inspire positive behavioural change in users. Mateusz has been actively involved in the CUI conference since its first edition back in 2019. In 2022, he served as a Short Papers Chair, while this year (2023), he fulfilled the duty of a Registrations Chair.
+  #     - name: Minha Lee
+  #       bio: Minha Lee is an Assistant Professor at the Eindhoven University of Technology's Industrial Design Department with a background in philosophy, digital arts, and HCI. Lee's research on moral emotions targets mental well-being by exploring conversational agents like robots or chatbots as our moral mirrors that extend who we are. A major application area for her research is in exploring conversational agents for dementia care to foster compassionate conversations, which has been funded by Alzheimer Nederland. Lee is the general co-chair of the 2023 ACM Conversational User Interface (CUI) Conference (Eindhoven), after being a Full papers and Provocation papers co-chair (2021, 2020). The 2023 CUI conference theme highlights diversity, equity, and inclusion (DEI), which relates to various workshops Lee has led at major HCI conferences, e.g., CHI 2022 workshop on CUI Ethics, CSCW 2022 workshop on Activism in Academia, and HRI 2021 workshop on Artificial Identity. 
+  #     - name: Heloisa Candello
+  #       bio: Dr. Heloisa Candello is a research scientist and a manager of the Human-centered & Responsible Tech group, at the IBM Research laboratory in Brazil. She holds a Ph.D. in Computer Science in Interactive Technologies from the University of Brighton, UK. Her main research interest is applying design methods to understand how people interact with Artificial Intelligence-based systems, particularly conversational systems. Heloisa leads and conducts research activities in Human-Computer Interaction (HCI) to understand the social impact, context, and motivations of using conversational technologies. Her research has resulted in numerous conference publications (ACM CHI, CUI, CSCW, DRS, DUXU, IUI) and recognition in the HCI field. Heloisa was also part of several organizing, scientific, and executive committee in ACM SIGCHI conferences. From 2019-2021, she served the ACM SIGCHI Volunteer Development Committee, as a Research Scientist. Currently, she also serves the SIGCHI LATAM executive committee, and CUI Steering Committee.   <br><br><em>Serving the CUI Community</em><br>She co-organized CUI focused workshops since 2017 at CSCW, CHI and IUI . Presented at past CUI conferences (full-paper, provocation paper, demo, showcase paper). And co-chaired Full papers (CUI’20), Demos (CUI’21), Short papers (CUI’22) and Doctor Consortium (CUI’23). She is a member of the CUI conference steering committee since 2019. 
+ 
+ 
