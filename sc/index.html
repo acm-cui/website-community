@@ -1,0 +1,144 @@
+---
+title: CUI Steering Committee
+description: >
+  The ACM Conversational User Interfaces Steering Committee are responsibile for the overall organisation of the CUI conference and workshop series.
+
+layout: default
+
+redirect_from:
+  - /about/
+  - /about/constitution/
+  - /about/members/
+  - /about/sc/
+  - /sc/members/
+  - /sc/committee/
+  - /sc/constitution/
+  - /steering-committee/
+
+menus:
+  main:
+    title: Steering Committee
+    weight: 1
+#    identifier: sc
+#  sc:
+#    title: Committee Members
+#    weight: 0
+---
+<section>
+  <article class="flex-grow-1 p-md-4 p-3">
+    <h2 class="fw-semibold mb-2 m-0 p-0">{{ page.title | escape }}</h2>
+    <p>
+      The ACM Conversational User Interfaces Steering Committee is responsibile for the overall organisation of the annual ACM CUI conference and workshop series.
+    </p>
+  </article>
+  <article class="flex-grow-1 p-md-4 p-3">
+    <h3 class="fw-semibold mb-2 m-0 p-0">Constitution</h3>
+    <p>
+      The constitution for the ACM Conversational User Interfaces conference sets out the organisation and procedures that govern the conference and workshop series, as well as the overarching series steeering committee.
+    </p>
+    <p>
+    <a href="{{ '/assets/pdf/cui-conference-constitution.pdf' | relative_url }}" class="btn btn-primary me-3">
+       <i class="bi bi-file-earmark-arrow-down-fill"></i>
+        Download the latest constitution
+      </a>
+      <span class="text-secondary small">
+        Last updated and approved: 19th April 2024
+      </span>
+    </p>
+  </article>
+  <article class="flex-grow-1 p-md-4 p-3">
+    <h3 class="fw-semibold mb-2 m-0 p-0">Membership</h3>
+    <p>
+      The following people are the current <em>Officers</em> and <em>Members</em> of the steering committee. Officers are elected by the community and undertake a specific role on the committee, while members are invited to serve on the committee on the basis of their expertise and community participation.
+    </p>
+    <ul class="list-unstyled d-flex flex-row flex-wrap align-items-stretch m-0 p-0 sc-list">
+      {%- assign num_members = site.data.oc.members | size -%}
+      {%- if num_members > 0 %}
+        {%- assign membership = site.data.sc.officers | concat: site.data.sc.members -%}
+      {%- else -%}
+        {%- assign membership = site.data.sc.officers -%}
+      {%- endif -%}
+      {%- for member in membership -%}
+        <li class="mx-0 m-2 px-2 py-0 sc-person">
+          <div class="d-flex flex-row align-items-center rounded-pill h-100 p-3">
+            <div>
+              <img src="{{ "assets/img/sc/" | append: member.photo | relative_url }}" class="profile-photo rounded-circle" alt="A photo of {{ member.name }}" title="{{ member.name }}" style="width: 60px">
+            </div>
+            <div class="ms-3">
+              {% if member.url %}
+                <span class="mt-0 mb-1 fw-semibold"><a href="{{ member.url }}" title="Go to {{ member.name }}'s website" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ member.name }}</span> <i class="bi bi-box-arrow-up-right conference-chevron"></i></a></span>
+              {% else %}
+                <span class="mt-0 mb-1 fw-semibold">{{ member.name }}</span>
+              {% endif %}
+              <ul class="list-unstyled">
+                {% for role in member.roles %}
+                  <li>
+                    <span class="fw-medium small">{{ role["role"] }}</span> <small>({{ role["term"] }})</small>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </article>
+</section>
+
+<!--
+
+
+
+## Officers
+
+<ul class="list-unstyled">
+  {% for member in site.data.steering-committee.officers %}
+    <li class="d-flex flex-md-row flex-column my-5">
+      <div class="flex-shrink-0">
+        <img src="{{ member.photo | relative_url }}" class="profile-photo mr-md-3 mb-md-0 mb-3 rounded-circle shadow" alt="A photo of {{ member.name }}" title="{{ member.name }}">
+      </div>
+      <div class="flex-grow-1 ms-md-3">
+        {% if member.url %}
+          <h4 class="mt-0 mb-1"><a href="{{ member.url }}" title="Go to {{ member.name }}'s website" target="_blank">{{ member.name }}</a></h4>
+        {% else %}
+          <h4 class="mt-0 mb-1">{{ member.name }}</h4>
+        {% endif %}
+        <ul class="list-unstyled mb-2">
+          {% for role in member.roles %}
+            <li>
+              <strong>{{ role["role"] }}</strong> <small>({{ role["term"] }})</small>
+            </li>
+          {% endfor %}
+        </ul>
+        {{- member.bio -}}
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+
+## Members
+
+<ul class="list-unstyled">
+  {% for member in site.data.steering-committee.members %}
+    <li class="d-flex flex-md-row flex-column my-5">
+      <div class="flex-shrink-0">
+        <img src="{{ member.photo | relative_url }}" class="profile-photo mr-md-3 mb-md-0 mb-3 rounded-circle shadow" alt="A photo of {{ member.name }}" title="{{ member.name }}">
+      </div>
+      <div class="flex-grow-1 ms-md-3">
+        {% if member.url %}
+          <h4 class="mt-0 mb-1"><a href="{{ member.url }}" title="Go to {{ member.name }}'s website" target="_blank">{{ member.name }}</a></h4>
+        {% else %}
+          <h4 class="mt-0 mb-1">{{ member.name }}</h4>
+        {% endif %}
+        <p>
+          <strong>Member since {{ member.invited }}</strong>
+        </p>
+        {{- member.bio -}}
+      </div>
+    </li>
+  {% else %}
+    <em>There are no invited memebers on the CUI Steering Committee at the moment.</em>
+  {% endfor %}
+</ul>
+-->
+{%- include sidebar.html -%}

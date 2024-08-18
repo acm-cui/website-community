@@ -5,6 +5,11 @@ description: The Conversational User Interfaces conference and workshop series.
 permalink: /
 lastmod: page
 
+redirect_from:
+ - /contact/
+ - /connect/
+ - /mailing-list/
+
 menus:
   main:
     title: About

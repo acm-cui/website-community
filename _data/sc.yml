@@ -1,0 +1,86 @@
+officers:
+  - name: Heloisa Candello
+    photo: heloisa-candello.png
+    url: https://researcher.watson.ibm.com/researcher/view.php?person=br-heloisacandello
+    roles:
+      - role:  Co-Chair
+        term: 2024–2027
+
+  - name: Minha Lee
+    photo: minha-lee.png
+    url: https://minha-lee.github.io
+    roles:
+      - role:  Co-Chair
+        term: 2024–2027
+      - role:  CUI 2023 General Chair
+        term: 2023–2026
+
+  - name: Leigh Clark
+    photo: leigh-clark.jpg
+    url: https://lmhclark.com/
+    roles:
+      - role: Secretary
+        term: 2019–2024
+
+  - name: Benjamin R Cowan
+    photo: benjamin-cowan.jpg
+    url: http://www.benjamincowan.com/
+    roles:
+      - role: Conference Liaison
+        term: 2019–2024
+
+  - name: Andreea Danielescu
+    photo: andreea-danielescu.png
+    roles:
+      - role: Industry/NGO Liaison
+        term: 2023–2026
+
+  - name: Mateusz Dubiel
+    photo: mateusz-dubiel.jpg
+    url: https://scholar.google.co.uk/citations?user=N5VfxGEAAAAJ&hl=en
+    roles:
+      - role:  CUI 2024 General Chair
+        term: 2024–2027
+
+  - name: Martin Halvey
+    photo: martin-halvey.jpg
+    url: https://www.strath.ac.uk/staff/halveymartindr/
+    roles:
+      - role:  CUI 2022 General Chair
+        term: 2022–2025
+
+  - name: Cosmin Munteanu
+    photo: cosmin-munteanu.jpg
+    url: http://www.cs.utoronto.ca/~mcosmin/
+    roles:
+      - role:  CUI 2023 General Chair
+        term: 2023–2026
+
+  - name: Christine Murad
+    photo: christine-murad.jpg
+    url: http://www.cs.toronto.edu/~cmurad/
+    roles:
+      - role: Student Representative
+        term: 2019–2024
+
+  - name: Martin Porcheron
+    photo: martin-porcheron.jpg
+    url: https://www.porcheron.uk/
+    roles:
+      - role: Technical Support Chair
+        term: 2019–2024
+      - role:  CUI 2023 General Chair
+        term: 2023–2026
+
+  - name: Jaisie Sin
+    photo: jaisie-sin.png
+    url: https://www.jaisiesin.com
+    roles:
+      - role: Outreach/Publicity Chair
+        term: 2023–2026
+
+
+members:
+#  - name: Stephan Schlögl
+#    photo: stephan-schloegl.jpg
+#    url: https://www.mci.edu/faculty/stephan.schloegl_en.html
