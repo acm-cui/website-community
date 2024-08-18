@@ -82,18 +82,25 @@ menus:
   <article class="flex-grow-1 p-md-4 p-3">
     <h3 id="election" class="fw-semibold mb-2 m-0 p-0">Steering Committee Elections</h3>
 
-    <p>Periodically, there are elections to the ACM CUI Steering Committee.</p>
-
-    {%- for role in site.data.elections -%}
-      <h4>{{ role.title }}</h4>
-      <p>The following people are standing for the role of <em>{{ role.title }}</em>, to serve in the <em>{{ role.term }}</em> term.</p>
-      {%- for person in role.nominations %}
-        <h5>{{ person.name }}</h5>
-        <p>{{ person.bio }}</p>
-      {%- endfor -%}
+    {%- unless site.data.sc.elections or site.data.sc.nominations -%}
+      <p>There are curently no ongoing elections or calls for nomination to the CUI Steering Committee. Subscribe to <a href="https://listserv.acm.org/SCRIPTS/WA-ACMLPX.CGI?A0=CUI-ANNOUNCEMENTS&X=DA00202F15E5DE0C2A">CUI Announcements</a> to be informed of when nominations are opened or an election is called.</p>
     {%- else -%}
-	    <p><em>There are no elections at the moment.</em></p>
-    {%- endfor -%}
+      {%- if site.data.sc.nominations -%}
+        <p>The following calls for nomination are open. Following the nomination deadline, an election to the CUI Steering Committee will be called. Subscribe to <a href="https://listserv.acm.org/SCRIPTS/WA-ACMLPX.CGI?A0=CUI-ANNOUNCEMENTS&X=DA00202F15E5DE0C2A">CUI Announcements</a> to be informed and open to voting in the election.</p>
+      {%- endif -%}
+      
+      {%- if site.data.sc.elections -%}
+        <p>The following elections are ongoing.</p>
+        {%- for role in site.data.elections -%}
+          <h4>{{ role.title }}</h4>
+          <p>The following people are standing for the role of <em>{{ role.title }}</em>, to serve in the <em>{{ role.term }}</em> term.</p>
+          {%- for person in role.nominations %}
+            <h5>{{ person.name }}</h5>
+            <p>{{ person.bio }}</p>
+          {%- endfor -%}
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endunless -%}
   </article>
 </section>
 {%- include sidebar.html -%}
