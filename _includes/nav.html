@@ -12,7 +12,7 @@
                   {%- endif -%}
                 {%- endfor -%}
               {%- endif -%}
-              <li class="nav-item {%- if is_active %} active {%- endif %} m-2 p-0 text-md-start text-center rounded-3">
+              <li class="nav-item {%- if is_active %} active {%- endif %} m-2 p-0 text-md-start text-center rounded-3 shadow-sm">
                 <div class="h-100 m-0 rounded-3">
                   <a class="nav-link rounded-2 {%- if item.children -%}dropdown-toggle{%- endif %}{%- if is_active %} active" aria-current="page{%- endif -%}" {%- if item.children -%}data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"{%- else %}href="{{ item.url | relative_url }}{%- endif %}" tabindex="0">
                     <span class="d-block py-2 px-3">
