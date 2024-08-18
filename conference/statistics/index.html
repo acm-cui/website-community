@@ -46,7 +46,7 @@ menus:
       {%- for year in site.data.statistics.years offset:start_years_at limit:max_years_per_table  -%}
         {%- if site.data.statistics.registrations[year]["total"] -%}
           <tr class="border-top">
-            <td style="width: 40%">{{ site.data.conferences[year].name }}{% if site.data.statistics.registrations[year]['footnote_id'] %}{% assign symbol_id = site.data.statistics.registrations[year]['footnote_id'] | minus: 1 %}<sup>{{ footnote_symbols[symbol_id] }}</sup>{% endif %}</td>
+            <td style="width: 40%">{{ site.data.conf[year].name }}{% if site.data.statistics.registrations[year]['footnote_id'] %}{% assign symbol_id = site.data.statistics.registrations[year]['footnote_id'] | minus: 1 %}<sup>{{ footnote_symbols[symbol_id] }}</sup>{% endif %}</td>
             <td style="width: 20%">{{ site.data.statistics.registrations[year]['total'] }}</td>
             <td style="width: 20%">{{ site.data.statistics.registrations[year]['virtual'] }}</td>
             <td style="width: 20%">{{ site.data.statistics.registrations[year]['total'] | minus: site.data.statistics.registrations[year]['virtual'] }}</td>

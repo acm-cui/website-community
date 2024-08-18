@@ -3,7 +3,7 @@
     <h6 class="fw-bold">Next conference</h6>
     <div class="d-flex flex-column last-md-0">
       {%- assign no_conferences = true -%}
-      {%- for datum in site.data.conferences -%}
+      {%- for datum in site.data.conf -%}
         {%- assign conference = datum[1] -%}
         {%- capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture -%}
         {%- capture conferenceunix %}{{ conference.dates.end | date: '%s' }}{% endcapture -%}
@@ -30,7 +30,7 @@
     <h6 class="fw-bold">Upcoming workshops</h6>
     <div class="d-flex flex-column">
       {%- assign no_workshops = true -%}
-      {%- assign workshops_sorted = site.data.workshops | sort: 'date' -%}
+      {%- assign workshops_sorted = site.data.ws | sort: 'date' -%}
 
       {%- for workshop in workshops_sorted -%}
         {%- capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture -%}

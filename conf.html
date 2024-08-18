@@ -28,7 +28,7 @@ menus:
     </p>
   </article>
   <div class="flex-grow-1 d-inline-flex flex-column text-start justify-content-center align-items-center mx-auto accordion accordion-flush conference-list w-100" id="conferenceList">
-    {%- for datum in site.data.conferences -%}
+    {%- for datum in site.data.conf -%}
       {%- assign year = datum[0] -%}
       {%- assign conference = datum[1] -%}
       {%- assign has_hm_awards = conference.awards.hon_mentions | size -%}

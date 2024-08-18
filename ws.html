@@ -25,7 +25,7 @@ menus:
     </p>
   </article>
   {%- assign last_year = 'none' -%}
-  {%- for workshop in site.data.workshops -%}
+  {%- for workshop in site.data.ws -%}
     {%- if workshop.dates -%}
       {%- assign year = workshop.dates.start | date: "%Y" -%}
     {%- elsif workshop.date -%}
