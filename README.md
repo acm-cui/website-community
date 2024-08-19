@@ -61,7 +61,7 @@ Primary conference data (that is, conference names, dates, URLs, sponsors, and a
 
 ### Conference statistics
 
-The file `_data/statistics.yml` contains programme and registration statistics for each conference year. There are four associative arrays in this file.
+The file `_data/stats.yml` contains programme and registration statistics for each conference year. There are four associative arrays in this file.
 
 The `years` list is the years for which should be included in conference statistics. This can be used to avoid including empty data for a conference before any statistics have been compiled, but after tracks have been entered.
 
