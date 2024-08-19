@@ -146,6 +146,14 @@ article {
 	-webkit-backdrop-filter: $glass-backdrop-filter;
 	backdrop-filter: $glass-backdrop-filter;
 
+	&.grab {
+		background: $grab-background;
+
+		h3 {
+			color: $primary;
+		}
+	}
+
 	.profile-photo {
 		max-width: $profile-photo-width;
 	}

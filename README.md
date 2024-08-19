@@ -92,6 +92,17 @@ The `tracks` list contains items with the following structure:
 | `lang`     | Yes           | string       | How to describe submissions/acceptances (in a sentence)  | `title: Doctoral Consortium submissions`             |
 | `data`     | No            | assoc. array | Submissions and acceptances for a track for a given year | `2019:`<br>`  submissions: 28`<br>`  acceptances: 9` |
 
+## Conference EOIs
+
+The announcement of an Expression of Interest to host a future conference is configured in `_data/conf_host.yml`, with the following data:
+
+| **Key**      | **Required?** | **Type** | **Explanation**                             | **Example**                         |
+|--------------|---------------|----------|---------------------------------------------|-------------------------------------|
+| `show`       | Yes           | bool     | Show the EOI section on the conference page | `true`                              |
+| `preamble`   | Yes           | string   | Information shown at top of the EOI         | `For its fifth iteration,`          |
+| `postamble`  | Yes           | string   | Information shown at bottom of the EOI      | `Expressions of Interest will...`   |
+| `conference` | Yes           | string   | Name of the conference                      | `ACM CUI 2023`                      |
+| `form`       | Yes           | string   | URL of the EOI form                         | `https://docs.google.com/forms....` |
 
 ## Workshops list
 

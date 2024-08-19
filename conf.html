@@ -27,6 +27,23 @@ menus:
       The annual ACM Conversational User Interfaces conference is held in locations across the world, bringing together researchers and practitioners to explore and discuss the state-of-the-art in conversational technologies. Each conference is run by a dedicated group of volunteers, with oversight and support provided by the <a href="{{ "/sc/" | relative_url }}">CUI Steering Committee</a>.
     </p>
   </article>
+  {%- if site.data.conf_host.show -%}
+  <article id="eoi" class="grab flex-grow-1 p-md-4 p-3">
+    <h3 class="fw-semibold mb-2 m-0 p-0">{{ site.data.conf_host.conference }} Expression of Interest</h3>
+    <p>
+      {{ site.data.conf_host.preamble }}
+    </p>
+    <p>
+      <a href="{{ site.data.conf_host.form }}" class="btn btn-primary text-white me-3 shadow-sm">
+        <i class="bi bi-file-earmark-arrow-down-fill me-2"></i>
+        Complete the online Expression of Interest
+      </a>
+    </p>
+    <p>
+      {{ site.data.conf_host.postamble }}
+    </p>
+  </article>
+  {%- endif -%}
   <div class="flex-grow-1 d-inline-flex flex-column text-start justify-content-center align-items-center mx-auto accordion accordion-flush conference-list w-100" id="conferenceList">
     {%- for datum in site.data.conf -%}
       {%- assign year = datum[0] -%}
