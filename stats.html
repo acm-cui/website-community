@@ -32,9 +32,9 @@ menus:
         {%- assign end_years_at = num_years -%}
       {%- endif -%}
       {%- assign num_years_this_table = end_years_at | minus: start_years_at | round -%}
-      {%- assign start_year = site.data.statistics.years[start_years_at] -%}
+      {%- assign start_year = site.data.stats.years[start_years_at] -%}
       {%- assign end_years_at_minus_one = end_years_at | minus: 1 -%}
-      {%- assign end_year = site.data.statistics.years[end_years_at_minus_one] -%}
+      {%- assign end_year = site.data.stats.years[end_years_at_minus_one] -%}
       <table class="w-100 mb-2 text-center">
         <thead>
           <tr class="fw-bold">
@@ -48,13 +48,13 @@ menus:
           </tr>
         </thead>
         <tbody>
-          {%- for year in site.data.statistics.years offset:start_years_at limit:max_years_per_table  -%}
-            {%- if site.data.statistics.registrations[year]["total"] -%}
+          {%- for year in site.data.stats.years offset:start_years_at limit:max_years_per_table  -%}
+            {%- if site.data.stats.registrations[year]["total"] -%}
               <tr class="border-top">
-                <td style="width: 40%">{{ site.data.conf[year].name }}{% if site.data.statistics.registrations[year]['footnote_id'] %}{% assign symbol_id = site.data.statistics.registrations[year]['footnote_id'] | minus: 1 %}<sup>{{ footnote_symbols[symbol_id] }}</sup>{% endif %}</td>
-                <td style="width: 20%">{{ site.data.statistics.registrations[year]['total'] }}</td>
-                <td style="width: 20%">{{ site.data.statistics.registrations[year]['virtual'] }}</td>
-                <td style="width: 20%">{{ site.data.statistics.registrations[year]['total'] | minus: site.data.statistics.registrations[year]['virtual'] }}</td>
+                <td style="width: 40%">{{ site.data.conf[year].name }}{% if site.data.stats.registrations[year]['footnote_id'] %}{% assign symbol_id = site.data.stats.registrations[year]['footnote_id'] | minus: 1 %}<sup>{{ footnote_symbols[symbol_id] }}</sup>{% endif %}</td>
+                <td style="width: 20%">{{ site.data.stats.registrations[year]['total'] }}</td>
+                <td style="width: 20%">{{ site.data.stats.registrations[year]['virtual'] }}</td>
+                <td style="width: 20%">{{ site.data.stats.registrations[year]['total'] | minus: site.data.stats.registrations[year]['virtual'] }}</td>
               </tr>
             {%- endif -%}
           {%- endfor -%}
@@ -70,7 +70,7 @@ menus:
         </p>
       </div>
       {%- assign footnote_index = 0 -%}
-      {%- for footnote in site.data.statistics.registrations_footnotes -%}
+      {%- for footnote in site.data.stats.registrations_footnotes -%}
         <div class="d-flex flex-row">
           <p class="flex-shrink-0 me-1 m-0 text-end" style="width: 1rem">{{ footnote_symbols[footnote_index] }}</p> 
           <p>
@@ -89,7 +89,7 @@ menus:
   <article id="programme-statistics" class="flex-grow-1 p-md-4 p-3">
     <h3 class="fw-semibold mb-3 m-0 p-0">Programme statistics</h3>
     {%- assign max_years_per_table = 3.0 -%}
-    {%- assign num_years = site.data.statistics.years | size -%}
+    {%- assign num_years = site.data.stats.years | size -%}
     {%- assign num_tables = num_years | divided_by: max_years_per_table | ceil -%}
     {%- assign num_tables_loop = num_tables | minus: 1 -%}
 
@@ -100,9 +100,9 @@ menus:
         {%- assign end_years_at = num_years -%}
       {%- endif -%}
       {%- assign num_years_this_table = end_years_at | minus: start_years_at | round -%}
-      {%- assign start_year = site.data.statistics.years[start_years_at] -%}
+      {%- assign start_year = site.data.stats.years[start_years_at] -%}
       {%- assign end_years_at_minus_one = end_years_at | minus: 1 -%}
-      {%- assign end_year = site.data.statistics.years[end_years_at_minus_one] -%}
+      {%- assign end_year = site.data.stats.years[end_years_at_minus_one] -%}
       <table class="w-100 mb-2 text-center">
         <thead>
           <tr class="fw-bold">
@@ -110,16 +110,16 @@ menus:
             <td colspan="{{ num_years_this_table }}">Acceptances / Submissions*<br><small>(Acceptance Rate)</small></td>
           </tr>
           <tr>
-            {%- for year in site.data.statistics.years offset:start_years_at limit:max_years_per_table  -%}
+            {%- for year in site.data.stats.years offset:start_years_at limit:max_years_per_table  -%}
               <td>{{ year }}</td>
             {%- endfor -%}
           </tr>
         </thead>
         <tbody>
-          {%- for track in site.data.statistics.tracks -%}
+          {%- for track in site.data.stats.tracks -%}
             <tr class="border-top">
               <td>{{ track["title"] }}</td>
-              {%- for year in site.data.statistics.years offset:start_years_at limit:max_years_per_table  -%}
+              {%- for year in site.data.stats.years offset:start_years_at limit:max_years_per_table  -%}
                 {%- if track["data"][year]["submissions"] -%}
                   <td>
                     {%- assign submissions_float = track["data"][year]["submissions"] | times: 1.0 -%}

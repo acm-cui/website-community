@@ -34,7 +34,7 @@ menus:
       {%- assign has_hm_awards = conference.awards.hon_mentions | size -%}
       {%- assign has_bp_awards = conference.awards.best_papers | size -%}
       <div class="d-flex flex-column w-100 accordion-item conference-year">
-        {%- if has_hm_awards > 0 or has_bp_awards > 0 or site.data.statistics.years contains year -%}
+        {%- if has_hm_awards > 0 or has_bp_awards > 0 or site.data.stats.years contains year -%}
           <a href="#conference-{{ year }}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="conference-{{ conference-year}}" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black">
             <div class="flex-shrink-0 align-self-start">
               {%- assign image_url = "/assets/img/conferences/" | append: conference.logo -%}
@@ -61,7 +61,7 @@ menus:
                     </button>
                   </li>
                 {%- endif -%}
-                {%- if site.data.statistics.years contains year -%}
+                {%- if site.data.stats.years contains year -%}
                   <li class="nav-item mt-lg-2 m-lg-0 m-1">
                     <button class="nav-link w-100 link-primary shadow-sm" id="conference-{{ year }}-statistics-tab" data-bs-toggle="pill" data-bs-target="#conference-{{ year }}-statistics" type="button" role="tab" aria-controls="conference-{{ year }}-statistics" aria-selected="false">
                       Statistics
@@ -94,28 +94,28 @@ menus:
                       {{ conference.name }} will be held in {{ conference.location }} on {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}.
                     {%- endif -%}
                   </p>
-                  {%- if site.data.statistics.years contains year -%}
+                  {%- if site.data.stats.years contains year -%}
                     <p>
-                      {{ site.data.statistics.registrations[year].total }} people registered for the conference
+                      {{ site.data.stats.registrations[year].total }} people registered for the conference
                       {%- if conference.covid19virtual -%}
                         .
                       {%- else -%}
-                        {%- if site.data.statistics.registrations[year].virtual > 0 -%},
-                          {{ site.data.statistics.registrations[year].virtual }} of whom for virtual attendance and {{ site.data.statistics.registrations[year].total | minus: site.data.statistics.registrations[year].virtual }} in-person attendance.
+                        {%- if site.data.stats.registrations[year].virtual > 0 -%},
+                          {{ site.data.stats.registrations[year].virtual }} of whom for virtual attendance and {{ site.data.stats.registrations[year].total | minus: site.data.stats.registrations[year].virtual }} in-person attendance.
                         {%- else -%}
                           .
                         {%- endif -%} 
                       {%- endif -%}
                       {%- assign totalpubs = 0 -%}
                       {%- assign totaltracks = 0 -%}
-                      {%- for track in site.data.statistics.tracks -%}
+                      {%- for track in site.data.stats.tracks -%}
                         {%- if track.data[year] -%}
                           {%- assign totalpubs = totalpubs | plus: track.data[year].acceptances -%}
                           {%- assign totaltracks = totaltracks | plus: 1 -%}
                         {%- endif -%}
                       {%- endfor %}
                       In total, there were {{ totalpubs }} publications at {{ conference.name }}, consisting of 
-                      {% for track in site.data.statistics.tracks -%}
+                      {% for track in site.data.stats.tracks -%}
                         {%- if track.data[year] -%}
                           {%- if totaltracks > 2 %}{%- unless forloop.first %}, {% endunless %}{% endif %}{% if forloop.index == totaltracks %} and {% endif %}{{ track.data[year].acceptances }} {{ track.lang }}
                         {%- endif -%}
@@ -165,16 +165,16 @@ menus:
                   {%- endif -%}
                 </div>
                 {%- endif -%}
-                {%- if site.data.statistics.years contains year -%}
+                {%- if site.data.stats.years contains year -%}
                   <div class="tab-pane fade w-100" id="conference-{{ year }}-statistics" role="tabpanel" aria-labelledby="conference-{{ year }}-statistics-tab" tabindex="0">
                     <h4 class="fw-medium">Registration statistics</h4>
                     <p>
                       We record <em>registrations</em> and not attendance as attendance can be difficult to accurately count. Registrations do typically include "comped" registrations—such as those given to student volunteers and keynotes—as well as registrations in return for sponsorship of the conference.
-                      {% if site.data.statistics.registrations[year].footnote_id -%}
-                        {%- assign footnote_id = site.data.statistics.registrations[year].footnote_id | minus: 1 -%}
-                        {%- assign footnote_length = site.data.statistics.registrations_footnotes[footnote_id] | size -%}
+                      {% if site.data.stats.registrations[year].footnote_id -%}
+                        {%- assign footnote_id = site.data.stats.registrations[year].footnote_id | minus: 1 -%}
+                        {%- assign footnote_length = site.data.stats.registrations_footnotes[footnote_id] | size -%}
                         {%- assign footnote_offset = footnote_length | minus: 1 -%}
-                        For {{ conference.name }}, {{ site.data.statistics.registrations_footnotes[footnote_id] | slice: 0, 1 | downcase }}{{ site.data.statistics.registrations_footnotes[footnote_id] | slice: 1, footnote_offset }}
+                        For {{ conference.name }}, {{ site.data.stats.registrations_footnotes[footnote_id] | slice: 0, 1 | downcase }}{{ site.data.stats.registrations_footnotes[footnote_id] | slice: 1, footnote_offset }}
                       {%- endif -%}
                     </p>
                     <table class="w-100 mb-2 text-center">
@@ -187,9 +187,9 @@ menus:
                       </thead>
                       <tbody>
                         <tr class="border-top">
-                          <td style="width: 33%">{{ site.data.statistics.registrations[year].virtual }}</td>
-                          <td style="width: 33%">{{ site.data.statistics.registrations[year].total | minus: site.data.statistics.registrations[year].virtual }}</td>
-                          <td>{{ site.data.statistics.registrations[year].total }}</td>
+                          <td style="width: 33%">{{ site.data.stats.registrations[year].virtual }}</td>
+                          <td style="width: 33%">{{ site.data.stats.registrations[year].total | minus: site.data.stats.registrations[year].virtual }}</td>
+                          <td>{{ site.data.stats.registrations[year].total }}</td>
                         </tr>
                       </tbody>
                     </table>
@@ -206,7 +206,7 @@ menus:
                         </tr>
                       </thead>
                       <tbody>
-                        {%- for track in site.data.statistics.tracks -%}
+                        {%- for track in site.data.stats.tracks -%}
                           {%- if track["data"][year]["submissions"] > 0 -%}
                             <tr class="border-top">
                               <td>{{ track["title"] }}</td>
