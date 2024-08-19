@@ -39,6 +39,15 @@ The `nominations_settings` associative array consists of the following data:
 | `deadline` | Yes           | string       | Deadline for nominations in the format YYYY-MM-DD                                                                                                                                                           | `2023-05-27`                                            |
 | `contact`  | Yes           | assoc. array | Who individuals should contact, should they have any questions.<br><br>This consists of two required keys: the name of the individual to contact (`name`, string) and their email address (`email`, string) | `name: Benjamin Cowan`<br>`email:benjamin.cowan@ucd.ie` |
 
+### Constitution
+
+The file `_data/const.yml` contains information relating to the Constitution of the Steering Committee, and has the following data:
+
+| **Key** | **Required?** | **Type** | **Explanation**                                     | **Example**                                   |
+|---------|---------------|----------|-----------------------------------------------------|-----------------------------------------------|
+| `path`  | Yes           | string   | Path to the PDF of the constitution                 | `/assets/pdf/cui-conference-constitution.pdf` |
+| `date`  | Yes           | string   | Date the constitution was last updated and approved | `2024-04-19`                                  |
+
 
 ## Conference data
 

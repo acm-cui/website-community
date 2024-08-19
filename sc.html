@@ -39,12 +39,12 @@ menus:
       The constitution for the ACM Conversational User Interfaces conference sets out the organisation and procedures that govern the conference and workshop series, as well as the overarching series steeering committee.
     </p>
     <p>
-      <a href="{{ '/assets/pdf/cui-conference-constitution.pdf' | relative_url }}" class="btn btn-primary text-white me-3 shadow-sm">
+      <a href="{{ site.data.const.file | relative_url }}" class="btn btn-primary text-white me-3 shadow-sm">
         <i class="bi bi-file-earmark-arrow-down-fill"></i>
         Download the latest constitution
       </a>
       <span class="text-secondary small d-xl-inline-block mt-xl-0 d-block mt-3">
-        Last updated and approved: 19th April 2024
+        Last updated and approved: {% include date.html date=site.data.const.date -%}
       </span>
     </p>
   </article>
