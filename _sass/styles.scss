@@ -80,7 +80,7 @@ nav.navbar {
 		& > div {
 			-webkit-backdrop-filter: $nav-link-glass-backdrop-filter;
 			backdrop-filter: $nav-link-glass-backdrop-filter;
-			padding: calc($nav-link-border-width/2)  calc($nav-link-border-width/2);
+			padding: $nav-link-border-width ;
 		}
 
 		&.active {
