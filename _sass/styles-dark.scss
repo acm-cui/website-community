@@ -93,11 +93,12 @@ nav.navbar {
 
 .nav-pills {
 	.nav-link {
-		@include auto-transition((color, background));
-		background: $nav-link-button-bg-hover-dark;
+		-webkit-backdrop-filter: $nav-link-glass-backdrop-filter-dark;
+		backdrop-filter: $nav-link-glass-backdrop-filter-dark;
+		border: $nav-link-button-border-dark;
 
 		&:active, &:hover, &.active {
-			color: $nav-link-button-fg;
+			border: $nav-link-button-hover-border-dark;
 			background: $nav-link-button-bg-hover-dark;
 		}
 	}
