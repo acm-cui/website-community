@@ -2,7 +2,7 @@
 permalink: /assets/csv/statistics/awards.csv
 layout: none
 ---
-Conference,Honourable mentions,Honourable mention eligible,Honourable mention %,Best papers,Best papers eligible,Best papers %
+Conference,Honourable mentions,Honourable mention eligible,Honourable mention %,Best papers,Best papers eligible,Best papers %,Total,Total eligible,Total %
 {%- for year in site.data.stats.years -%}{%- assign conference = site.data.conf[year] %}
 {{ conference.name -}},
 {%- assign num_hom_mentions = conference.awards.hon_mentions | size | times: 1.0 -%}{{ conference.awards.hon_mentions | size }},{% assign total_possible = 0 -%}{%- for track in conference.awards.track_links.hon_mentions -%}{%- assign total_possible = total_possible | plus: site.data.stats.tracks[track]['data'][year]['acceptances'] -%}{%- endfor -%}{{ total_possible }},{{ num_hom_mentions | divided_by: total_possible | times: 100 | round: 1 }}%,
