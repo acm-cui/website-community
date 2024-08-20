@@ -2,7 +2,7 @@
 
 The ACM CUI community website is build using Jekyll, on GitHub Pages.
 
-## Steering Commmitee data
+## Steering Commmitee membership, nominations and elections
 
 Information about officers and members of the Steering Commmittee is stored in `_data/sc.yml` in four lists, one for _officers_ of the Steering Committee (`officers`), one for _members_ of the Steering Committee (`members`), one for elections to the Steering Committee (`elections`), and one for nominations for elections to the Steering Committee (`nominations`). There is additionally one associative array, `nominations_settings`, which contains information used in the Call for Nominations.
 
@@ -39,7 +39,7 @@ The `nominations_settings` associative array consists of the following data:
 | `deadline` | Yes           | string       | Deadline for nominations in the format YYYY-MM-DD                                                                                                                                                           | `2023-05-27`                                            |
 | `contact`  | Yes           | assoc. array | Who individuals should contact, should they have any questions.<br><br>This consists of two required keys: the name of the individual to contact (`name`, string) and their email address (`email`, string) | `name: Benjamin Cowan`<br>`email:benjamin.cowan@ucd.ie` |
 
-### Constitution
+## Constitution
 
 The file `_data/const.yml` contains information relating to the Constitution of the Steering Committee, and has the following data:
 
@@ -92,7 +92,7 @@ The `tracks` list contains items with the following structure:
 | `lang`     | Yes           | string       | How to describe submissions/acceptances (in a sentence)  | `title: Doctoral Consortium submissions`             |
 | `data`     | No            | assoc. array | Submissions and acceptances for a track for a given year | `2019:`<br>`  submissions: 28`<br>`  acceptances: 9` |
 
-## Conference EOIs
+### Conference Expressions of Interest
 
 The announcement of an Expression of Interest to host a future conference is configured in `_data/conf_host.yml`, with the following data:
 
@@ -104,7 +104,7 @@ The announcement of an Expression of Interest to host a future conference is con
 | `conference` | Yes           | string   | Name of the conference                      | `ACM CUI 2023`                      |
 | `form`       | Yes           | string   | URL of the EOI form                         | `https://docs.google.com/forms....` |
 
-## Workshops list
+## Workshops
 
 File file `_data/ws.yml` contains information about satellite workshops affiliated with the ACM CUI community. The newest conference should be at the top of the list. The file contains a list of associative arrays with the key-value pairs:
 
