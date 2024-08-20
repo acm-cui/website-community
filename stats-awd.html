@@ -1,0 +1,8 @@
+---
+permalink: /assets/csv/statistics/awards.csv
+layout: none
+---
+Conference,Honourable mentions,Best papers,Outstanding service
+{%- for year in site.data.stats.years -%}{%- assign conference = site.data.conf[year] %}
+{{ site.data.conf[year].name }},{{ conference.awards.hon_mentions | size }},{{ conference.awards.best_papers | size }},{{ conference.awards.outstanding_service | size -}}
+{% endfor -%}

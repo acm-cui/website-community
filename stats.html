@@ -37,11 +37,11 @@ menus:
       {%- assign end_year = site.data.stats.years[end_years_at_minus_one] -%}
       <table class="w-100 mb-2 text-center">
         <thead>
-          <tr class="fw-bold">
+          <tr class="fw-medium">
             <td rowspan="2">Conference</td>
             <td colspan="3">Registrations</td>
           </tr>
-          <tr>
+          <tr class="fw-medium">
             <td>Total</td>
             <td>Virtual</td>
             <td>In-person</td>
@@ -80,12 +80,12 @@ menus:
           </div>
       {%- endfor -%}
     </small>
-
-    <a href="{{ "/assets/csv/stats-registration.csv" | relative_url }}" class="mt-3 btn btn-primary text-white me-3 shadow-sm"  title="Registration statistics as a CSV file">
+    <a href="{{ "/assets/csv/statistics/registrations.csv" | relative_url }}" class="mt-3 btn btn-primary text-white me-3 shadow-sm"  title="Registration statistics as a CSV file">
       <i class="bi bi-file-earmark-arrow-down-fill"></i>
       Download this table as a CSV
     </a>
   </article>
+
   <article id="programme-statistics" class="flex-grow-1 p-md-4 p-3">
     <h3 class="fw-semibold mb-3 m-0 p-0">Programme statistics</h3>
     {%- assign max_years_per_table = 3.0 -%}
@@ -105,11 +105,11 @@ menus:
       {%- assign end_year = site.data.stats.years[end_years_at_minus_one] -%}
       <table class="w-100 mb-2 text-center">
         <thead>
-          <tr class="fw-bold">
+          <tr class="fw-medium">
             <td rowspan="2">Track</td>
             <td colspan="{{ num_years_this_table }}">Acceptances / Submissions*<br><small>(Acceptance Rate)</small></td>
           </tr>
-          <tr>
+          <tr class="fw-medium">
             {%- for year in site.data.stats.years offset:start_years_at limit:max_years_per_table  -%}
               <td>{{ year }}</td>
             {%- endfor -%}
@@ -145,11 +145,46 @@ menus:
       </div>
     </small>
 
-    <a href="{{ "/assets/csv/stats-programme.csv" | relative_url }}" class="mt-3 btn btn-primary text-white me-3 shadow-sm"  title="Registration statistics as a CSV file">
+    <a href="{{ "/assets/csv/statistics/programme.csv" | relative_url }}" class="mt-3 btn btn-primary text-white me-3 shadow-sm"  title="Registration statistics as a CSV file">
       <i class="bi bi-file-earmark-arrow-down-fill"></i>
       Download these tables as a CSV
     </a>
 
+  </article>
+
+  <article id="programme-statistics" class="flex-grow-1 p-md-4 p-3">
+    <h3 class="fw-semibold mb-3 m-0 p-0">Award statistics</h3>
+    <table class="w-100 mb-2 text-center">
+      <thead>
+        <tr class="fw-medium">
+          <td rowspan="2">Conference</td>
+          <td colspan="3">Awards</td>
+        </tr>
+        <tr class="fw-medium">
+          <td>Hon. mentions</td>
+          <td>Best papers</td>
+          <td>Outstanding service</td>
+        </tr>
+      </thead>
+      <tbody>
+        {%- for year in site.data.stats.years -%}
+          {%- assign conference = site.data.conf[year] -%}
+          {%- if  site.data.stats.years contains year -%}
+            <tr class="border-top">
+              <td>{{ conference.name }}</td>
+              <td>{{ conference.awards.hon_mentions | size }}</td>
+              <td>{{ conference.awards.best_papers | size }}</td>
+              <td>{{ conference.awards.outstanding_service | size }}</td>
+            </tr>
+          {%- endif -%}
+        {%- endfor -%}
+      </tbody>
+    </table>
+
+    <a href="{{ "/assets/csv/statistics/awards.csv" | relative_url }}" class="mt-3 btn btn-primary text-white me-3 shadow-sm"  title="Registration statistics as a CSV file">
+      <i class="bi bi-file-earmark-arrow-down-fill"></i>
+      Download this table as a CSV
+    </a>
   </article>
 </section>
 {%- include sidebar.html -%}

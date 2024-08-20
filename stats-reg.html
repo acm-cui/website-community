@@ -1,8 +1,8 @@
 ---
-permalink: /assets/csv/stats-registration.csv
+permalink: /assets/csv/statistics/registrations.csv
 layout: none
 ---
 Conference,Total registrations,Virtual registrations,In-person registrations
-{%- for year in site.data.stats.years offset:start_years_at limit:max_years_per_table -%}{%- if site.data.stats.registrations[year]["total"] %}
+{%- for year in site.data.stats.years -%}{%- if site.data.stats.registrations[year]["total"] %}
 {{ site.data.conf[year].name }},{{ site.data.stats.registrations[year]['total'] }},{{ site.data.stats.registrations[year]['virtual'] }},{{ site.data.stats.registrations[year]['total'] | minus: site.data.stats.registrations[year]['virtual'] }}
 {%- endif -%}{% endfor -%}
