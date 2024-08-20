@@ -116,7 +116,8 @@ menus:
           </tr>
         </thead>
         <tbody>
-          {%- for track in site.data.stats.tracks -%}
+          {%- for datum in site.data.stats.tracks -%}
+            {%- assign track = datum[1] -%}
             <tr class="border-top">
               <td>{{ track["title"] }}</td>
               {%- for year in site.data.stats.years offset:start_years_at limit:max_years_per_table  -%}
@@ -153,17 +154,17 @@ menus:
   </article>
 
   <article id="programme-statistics" class="flex-grow-1 p-md-4 p-3">
-    <h3 class="fw-semibold mb-3 m-0 p-0">Award statistics</h3>
+    <h3 class="fw-semibold mb-3 m-0 p-0">Programme award statistics</h3>
     <table class="w-100 mb-2 text-center">
       <thead>
         <tr class="fw-medium">
           <td rowspan="2">Conference</td>
-          <td colspan="3">Awards</td>
+          <td colspan="3">Awarded / eligible<br><small>(% awarded)</small></td>
         </tr>
         <tr class="fw-medium">
           <td>Hon. mentions</td>
           <td>Best papers</td>
-          <td>Outstanding service</td>
+          <td>Total</td>
         </tr>
       </thead>
       <tbody>
@@ -172,9 +173,13 @@ menus:
           {%- if  site.data.stats.years contains year -%}
             <tr class="border-top">
               <td>{{ conference.name }}</td>
-              <td>{{ conference.awards.hon_mentions | size }}</td>
-              <td>{{ conference.awards.best_papers | size }}</td>
-              <td>{{ conference.awards.outstanding_service | size }}</td>
+              <td>{%- assign num_hom_mentions = conference.awards.hon_mentions | size | times: 1.0 -%}{{ conference.awards.hon_mentions | size }} / {% assign total_possible = 0 -%}{%- for track in conference.awards.track_links.hon_mentions -%}{%- assign total_possible = total_possible | plus: site.data.stats.tracks[track]['data'][year]['acceptances'] -%}{%- endfor -%}{{ total_possible }}<br><small class="text-muted">({{ num_hom_mentions | divided_by: total_possible | times: 100 | round: 1 }}%)</small></td>
+              <td>{%- assign num_best_papers = conference.awards.best_papers | size | times: 1.0 -%}{{ conference.awards.best_papers | size }} / {% assign total_possible = 0 -%}{%- for track in conference.awards.track_links.best_papers -%}{%- assign total_possible = total_possible | plus: site.data.stats.tracks[track]['data'][year]['acceptances'] -%}{%- endfor -%}{{ total_possible }}<br><small class="text-muted">({{ num_best_papers | divided_by: total_possible | times: 100 | round: 1 }}%)</small></td>
+              {%- assign counted_tracks = conference.awards.track_links.hon_mentions -%}
+              {%- for count_track in conference.awards.track_lists.best_papers -%}
+                {%- assign counted_tracks = counted_tracks | concat: count_track -%}
+              {%- endfor -%}
+              <td>{%- assign num_total = num_best_papers | plus: num_hom_mentions  -%}{{ num_best_papers | plus: num_hom_mentions | replace: ".0","" }} / {% assign total_possible = 0 -%}{%- for track in counted_tracks -%}{%- assign total_possible = total_possible | plus: site.data.stats.tracks[track]['data'][year]['acceptances'] -%}{%- endfor -%}{{ total_possible }}<br><small class="text-muted">({{ num_total | divided_by: total_possible | times: 100 | round: 1 }}%)</small></td>
             </tr>
           {%- endif -%}
         {%- endfor -%}

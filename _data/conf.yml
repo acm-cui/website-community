@@ -39,6 +39,15 @@
     - name: SIGCHI
       link: https://www.sigchi.org/
   awards:
+    track_links:
+      hon_mentions:
+        - papers
+        - posters
+        - provocations
+      best_papers:
+        - papers
+        - posters
+        - provocations
     hon_mentions:
       - title: "Explaining the Wait: How Justifying Chatbot Response Delays Impact User Trust"
         authors: Zhengquan Zhang, Konstantinos Tsiakas, and Christina Schneegass
@@ -95,6 +104,15 @@
     - name: SIGCHI
       link: https://www.sigchi.org/
   awards:
+    track_links:
+      hon_mentions:
+        - papers
+        - posters
+        - provocations
+      best_papers:
+        - papers
+        - posters
+        - provocations
     hon_mentions:
       - title: "From Writing Dialogue to Designing Conversation: Considering the potential of Conversation Analysis for Voice User Interfaces"
         authors: Adam Brandt, Spencer Hazel, Rory McKinnon, Kleopatra Sideridou, Joe Tindale, and Nikoletta Ventoura
@@ -150,10 +168,19 @@
     - name: SIGCHI
       link: https://www.sigchi.org/
   awards:
+    track_links:
+      hon_mentions:
+        - papers
+        - posters
+        - provocations
+      best_papers:
+        - papers
+        - posters
+        - provocations
     hon_mentions:
       - title: A Blueprint for Integrating Task-Oriented Conversational Agents in Education Poster
         authors: Juan Carlos Farah, Basile Spaenlehauer, Sandy Ingram, and Denis Gillet
-        dl: https://doi.org/abs/10.1145/3543829.3544525
+        dl: https://doi.org/doi/10.1145/3543829.3544525
       - title: Should Alexa be a Police Officer, a Doctor, or a Priest?
         authors: James Simpson and Cassandra Crone
         dl: https://doi.org/10.1145/3543829.3544522
@@ -177,6 +204,13 @@
     end: 2021-07-29
   logo: cui2021.png
   urls:
+    track_links:
+      hon_mentions:
+        - papers
+        - provocations
+      best_papers:
+        - papers
+        - provocations
     website:
       name: Website
       link: https://cui.acm.org/2021/
@@ -198,6 +232,13 @@
     - name: SIGCHI
       link: https://www.sigchi.org/
   awards:
+    track_links:
+      hon_mentions:
+        - papers
+        - provocations
+      best_papers:
+        - papers
+        - provocations
     hon_mentions:
       - title: Can I Talk to You about Your Social Needs? Understanding Preference for Conversational User Interface in Health
         authors: Rafal Kocielnik, Raina Langevin, James S George, Shota Akenaga, Amelia Wang, Darwin P Jones, Alexander Argyle, Callan Fockele, Layla Anderson, Dennis T Hsieh, Kabir Yadav, Herbert Duber, Gary Hsieh, and Andrea L Hartzler
@@ -249,6 +290,13 @@
     - name: SIGCHI
       link: https://www.sigchi.org/
   awards:
+    track_links:
+      hon_mentions:
+        - papers
+        - provocations
+      best_papers:
+        - papers
+        - provocations
     hon_mentions:
       - title: What Can I Say? Effects of Discoverability in VUIs on Task Performance and User Experience
         authors: Philipp Kirschthaler, Martin Porcheron, and Joel E Fischer
@@ -309,6 +357,13 @@
     - name: SIGCHI
       link: https://www.sigchi.org/
   awards:
+    track_links:
+      hon_mentions:
+        - papers
+        - provocations
+      best_papers:
+        - papers
+        - provocations
     hon_mentions:
       - title: Crowdsourcing a self-evolving dialog graph
         authors: Patrik Jonell, Per Fallgren, Fethiye Irmak Doğan, José Lopes, Ulme Wennberg, and Gabriel Skantze

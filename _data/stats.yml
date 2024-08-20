@@ -36,8 +36,11 @@ registrations:
     footnote_id: 1
 
 tracks:
-  - title: Papers
-    lang: papers
+  papers:
+    title: Papers
+    lang:
+      singular: paper
+      plural: papers
     data:
       2019:
         submissions: 28
@@ -58,8 +61,11 @@ tracks:
         submissions: 87
         acceptances: 29
   
-  - title: Provocations
-    lang: provocations
+  provocations:
+    title: Provocations
+    lang:
+      singular: provocation
+      plural: provocations
     data:
       2019:
         submissions: 36
@@ -80,8 +86,11 @@ tracks:
         submissions: 23
         acceptances: 12
   
-  - title: Posters
-    lang: posters
+  posters:
+    title: Posters
+    lang:
+      singular: poster
+      plural: posters
     data:
       2020:
         submissions: 23
@@ -99,8 +108,11 @@ tracks:
         submissions: 39
         acceptances: 19
   
-  - title: Demonstrations
-    lang: demos
+  demos:
+    title: Demonstrations
+    lang:
+      singular: demo
+      plural: demos
     data:
       2020:
         submissions: 8
@@ -118,8 +130,11 @@ tracks:
         submissions: 3
         acceptances: 3
 
-  - title: SIGs/Workshops
-    lang: SIGs/workshops
+  workshops:
+    title: SIGs/Workshops
+    lang:
+      singular: SIG/workshop
+      plural: SIGs/workshops
     data:
       2022:
         submissions: 2
@@ -131,8 +146,11 @@ tracks:
         submissions: 6
         acceptances: 4
 
-  - title: Doctoral Consortium
-    lang: Doctoral Consortium submissions
+  dc:
+    title: Doctoral Consortium
+    lang:
+      singular: Doctoral Consortium participant
+      plural: Doctoral Consortium participants
     data:
       2023:
         submissions: 9

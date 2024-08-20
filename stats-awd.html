@@ -2,7 +2,13 @@
 permalink: /assets/csv/statistics/awards.csv
 layout: none
 ---
-Conference,Honourable mentions,Best papers,Outstanding service
+Conference,Honourable mentions,Honourable mention eligible,Honourable mention %,Best papers,Best papers eligible,Best papers %
 {%- for year in site.data.stats.years -%}{%- assign conference = site.data.conf[year] %}
-{{ site.data.conf[year].name }},{{ conference.awards.hon_mentions | size }},{{ conference.awards.best_papers | size }},{{ conference.awards.outstanding_service | size -}}
-{% endfor -%}
+{{ conference.name -}},
+{%- assign num_hom_mentions = conference.awards.hon_mentions | size | times: 1.0 -%}{{ conference.awards.hon_mentions | size }},{% assign total_possible = 0 -%}{%- for track in conference.awards.track_links.hon_mentions -%}{%- assign total_possible = total_possible | plus: site.data.stats.tracks[track]['data'][year]['acceptances'] -%}{%- endfor -%}{{ total_possible }},{{ num_hom_mentions | divided_by: total_possible | times: 100 | round: 1 }}%,
+{%- assign num_best_papers = conference.awards.best_papers | size | times: 1.0 -%}{{ conference.awards.best_papers | size }},{% assign total_possible = 0 -%}{%- for track in conference.awards.track_links.best_papers -%}{%- assign total_possible = total_possible | plus: site.data.stats.tracks[track]['data'][year]['acceptances'] -%}{%- endfor -%}{{ total_possible }},{{ num_best_papers | divided_by: total_possible | times: 100 | round: 1 }}%,
+{%- assign counted_tracks = conference.awards.track_links.hon_mentions -%}
+{%- for count_track in conference.awards.track_lists.best_papers -%}
+    {%- assign counted_tracks = counted_tracks | concat: count_track -%}
+{%- endfor -%}
+{%- assign num_total = num_best_papers | plus: num_hom_mentions  -%}{{ num_best_papers | plus: num_hom_mentions | replace: ".0","" }},{% assign total_possible = 0 -%}{%- for track in counted_tracks -%}{%- assign total_possible = total_possible | plus: site.data.stats.tracks[track]['data'][year]['acceptances'] -%}{%- endfor -%}{{ total_possible }},{{ num_total | divided_by: total_possible | times: 100 | round: 1 }}%{% endfor -%}

@@ -125,16 +125,18 @@ menus:
                       {%- endif -%}
                       {%- assign totalpubs = 0 -%}
                       {%- assign totaltracks = 0 -%}
-                      {%- for track in site.data.stats.tracks -%}
+                      {%- for datum in site.data.stats.tracks -%}
+                        {%- assign track = datum[1] -%}
                         {%- if track.data[year] -%}
                           {%- assign totalpubs = totalpubs | plus: track.data[year].acceptances -%}
                           {%- assign totaltracks = totaltracks | plus: 1 -%}
                         {%- endif -%}
                       {%- endfor %}
                       In total, there were {{ totalpubs }} publications at {{ conference.name }}, consisting of 
-                      {% for track in site.data.stats.tracks -%}
+                      {% for datum in site.data.stats.tracks -%}
+                        {%- assign track = datum[1] -%}
                         {%- if track.data[year] -%}
-                          {%- if totaltracks > 2 %}{%- unless forloop.first %}, {% endunless %}{% endif %}{% if forloop.index == totaltracks %} and {% endif %}{{ track.data[year].acceptances }} {{ track.lang }}
+                          {%- if totaltracks > 2 %}{%- unless forloop.first %}, {% endunless %}{% endif %}{% if forloop.index == totaltracks %} and {% endif %}{{ track.data[year].acceptances }} {% if track.data[year].acceptances == 1 -%}{{ track.lang.singular }}{%- else -%}{{ track.lang.plural }}{%- endif -%}
                         {%- endif -%}
                       {%- endfor %}.
                       {%- if conference.urls.proceedings %}
@@ -225,7 +227,8 @@ menus:
                         </tr>
                       </thead>
                       <tbody>
-                        {%- for track in site.data.stats.tracks -%}
+                        {%- for datum in site.data.stats.tracks -%}
+                          {%- assign track = datum[1] -%}
                           {%- if track["data"][year]["submissions"] > 0 -%}
                             <tr class="border-top">
                               <td>{{ track["title"] }}</td>
@@ -278,7 +281,7 @@ menus:
       </div>
       <div class="flex-grow-1 flex-fill ps-md-2 ms-3">
         <h3 class="m-0 p-0 pt-1 fw-semibold">Looking for statistics across years?</h3>
-        <p class="mb-0 mt-1 p-0">Registration and programme statistics can be compared, contrasted, and downloaded in CSV format from the <a href="{{ "/conference/statistics" | relative_url }}">conference statistics</a> page.</p>
+        <p class="mb-0 mt-1 p-0">Registration, programme and award statistics can be compared, contrasted, and downloaded in CSV format from the <a href="{{ "/conference/statistics" | relative_url }}">conference statistics</a> page.</p>
       </div>
     </div>
   </div>
