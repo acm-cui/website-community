@@ -187,13 +187,15 @@ menus:
                     <h4 class="fw-medium">Registration statistics</h4>
                     <p>
                       We record <em>registrations</em> and not attendance as attendance can be difficult to accurately count. Registrations do typically include "comped" registrations—such as those given to student volunteers and keynotes—as well as registrations in return for sponsorship of the conference.
-                      {% if site.data.stats.registrations[year].footnote_id -%}
+                    </p>
+                    {% if site.data.stats.registrations[year].footnote_id -%}
+                      <p>
                         {%- assign footnote_id = site.data.stats.registrations[year].footnote_id | minus: 1 -%}
                         {%- assign footnote_length = site.data.stats.registrations_footnotes[footnote_id] | size -%}
                         {%- assign footnote_offset = footnote_length | minus: 1 -%}
                         For {{ conference.name }}, {{ site.data.stats.registrations_footnotes[footnote_id] | slice: 0, 1 | downcase }}{{ site.data.stats.registrations_footnotes[footnote_id] | slice: 1, footnote_offset }}
-                      {%- endif -%}
-                    </p>
+                      </p>
+                    {%- endif -%}
                     <table class="w-100 mb-2 text-center">
                       <thead>
                         <tr class="fw-medium border-bottom">
