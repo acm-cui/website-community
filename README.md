@@ -1,6 +1,6 @@
 # ACM Conversational User Interfaces community website
 
-The ACM CUI community website is build using Jekyll, on GitHub Pages.
+The ACM CUI community website is built using Jekyll, on GitHub Pages. Avoid naming any directories after a year or subdirectories if the `workshops` directory.
 
 ## Steering Commmitee membership, nominations and elections
 
