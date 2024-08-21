@@ -61,6 +61,22 @@ $nav-link-color: #000;
 $nav-link-active-color: #000;
 $nav-link-glass-backdrop-filter: saturate(180%) blur(20px) brightness(95%);
 
+$nav-link-active-bg-gradient: linear-gradient(-135deg,
+                   rgba(81,112,78,1) 20%,
+                   rgba(81,112,78,1) 30%,
+                   rgba(203,106,115,1) 30%,
+                   rgba(203,106,115,1) 40%,
+                   rgba(182,81,145,1) 40%,
+                   rgba(182,81,145,1) 50%,
+                   rgba(81,105,182,1) 50%,
+                   rgba(81,105,182,1) 60%,
+                   rgba(255,117,11,1) 60%,
+                   rgba(255,117,11,1) 70%,
+                   rgba(0,161,222,1) 70%,
+                   rgba(0,161,222,1) 80%,
+                   rgba(255,0,0,1) 80%,
+                   rgba(255,0,0,1) 90%);
+
 $navbar-light-hover-bg: $primary;
 $navbar-light-hover-color: #000;
 $navbar-light-expanded-color: $navbar-light-hover-color;
