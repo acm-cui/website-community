@@ -45,7 +45,7 @@ The file `_data/const.yml` contains information relating to the Constitution of 
 
 | **Key** | **Required?** | **Type** | **Explanation**                                     | **Example**                                   |
 |---------|---------------|----------|-----------------------------------------------------|-----------------------------------------------|
-| `path`  | Yes           | string   | Path to the PDF of the constitution                 | `/assets/pdf/cui-conference-constitution.pdf` |
+| `file`  | Yes           | string   | Path to the PDF of the constitution                 | `/assets/pdf/cui-conference-constitution.pdf` |
 | `date`  | Yes           | string   | Date the constitution was last updated and approved | `2024-04-19`                                  |
 
 
