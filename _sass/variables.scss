@@ -22,23 +22,23 @@ $border-color: rgba(55,55,55, 0.2);
 // LAYOUT
 $body-bg: rgb(238,238,238);
 $body-bg-gradient: linear-gradient(-135deg,
-                    darken(rgba($body-bg,1), 20%) 0%,
-                   darken(rgba($body-bg,1), 20%) 10%,
-                   rgba(81,112,78,1) 10%,
-                   rgba(81,112,78,1) 20%,
-                   rgba(203,106,115,1) 20%,
-                   rgba(203,106,115,1) 30%,
-                   rgba(182,81,145,1) 30%,
-                   rgba(182,81,145,1) 40%,
-                   rgba(81,105,182,1) 40%,
-                   rgba(81,105,182,1) 50%,
-                   rgba(255,117,11,1) 50%,
-                   rgba(255,117,11,1) 60%,
-                   rgba(0,161,222,1) 60%,
-                   rgba(0,161,222,1) 70%,
-                   rgba(255,0,0,1) 70%,
-                   rgba(255,0,0,1) 80%,
-                   darken(rgba($body-bg,1), 20%) 80%);
+                    darken(rgba($body-bg,1), 20%) 0px,
+                   darken(rgba($body-bg,1), 20%) 200px,
+                   rgba(81,112,78,1) 200px,
+                   rgba(81,112,78,1) 300px,
+                   rgba(203,106,115,1) 300px,
+                   rgba(203,106,115,1) 400px,
+                   rgba(182,81,145,1) 400px,
+                   rgba(182,81,145,1) 500px,
+                   rgba(81,105,182,1) 500px,
+                   rgba(81,105,182,1) 600px,
+                   rgba(255,117,11,1) 600px,
+                   rgba(255,117,11,1) 700px,
+                   rgba(0,161,222,1) 700px,
+                   rgba(0,161,222,1) 800px,
+                   rgba(255,0,0,1) 800px,
+                   rgba(255,0,0,1) 900px,
+                   darken(rgba($body-bg,1), 20%) 900px);
 
 $content-bg: rgba($body-bg,.7);
 $content-border-size: 3px;
