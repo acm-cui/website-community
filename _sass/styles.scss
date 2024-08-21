@@ -198,7 +198,7 @@ article + article {
 		backdrop-filter: $glass-backdrop-filter;
 		margin-top: $content-border-size;
 
-		.conference-chevron {
+		.conference-chevron, .conference-calculator {
 			color: $conference-chevron-color;
 			opacity: $conference-chevron-o;
 			font-size: $conference-chevron-font-size;
@@ -207,6 +207,10 @@ article + article {
 			&:hover, .conference-year:hover .conference-chevron {
 				opacity: 1;
 			}
+		}
+
+		.conference-calculator {
+			font-size: 2.6rem
 		}
 	}
 
