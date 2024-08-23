@@ -25,11 +25,12 @@ Each item in the `elections` list consists of an associative array with the foll
 
 Each item in the `nominations` list consists of an associative array with the following structure:
 
-| **Key**       | **Required?** | **Type** | **Explanation**                         | **Example**        |
-|---------------|---------------|----------|-----------------------------------------|--------------------|
-| `title`       | Yes           | string   | Name of the office                      | `Co-Chair`         |
-| `term`        | Yes           | string   | Years the elected individual will serve | `2023–2026`        |
-| `explanation` | Yes           | string   | An explanation of what the role entails | `The Co-Chair....` |
+| **Key**            | **Required?** | **Type** | **Explanation**                                                                                                                         | **Example**                                                  |
+|--------------------|---------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| `title`            | Yes           | string   | Name of the office                                                                                                                      | `Co-Chair`                                                   |
+| `term`             | Yes           | string   | Years the elected individual will serve                                                                                                 | `2023–2026`                                                  |
+| `overview`         | Yes           | string   | An explanation of what the role entails                                                                                                 | `The Co-Chair....`                                           |
+| `responsibilities` | Yes           | list     | A list of responsibilities, where each item is an associative array with the required keys `title` (string) and tasks (list of strings) | `- title: Governance`<br>`  tasks:`<br>`    - Do x, y and z` |
 
 The `nominations_settings` associative array consists of the following data:
 
