@@ -33,6 +33,66 @@ menus:
      If you have any questions, please reach out to the Steering Committee Co-Chairs by emailing <a href="mailto:contact@cui.acm.org" title="Email the CUI Steering Committee Co-Chairs">contact@cui.acm.org</a>. 
     </p>
   </article>
+  {%- if site.data.sc.nominations -%}
+  <article class="flex-grow-1 p-md-4 p-3 grab">
+    <h3 id="nominations" class="fw-semibold mb-2 m-0 p-0">Call for nominations to service on the Steering Committee</h3>
+      <p>
+        The Conversational User Interfaces (CUI) Steering Committee invites nominations to serve as a member of the CUI Steering Committee. In particular we are looking for candidates to nominate themselves or a colleague for the following roles. Following the nomination deadline, an election to the CUI Steering Committee will be called. Subscribe to <a href="https://listserv.acm.org/SCRIPTS/WA-ACMLPX.CGI?A0=CUI-ANNOUNCEMENTS&X=DA00202F15E5DE0C2A">CUI Announcements</a> to be informed and open to voting in the election.
+      </p>
+      <ul class="list-unstyled mx-lg-4 mx-3" id="elections">
+        {%- for role in site.data.sc.nominations -%}
+          <li class="mb-3">
+            <h4 class="fw-medium election-role d-flex flex-row" type="button" data-bs-toggle="collapse" data-bs-target="#nomination-{{ forloop.index0 }}" aria-expanded="false" aria-controls="election-{{ forloop.index0 }}">
+              <i class="bi bi-chevron-compact-right me-1"></i><span>Nominations for {{ role.title }} (<em>{{ role.term }}</em>)</span>
+            </h4>
+            <div id="nomination-{{ forloop.index0 }}" class="collapse">
+              <p>{{ role.overview }}</p>
+              <h5 class="fw-semibold m-0">Key responsibilities</h5>
+              {%- for responsibility in role.responsibilities -%}
+                <h6 class="mt-3 m-0">{{ responsibility.title }}</h6>
+                <ul class="mb-3">
+                  {%- for task in responsibility.tasks -%}
+                    <li>{{ task }}</li>
+                  {%- endfor -%}
+                </ul>
+              {%- endfor -%}
+            </div>
+          </li>
+        {%- endfor -%}
+      </ul>
+      <p>
+        To be eligible to be nominated you must be a member of SIGCHI. Please submit nominations, for yourself or another, by {% include date.html date=site.data.sc.nominations_settings.deadline -%}, Anywhere on Earth (AoE) through <a href="{{ site.data.sc.nominations_settings.link }}" title="Nomination form for the CUI Steering Committee">this application form</a>.
+      </p>
+      <p>
+        If you would like any further details about the nominations or elections process, or any of the roles, email <a href="mailto:{{ site.data.sc.nominations_settings.contact.email }}">{{ site.data.sc.nominations_settings.contact.name }}</a>.
+      </p>
+    </article>
+    {%- endif -%}
+    {%- if site.data.sc.elections -%}
+      <article class="flex-grow-1 p-md-4 p-3">
+        <h3 id="elections" class="fw-semibold mb-2 m-0 p-0">Election of Officers to Steering Committee</h3>
+        <p>The following elections to Office are ongoing. Once nominations are closed, nominees will be informed as to the following steps in the election process. All members of the <a href="https://listserv.acm.org/SCRIPTS/WA-ACMLPX.CGI?A0=CUI-ANNOUNCEMENTS&X=DA00202F15E5DE0C2A">CUI Announcements</a> mailing list have been emailed instructions on how to vote.</p>
+        <ul class="list-unstyled mx-lg-4 mx-3" id="elections">
+          {%- for role in site.data.sc.elections -%}
+            <li class="mb-3">
+              <h4 class="fw-medium election-role d-flex flex-row" type="button" data-bs-toggle="collapse" data-bs-target="#election-{{ forloop.index0 }}" aria-expanded="false" aria-controls="election-{{ forloop.index0 }}">
+                <i class="bi bi-chevron-compact-right me-1"></i><span>Election to {{ role.title }} (<em>{{ role.term }}</em>)</span>
+              </h4>
+              <div id="election-{{ forloop.index0 }}" class="collapse">
+                <ul>
+                  {%- for person in role.nominations %}
+                    <li class="pt-2">
+                      <h5>{{ person.name }}</h5>
+                      <p>{{ person.bio }}</p>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </article>
+    {%- endif -%}
   <article id="constitution" class="flex-grow-1 p-md-4 p-3">
     <h3 class="fw-semibold mb-2 m-0 p-0">Constitution</h3>
     <p>
@@ -85,56 +145,5 @@ menus:
       {%- endfor -%}
     </ul>
   </article>
-  {%- if site.data.sc.nominations -%}
-  <article class="flex-grow-1 p-md-4 p-3">
-    <h3 id="nominations" class="fw-semibold mb-2 m-0 p-0">Call for nominations to service on the Steering Committee</h3>
-      <p>
-        The Conversational User Interfaces (CUI) Steering Committee invites nominations to serve as a member of the CUI Steering Committee. In particular we are looking for candidates to nominate themselves or a colleague for the following roles. Following the nomination deadline, an election to the CUI Steering Committee will be called. Subscribe to <a href="https://listserv.acm.org/SCRIPTS/WA-ACMLPX.CGI?A0=CUI-ANNOUNCEMENTS&X=DA00202F15E5DE0C2A">CUI Announcements</a> to be informed and open to voting in the election.
-      </p>
-      <ul class="list-unstyled mx-lg-4 mx-3" id="elections">
-        {%- for role in site.data.sc.nominations -%}
-          <li class="mb-3">
-            <h4 class="fw-medium election-role d-flex flex-row" type="button" data-bs-toggle="collapse" data-bs-target="#nomination-{{ forloop.index0 }}" aria-expanded="false" aria-controls="election-{{ forloop.index0 }}">
-              <i class="bi bi-chevron-compact-right me-1"></i><span>Nominations for {{ role.title }} (<em>{{ role.term }}</em>)</span>
-            </h4>
-            <div id="nomination-{{ forloop.index0 }}" class="collapse">
-              <p>{{ role.explanation }}</p>
-            </div>
-          </li>
-        {%- endfor -%}
-      </ul>
-      <p>
-        To be eligible to be nominated you must be a member of SIGCHI. Please submit nominations, for yourself or another, by {% include date.html date=site.data.sc.nominations_settings.deadline -%}, Anywhere on Earth (AoE) through <a href="{{ site.data.sc.nominations_settings.link }}" title="Nomination form for the CUI Steering Committee">this application form</a>.
-      </p>
-      <p>
-        If you would like any further details about the nominations or elections process, or any of the roles, email <a href="mailto:{{ site.data.sc.nominations_settings.contact.email }}">{{ site.data.sc.nominations_settings.contact.name }}</a>.
-      </p>
-    </article>
-    {%- endif -%}
-    {%- if site.data.sc.elections -%}
-      <article class="flex-grow-1 p-md-4 p-3">
-        <h3 id="elections" class="fw-semibold mb-2 m-0 p-0">Election of Officers to Steering Committee</h3>
-        <p>The following elections to Office are ongoing. Once nominations are closed, nominees will be informed as to the following steps in the election process. All members of the <a href="https://listserv.acm.org/SCRIPTS/WA-ACMLPX.CGI?A0=CUI-ANNOUNCEMENTS&X=DA00202F15E5DE0C2A">CUI Announcements</a> mailing list have been emailed instructions on how to vote.</p>
-        <ul class="list-unstyled mx-lg-4 mx-3" id="elections">
-          {%- for role in site.data.sc.elections -%}
-            <li class="mb-3">
-              <h4 class="fw-medium election-role d-flex flex-row" type="button" data-bs-toggle="collapse" data-bs-target="#election-{{ forloop.index0 }}" aria-expanded="false" aria-controls="election-{{ forloop.index0 }}">
-                <i class="bi bi-chevron-compact-right me-1"></i><span>Election to {{ role.title }} (<em>{{ role.term }}</em>)</span>
-              </h4>
-              <div id="election-{{ forloop.index0 }}" class="collapse">
-                <ul>
-                  {%- for person in role.nominations %}
-                    <li class="pt-2">
-                      <h5>{{ person.name }}</h5>
-                      <p>{{ person.bio }}</p>
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              </div>
-            </li>
-          {%- endfor -%}
-        </ul>
-      </article>
-    {%- endif -%}
 </section>
 {%- include sidebar.html -%}
