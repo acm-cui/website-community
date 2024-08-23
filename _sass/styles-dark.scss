@@ -116,6 +116,10 @@ aside {
 article {
 	background: $main-bg-dark;
 
+	&.grab {
+		background: $grab-background-dark;
+	}
+
 	.timeline {
 		.timeline-label {
 			color: $timeline-label-color-dark;
