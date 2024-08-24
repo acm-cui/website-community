@@ -61,7 +61,13 @@ menus:
         {%- endfor -%}
       </ul>
       <p>
-        To be eligible to be nominated you must be a member of SIGCHI. Please submit nominations, for yourself or another, by {% include date.html date=site.data.sc.nominations_settings.deadline -%}, Anywhere on Earth (AoE) through <a href="{{ site.data.sc.nominations_settings.link }}" title="Nomination form for the CUI Steering Committee">this application form</a>.
+        To be eligible to be nominated you must be a member of SIGCHI. Please submit nominations, for yourself or another, by {% include date.html date=site.data.sc.nominations_settings.deadline -%}, Anywhere on Earth (AoE).
+      </p>
+      <p>
+        <a href="{{ site.data.sc.nominations_settings.link }}" class="btn btn-primary text-white me-3 shadow-sm">
+          <i class="bi bi-person-raised-hand me-2"></i>
+          Complete the nomination form
+        </a>
       </p>
       <p>
         If you would like any further details about the nominations or elections process, or any of the roles, email <a href="mailto:{{ site.data.sc.nominations_settings.contact.email }}">{{ site.data.sc.nominations_settings.contact.name }}</a>.
