@@ -56,7 +56,7 @@
 @import "root-styles"; // CUI COMMUNITY
 
 @media (prefers-color-scheme: dark) {
-	// @import "community-styles-dark"; // CUI COMMUNITY
+	@import "root-styles-dark"; // CUI COMMUNITY
 }
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");

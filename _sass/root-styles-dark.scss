@@ -3,7 +3,7 @@ $transition-duration: .5s;
 $transition-function: ease;
 
 a, a:active, a:visited, a:hover {
-  color: black;
+  color: white;
   text-decoration: none;
 
   i {
@@ -19,7 +19,7 @@ a, a:active, a:visited, a:hover {
   img {
     @include auto-transition((box-shadow));
     max-width: 180px;
-    border: .5rem solid black;
+    border: .5rem solid white;
   } 
 
   &:hover img {
@@ -30,26 +30,26 @@ a, a:active, a:visited, a:hover {
 
 #community {  
   background: linear-gradient(90deg,
-                            rgb(255,255,255) 0%,
-                            rgb(238,238,238) 100%);                   
+                            #111 0%,
+                            #444 100%);                   
 }
 
 #conference {
   background: linear-gradient(270deg,
-                            rgb(255,255,255) 0%,
-                            rgb(238,238,238) 100%);
+                            #111 0%,
+                            #444 100%);   
 }
 
 @include media-breakpoint-up(md) {
   #community {  
     background: linear-gradient(0deg,
-                                rgb(255,255,255) 0%,
-                                rgb(238,238,238) 100%);                   
+                              #111 0%,
+                              #444 100%);               
   }
   #conference {
     background: linear-gradient(180deg,
-    rgb(255,255,255) 0%,
-    rgb(238,238,238) 1000%);
+                              #111 0%,
+                              #444 100%);   
   }
 
   .h-md-100 {
