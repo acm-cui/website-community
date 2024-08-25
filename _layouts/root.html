@@ -2,11 +2,28 @@
 ---
 {%- assign cache = site.time | date: '%s%N' -%}
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en-gb" }}">
+<html lang="{{ page.lang | default: site.lang | default: "en-gb" }}" class="w-100 h-100">
   <head>
-    {%- include head.html -%}
+    {%- include head.html css="root" -%}
   </head>
-  <body class="p-xl-5 p-lg-4 p-3">
-    
+  <body class="d-flex flex-md-row flex-column flex-fill flex-grow-1 align-items-stretch w-100 h-100">
+    <div id="community" class="w-md-50 w-100 h-md-100 h-50">
+      <a href="/community/" title="Go to the ACM Conversational User Interfaces community website" class="streched-link d-flex flex-column align-items-center justify-content-center w-100 h-100 text-center p-5">
+        <img src="{{ "/community/assets/icn/apple-touch-icon.png" | relative_url }}" alt="ACM Conversational User Interfaces community" class="rounded-4 shadow-md">
+        <span class="d-block ms-1 mt-4">
+          Visit the <b class="fw-semibold">ACM CUI Community website</b>
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </span>
+      </a>
+    </div>
+    <div id="conference" class="w-md-50 w-100 h-md-100 h-50">
+      <a href="/{{ page.conference.year }}/" title="Go to the ACM Conversational User Interfaces {{ page.conference.year }} website" class="streched-link d-flex flex-column align-items-center justify-content-center w-100 h-100 text-center p-5">
+        <img src="{{ "/community/assets/img/conference/cui" | append: page.conference.year | append: ".png" | relative_url }}" alt="ACM Conversational User Interfaces {{ page.conference.year }}" class="rounded-4 shadow-md">
+        <span class="d-block ms-1 mt-4">
+          Visit the <b class="fw-semibold">ACM CUI {{ page.conference.year }} website</b>
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </span>
+      </a>
+    </div>
   </body>
 </html>
