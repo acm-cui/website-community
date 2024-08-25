@@ -1,2 +1,2 @@
-baseurl: "/community" # Start with a forward slash, do NOT leave empty!!!
+baseurl: "/" # Start with a forward slash, do NOT leave empty!!!
 url: "https://cui.acm.org" # do NOT change this

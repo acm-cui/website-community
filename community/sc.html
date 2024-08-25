@@ -3,20 +3,21 @@ title: CUI Steering Committee
 description: >
   The ACM Conversational User Interfaces Steering Committee are responsibile for the overall organisation of the CUI conference and workshop series.
 
-layout: default
+layout: community
 
 redirect_from:
-  - /about/
-  - /about/constitution/
-  - /about/members/
-  - /about/sc/
-  - /contact/
-  - /sc/members/
-  - /sc/committee/
-  - /sc/constitution/
-  - /sc/elections/
-  - /sc/nominate-for-sc/
-  - /steering-committee/
+  - /sc/
+  - /community/about/
+  - /community/about/constitution/
+  - /community/about/members/
+  - /community/about/sc/
+  - /community/contact/
+  - /community/sc/members/
+  - /community/sc/committee/
+  - /community/sc/constitution/
+  - /community/sc/elections/
+  - /community/sc/nominate-for-sc/
+  - /community/steering-committee/
 
 menus:
   main:
@@ -130,7 +131,7 @@ menus:
         <li class="mx-0 m-2 px-2 py-0 sc-person">
           <div class="d-flex flex-row align-items-center rounded-pill shadow-sm h-100 p-3">
             <div>
-              <img src="{{ "assets/img/sc/" | append: member.photo | relative_url }}" class="profile-photo rounded-circle" alt="A photo of {{ member.name }}" title="{{ member.name }}" style="width: 60px">
+              <img src="{{ "/community/assets/img/sc/" | append: member.photo | relative_url }}" class="profile-photo rounded-circle" alt="A photo of {{ member.name }}" title="{{ member.name }}" style="width: 60px">
             </div>
             <div class="ms-3">
               {%- if member.url -%}

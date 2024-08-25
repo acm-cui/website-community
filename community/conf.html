@@ -1,19 +1,20 @@
 ---
 title: Conference
-description: Information and links for each annual ACM SIGCHI Conversational User Interfaces conference.
+description: >
+  Information and links for each annual ACM SIGCHI Conversational User Interfaces conference.
 
-permalink: /conference/
-layout: default
+layout: community
 
 lastmod: 
   type: data
   file: conferences.yml
 
+permalink: /community/conference/
 redirect_from:
-  - /conference/awards/
-  - /conferences/
-  - /conferences/awards/
-  - /conferences/proceedings/
+  - /community/conference/awards/
+  - /community/conferences/
+  - /community/conferences/awards/
+  - /community/conferences/proceedings/
 
 menus:
   main:
@@ -57,7 +58,7 @@ menus:
         {%- if has_hm_awards > 0 or has_bp_awards > 0 or site.data.stats.years contains year -%}
           <a href="#conference-{{ year }}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="conference-{{ conference-year}}" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black">
             <div class="flex-shrink-0 align-self-start">
-              {%- assign image_url = "/assets/img/conferences/" | append: conference.logo -%}
+              {%- assign image_url = "/community/assets/img/conferences/" | append: conference.logo -%}
               <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 50px" alt="{{ conference.name }} logo">
             </div>
             <div class="flex-grow-1 flex-fill ps-md-2 ms-3 small">
@@ -255,7 +256,7 @@ menus:
         {%- elsif conference.urls.website -%}
           <a href="{{ conference.urls.website.link }}" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black" title="Visit the {{ conference.name }} website" target="_blank">
             <div class="flex-shrink-0 align-self-start">
-              {%- assign image_url = "/assets/img/conferences/" | append: conference.logo -%}
+              {%- assign image_url = "/community/assets/img/conferences/" | append: conference.logo -%}
               <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow-sm" style="width: 50px" alt="{{ conference.name }} logo">
             </div>
             <div class="flex-grow-1 flex-fill ps-md-2 ms-3 small">
@@ -267,7 +268,7 @@ menus:
         {%- else -%}
           <div class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black">
             <div class="flex-shrink-0 align-self-start">
-              {%- assign image_url = "/assets/img/conferences/" | append: conference.logo -%}
+              {%- assign image_url = "/community/assets/img/conferences/" | append: conference.logo -%}
               <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 50px" alt="{{ conference.name }} logo">
             </div>
             <div class="flex-grow-1 flex-fill ps-md-2 ms-3 small">
@@ -284,7 +285,7 @@ menus:
       </div>
       <div class="flex-grow-1 flex-fill ps-md-2 ms-3">
         <h3 class="m-0 p-0 pt-1 fw-semibold">Looking for statistics across years?</h3>
-        <p class="mb-0 mt-1 p-0">Registration, programme, and award statistics can be compared, contrasted, and downloaded in CSV format from the <a href="{{ "/conference/statistics" | relative_url }}">conference statistics</a> page.</p>
+        <p class="mb-0 mt-1 p-0">Registration, programme, and award statistics can be compared, contrasted, and downloaded in CSV format from the <a href="{{ "/community/conference/statistics/" | relative_url }}">conference statistics</a> page.</p>
       </div>
     </div>
   </div>

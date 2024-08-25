@@ -2,9 +2,9 @@
 
 The ACM CUI community website is built using Jekyll, on GitHub Pages. Avoid naming any directories after a year or subdirectories if the `workshops` directory.
 
-## Steering Commmitee membership, nominations and elections
+## Steering Commitee membership, nominations and elections
 
-Information about officers and members of the Steering Commmittee is stored in `_data/sc.yml` in four lists, one for _officers_ of the Steering Committee (`officers`), one for _members_ of the Steering Committee (`members`), one for elections to the Steering Committee (`elections`), and one for nominations for elections to the Steering Committee (`nominations`). There is additionally one associative array, `nominations_settings`, which contains information used in the Call for Nominations.
+Information about officers and members of the Steering Committee is stored in `_data/sc.yml` in four lists, one for _officers_ of the Steering Committee (`officers`), one for _members_ of the Steering Committee (`members`), one for elections to the Steering Committee (`elections`), and one for nominations for elections to the Steering Committee (`nominations`). There is additionally one associative array, `nominations_settings`, which contains information used in the Call for Nominations.
 
 Each item in the `officers` and `members` lists consists of an associative array with the following structure:
 

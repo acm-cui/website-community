@@ -1,14 +1,17 @@
 ---
 title: Welcome to CUI
-description: The Conversational User Interfaces conference and workshop series.
+description: >
+    The Conversational User Interfaces conference and workshop series community website.
 
-permalink: /
+layout: textonly
+
 lastmod: page
 
+permalink: /community/
 redirect_from:
- - /contact/
- - /connect/
- - /mailing-list/
+ - /community/contact/
+ - /community/connect/
+ - /community/mailing-list/
 
 menus:
   main:
