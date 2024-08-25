@@ -1,15 +1,15 @@
 {%- if include.date_tentative -%}
-	{{ include.date_tentative }}
+  {{ include.date_tentative }}
 {%- else -%}
-	{%- assign date = include.date | slice: -2, 2 -%}
-	{%- if date == "01" or date == "1" or date == "21" or date == "31" -%}
-		{%- assign suffix = "st" -%}
-	{%- elsif date == "02" or date == "2" or date == "22" -%}
-		{%- assign suffix = "nd" -%}
-	{%- elsif date == "03" or date == "3" or date == "23" -%}
-		{%- assign suffix = "rd" -%}
-	{%- else -%}
-		{%- assign suffix = "th" -%}
-	{%- endif -%}
-	{{ include.date | date: "%-d" }}{{ suffix }}{% unless include.date_only %} {{ include.date | date: "%B %Y" }}{% endunless %}
+  {%- assign date = include.date | slice: -2, 2 -%}
+  {%- if date == "01" or date == "1" or date == "21" or date == "31" -%}
+    {%- assign suffix = "st" -%}
+  {%- elsif date == "02" or date == "2" or date == "22" -%}
+    {%- assign suffix = "nd" -%}
+  {%- elsif date == "03" or date == "3" or date == "23" -%}
+    {%- assign suffix = "rd" -%}
+  {%- else -%}
+    {%- assign suffix = "th" -%}
+  {%- endif -%}
+  {{ include.date | date: "%-d" }}{{ suffix }}{% unless include.date_only %} {{ include.date | date: "%B %Y" }}{% endunless %}
 {%- endif -%}

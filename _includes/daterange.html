@@ -1,5 +1,5 @@
 {%- if include.date_tentative -%}
-    {{- include.date_tentative -}}
+  {{- include.date_tentative -}}
 {%- else -%}
-    {%- include date.html date=include.startdate date_only=true %}–{%- include date.html date=include.enddate -%}
+  {%- include date.html date=include.startdate date_only=true %}–{%- include date.html date=include.enddate -%}
 {%- endif -%}

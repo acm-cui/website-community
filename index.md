@@ -7,16 +7,7 @@ layout: textonly
 
 lastmod: page
 
-permalink: /community/
-redirect_from:
- - /community/contact/
- - /community/connect/
- - /community/mailing-list/
-
-menus:
-  main:
-    title: About
-    weight: 0
+permalink: /
 ---
 
 Welcome to the Conversational User Interfaces (CUI) community website. CUI (pronounced "coo-ee") was founded in 2018 to bring together researchers and practitioners from a wide range of disciplines examining the design of speech and language technologies. In 2022, CUI joined [SIGCHI](https://sigchi.org/ "ACM Special Interest Group on Computer-Human Interaction"), the [Association for Computing Machinery](https://www.acm.org/ "Association for Computing Machinery")  Special Interest Group on Computer-Human Interaction.

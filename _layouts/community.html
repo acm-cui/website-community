@@ -2,33 +2,33 @@
 ---
 {%- assign cache = site.time | date: '%s%N' -%}
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: " en" }}">
-	<head>
-		{%- include head.html -%}
-	</head>
-	<body class="p-xl-5 p-lg-4 p-3">
-		<div class="container h-100 mx-auto p-0 d-flex flex-column rounded-2 shadow rounded-2">
-			<div class="w-100 h-100 m-0 rounded-2">
-				<header class="d-flex flex-row align-items-center justify-content-center text-center p-lg-4 p-3">
-					<a href="{{ "/" | relative_url }}" title="ACM Conversational User Interfaces community" tabindex="0">
-						<picture>
-							<source srcset="{{ "/community/assets/img/logo-full-dark.svg" | relative_url }}" media="(prefers-color-scheme: dark)">
-							<img src="{{ "/community/assets/img/logo-full.svg" | relative_url }}" alt="The text CUI against a pink background with abstract waves" title="ACM Conversational User Interfaces community">
-						</picture>
-					</a>
-				</header>
-				<nav class="navbar navbar-expand rounded-top-1 p-0">
-					{%- include nav.html -%}
-				</nav>
-				<main class="d-flex flex-lg-row-reverse flex-column flex-grow-1">
-					{{ content }}
-				</main>
-				<footer class="flex-grow-0 px-lg-4 p-3 rounded-bottom-1 small text-center text-muted">
-					&copy; {{ site.time | date: "%Y" }} ACM conference on Conversational User Interfaces<br>
-					<a href="https://www.acm.org/about-acm/privacy-policy" title="Association for Computing Machinery Privacy Policy" class="text-muted">ACM Privacy Policy</a>
-				</footer>
-			</div>
-		</div>
-		<script src="{{ '/community/assets/js/bootstrap.bundle.min.js' | relative_url }}?{{ cache }}"></script>
-	</body>
+<html lang="{{ page.lang | default: site.lang | default: "en-gb" }}">
+  <head>
+    {%- include head.html -%}
+  </head>
+  <body class="p-xl-5 p-lg-4 p-3">
+    <div class="container h-100 mx-auto p-0 d-flex flex-column rounded-2 shadow rounded-2">
+      <div class="w-100 h-100 m-0 rounded-2">
+        <header class="d-flex flex-row align-items-center justify-content-center text-center p-lg-4 p-3">
+          <a href="{{ "/" | relative_url }}" title="ACM Conversational User Interfaces community" tabindex="0">
+            <picture>
+              <source srcset="{{ "/community/assets/img/logo-full-dark.svg" | relative_url }}" media="(prefers-color-scheme: dark)">
+              <img src="{{ "/community/assets/img/logo-full.svg" | relative_url }}" alt="The text CUI against a pink background with abstract waves" title="ACM Conversational User Interfaces community">
+            </picture>
+          </a>
+        </header>
+        <nav class="navbar navbar-expand rounded-top-1 p-0">
+          {%- include nav.html -%}
+        </nav>
+        <main class="d-flex flex-lg-row-reverse flex-column flex-grow-1">
+          {{ content }}
+        </main>
+        <footer class="flex-grow-0 px-lg-4 p-3 rounded-bottom-1 small text-center text-muted">
+          &copy; {{ site.time | date: "%Y" }} ACM conference on Conversational User Interfaces<br>
+          <a href="https://www.acm.org/about-acm/privacy-policy" title="Association for Computing Machinery Privacy Policy" class="text-muted">ACM Privacy Policy</a>
+        </footer>
+      </div>
+    </div>
+    <script src="{{ '/community/assets/js/bootstrap.bundle.min.js' | relative_url }}?{{ cache }}"></script>
+  </body>
 </html>
