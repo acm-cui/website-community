@@ -1,7 +1,7 @@
 ---
 title: Welcome
 description: >
-  The Conversational User Interfaces conference and workshop series community website.
+  The ACM SIGCHI Conversational User Interfaces conference and workshop series website.
 
 layout: root
 
