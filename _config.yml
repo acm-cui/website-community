@@ -20,22 +20,26 @@ social:
   - https://hci.social/@cui
   - https://twitter.com/ACM_CUI
   - https://github.com/acm-cui
+
 twitter:
   username: ACM_CUI
   card: summary
   creator: ACM_CUI
 
+github:
+  repo: https://github.com/acm-cui/website-community/
+  link_title: "View edit on GitHub"
+
 # Build settings
 plugins_dir: ./_plugins
 plugins:
-  - jekyll-feed
-  - jekyll-last-modified-at
+  - jekyll-last-commit
+  - jekyll-menus
   - jekyll-minifier
   - jekyll-optional-front-matter
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-titles-from-headings
-  - jekyll-menus
 
 liquid:
   error_mode: strict
@@ -47,6 +51,10 @@ titles_from_headings:
   strip_title: true
   collections: true
 
+jekyll-last-commit:
+  date_format: '%d-%b-%Y %R'        # default: `%B %d, %Y`
+  should_fall_back_to_mtime: false # default: `true`
+  
 sass:
   style: compressed
 
