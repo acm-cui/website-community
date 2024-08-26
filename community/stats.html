@@ -59,24 +59,22 @@ redirect_from:
       </table>
     {%- endfor -%}
 
-    <small>
+    <div class="d-flex flex-row fs-6">
+      <p class="flex-shrink-0 me-1 m-0 text-end" style="width: 1rem">*</p> 
+      <p>
+        We record <em>registrations</em> and not attendance as attendance can be difficult to accurately count. Registrations do typically include "comped" registrations—such as those given to student volunteers and keynotes—as well as registrations in return for sponsorship of the conference.
+      </p>
+    </div>
+    {%- assign footnote_index = 0 -%}
+    {%- for footnote in site.data.stats.registrations_footnotes -%}
       <div class="d-flex flex-row">
-        <p class="flex-shrink-0 me-1 m-0 text-end" style="width: 1rem">*</p> 
+        <p class="flex-shrink-0 me-1 m-0 text-end" style="width: 1rem">{{ footnote_symbols[footnote_index] }}</p> 
         <p>
-          We record <em>registrations</em> and not attendance as attendance can be difficult to accurately count. Registrations do typically include "comped" registrations—such as those given to student volunteers and keynotes—as well as registrations in return for sponsorship of the conference.
+          {{ footnote }}
         </p>
-      </div>
-      {%- assign footnote_index = 0 -%}
-      {%- for footnote in site.data.stats.registrations_footnotes -%}
-        <div class="d-flex flex-row">
-          <p class="flex-shrink-0 me-1 m-0 text-end" style="width: 1rem">{{ footnote_symbols[footnote_index] }}</p> 
-          <p>
-            {{ footnote }}
-          </p>
-          {%- assign footnote_index = footnote_index | plus: 1 -%}
-          </div>
-      {%- endfor -%}
-    </small>
+        {%- assign footnote_index = footnote_index | plus: 1 -%}
+        </div>
+    {%- endfor -%}
     <a href="{{ "/community/assets/csv/statistics/registrations.csv" | relative_url }}" class="mt-3 btn btn-primary text-white me-3 shadow-sm"  title="Registration statistics as a CSV file">
       <i class="bi bi-file-earmark-arrow-down-fill me-2"></i>
       Download this table as a CSV
@@ -134,14 +132,12 @@ redirect_from:
       </table>
     {%- endfor -%}
 
-    <small>
-      <div class="d-flex flex-row">
-        <p class="flex-shrink-0 me-1 m-0 text-end" style="width: 1rem">*</p> 
-        <p>
-          Submission numbers exclude those which were incomplete at the time of the submission deadline. Submissions which were desk or early rejected, e.g., due to incorrect formatting or inclusion of author details during anonymous peer review, are included in the overall numbers.
-        </p>
-      </div>
-    </small>
+    <div class="d-flex flex-row fs-6">
+      <p class="flex-shrink-0 me-1 m-0 text-end" style="width: 1rem">*</p> 
+      <p>
+        Submission numbers exclude those which were incomplete at the time of the submission deadline. Submissions which were desk or early rejected, e.g., due to incorrect formatting or inclusion of author details during anonymous peer review, are included in the overall numbers.
+      </p>
+    </div>
 
     <a href="{{ "/community/assets/csv/statistics/programme.csv" | relative_url }}" class="mt-3 btn btn-primary text-white me-3 shadow-sm"  title="Registration statistics as a CSV file">
       <i class="bi bi-file-earmark-arrow-down-fill me-2"></i>
