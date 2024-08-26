@@ -33,7 +33,6 @@ github:
 # Build settings
 plugins_dir: ./_plugins
 plugins:
-  - jekyll-last-commit
   - jekyll-menus
   - jekyll-minifier
   - jekyll-optional-front-matter

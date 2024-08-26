@@ -17,12 +17,12 @@ gem "jekyll", "~> 4.3.3"
 gem "webrick"
 gem 'execjs'
 gem 'nokogiri'
-gem 'rake'
+
+gem 'rugged'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-seo-tag"
-  gem "jekyll-last-commit"
   gem 'jekyll-minifier'
   gem 'jekyll-optional-front-matter'
   gem 'jekyll-redirect-from'

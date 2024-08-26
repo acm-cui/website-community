@@ -48,9 +48,6 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
-    jekyll-last-commit (0.0.3)
-      jekyll (>= 3.7, < 5.0)
-      rugged (~> 1.1)
     jekyll-minifier (0.1.10)
       cssminify2 (~> 2.0)
       htmlcompressor (~> 0.4)
@@ -120,7 +117,6 @@ DEPENDENCIES
   execjs
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.3.3)
-  jekyll-last-commit
   jekyll-menus!
   jekyll-minifier
   jekyll-optional-front-matter
@@ -129,7 +125,7 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-titles-from-headings
   nokogiri
-  rake
+  rugged
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.1.1)
