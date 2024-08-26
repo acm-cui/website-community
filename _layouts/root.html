@@ -16,11 +16,18 @@
         </span>
       </a>
     </div>
+    {%- assign conf = "" -%}
+    {%- for datum in site.data.conf -%}
+      {%- if datum[1].urls.website -%}
+        {%- assign conf = datum[0] -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
     <div id="conference" class="w-md-50 w-100 h-md-100 h-50">
-      <a href="/{{ page.conference.year }}/" title="Go to the ACM Conversational User Interfaces {{ page.conference.year }} website" class="streched-link d-flex flex-column align-items-center justify-content-center w-100 h-100 text-center p-5">
-        <img src="{{ "/community/assets/img/conference/cui" | append: page.conference.year | append: ".png" | relative_url }}" alt="ACM Conversational User Interfaces {{ page.conference.year }}" class="rounded-4 shadow-md">
+      <a href="/{{ conf }}/" title="Go to the ACM Conversational User Interfaces {{ conf }} website" class="streched-link d-flex flex-column align-items-center justify-content-center w-100 h-100 text-center p-5">
+        <img src="{{ "/community/assets/img/conference/cui" | append: conf | append: ".png" | relative_url }}" alt="ACM Conversational User Interfaces {{ conf }}" class="rounded-4 shadow-md">
         <span class="d-block ms-1 mt-4">
-          Visit the <b class="fw-semibold">ACM CUI {{ page.conference.year }}</b> website
+          Visit the <b class="fw-semibold">ACM CUI {{ conf }}</b> website
           <i class="bi bi-arrow-right-circle-fill"></i>
         </span>
       </a>
