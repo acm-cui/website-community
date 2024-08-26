@@ -28,7 +28,7 @@
           {%- if page.lastmod == "page" or page.lastmod.type == "page" -%}
             <br>Last modified: <a href="{{ site.github.repo }}commit/{{ page.last_commit.sha }}" title="{{ site.github.link_title }}" class="text-muted">{{ page.last_modified_at_formatted }}</a> {%- if page.maintainer %} &bull; {% endif %}
           {%- elsif page.lastmod.type == "data" -%}
-            <!-- Last modified: {{ page.lastmod.file | data_file_mtime }} {%- if page.maintainer %} &bull; {% endif %}   -->
+            <!-- <br>Last modified: {{ page.lastmod.file | data_file_mtime }} {%- if page.maintainer %} &bull; {% endif %}   -->
           {%- endif -%}
           <br>
           <a href="https://www.acm.org/about-acm/privacy-policy" title="Association for Computing Machinery Privacy Policy" class="text-muted">ACM Privacy Policy</a>
