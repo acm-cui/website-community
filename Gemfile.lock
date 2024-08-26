@@ -129,6 +129,7 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-titles-from-headings
   nokogiri
+  rake
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.1.1)
