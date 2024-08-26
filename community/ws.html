@@ -20,7 +20,7 @@ menus:
     title: Workshops
     weight: 3
 ---
-<section>
+<div>
   <article class="flex-grow-1 p-md-4 p-3">
     <h2 class="fw-semibold mb-2 m-0 p-0">{{ page.title | escape }}</h2>
     <p>
@@ -66,5 +66,6 @@ menus:
       {%- endif -%}
     </li>
   {%- endfor -%}
-</section>
+  </ol>
+</div>
 {%- include sidebar.html -%}
