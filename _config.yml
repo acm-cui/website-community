@@ -7,7 +7,7 @@ locale: en-GB
 tagline: >
   The ACM Conversational User Interfaces conference and workshop series
 description: >-
-  CUI, an Association for Computing Machinery Special Interest Group on Human Computer Interaction specialised conference, is the premier international venue for research on the design, development, and use of conversational interfaces. 
+  CUI, an Association for Computing Machinery Special Interest Group on Computer Human Interaction specialised conference, is the premier international venue for research on the design, development, and use of conversational interfaces. 
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
