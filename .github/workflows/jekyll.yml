@@ -20,8 +20,8 @@ jobs:
     steps:
       - name: ⬇️ Checkout
         uses: actions/checkout@v4
-      - name: 🕰️ Fetch git log
-        run: git switch main && git pull && git log -10
+        with: 
+          fetch-depth: 0
       - name: 💎 Setup Ruby
         uses: ruby/setup-ruby@v1 # v1.115.3
         with:
