@@ -25,28 +25,8 @@
         </main>
         <footer class="flex-grow-0 px-lg-4 p-3 rounded-bottom-1 small text-center text-muted">
           &copy; {{ site.time | date: "%Y" }} ACM Conference on Conversational User Interfaces
-          {%- if page.lastmod == "page" or page.lastmod.type == "page" -%}
-            <br>Last modified: <a href="{{ site.github.repo }}commit/{{ page.last_commit.sha }}" title="{{ site.github.link_title }}" class="text-muted" target="_blank">{{ page.last_modified_at_formatted }}</a> {%- if page.maintainer %} &bull; {% endif %}
-          {%- elsif page.lastmod.type == "data" and page.lastmod.file -%}
-            {%- if page.last_commit.time_epoch > site.data.meta[page.lastmod.file].last_commit.time_epoch -%}
-              <br>Last modified: <a href="{{ site.github.repo }}commit/{{ page.last_commit.sha }}" title="{{ site.github.link_title }}" class="text-muted" target="_blank">{{ page.last_modified_at_formatted }}</a>
-            {%- else -%}
-              <br>Last modified: <a href="{{ site.github.repo }}commit/{{ site.data.meta[page.lastmod.file].last_commit.sha }}" title="{{ site.github.link_title }}" class="text-muted" target="_blank">{{ site.data.meta[page.lastmod.file].last_modified_at_formatted }}</a>
-            {%- endif -%}
-          {%- elsif page.lastmod.type == "data" and page.lastmod.files -%}
-            {%- assign newest = site.data.meta[page.lastmod.files.first] -%}
-            {%- for file in page.lastmod.files -%}
-              {%- assign candidate = site.data.meta[file] -%}
-              {%- if candidate.last_commit.time_epoch > newest.last_commit.time_epoch -%}
-                {%- assign newest = candidate -%}
-              {%- endif -%}
-            {%- endfor -%}
-            {%- if page.last_commit.time_epoch > newest.last_commit.time_epoch -%}
-              <br>Last modified: <a href="{{ site.github.repo }}commit/{{ page.last_commit.sha }}" title="{{ site.github.link_title }}" class="text-muted" target="_blank">{{ page.last_modified_at_formatted }}</a>
-            {%- else -%}
-              <br>Last modified: <a href="{{ site.github.repo }}commit/{{ newest.last_commit.sha }}" title="{{ site.github.link_title }}" class="text-muted" target="_blank">{{ newest.last_modified_at_formatted }}</a>
-            {%- endif -%}
-          {%- endif -%}
+          <br>
+          {%- include lastmod.html -%}
           <br>
           <a href="https://www.acm.org/about-acm/privacy-policy" title="Association for Computing Machinery Privacy Policy" class="text-muted">ACM Privacy Policy</a>
         </footer>
