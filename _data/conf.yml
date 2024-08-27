@@ -1,5 +1,6 @@
 2025:
   name: ACM CUI 2025
+  type: a SIGCHI specialised conference
   location: Waterloo, ON, Canada
   dates:
     start: 2025-07-08
@@ -12,6 +13,7 @@
 
 2024:
   name: ACM CUI 2024
+  type: a SIGCHI specialised conference
   location: Luxembourg City, Luxembourg
   dates:
     start: 2024-07-08
@@ -77,6 +79,7 @@
 
 2023:
   name: ACM CUI 2023
+  type: a SIGCHI specialised conference
   location: Eindhoven, Netherlands
   dates:
     start: 2023-07-19
@@ -147,6 +150,7 @@
 
 2022:
   name: CUI 2022
+  type: an ACM in-cooperation conference
   location: Glasgow, UK
   dates:
     start: 2022-07-26
@@ -197,6 +201,7 @@
 
 2021:
   name: CUI 2021
+  type: an ACM in-cooperation conference
   covid19virtual: true
   location: Virtual Event
   dates:
@@ -262,6 +267,7 @@
 
 2020:
   name: CUI 2020
+  type: an ACM in-cooperation conference
   covid19virtual: true
   location: Virtual Event
   dates: 
@@ -320,6 +326,7 @@
 
 2019:
   name: CUI 2019
+  type: ACM in-cooperation conference
   location: Dublin, Ireland
   dates: 
     start: 2019-08-22
