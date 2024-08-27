@@ -20,15 +20,15 @@ jobs:
     steps:
       - name: ⬇️ Checkout
         uses: actions/checkout@v4
+      - name: 🕰️ Fetch git log
+        run: git switch main && git pull && git log -10
       - name: 💎 Setup Ruby
         uses: ruby/setup-ruby@v1 # v1.115.3
         with:
-          ruby-version: '3.2.4' # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          ruby-version: '3.2.4'
+          bundler-cache: true
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: 👷 Build with Jekyll
-        # Outputs to the './_site' directory by default
-        # "${{ steps.pages.outputs.base_path }}"
         run: bundle exec jekyll build  --trace --config "_config.yml,_config_production.yml"
         env:
           JEKYLL_ENV: production
