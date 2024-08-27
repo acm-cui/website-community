@@ -5,6 +5,14 @@ GIT
     jekyll-menus (0.6.1)
       jekyll (>= 3.6, < 5.0)
 
+GIT
+  remote: https://github.com/mporcheron/jekyll-last-commit.git
+  revision: c1df0415273de3e0f1c0452d93dd934f62b52e0c
+  specs:
+    jekyll-last-commit (0.0.3)
+      jekyll (>= 3.7, < 5.0)
+      rugged (~> 1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -117,6 +125,7 @@ DEPENDENCIES
   execjs
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.3.3)
+  jekyll-last-commit!
   jekyll-menus!
   jekyll-minifier
   jekyll-optional-front-matter
