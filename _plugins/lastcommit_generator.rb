@@ -7,11 +7,14 @@ module JekyllLastCommit
       repo_man = JekyllLastCommit::RepoMan.new(site.source)
       repo_man.discover_repo()
       repo_man.discover_commits(site.documents.map {|d| d.relative_path })
-      repo_man.discover_commits(site.data.map {|df,d| "_data/#{df}.yml" })
+      repo_man.discover_commits(site.data.keys.map {|df| "_data/#{df}.yml" })
       repo_man.discover_commits(site.pages.map {|p| p.relative_path })
 
       date_format = site.config.dig('jekyll-last-commit', 'date_format')
       date_format ||= '%B %d, %Y'
+
+      data_file_key = site.config.dig('jekyll-last-commit', 'data_files_key')
+      data_file_key ||= 'meta'
 
       should_fall_back_to_mtime = site.config.dig('jekyll-last-commit', 'should_fall_back_to_mtime')
       should_fall_back_to_mtime = should_fall_back_to_mtime.nil? ? true : should_fall_back_to_mtime
@@ -40,34 +43,34 @@ module JekyllLastCommit
         end
       end
 
-      meta = {}
-      site.data.each do |datafile,data|
-        datafile = "#{datafile}.yml"
-        relative_path = "_data/#{datafile}"
+      site.data[data_file_key] = {}
+      site.data.keys.each do |data_file|
+        data_file = "#{data_file}.yml"
+        relative_path = "_data/#{data_file}"
         path_file = Jekyll.sanitized_path(site.source, relative_path)
+
         commit = repo_man.find_commit(relative_path)
         
-        meta[datafile] = {}
+        site.data[data_file_key][data_file] = {}
 
         if commit.nil?
           if should_fall_back_to_mtime
-            path_datafile = Jekyll.sanitized_path(site.source, path_file)
+            path_data_file = Jekyll.sanitized_path(site.source, path_file)
 
-            if File.file?(path_datafile)
-              raw_time = Time.at(File.mtime(path_file).to_i)
-              meta[datafile]['last_modified_at'] = raw_time
-              meta[datafile]['last_modified_at_formatted'] = raw_time.strftime(date_format)
+            if File.file?(data_file)
+              raw_time = Time.at(File.mtime(path_data_file).to_i)
+              site.data[data_file_key][data_file]['last_modified_at'] = raw_time
+              site.data[data_file_key][data_file]['last_modified_at_formatted'] = raw_time.strftime(date_format)
             end
           end
         else
           raw_time = Time.at(commit["time"].to_i)
 
-          meta[datafile]['last_commit'] = commit
-          meta[datafile]['last_modified_at'] = raw_time
-          meta[datafile]['last_modified_at_formatted'] = raw_time.strftime(date_format)
+          site.data[data_file_key][data_file]['last_commit'] = commit
+          site.data[data_file_key][data_file]['last_modified_at'] = raw_time
+          site.data[data_file_key][data_file]['last_modified_at_formatted'] = raw_time.strftime(date_format)
         end
       end
-      site.data['meta'] = meta
 
       site.pages.each do |page|
         commit = repo_man.find_commit(page.relative_path)

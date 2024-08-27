@@ -51,9 +51,10 @@ titles_from_headings:
   collections: true
 
 jekyll-last-commit:
-  date_format: '%d-%b-%Y %R'        # default: `%B %d, %Y`
+  date_format: '%d-%b-%Y %R'       # default: `%B %d, %Y`
   should_fall_back_to_mtime: false # default: `true`
-  
+  data_files_key: 'meta'           # default: meta
+
 sass:
   style: compressed
 
