@@ -1,9 +1,13 @@
 {%- assign newest_source = page -%}
+
 {%- if page.lastmod.type == "data" and page.lastmod.file -%}
-  {%- if page.last_commit.time_epoch < site.data.meta[page.lastmod.file].last_commit.time_epoch -%}
+
+  {%- if site.data.meta[page.lastmod.file].last_commit.time_epoch > newest_source.last_commit.time_epoch -%}
     {%- assign newest_source = site.data.meta[page.lastmod.file] -%}
   {%- endif -%}
+
 {%- elsif page.lastmod.type == "data" and page.lastmod.files -%}
+
   {%- assign newest_data_file = site.data.meta[page.lastmod.files.first] -%}
   {%- for file in page.lastmod.files -%}
     {%- assign candidate = site.data.meta[file] -%}
@@ -11,11 +15,32 @@
       {%- assign newest_data_file = candidate -%}
     {%- endif -%}
   {%- endfor -%}
-  {%- if page.last_commit.time_epoch < newest.last_commit.time_epoch -%}
-    {%- assign newest_source = newest -%}
+
+  {%- if newest_data_file.last_commit.time_epoch > newest_source.last_commit.time_epoch -%}
+    {%- assign newest_source = newest_data_file -%}
   {%- endif -%}
+
+{%- elsif page.lastmod.type == "static" and page.lastmod.files -%}
+
+  {%- for static_file in site.static_files -%}
+    {%- if page.lastmod.files contains static_file.path -%}
+      {%- assign candidate = static_file -%}
+      {%- unless newest_static_file -%}
+        {%- assign newest_static_file = candidate -%}
+      {% else -%}
+        {%- if candidate.last_commit.time_epoch > newest_static_file.last_commit.time_epoch -%}
+          {%- assign newest_static_file = candidate -%}
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- if newest_static_file.last_commit.time_epoch > newest_source.last_commit.time_epoch -%}
+    {%- assign newest_source = newest_static_file -%}
+  {%- endif -%}
+
 {%- endif -%}
 
-Last modified: <a href="{{- site.github.repo -}}commit/{{- newest_source.last_commit.sha -}}" title="{{- site.github.link_title -}}" class="text-muted" target="_blank">
-  {{- newest_source.last_modified_at_formatted -}}
+Last modified: <a href="{{- site.social.github.repo -}}commit/{{- newest_source.last_commit.sha -}}" title="{{- site.social.github.link_title -}}" class="text-muted" target="_blank">
+	{{- newest_source.last_modified_at_formatted -}}
 </a>
