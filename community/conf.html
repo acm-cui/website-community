@@ -56,8 +56,9 @@ menus:
       {%- assign conference = datum[1] -%}
       {%- assign has_hm_awards = conference.awards.hon_mentions | size -%}
       {%- assign has_bp_awards = conference.awards.best_papers | size -%}
+      {%- assign has_gcs = conference.general_chairs | size -%}
       <div class="d-flex flex-column w-100 accordion-item conference-year">
-        {%- if has_hm_awards > 0 or has_bp_awards > 0 or site.data.stats.years contains year -%}
+        {%- if has_hm_awards > 0 or has_bp_awards > 0 or has_gcs > 0or site.data.stats.years contains year -%}
           <a href="#conference-{{ year }}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="conference-{{ conference.year }}" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black">
             <div class="flex-shrink-0 align-self-start">
               {%- assign image_url = "/community/assets/img/conference/" | append: conference.logo -%}
@@ -103,18 +104,37 @@ menus:
               </ul>
               <div class="tab-content overflow-x-auto flex-grow-1 ms-lg-4 mt-lg-1 mt-3" id="conference-{{ year }}-tabContent">
                 <div class="tab-pane fade show active" id="conference-{{ year }}-about" role="tabpanel" aria-labelledby="conference-{{ year }}-about-tab" tabindex="0">
+                  {%- if conference.listdetails.preamble -%}
                   <p>
-                    {{ conference.listdetails.preamble }}
+                    {{- conference.listdetails.preamble -}}
+                  </p>
+                  {%- endif -%}
+                  <p>
                     {%- capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture -%}
                     {%- capture conferenceunix %}{{ conference.dates.end | date: '%s' }}{% endcapture -%}
                     {%- if nowunix > conferenceunix -%}
                       {%- if conference.covid19virtual -%}
-                      {{ conference.name }}, {{ conference.type }}, was held as a virtual event due to the COVID-19 pandemic. The conference was held on {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}.
+                        {{ conference.name }}, {{ conference.type }}, was held as a virtual event due to the COVID-19 pandemic on {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}.
                       {%- else -%}
-                      {{ conference.name }}, {{ conference.type }}, was held in {{ conference.location }} on {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}.
+                        {{ conference.name }}, {{ conference.type }}, was held in {{ conference.location }} on {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}.
                       {%- endif -%}
                     {%- else -%}
                       {{ conference.name }} will be held in {{ conference.location }} on {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}.
+                    {%- endif %}
+                    {% if conference.general_chairs -%}
+                      {%- if nowunix > conferenceunix -%}
+                        The conference was chaired by 
+                      {%- else -%}
+                        The conference will be chaired by 
+                      {% endif -%}
+                      {%- for gc in conference.general_chairs -%}
+                        {% if forloop.index0 > 0 and forloop.length > 2 %}, {% else %} {% endif %}{% if forloop.index == forloop.length %} and {% endif %}
+                        {%- if gc.website -%}
+                          <a href="{{ gc.website }}" target="_blank">{{ gc.name }}</a>
+                        {%- else -%}
+                          {{ gc.name }}
+                        {%- endif -%}
+                      {%- endfor -%}.
                     {%- endif -%}
                   </p>
                   {%- if site.data.stats.years contains year -%}
