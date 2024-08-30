@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/mporcheron/jekyll-last-commit.git
-  revision: c1df0415273de3e0f1c0452d93dd934f62b52e0c
+  revision: 87d4a708a5d08f9174610db7eee2498e3759c018
   specs:
     jekyll-last-commit (0.0.3)
       jekyll (>= 3.7, < 5.0)
@@ -30,10 +30,10 @@ GEM
     ffi (1.17.0-arm64-darwin)
     ffi (1.17.0-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
-    google-protobuf (4.27.3-arm64-darwin)
+    google-protobuf (4.28.0-arm64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.27.3-x86_64-linux)
+    google-protobuf (4.28.0-x86_64-linux)
       bigdecimal
       rake (>= 13)
     htmlcompressor (0.4.0)
