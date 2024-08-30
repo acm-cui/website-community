@@ -58,7 +58,7 @@ menus:
       {%- assign has_bp_awards = conference.awards.best_papers | size -%}
       {%- assign has_gcs = conference.general_chairs | size -%}
       <div class="d-flex flex-column w-100 accordion-item conference-year">
-        {%- if has_hm_awards > 0 or has_bp_awards > 0 or has_gcs > 0or site.data.stats.years contains year -%}
+        {%- if has_hm_awards > 0 or has_bp_awards > 0 or has_gcs > 0 or site.data.stats.years contains year -%}
           <a href="#conference-{{ year }}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="conference-{{ conference.year }}" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black">
             <div class="flex-shrink-0 align-self-start">
               {%- assign image_url = "/community/assets/img/conference/" | append: conference.logo -%}
