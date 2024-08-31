@@ -23,7 +23,7 @@ a, a:active, a:visited, a:hover {
   } 
 
   &:hover img {
-    box-shadow: 0 1rem 3rem rgba($black, .175);
+    box-shadow: $box-shadow-lg;
   }
 }   
 

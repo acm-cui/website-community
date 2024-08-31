@@ -57,6 +57,8 @@ nav.navbar {
 	margin-bottom: $content-border-width;
 
 	.nav-item {
+		box-shadow: none;
+
 		& > div {
 			-webkit-backdrop-filter: none;
 			backdrop-filter: none;
@@ -79,6 +81,7 @@ nav.navbar {
 		&.active .nav-link {
 			color: $nav-link-active-color-dark;
 			background: $nav-link-active-bg-dark;
+			box-shadow: 0 .125rem .25rem rgba($white, .075);
 		}
 
 	}

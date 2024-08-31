@@ -85,7 +85,8 @@ nav.navbar {
   }
 
   .nav-item {
-    transition: none;
+    @include auto-transition((background,box-shadow));
+    box-shadow: $box-shadow-sm;
 
     & > div {
       -webkit-backdrop-filter: $nav-link-glass-backdrop-filter;
@@ -106,6 +107,7 @@ nav.navbar {
     }
 
     &.active .nav-link, &:active .nav-link, &:hover .nav-link, &:focus .nav-link {
+      box-shadow: $box-shadow;
       color: $nav-link-active-color;
       background: $nav-link-bg;
     }
