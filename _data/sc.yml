@@ -96,77 +96,78 @@ elections:
   #     - name: Heloisa Candello
   #       bio: Dr. Heloisa Candello is a research scientist and a manager of the Human-centered & Responsible Tech group, at the IBM Research laboratory in Brazil. She holds a Ph.D. in Computer Science in Interactive Technologies from the University of Brighton, UK. Her main research interest is applying design methods to understand how people interact with Artificial Intelligence-based systems, particularly conversational systems. Heloisa leads and conducts research activities in Human-Computer Interaction (HCI) to understand the social impact, context, and motivations of using conversational technologies. Her research has resulted in numerous conference publications (ACM CHI, CUI, CSCW, DRS, DUXU, IUI) and recognition in the HCI field. Heloisa was also part of several organising, scientific, and executive committee in ACM SIGCHI conferences. From 2019-2021, she served the ACM SIGCHI Volunteer Development Committee, as a Research Scientist. Currently, she also serves the SIGCHI LATAM executive committee, and CUI Steering Committee.   <br><br><em>Serving the CUI Community</em><br>She co-organised CUI focused workshops since 2017 at CSCW, CHI and IUI . Presented at past CUI conferences (full-paper, provocation paper, demo, showcase paper). And co-chaired Full papers (CUI’20), Demos (CUI’21), Short papers (CUI’22) and Doctor Consortium (CUI’23). She is a member of the CUI conference steering committee since 2019. 
  
-# nominations:
-#   - title: Secretary
-#     term: 2024-2029
-#     overview: The Secretary of the CUI Steering Committee plays a critical role in ensuring the smooth operation of the committee and the successful execution of the conference series. This position is integral to fostering the development of a diverse and impactful international CUI community.
-#     responsibilities:
-#       - title: Governance
-#         tasks:
-#           - Support effective governance strategies, ensuring that the committee's actions align with the overarching goals of the conference and its broader mission.
-#           - Maintain processes that support sustainable growth, financial stability, and the continued relevance of the conference.
-#       - title: Meeting Coordination
-#         tasks:
-#           - Organise all Steering Committee meetings, including the preparation and distribution of agendas.
-#           - Ensure timely follow-up on action items and tracking progress.
-#           - Document activities, decisions, and correspondence to ensure transparency and continuity.
-#   - title: Student Representative
-#     term: 2024-2029
-#     overview: The Student Representative is a PhD student who will serve as a vital member of the Steering Committee, providing insights from the student community and those in the early stages of their careers.<br><br>Note that this position is only open to individuals currently studying towards an academic qualification.
-#     responsibilities:
-#       - title: Student Advocacy
-#         tasks: 
-#           - Represent the interests and concerns of students, particularly PhD candidates, ensuring their perspectives are considered in all aspects.
-#       - title: Communication and Outreach
-#         tasks: 
-#           - Serve as the liaison between the Steering Committee and the student community members, engaging with students to gather feedback and disseminating information.
-#           - Assist in developing and executing outreach strategies to encourage student participation in the conference, e.g., roundtable discussions/mentoring. 
-#       - title: Evaluation
-#         tasks: Provide the Steering Committee with actionable insights to improve future conferences from the student perspective.
-#       - title: Personal Development
-#         tasks: Leverage the position to develop leadership, communication, and organisational skills through active participation in committee meetings and conference planning activities.
-#   - title: Technical Chair
-#     term: 2024-2029
-#     explanation: The Technical Chair is responsible for managing all technical aspects of the conference and workshop series, including the development and maintenance of the  communitywebsite and providing essential technical support to other chairs and the organising committees of conferences and workshops. This role is pivotal in ensuring the seamless operation of all technical systems and platforms, which are essential for the success of CUI.
-#     responsibilities:
-#       - title: Technical Infrastructure
-#         tasks:
-#           - Oversee the development, maintenance, and updating of the conference website, ensuring it is user-friendly, accessible, and provides all necessary information to attendees.
-#           - Provide support and guidance on how to make best use of the conference hosting functions.
-#       - title: Support for Steering Committee members
-#         tasks:
-#           - Provide technical assistance and support to other Steering Committee members, ensuring they have the tools and resources needed to perform their roles effectively.
-#       - title: Security and Compliance
-#         tasks:
-#           - Monitor the security of the conference's online platforms to prevent unauthorised access and ensure data integrity.
-#       - title: Innovation and Improvement
-#         tasks:
-#           - Research and implement new technologies that could enhance the conference experience for attendees, speakers, and organisers.
-#           - Continuously evaluate the technical processes to identify areas for improvement and ensure the conference remains at the forefront of technological advancements.
-#   - title: Conference Liaison
-#     term: 2024-2029
-#     explanation: The Conference Liaison acts as the primary link between the Steering Committee and the various conference organising committees. This role is crucial for ensuring effective communication, alignment of goals, and the successful execution of the conference's vision and mission.
-#     responsibilities:
-#       - title: Representation and Communication
-#         tasks:
-#           - Serve as the official representative of the Steering Committee in all interactions with the conference organising committees.
-#           - Facilitate clear and consistent communication between the Steering Committee and the organising committees to ensure mutual understanding of goals, expectations, and responsibilities.
-#       - title: Coordination and Support
-#         tasks:
-#           - Assist the organising committees in understanding and implementing the Steering Committee’s directives, ensuring that the conference aligns with the broader strategic vision.
-#           - Support the organising committees by providing guidance and resources as needed, helping them to overcome challenges and achieve their objectives.
-#       - title: Monitoring and Reporting
-#         tasks:
-#           - Regularly monitor the progress of the organising committees to ensure they are on track with their planning and preparations.
-#           - Report back to the Steering Committee on the status of conference preparations, highlighting any issues or risks and proposing solutions.
-#       - title: Conflict Resolution
-#         tasks:
-#           - Mediate any conflicts or misunderstandings between the Steering Committee and organising committees, ensuring a collaborative and productive working relationship.
-#           - Work to resolve any issues that could impact the conference’s success, fostering a positive and cooperative environment.
-#       - title: Quality Assurance
-#         tasks:
-#           - Ensure that the organising committees adhere to the highest standards in planning and executing the conference, maintaining the reputation and integrity of the conference series.
-#           - Provide feedback and suggestions to the organising committees to enhance the quality and impact of the conference.
+nominations:
+  - title: Secretary
+    term: 2024-2029
+    overview: The Secretary of the CUI Steering Committee plays a critical role in ensuring the smooth operation of the committee and the successful execution of the conference series. This position is integral to fostering the development of a diverse and impactful international CUI community.
+    responsibilities:
+      - title: Governance
+        tasks:
+          - Support effective governance strategies, ensuring that the committee's actions align with the overarching goals of the conference and its broader mission.
+          - Maintain processes that support sustainable growth, financial stability, and the continued relevance of the conference.
+      - title: Meeting Coordination
+        tasks:
+          - Organise all Steering Committee meetings, including the preparation and distribution of agendas.
+          - Ensure timely follow-up on action items and tracking progress.
+          - Document activities, decisions, and correspondence to ensure transparency and continuity.
+  - title: Student Representative
+    term: 2024-2029
+    overview: The Student Representative is a PhD student who will serve as a vital member of the Steering Committee, providing insights from the student community and those in the early stages of their careers.<br><br>Note that this position is only open to individuals currently studying towards an academic qualification.
+    responsibilities:
+      - title: Student Advocacy
+        tasks: 
+          - Represent the interests and concerns of students, particularly PhD candidates, ensuring their perspectives are considered in all aspects.
+      - title: Communication and Outreach
+        tasks: 
+          - Serve as the liaison between the Steering Committee and the student community members, engaging with students to gather feedback and disseminating information.
+          - Assist in developing and executing outreach strategies to encourage student participation in the conference, e.g., roundtable discussions/mentoring. 
+      - title: Evaluation
+        tasks: Provide the Steering Committee with actionable insights to improve future conferences from the student perspective.
+      - title: Personal Development
+        tasks: Leverage the position to develop leadership, communication, and organisational skills through active participation in committee meetings and conference planning activities.
+  - title: Technical Chair
+    term: 2024-2029
+    explanation: The Technical Chair is responsible for managing all technical aspects of the conference and workshop series, including the development and maintenance of the  communitywebsite and providing essential technical support to other chairs and the organising committees of conferences and workshops. This role is pivotal in ensuring the seamless operation of all technical systems and platforms, which are essential for the success of CUI.
+    responsibilities:
+      - title: Technical Infrastructure
+        tasks:
+          - Oversee the development, maintenance, and updating of the conference website, ensuring it is user-friendly, accessible, and provides all necessary information to attendees.
+          - Provide support and guidance on how to make best use of the conference hosting functions.
+      - title: Support for Steering Committee members
+        tasks:
+          - Provide technical assistance and support to other Steering Committee members, ensuring they have the tools and resources needed to perform their roles effectively.
+      - title: Security and Compliance
+        tasks:
+          - Monitor the security of the conference's online platforms to prevent unauthorised access and ensure data integrity.
+      - title: Innovation and Improvement
+        tasks:
+          - Research and implement new technologies that could enhance the conference experience for attendees, speakers, and organisers.
+          - Continuously evaluate the technical processes to identify areas for improvement and ensure the conference remains at the forefront of technological advancements.
+  - title: Conference Liaison
+    term: 2024-2029
+    explanation: The Conference Liaison acts as the primary link between the Steering Committee and the various conference organising committees. This role is crucial for ensuring effective communication, alignment of goals, and the successful execution of the conference's vision and mission.
+    responsibilities:
+      - title: Representation and Communication
+        tasks:
+          - Serve as the official representative of the Steering Committee in all interactions with the conference organising committees.
+          - Facilitate clear and consistent communication between the Steering Committee and the organising committees to ensure mutual understanding of goals, expectations, and responsibilities.
+          - Engage in outreach to other related conferences and engage with ACM SIGCHI Specialized conference committee as required.
+      - title: Coordination and Support
+        tasks:
+          - Assist the organising committees in understanding and implementing the Steering Committee’s directives, ensuring that the conference aligns with the broader strategic vision.
+          - Support the organising committees by providing guidance and resources as needed, helping them to overcome challenges and achieve their objectives.
+      - title: Monitoring and Reporting
+        tasks:
+          - Regularly monitor the progress of the organising committees to ensure they are on track with their planning and preparations.
+          - Report back to the Steering Committee on the status of conference preparations, highlighting any issues or risks and proposing solutions.
+      - title: Conflict Resolution
+        tasks:
+          - Mediate any conflicts or misunderstandings between the Steering Committee and organising committees, ensuring a collaborative and productive working relationship.
+          - Work to resolve any issues that could impact the conference’s success, fostering a positive and cooperative environment.
+      - title: Quality Assurance
+        tasks:
+          - Ensure that the organising committees adhere to the highest standards in planning and executing the conference, maintaining the reputation and integrity of the conference series.
+          - Provide feedback and suggestions to the organising committees to enhance the quality and impact of the conference.
 
 nominations_settings:
   link: https://forms.gle/HiJMHtUFMk59arN46
