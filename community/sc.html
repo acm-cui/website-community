@@ -50,7 +50,7 @@ menus:
         {%- for role in site.data.sc.nominations -%}
           <li class="mb-3">
             <h4 class="fw-medium election-role d-flex flex-row" type="button" data-bs-toggle="collapse" data-bs-target="#nomination-{{ forloop.index0 }}" aria-expanded="false" aria-controls="election-{{ forloop.index0 }}">
-              <i class="bi bi-chevron-compact-right me-1"></i><span>Nominations for {{ role.title }} (<em>{{ role.term }}</em>)</span>
+              <i class="bi bi-chevron-compact-right me-1"></i><span>{{ role.title }} (<em>{{ role.term }}</em>)</span>
             </h4>
             <div id="nomination-{{ forloop.index0 }}" class="collapse">
               <p>{{ role.overview }}</p>
