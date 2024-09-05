@@ -127,7 +127,7 @@ nominations:
         tasks: Leverage the position to develop leadership, communication, and organisational skills through active participation in committee meetings and conference planning activities.
   - title: Technical Chair
     term: 2024-2029
-    explanation: The Technical Chair is responsible for managing all technical aspects of the conference and workshop series, including the development and maintenance of the  communitywebsite and providing essential technical support to other chairs and the organising committees of conferences and workshops. This role is pivotal in ensuring the seamless operation of all technical systems and platforms, which are essential for the success of CUI.
+    overview: The Technical Chair is responsible for managing all technical aspects of the conference and workshop series, including the development and maintenance of the  communitywebsite and providing essential technical support to other chairs and the organising committees of conferences and workshops. This role is pivotal in ensuring the seamless operation of all technical systems and platforms, which are essential for the success of CUI.
     responsibilities:
       - title: Technical Infrastructure
         tasks:
@@ -145,7 +145,7 @@ nominations:
           - Continuously evaluate the technical processes to identify areas for improvement and ensure the conference remains at the forefront of technological advancements.
   - title: Conference Liaison
     term: 2024-2029
-    explanation: The Conference Liaison acts as the primary link between the Steering Committee and the various conference organising committees. This role is crucial for ensuring effective communication, alignment of goals, and the successful execution of the conference's vision and mission.
+    overview: The Conference Liaison acts as the primary link between the Steering Committee and the various conference organising committees. This role is crucial for ensuring effective communication, alignment of goals, and the successful execution of the conference's vision and mission.
     responsibilities:
       - title: Representation and Communication
         tasks:
@@ -154,7 +154,7 @@ nominations:
           - Engage in outreach to other related conferences and engage with ACM SIGCHI Specialized conference committee as required.
       - title: Coordination and Support
         tasks:
-          - Assist the organising committees in understanding and implementing the Steering Committee’s directives, ensuring that the conference aligns with the broader strategic vision.
+          - Assist the organising committees in understanding and implementing the Steering Committee’s directives, ensuring that the conference aligns with the broader strategic vision.
           - Support the organising committees by providing guidance and resources as needed, helping them to overcome challenges and achieve their objectives.
       - title: Monitoring and Reporting
         tasks:
