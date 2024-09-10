@@ -69,7 +69,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /community/assets/icn/twitter.png
+      image: /community/assets/icn/card.png
       layout: "textonly"
   - scope:
       path:            "assets/**/*.pdf"
