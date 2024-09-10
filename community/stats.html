@@ -79,10 +79,9 @@ redirect_from:
         {%- assign footnote_index = footnote_index | plus: 1 -%}
         </div>
     {%- endfor -%}
-    <a href="{{ "/community/assets/csv/statistics/registrations.csv" | relative_url }}" class="mt-3 btn btn-primary text-white me-3 shadow-sm"  title="Registration statistics as a CSV file">
-      <i class="bi bi-file-earmark-arrow-down-fill me-2"></i>
-      Download this table as a CSV
-    </a>
+
+    {%- assign link = "/community/assets/csv/statistics/registrations.csv" | relative_url  -%}
+    {%- include button.html link=link icon="bi-file-earmark-arrow-down-fill" text="Download this table as a CSV" classes="mt-3" -%}
   </article>
 
   <article id="programme-statistics" class="flex-grow-1 p-md-4 p-3">
@@ -143,11 +142,8 @@ redirect_from:
       </p>
     </div>
 
-    <a href="{{ "/community/assets/csv/statistics/programme.csv" | relative_url }}" class="mt-3 btn btn-primary text-white me-3 shadow-sm"  title="Registration statistics as a CSV file">
-      <i class="bi bi-file-earmark-arrow-down-fill me-2"></i>
-      Download these tables as a CSV
-    </a>
-
+    {%- assign link = "/community/assets/csv/statistics/programme.csv" | relative_url  -%}
+    {%- include button.html link=link icon="bi-file-earmark-arrow-down-fill" text="Download these tables as a CSV" classes="mt-3" -%}
   </article>
 
   <article id="awards-statistics" class="flex-grow-1 p-md-4 p-3">
@@ -183,10 +179,8 @@ redirect_from:
       </tbody>
     </table>
 
-    <a href="{{ "/community/assets/csv/statistics/awards.csv" | relative_url }}" class="mt-3 btn btn-primary text-white me-3 shadow-sm"  title="Registration statistics as a CSV file">
-      <i class="bi bi-file-earmark-arrow-down-fill me-2"></i>
-      Download this table as a CSV
-    </a>
+    {%- assign link = "/community/assets/csv/statistics/awards.csv" | relative_url  -%}
+    {%- include button.html link=link icon="bi-file-earmark-arrow-down-fill" text="Download this table as a CSV" classes="mt-3" -%}
   </article>
 </div>
 {%- include sidebar.html -%}

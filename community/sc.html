@@ -75,10 +75,7 @@ menus:
         To be eligible to be nominated you must be a member of SIGCHI. Please submit nominations, for yourself or another, by {% include date.html date=site.data.sc.nominations_settings.deadline -%}, Anywhere on Earth (AoE).
       </p>
       <p>
-        <a href="{{ site.data.sc.nominations_settings.link }}" class="btn btn-primary text-white me-3 shadow-sm">
-          <i class="bi bi-person-raised-hand me-2"></i>
-          Complete the nomination form
-        </a>
+        {%- include button.html link=site.data.sc.nominations_settings.link icon="bi-person-raised-hand" text="Complete the nomination form" -%}
       </p>
       <p>
         If you would like any further details about the nominations or elections process, or any of the roles, email <a href="mailto:{{ site.data.sc.nominations_settings.contact.email }}">{{ site.data.sc.nominations_settings.contact.name }}</a>.
@@ -116,10 +113,8 @@ menus:
       The constitution for the ACM Conversational User Interfaces conference sets out the structure and organisational procedures that govern the conference and workshop series.
     </p>
     <p>
-      <a href="{{ site.data.const.file | relative_url }}" class="btn btn-primary text-white me-3 shadow-sm">
-        <i class="bi bi-file-earmark-arrow-down-fill me-2"></i>
-        Download the latest constitution
-      </a>
+      {%- assign link = site.data.const.file | relative_url -%}
+      {%- include button.html link=link icon="bi-file-earmark-arrow-down-fill" text="Download the constitution" classes="me-2" -%}
       <span class="text-secondary small d-xl-inline-block mt-xl-0 d-block mt-3">
         Last updated and approved: {% include date.html date=site.data.const.date -%}
       </span>

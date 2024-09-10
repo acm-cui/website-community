@@ -37,10 +37,7 @@ menus:
       {{ site.data.conf_host.preamble }}
     </p>
     <p>
-      <a href="{{ site.data.conf_host.form }}" class="btn btn-primary text-white me-3 shadow-sm">
-        <i class="bi bi-person-raised-hand me-2"></i>
-        Complete the EOI form
-      </a>
+      {%- include button.html link=site.data.conf_host.form icon="bi-person-raised-hand" text="Complete the EOI form" -%}
     </p>
     <p>
       {{ site.data.conf_host.postamble }}
