@@ -11,7 +11,7 @@
   {%- assign newest_data_file = site.data.meta[page.lastmod.files.first] -%}
   {%- for file in page.lastmod.files -%}
     {%- assign candidate = site.data.meta[file] -%}
-    {%- if candidate.last_commit.time_epoch > newest.last_commit.time_epoch -%}
+    {%- if candidate.last_commit.time_epoch > newest_data_file.last_commit.time_epoch -%}
       {%- assign newest_data_file = candidate -%}
     {%- endif -%}
   {%- endfor -%}
