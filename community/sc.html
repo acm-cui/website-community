@@ -126,7 +126,7 @@ menus:
       The following people are the current <em>Officers</em> and <em>Members</em> of the steering committee. Officers are elected by the community and undertake a specific role on the committee, while members are invited to serve on the committee on the basis of their expertise and community participation.
     </p>
     <ul class="list-unstyled d-flex flex-row flex-wrap align-items-stretch m-0 p-0 sc-list">
-      {%- assign num_members = site.data.oc.members | size -%}
+      {%- assign num_members = site.data.sc.members | size -%}
       {%- if num_members > 0 %}
         {%- assign membership = site.data.sc.officers | concat: site.data.sc.members -%}
       {%- else -%}

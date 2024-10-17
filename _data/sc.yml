@@ -81,9 +81,12 @@ officers:
 
 
 members:
-#  - name: Stephan Schlögl
-#    photo: stephan-schloegl.jpg
-#    url: https://www.mci.edu/faculty/stephan.schloegl_en.html
+ - name: Stephan Schlögl
+   photo: stephan-schloegl.jpg
+   roles:
+    - role: Invited Member
+      term: 2024–2029
+   url: https://www.mci.edu/faculty/stephan.schloegl_en.html
 
 elections:
   # - title: Co-Chair
