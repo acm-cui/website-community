@@ -125,9 +125,9 @@ elections:
   - title: Student Representative
     term: 2025–2030
     nominations:
-      - name: Xin Wang
+      - name: Vision (Xin) Wang
         bio: >
-          During my Ph.D. study, my research focus is on applying computational techniques, including machine learning and representation learning, into conversational AI. I have published conference paper about AI chatbot to improve patient experience in real-time hospital settings at CHI'24. I also actively served related conferences, including CHI'24, CUI'24 and CSCW'24, as paper reviewer. I also contributed to CUI workshop at CHI'24 through presenting my ongoing research on user trust modeling in conversational agents via representation learning methods.
+          I am currently pursuing a Ph.D. study, specializing in conversational AI. I have actively contributed to the CUI research community, presenting my work at CHI’24 and CHI’25. Specifically, I presented a case study on AI chatbots for improving patient experience in real-time hospital settings at CHI’24 and will present late-breaking work on user trust dynamics in human-AI communication at CHI’25. Additionally, I participated in the CUI workshop at CHI’24, where I shared insights from my ongoing research. I also had a poster paper accepted at CUI’24, although I later withdrew the submission due to a specific study reason. Beyond my research, I am an active reviewer for conferences such as CHI’24, CHI’25, CUI’24, and CSCW’24, staying engaged with cutting-edge developments in the field. Through my involvement, I have built strong connections with the CUI community, including some current Steering Committee members. I am also passionate about mentorship and have guided three graduate researchers and one undergraduate researcher in their academic and research endeavors. My experience in mentoring, reviewing, and presenting at major conferences has given me valuable insights into the challenges and needs of student researchers in the CUI community.
 
 
 elections_settings:
