@@ -113,6 +113,12 @@ elections:
       - name: Stephan Schlögl
         bio: >
           I've been CUI General Co-Chair 2020 and 2021 (both during COVID times) and thus been a CUI Steering Commitee member since 2019. Additionally I served at the CUI OC as DC Co-Chair 2023 and Demos Co-Chair 2024.
+  - title: Student Representative
+    term: 2025–2030
+    nominations:
+      - name: Vision (Xin) Wang
+        bio: >
+          I am currently pursuing a Ph.D. study, specializing in conversational AI. I have actively contributed to the CUI research community, presenting my work at CHI’24 and CHI’25. Specifically, I presented a case study on AI chatbots for improving patient experience in real-time hospital settings at CHI’24 and will present late-breaking work on user trust dynamics in human-AI communication at CHI’25. Additionally, I participated in the CUI workshop at CHI’24, where I shared insights from my ongoing research. I also had a poster paper accepted at CUI’24, although I later withdrew the submission due to a specific study reason. Beyond my research, I am an active reviewer for conferences such as CHI’24, CHI’25, CUI’24, and CSCW’24, staying engaged with cutting-edge developments in the field. Through my involvement, I have built strong connections with the CUI community, including some current Steering Committee members. I am also passionate about mentorship and have guided three graduate researchers and one undergraduate researcher in their academic and research endeavors. My experience in mentoring, reviewing, and presenting at major conferences has given me valuable insights into the challenges and needs of student researchers in the CUI community.
   - title: Technical Chair
     term: 2025–2030
     nominations:
@@ -122,12 +128,6 @@ elections:
       - name: Nima Zargham
         bio: >
           I have previously co-organized CUI-related workshops at notable conferences such as ACM/IEEE HRI 2023, ACM CUI 2023 and 2024, and ACM CHI 24 (CUI@CHI). Additionally, he served as a local chair at the ACM CHI-PLAY 2022 conference. I have also maintained the website for the CUI@CHI 2024 workshop.
-  - title: Student Representative
-    term: 2025–2030
-    nominations:
-      - name: Vision (Xin) Wang
-        bio: >
-          I am currently pursuing a Ph.D. study, specializing in conversational AI. I have actively contributed to the CUI research community, presenting my work at CHI’24 and CHI’25. Specifically, I presented a case study on AI chatbots for improving patient experience in real-time hospital settings at CHI’24 and will present late-breaking work on user trust dynamics in human-AI communication at CHI’25. Additionally, I participated in the CUI workshop at CHI’24, where I shared insights from my ongoing research. I also had a poster paper accepted at CUI’24, although I later withdrew the submission due to a specific study reason. Beyond my research, I am an active reviewer for conferences such as CHI’24, CHI’25, CUI’24, and CSCW’24, staying engaged with cutting-edge developments in the field. Through my involvement, I have built strong connections with the CUI community, including some current Steering Committee members. I am also passionate about mentorship and have guided three graduate researchers and one undergraduate researcher in their academic and research endeavors. My experience in mentoring, reviewing, and presenting at major conferences has given me valuable insights into the challenges and needs of student researchers in the CUI community.
 
 
 elections_settings:
