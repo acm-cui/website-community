@@ -1,4 +1,5 @@
 years:
+  - 2025
   - 2024
   - 2023
   - 2022
@@ -60,6 +61,9 @@ tracks:
       2024:
         submissions: 87
         acceptances: 29
+      2024:
+        submissions: 103
+        acceptances: 35
   
   provocations:
     title: Provocations
@@ -145,6 +149,9 @@ tracks:
       2024:
         submissions: 6
         acceptances: 4
+      2025:
+        submissions: 8
+        acceptances: 7
 
   dc:
     title: Doctoral Consortium
