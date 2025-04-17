@@ -209,6 +209,7 @@ menus:
                 {%- endif -%}
                 {%- if site.data.stats.years contains year -%}
                   <div class="tab-pane fade w-100" id="conference-{{ year }}-statistics" role="tabpanel" aria-labelledby="conference-{{ year }}-statistics-tab" tabindex="0">
+                    {%- if site.data.stats.registrations[year] -%}
                     <h4 class="fw-medium">Registration statistics</h4>
                     <p>
                       We record <em>registrations</em> and not attendance as attendance can be difficult to accurately count. Registrations do typically include "comped" registrations—such as those given to student volunteers and keynotes—as well as registrations in return for sponsorship of the conference.
@@ -237,8 +238,9 @@ menus:
                         </tr>
                       </tbody>
                     </table>
+                    {%- endif -%}
 
-                    <h4 class="pt-4 fw-medium">Programme statistics</h4>
+                    <h4 class="{%- if site.data.stats.registrations[year] -%}pt-4{%- endif %} fw-medium">Programme statistics</h4>
                     <p>Submission numbers exclude those which were incomplete at the time of the submission deadline. Submissions which were desk or early rejected, e.g., due to incorrect formatting or inclusion of author details during anonymous peer review, are included in the overall numbers.</p>
                     <table class="w-100 mb-2 text-center">
                       <thead>
