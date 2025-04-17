@@ -150,8 +150,18 @@ tracks:
         submissions: 6
         acceptances: 4
       2025:
-        submissions: 8
-        acceptances: 7
+        submissions: 5
+        acceptances: 5
+
+  tutorials:
+    title: Tutorials
+    lang:
+      singular: tutorial
+      plural: tutorials
+    data:
+      2025:
+        submissions: 2
+        acceptances: 2
 
   dc:
     title: Doctoral Consortium
