@@ -31,7 +31,7 @@ registrations:
   2023:
     total: 152
     virtual: 36
-  2025:
+  2024:
     total: 101
     virtual: 0
     footnote_id: 1
@@ -61,7 +61,7 @@ tracks:
       2024:
         submissions: 87
         acceptances: 29
-      2024:
+      2025:
         submissions: 103
         acceptances: 35
   
