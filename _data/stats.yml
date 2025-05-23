@@ -91,7 +91,7 @@ tracks:
         acceptances: 12
   
   posters:
-    title: Posters
+    title: Short Papers
     lang:
       singular: poster
       plural: posters
@@ -111,7 +111,10 @@ tracks:
       2024:
         submissions: 39
         acceptances: 19
-  
+      2025:
+        submissions: 55
+        acceptances: 27
+        
   demos:
     title: Demonstrations
     lang:
