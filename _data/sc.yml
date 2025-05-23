@@ -88,46 +88,46 @@ members:
       term: 2024–2029
    url: https://www.mci.edu/faculty/stephan.schloegl_en.html
 
-elections:
-  - title: Conference Liaison
-    term: 2025–2030
-    nominations:
-      - name: Justin Edwards 
-        bio: >
-          Justin has served in numerous organizing committee roles across multiple CUI conferences, including Accessibility Chair (2019), Virtual Chair (2021), Student Volunteer Chair (2024), and Hybrid Experience Chair (2023, 2025). His service to the CUI conference was recognised at CUI 2023 where he received the first CUI Outstanding Service Award for his efforts at that conference. In addition to CUI, Justin has served as a CHI Associate Char (2023, 2025 - Understanding People Subcommittee) and as a Senior Editor at the International Journal of Human-Computer Studies. Justin has attended CUI conferences as an author of full and provocation papers, posters, as well as in the roles of workshop organizer and (multiple time) quiz show host. He is running for Conference Liaison to ensure that future CUI conferences maintain the spirit of curiosity and delight embodied in our prior successful conferences.
-      - name: Sviatlana Höhn
-        bio: >
-          Dr. Sviatlana Höhn has been working on chatbots and conversational AI since 2011. She contributed to CUI as author and sponsor representative in 2024 (LuxAI S.A.). In addition to the usual researcher’s experiences as conference and workshop organiser, Dr. Höhn served as a research community manager of LuxAI S.A. (two years) and Vice-chair of the EU COST Action ‘Language in the Human-Machine Era’ (LITHME 3 years), for which she was responsible for the entire process of the organiser bid calls and management, organiser liasons and conference quality assurance, being also LITHME conference program chair (two years). Dr. Höhn also initiated and organised regular meetings of the Meetup group ‘Artificial Companions, Chatbots and Robots Luxembourg’ that attracted presenters from academia and commercial companies, such as UiPath, EmailTree, Vizir and Banque de Luxembourg. Dr. Höhn has a diverse cultural and communication experiences. She studied and worked in Belarus, Germany and Luxembourg, she earned professional and research experience from commercial companies and public research institutions.
-      - name: Donald McMillan 
-        bio: >
-          An experienced member of the international HCI community, Donald McMillan has played key roles in organising major ACM conferences, serving as General Chair for ACM IMX 2024 and ACM TEI 2018, as well as Technical Papers Chair for ACM CUI 2023. With experience across multiple roles in multiple communities, they have been part of organising and program committees for ACM CHI (Best Paper),  INSCI (Publications), CSCW, IMX, and CUI. Having a broad range of experience of many aspects of conference organisation and management, he is well suited to supporting future CUI chairs going forward. 
-  - title: Secretary
-    term: 2025–2030
-    nominations:
-      - name: Christine Murad
-        bio: >
-          I have served as the Student Representative on the CUI steering committee since it's inception in 2019, as one of the founding members. I am currently graduating from the student representative role, and I have also recently graduated with my PhD, and will be serving as a post-doc and research associate for the next several years. I have served chairing roles on CUI organizing committees in 2020-2021 (Showcases co-chair), 2022 (Demos co-chair), 2023 (Provocations co-chair), and 2024 (Workshops co-chair), and will be a Full Papers co-chair in 2025. I have been publishing and been involved in the CUI community since 2018, and am very familiar with how both the community and the steering committee operates. I am also very connected with most of the current steering committee, and many other names in the CUI community. 
-      - name: Martin Porcheron
-        bio: >
-          I have served as a founding member of the CUI Steering Committee and Technical Chair for the past five or so years. In this role I have overseen the development of CUI's technical capacity, including social media presence, and conference and community websites. I have covered many duties of the secretary,  organising meetings, managing elections, and overseeing the development of the constitution.
-      - name: Stephan Schlögl
-        bio: >
-          I've been CUI General Co-Chair 2020 and 2021 (both during COVID times) and thus been a CUI Steering Commitee member since 2019. Additionally I served at the CUI OC as DC Co-Chair 2023 and Demos Co-Chair 2024.
-  - title: Student Representative
-    term: 2025–2030
-    nominations:
-      - name: Vision (Xin) Wang
-        bio: >
-          I am currently pursuing a Ph.D. study, specializing in conversational AI. I have actively contributed to the CUI research community, presenting my work at CHI’24 and CHI’25. Specifically, I presented a case study on AI chatbots for improving patient experience in real-time hospital settings at CHI’24 and will present late-breaking work on user trust dynamics in human-AI communication at CHI’25. Additionally, I participated in the CUI workshop at CHI’24, where I shared insights from my ongoing research. I also had a poster paper accepted at CUI’24, although I later withdrew the submission due to a specific study reason. Beyond my research, I am an active reviewer for conferences such as CHI’24, CHI’25, CUI’24, and CSCW’24, staying engaged with cutting-edge developments in the field. Through my involvement, I have built strong connections with the CUI community, including some current Steering Committee members. I am also passionate about mentorship and have guided three graduate researchers and one undergraduate researcher in their academic and research endeavors. My experience in mentoring, reviewing, and presenting at major conferences has given me valuable insights into the challenges and needs of student researchers in the CUI community.
-  - title: Technical Chair
-    term: 2025–2030
-    nominations:
-      - name: Christine Murad
-        bio: >
-          I have served as the Student Representative on the CUI steering committee since it's inception in 2019, as one of the founding members. I am currently graduating from the student representative role, and I have also recently graduated with my PhD, and will be serving as a post-doc and research associate for the next several years. I have served chairing roles on CUI organizing committees in 2020-2021 (Showcases co-chair), 2022 (Demos co-chair), 2023 (Provocations co-chair), and 2024 (Workshops co-chair), and will be a Full Papers co-chair in 2025. I have been publishing and been involved in the CUI community since 2018, and am very familiar with how both the community and the steering committee operates. I am also very connected with most of the current steering committee, and many other names in the CUI community. 
-      - name: Nima Zargham
-        bio: >
-          I have previously co-organized CUI-related workshops at notable conferences such as ACM/IEEE HRI 2023, ACM CUI 2023 and 2024, and ACM CHI 24 (CUI@CHI). Additionally, he served as a local chair at the ACM CHI-PLAY 2022 conference. I have also maintained the website for the CUI@CHI 2024 workshop.
+# elections:
+#   - title: Conference Liaison
+#     term: 2025–2030
+#     nominations:
+#       - name: Justin Edwards 
+#         bio: >
+#           Justin has served in numerous organizing committee roles across multiple CUI conferences, including Accessibility Chair (2019), Virtual Chair (2021), Student Volunteer Chair (2024), and Hybrid Experience Chair (2023, 2025). His service to the CUI conference was recognised at CUI 2023 where he received the first CUI Outstanding Service Award for his efforts at that conference. In addition to CUI, Justin has served as a CHI Associate Char (2023, 2025 - Understanding People Subcommittee) and as a Senior Editor at the International Journal of Human-Computer Studies. Justin has attended CUI conferences as an author of full and provocation papers, posters, as well as in the roles of workshop organizer and (multiple time) quiz show host. He is running for Conference Liaison to ensure that future CUI conferences maintain the spirit of curiosity and delight embodied in our prior successful conferences.
+#       - name: Sviatlana Höhn
+#         bio: >
+#           Dr. Sviatlana Höhn has been working on chatbots and conversational AI since 2011. She contributed to CUI as author and sponsor representative in 2024 (LuxAI S.A.). In addition to the usual researcher’s experiences as conference and workshop organiser, Dr. Höhn served as a research community manager of LuxAI S.A. (two years) and Vice-chair of the EU COST Action ‘Language in the Human-Machine Era’ (LITHME 3 years), for which she was responsible for the entire process of the organiser bid calls and management, organiser liasons and conference quality assurance, being also LITHME conference program chair (two years). Dr. Höhn also initiated and organised regular meetings of the Meetup group ‘Artificial Companions, Chatbots and Robots Luxembourg’ that attracted presenters from academia and commercial companies, such as UiPath, EmailTree, Vizir and Banque de Luxembourg. Dr. Höhn has a diverse cultural and communication experiences. She studied and worked in Belarus, Germany and Luxembourg, she earned professional and research experience from commercial companies and public research institutions.
+#       - name: Donald McMillan 
+#         bio: >
+#           An experienced member of the international HCI community, Donald McMillan has played key roles in organising major ACM conferences, serving as General Chair for ACM IMX 2024 and ACM TEI 2018, as well as Technical Papers Chair for ACM CUI 2023. With experience across multiple roles in multiple communities, they have been part of organising and program committees for ACM CHI (Best Paper),  INSCI (Publications), CSCW, IMX, and CUI. Having a broad range of experience of many aspects of conference organisation and management, he is well suited to supporting future CUI chairs going forward. 
+#   - title: Secretary
+#     term: 2025–2030
+#     nominations:
+#       - name: Christine Murad
+#         bio: >
+#           I have served as the Student Representative on the CUI steering committee since it's inception in 2019, as one of the founding members. I am currently graduating from the student representative role, and I have also recently graduated with my PhD, and will be serving as a post-doc and research associate for the next several years. I have served chairing roles on CUI organizing committees in 2020-2021 (Showcases co-chair), 2022 (Demos co-chair), 2023 (Provocations co-chair), and 2024 (Workshops co-chair), and will be a Full Papers co-chair in 2025. I have been publishing and been involved in the CUI community since 2018, and am very familiar with how both the community and the steering committee operates. I am also very connected with most of the current steering committee, and many other names in the CUI community. 
+#       - name: Martin Porcheron
+#         bio: >
+#           I have served as a founding member of the CUI Steering Committee and Technical Chair for the past five or so years. In this role I have overseen the development of CUI's technical capacity, including social media presence, and conference and community websites. I have covered many duties of the secretary,  organising meetings, managing elections, and overseeing the development of the constitution.
+#       - name: Stephan Schlögl
+#         bio: >
+#           I've been CUI General Co-Chair 2020 and 2021 (both during COVID times) and thus been a CUI Steering Commitee member since 2019. Additionally I served at the CUI OC as DC Co-Chair 2023 and Demos Co-Chair 2024.
+#   - title: Student Representative
+#     term: 2025–2030
+#     nominations:
+#       - name: Vision (Xin) Wang
+#         bio: >
+#           I am currently pursuing a Ph.D. study, specializing in conversational AI. I have actively contributed to the CUI research community, presenting my work at CHI’24 and CHI’25. Specifically, I presented a case study on AI chatbots for improving patient experience in real-time hospital settings at CHI’24 and will present late-breaking work on user trust dynamics in human-AI communication at CHI’25. Additionally, I participated in the CUI workshop at CHI’24, where I shared insights from my ongoing research. I also had a poster paper accepted at CUI’24, although I later withdrew the submission due to a specific study reason. Beyond my research, I am an active reviewer for conferences such as CHI’24, CHI’25, CUI’24, and CSCW’24, staying engaged with cutting-edge developments in the field. Through my involvement, I have built strong connections with the CUI community, including some current Steering Committee members. I am also passionate about mentorship and have guided three graduate researchers and one undergraduate researcher in their academic and research endeavors. My experience in mentoring, reviewing, and presenting at major conferences has given me valuable insights into the challenges and needs of student researchers in the CUI community.
+#   - title: Technical Chair
+#     term: 2025–2030
+#     nominations:
+#       - name: Christine Murad
+#         bio: >
+#           I have served as the Student Representative on the CUI steering committee since it's inception in 2019, as one of the founding members. I am currently graduating from the student representative role, and I have also recently graduated with my PhD, and will be serving as a post-doc and research associate for the next several years. I have served chairing roles on CUI organizing committees in 2020-2021 (Showcases co-chair), 2022 (Demos co-chair), 2023 (Provocations co-chair), and 2024 (Workshops co-chair), and will be a Full Papers co-chair in 2025. I have been publishing and been involved in the CUI community since 2018, and am very familiar with how both the community and the steering committee operates. I am also very connected with most of the current steering committee, and many other names in the CUI community. 
+#       - name: Nima Zargham
+#         bio: >
+#           I have previously co-organized CUI-related workshops at notable conferences such as ACM/IEEE HRI 2023, ACM CUI 2023 and 2024, and ACM CHI 24 (CUI@CHI). Additionally, he served as a local chair at the ACM CHI-PLAY 2022 conference. I have also maintained the website for the CUI@CHI 2024 workshop.
 
 
 elections_settings:
