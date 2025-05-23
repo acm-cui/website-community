@@ -89,6 +89,9 @@ tracks:
       2024:
         submissions: 23
         acceptances: 12
+      2025:
+        submissions: 12
+        acceptances: 5
   
   posters:
     title: Short Papers
