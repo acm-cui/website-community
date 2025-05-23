@@ -139,7 +139,10 @@ tracks:
       2024:
         submissions: 3
         acceptances: 3
-
+      2025:
+        submissions: 8
+        acceptances: 4
+  
   workshops:
     title: SIGs/Workshops
     lang:
