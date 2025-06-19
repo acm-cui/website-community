@@ -337,8 +337,8 @@ if (window.location.hash != undefined) {
     $aboutTab.classList.remove('active');
     $aboutTab.setAttribute('aria-selected', 'false');
 
-    const $newsubtab = document.getElementById(conf + '-' + subtab);
-    const $newsubtabTab = document.getElementById(conf + '-' + subtab + '-tab');
+    var $newsubtab = document.getElementById(conf + '-' + subtab);
+    var $newsubtabTab = document.getElementById(conf + '-' + subtab + '-tab');
     $newsubtab.classList.add('show');
     $newsubtab.classList.add('active');
     $newsubtabTab.classList.add('active');
