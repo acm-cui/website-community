@@ -22,6 +22,7 @@ gem 'rugged'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem "jekyll-datapage-generator"
   gem "jekyll-last-commit", :git => "https://github.com/mporcheron/jekyll-last-commit.git"
   gem "jekyll-menus", :git => "https://github.com/forestryio/jekyll-menus.git"
   gem 'jekyll-minifier'

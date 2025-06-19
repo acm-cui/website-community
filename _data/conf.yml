@@ -1,4 +1,5 @@
 2025:
+  slug: cui2025
   name: ACM CUI 2025
   type: a SIGCHI specialised conference
   location: Waterloo, ON, Canada
@@ -19,6 +20,7 @@
       link: https://cui.acm.org/2025/
 
 2024:
+  slug: cui2024
   name: ACM CUI 2024
   type: a SIGCHI specialised conference
   location: Luxembourg City, Luxembourg
@@ -92,6 +94,7 @@
         dl: https://doi.org/10.1145/3640794.3665579
 
 2023:
+  slug: cui2023
   name: ACM CUI 2023
   type: a SIGCHI specialised conference
   location: Eindhoven, Netherlands
@@ -170,6 +173,7 @@
       From 2023 onwards, CUI officially joined the ACM SIGCHI family of conferences.
 
 2022:
+  slug: cui2022
   name: CUI 2022
   type: an ACM in-cooperation conference
   location: Glasgow, UK
@@ -228,6 +232,7 @@
         dl: https://doi.org/10.1145/3543829.3544521
 
 2021:
+  slug: cui2021
   name: CUI 2021
   type: an ACM in-cooperation conference
   covid19virtual: true
@@ -299,6 +304,7 @@
         dl: https://doi.org/10.1145/3469595.3469614
 
 2020:
+  slug: cui2020
   name: CUI 2020
   type: an ACM in-cooperation conference
   covid19virtual: true
@@ -363,6 +369,7 @@
         dl: https://doi.org/abs/10.1145/3405755.3406132
 
 2019:
+  slug: cui2019
   name: CUI 2019
   type: an ACM in-cooperation conference
   location: Dublin, Ireland

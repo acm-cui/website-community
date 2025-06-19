@@ -33,6 +33,7 @@ github:
 # Build settings
 plugins_dir: ./_plugins
 plugins:
+  - jekyll-datapage-generator
   - jekyll-menus
   - jekyll-minifier
   - jekyll-optional-front-matter
@@ -63,6 +64,15 @@ sass:
 jekyll-minifier:
   compress_css: false
   exclude: ['*.xml','*.csv']
+
+page_gen-dirs: true
+
+page_gen:
+- data: conf
+  template: conf
+  dir: community/conference
+  index_files: false
+  name: slug
 
 # Sitemap configutation
 defaults:
