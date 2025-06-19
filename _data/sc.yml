@@ -69,7 +69,7 @@ officers:
     roles:
       - role: Technical Chair
         term: 2019–2024
-      - role:  CUI 2023 General Chair
+      - role: CUI 2023 General Chair
         term: 2023–2026
 
   - name: Jaisie Sin
@@ -86,6 +86,18 @@ members:
    roles:
     - role: Invited Member
       term: 2024–2029
+   url: https://www.mci.edu/faculty/stephan.schloegl_en.html
+
+
+
+past_members:
+ - name: Stephan Schlögl
+   photo: stephan-schloegl.jpg
+   roles:
+    - role: CUI 2021 
+      term: 2021–2024
+    - role: CUI 2022 General Chair
+      term: 2022–2025
    url: https://www.mci.edu/faculty/stephan.schloegl_en.html
 
 # elections:

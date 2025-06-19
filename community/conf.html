@@ -136,15 +136,17 @@ menus:
                   </p>
                   {%- if site.data.stats.years contains year -%}
                     <p>
-                      {{ site.data.stats.registrations[year].total }} people registered for the conference
-                      {%- if conference.covid19virtual -%}
-                        .
-                      {%- else -%}
-                        {%- if site.data.stats.registrations[year].virtual > 0 -%},
-                          {{ site.data.stats.registrations[year].virtual }} of whom for virtual attendance and {{ site.data.stats.registrations[year].total | minus: site.data.stats.registrations[year].virtual }} in-person attendance.
-                        {%- else -%}
+                      {%- if site.data.stats.registrations[year].total %}
+                        {{ site.data.stats.registrations[year].total }} people registered for the conference
+                        {%- if conference.covid19virtual -%}
                           .
-                        {%- endif -%} 
+                        {%- else -%}
+                          {%- if site.data.stats.registrations[year].virtual > 0 -%},
+                            {{ site.data.stats.registrations[year].virtual }} of whom for virtual attendance and {{ site.data.stats.registrations[year].total | minus: site.data.stats.registrations[year].virtual }} in-person attendance.
+                          {%- else -%}
+                            .
+                          {%- endif -%} 
+                        {%- endif -%}
                       {%- endif -%}
                       {%- assign totalpubs = 0 -%}
                       {%- assign totaltracks = 0 -%}
