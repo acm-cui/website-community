@@ -54,9 +54,9 @@ menus:
       {%- assign has_hm_awards = conference.awards.hon_mentions | size -%}
       {%- assign has_bp_awards = conference.awards.best_papers | size -%}
       {%- assign has_gcs = conference.general_chairs | size -%}
-      <div class="d-flex flex-column w-100 accordion-item conference-year">
+      <div class="d-flex flex-column w-100 accordion-item conference-year" id="cui{{ year }}">
         {%- if has_hm_awards > 0 or has_bp_awards > 0 or has_gcs > 0 or site.data.stats.years contains year -%}
-          <a href="#conference-{{ year }}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="conference-{{ conference.year }}" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black">
+          <a href="#cui{{ year }}-info" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="cui{{ conference.year }}-info" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black">
             <div class="flex-shrink-0 align-self-start">
               {%- assign image_url = "/community/assets/img/conference/" | append: conference.logo -%}
               <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 50px" alt="{{ conference.name }} logo">
@@ -67,24 +67,24 @@ menus:
             </div>
             <i class="bi bi-chevron-compact-right conference-chevron" style="margin-top: -.2rem"></i>
           </a>
-          <div class="accordion-collapse collapse conference-expanded" id="conference-{{ year }}" data-bs-parent="#conferenceList">
+          <div class="accordion-collapse collapse conference-expanded" id="cui{{ year }}-info" data-bs-parent="#conferenceList">
             <div class="p-md-4 p-3 d-flex flex-lg-row flex-column overflow-hidden">
-              <ul class="nav nav-pills flex-lg-column justify-content-lg-start flex-row justify-content-center mx-lg-0 mx-auto flex-wrap" id="conference-{{ year }}-tab" role="tablist">
+              <ul class="nav nav-pills flex-lg-column justify-content-lg-start flex-row justify-content-center mx-lg-0 mx-auto flex-wrap" id="cui{{ year }}-tab" role="tablist">
                 <li class="nav-item mt-lg-2 m-lg-0 m-1">
-                  <button class="nav-link link-primary active w-100 shadow-sm" id="conference-{{ year }}-about-tab" data-bs-toggle="pill" data-bs-target="#conference-{{ year }}-about" type="button" role="tab" aria-controls="conference-{{ year }}-about" aria-selected="true">
+                  <button class="nav-link link-primary active w-100 shadow-sm" id="cui{{ year }}-about-tab" data-bs-toggle="pill" data-bs-target="#cui{{ year }}-about" type="button" role="tab" aria-controls="cui{{ year }}-about" aria-selected="true">
                     About
                   </button>
                 </li>
                 {%- if has_hm_awards > 0 or has_bp_awards > 0 -%}
                   <li class="nav-item mt-lg-2 m-lg-0 m-1">
-                    <button class="nav-link w-100 link-primary shadow-sm" id="conference-{{ year }}-awards-tab" data-bs-toggle="pill" data-bs-target="#conference-{{ year }}-awards" type="button" role="tab" aria-controls="conference-{{ year }}-awards" aria-selected="false">
+                    <button class="nav-link w-100 link-primary shadow-sm" id="cui{{ year }}-awards-tab" data-bs-toggle="pill" data-bs-target="#cui{{ year }}-awards" type="button" role="tab" aria-controls="cui{{ year }}-awards" aria-selected="false">
                       Awards
                     </button>
                   </li>
                 {%- endif -%}
                 {%- if site.data.stats.years contains year -%}
                   <li class="nav-item mt-lg-2 m-lg-0 m-1">
-                    <button class="nav-link w-100 link-primary shadow-sm" id="conference-{{ year }}-statistics-tab" data-bs-toggle="pill" data-bs-target="#conference-{{ year }}-statistics" type="button" role="tab" aria-controls="conference-{{ year }}-statistics" aria-selected="false">
+                    <button class="nav-link w-100 link-primary shadow-sm" id="cui{{ year }}-statistics-tab" data-bs-toggle="pill" data-bs-target="#cui{{ year }}-statistics" type="button" role="tab" aria-controls="cui{{ year }}-statistics" aria-selected="false">
                       Statistics
                     </button>
                   </li>
@@ -99,8 +99,8 @@ menus:
                   {%- endif -%}
                 {%- endfor -%}
               </ul>
-              <div class="tab-content overflow-x-auto flex-grow-1 ms-lg-4 mt-lg-1 mt-3" id="conference-{{ year }}-tabContent">
-                <div class="tab-pane fade show active" id="conference-{{ year }}-about" role="tabpanel" aria-labelledby="conference-{{ year }}-about-tab" tabindex="0">
+              <div class="tab-content overflow-x-auto flex-grow-1 ms-lg-4 mt-lg-1 mt-3" id="cui{{ year }}-tabContent">
+                <div class="tab-pane fade show active" id="cui{{ year }}-about" role="tabpanel" aria-labelledby="cui{{ year }}-about-tab" tabindex="0">
                   {%- if conference.listdetails.preamble -%}
                   <p>
                     {{- conference.listdetails.preamble -}}
@@ -185,7 +185,7 @@ menus:
                   </p>
                 </div>
                 {%- if has_hm_awards > 0 or has_bp_awards > 0 -%}
-                <div class="tab-pane fade" id="conference-{{ year }}-awards" role="tabpanel" aria-labelledby="conference-{{ year }}-awards-tab" tabindex="0">
+                <div class="tab-pane fade" id="cui{{ year }}-awards" role="tabpanel" aria-labelledby="cui{{ year }}-awards-tab" tabindex="0">
                   <h4 class="fw-medium">Best Paper awards</h4>
                   <ul>
                     {%- assign data = conference.awards.best_papers | sort: "title" -%}
@@ -210,7 +210,7 @@ menus:
                 </div>
                 {%- endif -%}
                 {%- if site.data.stats.years contains year -%}
-                  <div class="tab-pane fade w-100" id="conference-{{ year }}-statistics" role="tabpanel" aria-labelledby="conference-{{ year }}-statistics-tab" tabindex="0">
+                  <div class="tab-pane fade w-100" id="cui{{ year }}-statistics" role="tabpanel" aria-labelledby="cui{{ year }}-statistics-tab" tabindex="0">
                     {%- if site.data.stats.registrations[year] -%}
                     <h4 class="fw-medium">Registration statistics</h4>
                     <p>
@@ -314,3 +314,4 @@ menus:
   </div>
 </section>
 {%- include sidebar.html -%}
+<script>if (window.location.hash != undefined) { document.getElementById(window.location.hash.substring(1) + '-info').classList.add('show'); }</script>
