@@ -116,7 +116,7 @@ menus:
                         {{ conference.name }}, {{ conference.type }}, was held in {{ conference.location }} on {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}.
                       {%- endif -%}
                     {%- else -%}
-                      {{ conference.name }} will be held in {{ conference.location }} on {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}.
+                      {{ conference.name }}, {{ conference.type }}, will be held in {{ conference.location }} on {% include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}.
                     {%- endif %}
                     {% if conference.general_chairs -%}
                       {%- if nowunix > conferenceunix -%}
