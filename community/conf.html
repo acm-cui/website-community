@@ -323,15 +323,15 @@ if (window.location.hash != undefined) {
     conf = conf.substring(0, conf.indexOf('-'));
   }
   
-  const $confContainer = document.getElementById(conf + '-info');
-  const $confLink = document.getElementById(conf + '-link');
+  var $confContainer = document.getElementById(conf + '-info');
+  var $confLink = document.getElementById(conf + '-link');
   $confContainer.classList.add('show');
   $confLink.classList.remove('collapsed');
   $confLink.setAttribute('aria-expanded', 'true');
 
   if (subtab != 'about') {
-    const $about = document.getElementById(conf + '-about');
-    const $aboutTab = document.getElementById(conf + '-about-tab');
+    var $about = document.getElementById(conf + '-about');
+    var $aboutTab = document.getElementById(conf + '-about-tab');
     $about.classList.remove('show');
     $about.classList.remove('active');
     $aboutTab.classList.remove('active');
