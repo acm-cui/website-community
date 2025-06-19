@@ -15,20 +15,6 @@ officers:
       - role:  CUI 2023 General Chair
         term: 2023–2026
 
-  - name: Leigh Clark
-    photo: leigh-clark.jpg
-    url: https://lmhclark.com/
-    roles:
-      - role: Secretary
-        term: 2019–2024
-
-  - name: Benjamin R Cowan
-    photo: benjamin-cowan.jpg
-    url: http://www.benjamincowan.com/
-    roles:
-      - role: Conference Liaison
-        term: 2019–2024
-
   - name: Andreea Danielescu
     photo: andreea-danielescu.png
     roles:
@@ -56,19 +42,10 @@ officers:
       - role:  CUI 2023 General Chair
         term: 2023–2026
 
-  - name: Christine Murad
-    photo: christine-murad.jpg
-    url: http://www.cs.toronto.edu/~cmurad/
-    roles:
-      - role: Student Representative
-        term: 2019–2024
-
   - name: Martin Porcheron
     photo: martin-porcheron.jpg
     url: https://www.porcheron.uk/
     roles:
-      - role: Technical Chair
-        term: 2019–2024
       - role: CUI 2023 General Chair
         term: 2023–2026
 
@@ -79,26 +56,50 @@ officers:
       - role: Outreach/Publicity Chair
         term: 2023–2026
 
-
 members:
- - name: Stephan Schlögl
-   photo: stephan-schloegl.jpg
-   roles:
-    - role: Invited Member
-      term: 2024–2029
-   url: https://www.mci.edu/faculty/stephan.schloegl_en.html
-
+  - name: Stephan Schlögl
+    photo: stephan-schloegl.jpg
+    roles:
+      - role: Invited member
+        term: 2024–2029
+    url: https://www.mci.edu/faculty/stephan.schloegl_en.html
 
 
 past_members:
- - name: Stephan Schlögl
-   photo: stephan-schloegl.jpg
-   roles:
-    - role: CUI 2021 
-      term: 2021–2024
-    - role: CUI 2022 General Chair
-      term: 2022–2025
-   url: https://www.mci.edu/faculty/stephan.schloegl_en.html
+  - name: Leigh Clark
+    photo: leigh-clark.jpg
+    url: https://lmhclark.com/
+    roles:
+      - role: Secretary
+        term: 2019–2024
+
+  - name: Benjamin R Cowan
+    photo: benjamin-cowan.jpg
+    url: http://www.benjamincowan.com/
+    roles:
+      - role: Conference Liaison
+        term: 2019–2024
+
+  - name: Christine Murad
+    photo: christine-murad.jpg
+    url: http://www.cs.toronto.edu/~cmurad/
+    roles:
+      - role: Student Representative
+        term: 2019–2024
+  - name: Martin Porcheron
+    photo: martin-porcheron.jpg
+    url: https://www.porcheron.uk/
+    roles:
+      - role: Technical Chair
+        term: 2019–2024
+  - name: Stephan Schlögl
+    photo: stephan-schloegl.jpg
+    roles:
+      - role: CUI 2021 General Chair
+        term: 2021–2024
+      - role: CUI 2020 General Chair
+        term: 2020–2023
+    url: https://www.mci.edu/faculty/stephan.schloegl_en.html
 
 # elections:
 #   - title: Conference Liaison
