@@ -56,7 +56,7 @@ menus:
       {%- assign has_gcs = conference.general_chairs | size -%}
       <div class="d-flex flex-column w-100 accordion-item conference-year" id="cui{{ year }}">
         {%- if has_hm_awards > 0 or has_bp_awards > 0 or has_gcs > 0 or site.data.stats.years contains year -%}
-          <a href="#cui{{ year }}-info" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="cui{{ conference.year }}-info" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black">
+          <a id="cui{{ year }}-link" href="#cui{{ year }}-info" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="cui{{ conference.year }}-info" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black">
             <div class="flex-shrink-0 align-self-start">
               {%- assign image_url = "/community/assets/img/conference/" | append: conference.logo -%}
               <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow" style="width: 50px" alt="{{ conference.name }} logo">
@@ -314,4 +314,35 @@ menus:
   </div>
 </section>
 {%- include sidebar.html -%}
-<script>if (window.location.hash != undefined) { document.getElementById(window.location.hash.substring(1) + '-info').classList.add('show'); }</script>
+<script>
+if (window.location.hash != undefined) {
+  var conf = window.location.hash.substring(1);
+  var subtab = 'about';
+  if (conf.endsWith('-about') || conf.endsWith('-awards') || conf.endsWith('-statistics')) {
+    subtab = conf.substring(conf.indexOf('-') + 1);
+    conf = conf.substring(0, conf.indexOf('-'));
+  }
+  
+  const $confContainer = document.getElementById(conf + '-info');
+  const $confLink = document.getElementById(conf + '-link');
+  $confContainer.classList.add('show');
+  $confLink.classList.remove('collapsed');
+  $confLink.setAttribute('aria-expanded', 'true');
+
+  if (subtab != 'about') {
+    const $about = document.getElementById(conf + '-about');
+    const $aboutTab = document.getElementById(conf + '-about-tab');
+    $about.classList.remove('show');
+    $about.classList.remove('active');
+    $aboutTab.classList.remove('active');
+    $aboutTab.setAttribute('aria-selected', 'false');
+
+    const $newsubtab = document.getElementById(conf + '-' + subtab);
+    const $newsubtabTab = document.getElementById(conf + '-' + subtab + '-tab');
+    $newsubtab.classList.add('show');
+    $newsubtab.classList.add('active');
+    $newsubtabTab.classList.add('active');
+    $newsubtabTab.setAttribute('aria-selected', 'true');
+  }
+}
+</script>
