@@ -157,7 +157,11 @@ menus:
                           {%- assign totaltracks = totaltracks | plus: 1 -%}
                         {%- endif -%}
                       {%- endfor %}
-                      In total, there were {{ totalpubs }} publications at {{ conference.name }}, consisting of 
+                      {%- if nowunix > conferenceunix %}
+                        In total, there were {{ totalpubs }} publications at {{ conference.name }}, consisting of 
+                      {%- else %}
+                        In total, there will be {{ totalpubs }} publications at {{ conference.name }}, consisting of 
+                      {%- endif %}
                       {% for datum in site.data.stats.tracks -%}
                         {%- assign track = datum[1] -%}
                         {%- if track.data[year] -%}
