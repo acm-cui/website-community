@@ -72,6 +72,13 @@ officers:
         term: 2025–2030
     url: https://www.nimazargham.com/
 
+  - name: Vision (Xin) Wang
+    photo: vision-wang.jpeg
+    url: https://xin-wang-kr.github.io/
+    roles:
+      - role: Student Representative
+        term: 2025-2030
+
 members:
   - name: Stephan Schlögl
     photo: stephan-schloegl.jpg
