@@ -28,6 +28,13 @@ officers:
       - role:  CUI 2024 General Chair
         term: 2024–2027
 
+  - name: Justin Edwards
+    photo: justin-edwards.jpg
+    roles:
+      - role: Conference Liaison
+        term: 2025–2030
+    url: https://justinhci.github.io/
+
   - name: Martin Halvey
     photo: martin-halvey.jpg
     url: https://www.strath.ac.uk/staff/halveymartindr/
@@ -40,12 +47,14 @@ officers:
     url: https://uwaterloo.ca/systems-design-engineering/profile/c2muntea
     roles:
       - role:  CUI 2023 General Chair
-        term: 2023–2026
+        term: 2023–206
 
   - name: Martin Porcheron
     photo: martin-porcheron.jpg
     url: https://www.porcheron.uk/
     roles:
+      - role: Secretary
+        term: 2025–2030
       - role: CUI 2023 General Chair
         term: 2023–2026
 
@@ -55,6 +64,13 @@ officers:
     roles:
       - role: Outreach/Publicity Chair
         term: 2023–2026
+
+  - name: Nima Zargham
+    photo: nima-zargham.jpg
+    roles:
+      - role: Technical Support Chair
+        term: 2025–2030
+    url: https://www.nimazargham.com/
 
 members:
   - name: Stephan Schlögl
@@ -90,7 +106,7 @@ past_members:
     photo: martin-porcheron.jpg
     url: https://www.porcheron.uk/
     roles:
-      - role: Technical Chair
+      - role: Technical Support Chair
         term: 2019–2024
   - name: Stephan Schlögl
     photo: stephan-schloegl.jpg
