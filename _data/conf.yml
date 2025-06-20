@@ -21,6 +21,9 @@
   sponsors:
     - name: SIGCHI
       link: https://www.sigchi.org/
+  listdetails:
+    preamble: >
+      CUI leaves Europe for the first time!
 
 2024:
   slug: cui2024
