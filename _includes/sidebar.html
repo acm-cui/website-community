@@ -15,7 +15,7 @@
         {%- else -%}
           {%- assign no_conferences = false -%}
           {%- if conference.urls.website -%}
-            <small class="mb-2"><a href="{{ conference.urls.website.link }}" title="Visit the website for {{ conference.name }}" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ conference.name }}</span> <i class="bi bi-box-arrow-up-right"></i></a><br>{{ conference.location }}<br>{%- include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</small>
+            <small class="mb-2"><a href="{{ conference.urls.website.link }}" title="Visit the website for {{ conference.name }}" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ conference.name }}</span>&nbsp;<i class="bi bi-box-arrow-up-right"></i></a><br>{{ conference.location }}<br>{%- include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</small>
           {%- else -%}
             <small class="mb-2">{{ conference.name }}<br>{{ conference.location }}<br>{%- include daterange.html startdate=conference.dates.start enddate=conference.dates.end -%}</small>
           {%- endif -%}
@@ -42,7 +42,7 @@
         {%- if nowunix <= workshopunix -%}
           {%- assign no_workshops = false -%}
           {%- if workshop.url -%}
-            <small class="mb-2"><a href="{{ workshop.url }}" title="Visit the website for the workshop '{{ workshop.title }}'" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">CUI@{{ workshop.conference }}</span> <i class="bi bi-box-arrow-up-right"></i></a><br>
+            <small class="mb-2"><a href="{{ workshop.url }}" title="Visit the website for the workshop '{{ workshop.title }}'" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">CUI@{{ workshop.conference }}</span>&nbsp;<i class="bi bi-box-arrow-up-right"></i></a><br>
           {%- else -%}
             <small class="mb-2">CUI@{{ workshop.conference }}<br>
           {%- endif -%}
@@ -64,13 +64,13 @@
   <div class="p-md-4 p-3 text-start">
       <h6 class="fw-bold text-lg-start text-center">Connect with CUI</h6>
     <ul class="list-unstyled small mx-auto">
-      <li class="ms-lg-0 mx-auto my-2" style="width: 268px"><i class="bi bi-envelope-fill me-2"></i> <a href="https://listserv.acm.org/SCRIPTS/WA-ACMLPX.CGI?A0=CUI-ANNOUNCEMENTS&X=DA00202F15E5DE0C2A" title="Subscribe to the CUI Announcements mailing list on ACM listserv" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">CUI Announcements</span> <i class="bi bi-box-arrow-up-right"></i></a></li>
-      <li class="ms-lg-0 mx-auto my-2" style="width: 268px"><i class="bi bi-linkedin me-2"></i> <a href="https://www.linkedin.com/company/acm-cui/" title="Follow ACM CUI on LinkedIn" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">ACM CUI on LinkedIn</span> <i class="bi bi-box-arrow-up-right"></i></a></li>
-      <li class="ms-lg-0 mx-auto my-2" style="width: 268px"><i class="bi bi-bluesky me-2"></i> <a href="https://bsky.app/profile/cui.acm.org/" title="Follow @cui.acm.org on Bluesky" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">@cui.acm.org on Bluesky</span> <i class="bi bi-box-arrow-up-right"></i></a></li>
-      <li class="ms-lg-0 mx-auto my-2" style="width: 268px"><i class="bi bi-threads me-2"></i> <a href="https://threads.net/@acm_cui" title="Follow @acm_cui@threads.net" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">@acm_cui@threads.net</span> <i class="bi bi-box-arrow-up-right"></i></a></li>
-      <li class="ms-lg-0 mx-auto my-2" style="width: 268px"><i class="bi bi-mastodon me-2"></i> <a href="https://hci.social/@cui" title="Follow @cui@hci.social (Mastodon)" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">@cui@hci.social</span> <i class="bi bi-box-arrow-up-right"></i></a></li>
-      <li class="ms-lg-0 mx-auto my-2" style="width: 268px"><i class="bi bi-twitter-x me-2"></i> <a href="https://twitter.com/ACM_CUI" title="Follow @ACM_CUI on X" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">@ACM_CUI on X</span> <i class="bi bi-box-arrow-up-right"></i></a></li>
-      <li class="ms-lg-0 mx-auto mt-2" style="width: 268px"><i class="bi bi-discord me-2"></i> <a href="https://discord.gg/UeSDC2MyhH" title="Join the CUI Discord server" class="text-decoration-none"><span class="text-decoration-underline">CUI Discord server</span> <i class="bi bi-box-arrow-up-right"></i></a></li>
+      <li class="ms-lg-0 mx-auto my-2" style="width: 268px"><i class="bi bi-envelope-fill me-2"></i> <a href="https://listserv.acm.org/SCRIPTS/WA-ACMLPX.CGI?A0=CUI-ANNOUNCEMENTS&X=DA00202F15E5DE0C2A" title="Subscribe to the CUI Announcements mailing list on ACM listserv" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">CUI Announcements</span>&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
+      <li class="ms-lg-0 mx-auto my-2" style="width: 268px"><i class="bi bi-linkedin me-2"></i> <a href="https://www.linkedin.com/company/acm-cui/" title="Follow ACM CUI on LinkedIn" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">ACM CUI on LinkedIn</span>&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
+      <li class="ms-lg-0 mx-auto my-2" style="width: 268px"><i class="bi bi-bluesky me-2"></i> <a href="https://bsky.app/profile/cui.acm.org/" title="Follow @cui.acm.org on Bluesky" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">@cui.acm.org on Bluesky</span>&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
+      <li class="ms-lg-0 mx-auto my-2" style="width: 268px"><i class="bi bi-threads me-2"></i> <a href="https://threads.net/@acm_cui" title="Follow @acm_cui@threads.net" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">@acm_cui@threads.net</span>&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
+      <li class="ms-lg-0 mx-auto my-2" style="width: 268px"><i class="bi bi-mastodon me-2"></i> <a href="https://hci.social/@cui" title="Follow @cui@hci.social (Mastodon)" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">@cui@hci.social</span>&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
+      <li class="ms-lg-0 mx-auto my-2" style="width: 268px"><i class="bi bi-twitter-x me-2"></i> <a href="https://twitter.com/ACM_CUI" title="Follow @ACM_CUI on X" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">@ACM_CUI on X</span>&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
+      <li class="ms-lg-0 mx-auto mt-2" style="width: 268px"><i class="bi bi-discord me-2"></i> <a href="https://discord.gg/UeSDC2MyhH" title="Join the CUI Discord server" class="text-decoration-none"><span class="text-decoration-underline">CUI Discord server</span>&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
     </ul>
   </div>
   
