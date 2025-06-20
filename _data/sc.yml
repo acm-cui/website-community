@@ -95,14 +95,16 @@ past_membership:
     roles:
       - role: Secretary
         term: 2019–2025
-
+      - role: CUI 2019 General Chair
+        term: 2019–2022
   - name: Benjamin R Cowan
     photo: benjamin-cowan.jpg
     url: http://www.benjamincowan.com/
     roles:
       - role: Conference Liaison
         term: 2019–2025
-
+      - role: CUI 2019 General Chair
+        term: 2019–2022
   - name: Christine Murad
     photo: christine-murad.jpg
     url: http://www.cs.toronto.edu/~cmurad/
@@ -123,6 +125,14 @@ past_membership:
       - role: CUI 2020 General Chair
         term: 2020–2023
     url: https://www.mci.edu/faculty/stephan.schloegl_en.html
+  - name: María Inés Torres
+    photo: manes-torres.jpeg
+    roles:
+      - role: CUI 2021 General Chair
+        term: 2021–2024
+      - role: CUI 2020 General Chair
+        term: 2020–2023
+    url: https://www.ehu.eus/en/web/speech-interactive/m-ines-torres
 
 # elections:
 #   - title: Conference Liaison
