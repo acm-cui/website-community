@@ -18,6 +18,9 @@
     website:
       name: Website
       link: https://cui.acm.org/2025/
+  sponsors:
+    - name: SIGCHI
+      link: https://www.sigchi.org/
 
 2024:
   slug: cui2024
