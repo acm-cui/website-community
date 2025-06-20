@@ -95,7 +95,7 @@ menus:
                 {%- for url in conference.urls -%}
                   {%- if url[1].name -%}
                   <li class="nav-item mt-lg-2 m-lg-0 m-1">
-                    <a class="nav-link btn w-100 link-primary shadow-sm" href="{{ url[1].link }}" target="_blank">
+                    <a class="nav-link btn w-100 link-primary shadow-sm" href="{{ url[1].link }}" rel="external" target="_blank">
                       <span class="text-nowrap">{{ url[1].name }}&nbsp;<i class="bi bi-box-arrow-up-right fs-6"></i></span>
                     </a>
                   </li>
@@ -130,7 +130,7 @@ menus:
                       {%- for gc in conference.general_chairs -%}
                         {% if forloop.index0 > 0 and forloop.length > 2 %}, {% else %} {% endif %}{% if forloop.index == forloop.length %} and {% endif %}
                         {%- if gc.website -%}
-                          <a href="{{ gc.website }}" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ gc.name }}</span> <i class="bi bi-box-arrow-up-right"></i></a>
+                          <a href="{{ gc.website }}" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ gc.name }}</span> <i class="bi bi-box-arrow-up-right"></i></a>
                         {%- else -%}
                           {{ gc.name }}
                         {%- endif -%}
@@ -172,7 +172,7 @@ menus:
                         {%- endif -%}
                       {%- endfor %}.
                       {%- if conference.urls.proceedings %}
-                        The {{ conference.name }} proceedings were published in the <a href="{{ conference.urls.proceedings.link }}" title="View the proceedings of {{ conference.name }} in the ACM Digital Library" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">ACM Digital Library</span> <i class="bi bi-box-arrow-up-right"></i></a>.
+                        The {{ conference.name }} proceedings were published in the <a href="{{ conference.urls.proceedings.link }}" title="View the proceedings of {{ conference.name }} in the ACM Digital Library" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">ACM Digital Library</span> <i class="bi bi-box-arrow-up-right"></i></a>.
                       {%- endif -%}
                     </p>
                   {%- endif -%}
@@ -180,14 +180,14 @@ menus:
                     <p>
                       The CUI community is grateful to 
                       {% for sponsor in conference.sponsors -%}
-                        {% unless forloop.first %}{% unless forloop.last %}, {% else %}{% if forloop.length > 2 %},{% endif %} and {% endunless %}{% endunless %}<a href="{{ sponsor.link }}" title="Visit the {{ sponsor.name }} website" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ sponsor.name }}</span> <i class="bi bi-box-arrow-up-right"></i></a>
+                        {% unless forloop.first %}{% unless forloop.last %}, {% else %}{% if forloop.length > 2 %},{% endif %} and {% endunless %}{% endunless %}<a href="{{ sponsor.link }}" title="Visit the {{ sponsor.name }} website" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ sponsor.name }}</span> <i class="bi bi-box-arrow-up-right"></i></a>
                       {%- endfor %} for their generous support towards {{ conference.name }}.
                     </p>
                   {%- endif -%}
                   <p>
                     {%- if conference.urls.website -%}
                       Visit the 
-                      <a href="{{ conference.urls.website.link }}" title="Visit the {{ conference.name }} website" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">conference website</span> <i class="bi bi-box-arrow-up-right"></i></a> for more information about {{ conference.name }}.
+                      <a href="{{ conference.urls.website.link }}" title="Visit the {{ conference.name }} website" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">conference website</span> <i class="bi bi-box-arrow-up-right"></i></a> for more information about {{ conference.name }}.
                     {%- endif -%}
                   </p>
                 </div>
@@ -197,14 +197,14 @@ menus:
                   <ul>
                     {%- assign data = conference.awards.best_papers | sort: "title" -%}
                     {%- for award in data -%}
-                      <li class="mb-1"><a href="{{ award.dl }}" title="View '{{ award.title | escape }}' in the ACM Digital Library" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ award.title }}</span> <i class="bi bi-box-arrow-up-right"></i></a><br>{{ award.authors }}</li>
+                      <li class="mb-1"><a href="{{ award.dl }}" title="View '{{ award.title | escape }}' in the ACM Digital Library" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ award.title }}</span> <i class="bi bi-box-arrow-up-right"></i></a><br>{{ award.authors }}</li>
                     {%- endfor -%}
                   </ul>
                   <h4 class="pt-4 fw-medium">Honourable Mention awards</h4>
                   <ul>
                     {%- assign data = conference.awards.hon_mentions | sort: "title" -%}
                     {%- for award in data -%}
-                      <li class="mb-1"><a href="{{ award.dl }}" title="View '{{ award.title | escape }}' in the ACM Digital Library" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ award.title }}</span> <i class="bi bi-box-arrow-up-right"></i></a><br>{{ award.authors }}</li>
+                      <li class="mb-1"><a href="{{ award.dl }}" title="View '{{ award.title | escape }}' in the ACM Digital Library" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ award.title }}</span> <i class="bi bi-box-arrow-up-right"></i></a><br>{{ award.authors }}</li>
                     {%- endfor -%}
                   </ul>
                   {%- if conference.awards.outstanding_service -%}
@@ -284,7 +284,7 @@ menus:
             </div>
           </div>
         {%- elsif conference.urls.website -%}
-          <a href="{{ conference.urls.website.link }}" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black" title="Visit the {{ conference.name }} website" target="_blank">
+          <a href="{{ conference.urls.website.link }}" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black" title="Visit the {{ conference.name }} website" rel="external" target="_blank">
             <div class="flex-shrink-0 align-self-start">
               {%- assign image_url = "/community/assets/img/conference/" | append: conference.logo -%}
               <img src="{{ image_url | relative_url }}?{{ cache }}" class="rounded shadow-sm" style="width: 50px" alt="{{ conference.name }} logo">
