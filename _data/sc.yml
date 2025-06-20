@@ -65,19 +65,19 @@ officers:
       - role: Outreach/Publicity Chair
         term: 2023–2026
 
-  - name: Nima Zargham
-    photo: nima-zargham.jpg
-    roles:
-      - role: Technical Support Chair
-        term: 2025–2030
-    url: https://www.nimazargham.com/
-
   - name: Vision (Xin) Wang
     photo: vision-wang.jpeg
     url: https://xin-wang-kr.github.io/
     roles:
       - role: Student Representative
         term: 2025-2030
+
+  - name: Nima Zargham
+    photo: nima-zargham.jpg
+    roles:
+      - role: Technical Support Chair
+        term: 2025–2030
+    url: https://www.nimazargham.com/
 
 members:
   - name: Stephan Schlögl
@@ -88,7 +88,7 @@ members:
     url: https://www.mci.edu/faculty/stephan.schloegl_en.html
 
 
-past_members:
+past_membership:
   - name: Leigh Clark
     photo: leigh-clark.jpg
     url: https://lmhclark.com/
