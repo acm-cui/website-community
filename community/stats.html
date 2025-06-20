@@ -148,6 +148,9 @@ redirect_from:
 
   <article id="awards-statistics" class="flex-grow-1 p-md-4 p-3">
     <h3 class="fw-semibold mb-3 m-0 p-0">Programme award statistics</h3>
+    <p>
+      Information about award winners can be found under each <a href="{{ "/community/conference/" | relative_url }}" title="CUI conference series">conference page</a>.
+    </p>
     <table class="w-100 mb-2 text-center">
       <thead>
         <tr class="fw-medium">
@@ -166,7 +169,7 @@ redirect_from:
           {%- if site.data.stats.years contains year -%}
             {%- if site.data.conf[year].awards -%}
               <tr class="border-top">
-                <td>{{ conference.name }}</td>
+                <td><a href="{{ "/community/conference/" | relative_url }}{{ conference.slug }}/#awards" title="Details of the awards given at {{ conference.name }}">{{ conference.name }}</a></td>
                 <td>{%- assign num_hom_mentions = conference.awards.hon_mentions | size | times: 1.0 -%}{{ conference.awards.hon_mentions | size }} / {% assign total_possible = 0 -%}{%- for track in conference.awards.track_links.hon_mentions -%}{%- assign total_possible = total_possible | plus: site.data.stats.tracks[track]['data'][year]['acceptances'] -%}{%- endfor -%}{{ total_possible }}<br><small class="text-muted">({{ num_hom_mentions | divided_by: total_possible | times: 100 | round: 1 }}%)</small></td>
                 <td>{%- assign num_best_papers = conference.awards.best_papers | size | times: 1.0 -%}{{ conference.awards.best_papers | size }} / {% assign total_possible = 0 -%}{%- for track in conference.awards.track_links.best_papers -%}{%- assign total_possible = total_possible | plus: site.data.stats.tracks[track]['data'][year]['acceptances'] -%}{%- endfor -%}{{ total_possible }}<br><small class="text-muted">({{ num_best_papers | divided_by: total_possible | times: 100 | round: 1 }}%)</small></td>
                 {%- assign counted_tracks = conference.awards.track_links.hon_mentions -%}
