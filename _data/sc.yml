@@ -70,7 +70,7 @@ officers:
     url: https://xin-wang-kr.github.io/
     roles:
       - role: Student Representative
-        term: 2025-2030
+        term: 2025–2030
 
   - name: Nima Zargham
     photo: nima-zargham.jpg
@@ -103,8 +103,16 @@ past_membership:
     roles:
       - role: Conference Liaison
         term: 2019–2025
+      - role: Co-Chair
+        term: 2019–2024
       - role: CUI 2019 General Chair
         term: 2019–2022
+  - name: Cosmin Munteanu
+    photo: cosmin-munteanu.jpg
+    url: https://uwaterloo.ca/systems-design-engineering/profile/c2muntea
+    roles:
+      - role: Co-Chair
+        term: 2019–2024
   - name: Christine Murad
     photo: christine-murad.jpg
     url: http://www.cs.toronto.edu/~cmurad/
