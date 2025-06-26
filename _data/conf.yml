@@ -18,9 +18,6 @@
     website:
       name: Website
       link: https://cui.acm.org/2025/
-    proceedings:
-      name: Proceedings
-      link: https://dl.acm.org/doi/proceedings/10.1145/3719160
   sponsors:
     - name: SIGCHI
       link: https://www.sigchi.org/
