@@ -1,0 +1,45 @@
+<ul class="list-unstyled d-flex flex-column m-0 p-0 sc-list w-50">
+  {%- for member in include.list -%}
+    {%- assign numRoles = member.roles | size -%}
+    <li class="mx-0 m-2 px-2 py-0 sc-person w-100">
+      <div class=" d-flex flex-row align-items-center rounded-4 shadow-sm h-100 p-3 {% if numRoles > 1 %}has-extra-roles{% endif %}" id="sc-person-{{ member.name | slugify }}">
+      <div>
+        <img src="{{ "/community/assets/img/sc/" | append: member.photo | relative_url }}" class="profile-photo rounded-circle" alt="A photo of {{ member.name }}" title="{{ member.name }}" style="width: 60px">
+      </div>
+      <div class="ms-3">
+        {%- if member.url -%}
+        <span class="mt-0 mb-1 fw-semibold"><a href="{{ member.url }}" title="Go to {{ member.name }}'s website" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ member.name }}</span>&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></span>
+        {%- else -%}
+        <span class="mt-0 mb-1 fw-semibold">{{ member.name }}</span>
+        {%- endif -%}
+        <ul class="list-unstyled">
+        {%- for role in member.roles -%}
+          {%- if forloop.first -%}
+          <li>
+            <span class="fw-medium small me-md-1 me-0">{{- role["role"] -}}</span><span class="d-md-inline-block d-block small text-nowrap">({{- role["term"] -}}){%- unless forloop.last %} <span class="more-ellip"><em>&hellip;</em></span>{%- endunless -%}</span>
+          </li>
+          {%- break -%}
+          {%- else -%}
+          {%- endif -%}
+        {%- endfor -%}
+        </ul>
+        {%- if numRoles > 1 -%}
+        <div class="extra-roles">
+          <ul class="list-unstyled " id="extra-roles-{{ member.name | slugify }}">
+          {%- for role in member.roles -%}
+            {%- if forloop.first -%}
+            {%- continue -%}
+            {%- else -%}
+            <li>
+              <span class="fw-medium small me-md-1 me-0">{{- role["role"] -}}</span><span class="d-md-inline-block d-block small text-nowrap">({{- role["term"] -}})</span>
+            </li>
+            {%- endif -%}
+          {%- endfor -%}
+          </ul>
+        </div>
+        {%- endif -%}
+      </div>
+      </div>
+    </li>
+  {%- endfor -%}
+</ul>

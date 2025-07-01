@@ -13,7 +13,7 @@ $h5-font-size: 1rem;
 $transition-duration: .5s;
 $transition-function: ease;
 
-$glass-backdrop-filter: saturate(180%) blur(20px);
+$glass-backdrop-filter: saturate(180%) blur(10px);
 
 $border-color: rgba(55,55,55, 0.2);
 
@@ -122,6 +122,7 @@ $nav-link-button-hover-border: 1px solid rgba(#ffffff, 0.4);
 $nav-link-button-bg-hover: rgba(#ffffff, 0.4);
 
 $sc-person-bg: rgba(#fff, 0.4);
+$sc-person-bg-hover: rgba(#fff, 0.9);
 
 $ws-year-size: 5rem;
 $ws-year-mt: -2rem;

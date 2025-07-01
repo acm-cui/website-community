@@ -1,0 +1,15 @@
+{%- assign left = '' | split: '' %}
+{%- assign right = '' | split: '' %}
+{%- for member in include.list -%}
+  {%- assign numRoles = member.roles | size | divided_by: 2 -%}
+  {%- assign mod = forloop.index0 | modulo: 2 %}
+  {%- if mod == 0 -%}
+    {%- assign left = left | push: member -%}
+  {%- else -%}
+    {%- assign right = right | push: member -%}
+  {%- endif -%}
+{%- endfor -%}
+<div class="d-flex flex-row">
+  {%- include membership_col.html list=left -%}
+  {%- include membership_col.html list=right -%}
+</div>

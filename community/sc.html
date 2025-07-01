@@ -134,69 +134,15 @@ menus:
     <p>
       The following people are the current <em>Officers</em> and <em>Members</em> of the steering committee. Officers are elected by the community and undertake a specific role on the committee, while members are invited to serve on the committee on the basis of their expertise and community participation.
     </p>
-    <ul class="list-unstyled d-flex flex-row flex-wrap align-items-stretch m-0 p-0 sc-list">
-      {%- assign num_members = site.data.sc.members | size -%}
-      {%- if num_members > 0 %}
-        {%- assign membership = site.data.sc.officers | concat: site.data.sc.members -%}
-      {%- else -%}
-        {%- assign membership = site.data.sc.officers -%}
-      {%- endif -%}
-      {%- for member in membership -%}
-        <li class="mx-0 m-2 px-2 py-0 sc-person">
-          <div class="d-flex flex-row align-items-center rounded-pill shadow-sm h-100 p-3">
-            <div>
-              <img src="{{ "/community/assets/img/sc/" | append: member.photo | relative_url }}" class="profile-photo rounded-circle" alt="A photo of {{ member.name }}" title="{{ member.name }}" style="width: 60px">
-            </div>
-            <div class="ms-3">
-              {%- if member.url -%}
-                <span class="mt-0 mb-1 fw-semibold"><a href="{{ member.url }}" title="Go to {{ member.name }}'s website" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ member.name }}</span>&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></span>
-              {%- else -%}
-                <span class="mt-0 mb-1 fw-semibold">{{ member.name }}</span>
-              {%- endif -%}
-              <ul class="list-unstyled">
-                {%- for role in member.roles -%}
-                  <li>
-                    <span class="fw-medium small me-md-1 me-0">{{- role["role"] -}}</span><span class="d-md-inline-block d-block small text-nowrap">({{- role["term"] -}})</span>
-                  </li>
-                {%- endfor -%}
-              </ul>
-            </div>
-          </div>
-        </li>
-      {%- endfor -%}
-    </ul>
+    {%- include membership.html list=site.data.sc.membership -%}
   </article>
 
-  <article id="membership" class="flex-grow-1 p-md-4 p-3">
+  <article id="past_membership" class="flex-grow-1 p-md-4 p-3">
     <h3 class="fw-semibold mb-2 m-0 p-0">Former membership</h3>
     <p>
-      We thank former the officers and members of the steering committee for their service over the years.
+      We thank the following people who were previously members or officers of the steering committee for their service over the years.
     </p>
-    <ul class="list-unstyled d-flex flex-row flex-wrap align-items-stretch m-0 p-0 sc-list">
-      {%- for member in site.data.sc.past_membership -%}
-        <li class="mx-0 m-2 px-2 py-0 sc-person">
-          <div class="d-flex flex-row align-items-center rounded-pill shadow-sm h-100 p-3">
-            <div>
-              <img src="{{ "/community/assets/img/sc/" | append: member.photo | relative_url }}" class="profile-photo rounded-circle" alt="A photo of {{ member.name }}" title="{{ member.name }}" style="width: 60px">
-            </div>
-            <div class="ms-3">
-              {%- if member.url -%}
-                <span class="mt-0 mb-1 fw-semibold"><a href="{{ member.url }}" title="Go to {{ member.name }}'s website" rel="external" target="_blank" class="text-decoration-none"><span class="text-decoration-underline">{{ member.name }}</span>&nbsp;<i class="bi bi-box-arrow-up-right"></i></a></span>
-              {%- else -%}
-                <span class="mt-0 mb-1 fw-semibold">{{ member.name }}</span>
-              {%- endif -%}
-              <ul class="list-unstyled">
-                {%- for role in member.roles -%}
-                  <li>
-                    <span class="fw-medium small me-md-1 me-0">{{- role["role"] -}}</span><span class="d-md-inline-block d-block small text-nowrap">({{- role["term"] -}})</span>
-                  </li>
-                {%- endfor -%}
-              </ul>
-            </div>
-          </div>
-        </li>
-      {%- endfor -%}
-    </ul>
+    {%- include membership.html list=site.data.sc.past_membership -%}
   </article>
 </div>
 {%- include sidebar.html -%}

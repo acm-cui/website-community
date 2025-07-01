@@ -1,4 +1,4 @@
-officers:
+membership:
   - name: Heloisa Candello
     photo: heloisa-candello.png
     url: https://research.ibm.com/people/heloisa-caroline-de-souza-pereira-candello-de-souza-pereira-candello
@@ -48,6 +48,8 @@ officers:
     roles:
       - role:  CUI 2023 General Chair
         term: 2023–2026
+      - role: Co-Chair
+        term: 2019–2024
 
   - name: Martin Porcheron
     photo: martin-porcheron.jpg
@@ -57,6 +59,19 @@ officers:
         term: 2025–2030
       - role: CUI 2023 General Chair
         term: 2023–2026
+      - role: Technical Support Chair
+        term: 2019–2025
+
+  - name: Stephan Schlögl
+    photo: stephan-schloegl.jpg
+    roles:
+      - role: Invited member
+        term: 2024–2029
+      - role: CUI 2021 General Chair
+        term: 2021–2024
+      - role: CUI 2020 General Chair
+        term: 2020–2023
+    url: https://www.mci.edu/faculty/stephan.schloegl_en.html
 
   - name: Jaisie Sin
     photo: jaisie-sin.png
@@ -79,15 +94,6 @@ officers:
         term: 2025–2030
     url: https://www.nimazargham.com/
 
-members:
-  - name: Stephan Schlögl
-    photo: stephan-schloegl.jpg
-    roles:
-      - role: Invited member
-        term: 2024–2029
-    url: https://www.mci.edu/faculty/stephan.schloegl_en.html
-
-
 past_membership:
   - name: Leigh Clark
     photo: leigh-clark.jpg
@@ -97,6 +103,7 @@ past_membership:
         term: 2019–2025
       - role: CUI 2019 General Chair
         term: 2019–2022
+
   - name: Benjamin R Cowan
     photo: benjamin-cowan.jpg
     url: http://www.benjamincowan.com/
@@ -107,32 +114,14 @@ past_membership:
         term: 2019–2024
       - role: CUI 2019 General Chair
         term: 2019–2022
-  - name: Cosmin Munteanu
-    photo: cosmin-munteanu.jpg
-    url: https://uwaterloo.ca/systems-design-engineering/profile/c2muntea
-    roles:
-      - role: Co-Chair
-        term: 2019–2024
+
   - name: Christine Murad
     photo: christine-murad.jpg
     url: http://www.cs.toronto.edu/~cmurad/
     roles:
       - role: Student Representative
         term: 2019–2025
-  - name: Martin Porcheron
-    photo: martin-porcheron.jpg
-    url: https://www.porcheron.uk/
-    roles:
-      - role: Technical Support Chair
-        term: 2019–2025
-  - name: Stephan Schlögl
-    photo: stephan-schloegl.jpg
-    roles:
-      - role: CUI 2021 General Chair
-        term: 2021–2024
-      - role: CUI 2020 General Chair
-        term: 2020–2023
-    url: https://www.mci.edu/faculty/stephan.schloegl_en.html
+
   - name: María Inés Torres
     photo: manes-torres.jpeg
     roles:

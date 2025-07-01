@@ -241,11 +241,39 @@ article + article {
 
 .sc-list {
   .sc-person {
+    @include auto-transition((height, opacity));
     width: 100%;
+
+    .extra-roles {
+      max-height: 0;
+      overflow: hidden;
+      @include auto-transition((max-height));
+    }
 
     & > div {
       background: $sc-person-bg;
+      @include auto-transition((-webkit-backdrop-filter, backdrop-filter, border-radius, box-shadow, transform));
+
+      .more-ellip {
+        @include auto-transition((opacity));
+      }
+
+      &:hover {
+        background: $sc-person-bg-hover;
+        box-shadow: $box-shadow-lg;
+        -webkit-backdrop-filter: $glass-backdrop-filter;
+        backdrop-filter: $glass-backdrop-filter;
+
+        .more-ellip {
+          opacity: 0;
+        }
+
+        .extra-roles {
+          max-height: 500px;
+        }
+      }
     }
+
   }
 }
 
