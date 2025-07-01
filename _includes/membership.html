@@ -9,7 +9,10 @@
     {%- assign right = right | push: member -%}
   {%- endif -%}
 {%- endfor -%}
-<div class="d-flex flex-row">
+<div class="d-md-none d-flex flex-row">
+  {%- include membership_col.html list=include.list -%}
+</div>
+<div class="d-md-flex flex-row d-none">
   {%- include membership_col.html list=left -%}
   {%- include membership_col.html list=right -%}
 </div>

@@ -310,6 +310,13 @@ footer {
 
 
 @include media-breakpoint-up(lg) {
+  .w-md-50 {
+    width: 50% !important;
+  }
+}
+
+
+@include media-breakpoint-up(lg) {
   aside {
         margin-right: $content-border-width;
         margin-top: 0;
