@@ -77,10 +77,10 @@ membership:
     photo: jaisie-sin.png
     url: https://www.jaisiesin.com
     roles:
-      - role: ACM CUI 2025 General Chair
-        term: 2025–2028
       - role: Outreach/Publicity Chair
         term: 2023–2028
+      - role: ACM CUI 2025 General Chair
+        term: 2025–2028
 
   - name: Vision (Xin) Wang
     photo: vision-wang.jpeg
