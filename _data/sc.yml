@@ -97,7 +97,6 @@ membership:
 past_membership:
   - name: Leigh Clark
     photo: leigh-clark.jpg
-    url: https://lmhclark.com/
     roles:
       - role: Secretary
         term: 2019–2025
