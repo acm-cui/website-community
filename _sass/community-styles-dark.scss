@@ -162,9 +162,16 @@ table {
 	.sc-person {
 		& > div {
 			background: $sc-person-bg-dark;
+
+     	&:hover {
+        	background: $sc-person-bg-hover-dark;
 		}
 	}
+
+	}
 }
+
+
 
 .workshop-year {
 	opacity: $ws-year-o-dark;
