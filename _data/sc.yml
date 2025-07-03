@@ -115,6 +115,12 @@ past_membership:
       - role: CUI 2019 General Chair
         term: 2019–2022
 
+  - name: Philip R Doyle
+    photo: philip-doyle.jpg
+    roles:
+      - role: Student Representative
+        term: 2019–2024
+
   - name: Christine Murad
     photo: christine-murad.jpg
     url: http://www.cs.toronto.edu/~cmurad/
