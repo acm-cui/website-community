@@ -18,6 +18,9 @@
     website:
       name: Website
       link: https://cui.acm.org/2025/
+    programme: 
+      name: Programme
+      link: https://programs.sigchi.org/cui/2025
   sponsors:
     - name: SIGCHI
       link: https://www.sigchi.org/
