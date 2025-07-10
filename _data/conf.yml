@@ -1,3 +1,27 @@
+2026:
+  slug: cui2026
+  name: ACM CUI 2026
+  type: a SIGCHI specialised conference
+  location: Bremen, Germany
+  dates:
+    start: 2026-07-20
+    end: 2026-07-23
+  logo: cui2026.png
+  general_chairs:
+    - name: Effie Law
+      website: https://www.durham.ac.uk/staff/lai-chong-law/ 
+    - name: Thomas Eßmeyer
+      website: https://thomasmildner.me/
+    - name: Nima Zargham
+      website: https://www.uni-bremen.de/dmlab/team/dr-ing-nima-zargham 
+  urls:
+    website:
+      name: Website
+      link: https://cui.acm.org/2026/
+  sponsors:
+    - name: SIGCHI
+      link: https://www.sigchi.org/
+      
 2025:
   slug: cui2025
   name: ACM CUI 2025
@@ -18,6 +42,9 @@
     website:
       name: Website
       link: https://cui.acm.org/2025/
+    proceedings:
+      name: Proceedings
+      link: https://dl.acm.org/doi/proceedings/10.1145/3719160
     programme: 
       name: Programme
       link: https://programs.sigchi.org/cui/2025
