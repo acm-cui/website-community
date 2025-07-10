@@ -39,6 +39,10 @@ a, a:active, a:visited, a:hover {
 
 #conference {
   background: transparent;
+
+  img {
+    background: #fff;
+  }
 }
 
 @include media-breakpoint-up(md) {
