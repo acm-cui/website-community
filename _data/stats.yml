@@ -35,6 +35,9 @@ registrations:
     total: 101
     virtual: 0
     footnote_id: 1
+  2025:
+    total: 134
+    virtual: 24
 
 tracks:
   papers:
