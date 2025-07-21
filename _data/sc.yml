@@ -81,7 +81,7 @@ membership:
         term: 2022–2025
 
   - name: Sviatlana Höhn
-    photo: Sviatlana.jpeg
+    photo: Sviatlana.png
     url: https://www.uni.lu/snt-en/people/sviatlana-hoehn/
     roles:
       - role: Invited member
@@ -95,10 +95,10 @@ membership:
         term: 2025–2030
       - role: Student Representative
         term: 2019–2025
-        
 
   - name: Stephan Schlögl
     photo: stephan-schloegl.jpg
+    url: https://www.mci.edu/faculty/stephan.schloegl_en.html
     roles:
       - role: Invited member
         term: 2024–2029
@@ -106,7 +106,6 @@ membership:
         term: 2021–2024
       - role: CUI 2020 General Chair
         term: 2020–2023
-    url: https://www.mci.edu/faculty/stephan.schloegl_en.html
 
   - name: Jaisie Sin
     photo: jaisie-sin.png
