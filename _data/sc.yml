@@ -62,6 +62,14 @@ membership:
       - role: Technical Support Chair
         term: 2019–2025
 
+  - name: Sviatlana Höhn
+    photo: Sviatlana.jpg
+    url: https://www.uni.lu/snt-en/people/sviatlana-hoehn/
+    roles:
+      - role: Invited member
+        term: 2025–2030
+
+
   - name: Stephan Schlögl
     photo: stephan-schloegl.jpg
     roles:
