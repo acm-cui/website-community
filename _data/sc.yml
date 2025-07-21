@@ -35,12 +35,6 @@ membership:
         term: 2025–2030
     url: https://justinhci.github.io/
 
-  - name: Martin Halvey
-    photo: martin-halvey.jpg
-    url: https://www.strath.ac.uk/staff/halveymartindr/
-    roles:
-      - role: CUI 2022 General Chair
-        term: 2022–2025
 
   - name: Cosmin Munteanu
     photo: cosmin-munteanu.jpg
@@ -62,13 +56,46 @@ membership:
       - role: Technical Support Chair
         term: 2019–2025
 
+
+  - name: Benjamin R Cowan
+    photo: benjamin-cowan.jpg
+    url: http://www.benjamincowan.com/
+    roles:
+      - role: Invited member
+        term: 2025–2030
+      - role: Conference Liaison
+        term: 2019–2025
+      - role: Co-Chair
+        term: 2019–2024
+      - role: CUI 2019 General Chair
+        term: 2019–2022
+
+        
+  - name: Martin Halvey
+    photo: martin-halvey.jpg
+    url: https://www.strath.ac.uk/staff/halveymartindr/
+    roles:
+       - role: Invited member
+        term: 2025–2030
+      - role: CUI 2022 General Chair
+        term: 2022–2025
+
   - name: Sviatlana Höhn
-    photo: Sviatlana.jpg
+    photo: Sviatlana.jpeg
     url: https://www.uni.lu/snt-en/people/sviatlana-hoehn/
     roles:
       - role: Invited member
         term: 2025–2030
 
+  - name: Christine Murad
+    photo: christine-murad.jpg
+    url: http://www.cs.toronto.edu/~cmurad/
+    roles:
+      - role: Invited member
+        term: 2025–2030
+      - role: Student Representative
+        term: 2019–2025
+        
 
   - name: Stephan Schlögl
     photo: stephan-schloegl.jpg
@@ -104,6 +131,7 @@ membership:
         term: 2025–2030
     url: https://www.nimazargham.com/
 
+
 past_membership:
   - name: Leigh Clark
     photo: leigh-clark.jpg
@@ -113,16 +141,6 @@ past_membership:
       - role: CUI 2019 General Chair
         term: 2019–2022
 
-  - name: Benjamin R Cowan
-    photo: benjamin-cowan.jpg
-    url: http://www.benjamincowan.com/
-    roles:
-      - role: Conference Liaison
-        term: 2019–2025
-      - role: Co-Chair
-        term: 2019–2024
-      - role: CUI 2019 General Chair
-        term: 2019–2022
 
   - name: Philip R Doyle
     photo: philip-doyle.jpg
@@ -130,12 +148,6 @@ past_membership:
       - role: Student Representative
         term: 2019–2024
 
-  - name: Christine Murad
-    photo: christine-murad.jpg
-    url: http://www.cs.toronto.edu/~cmurad/
-    roles:
-      - role: Student Representative
-        term: 2019–2025
 
   - name: María Inés Torres
     photo: manes-torres.jpeg
