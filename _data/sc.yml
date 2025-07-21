@@ -75,7 +75,7 @@ membership:
     photo: martin-halvey.jpg
     url: https://www.strath.ac.uk/staff/halveymartindr/
     roles:
-       - role: Invited member
+      - role: Invited member
         term: 2025–2030
       - role: CUI 2022 General Chair
         term: 2022–2025
