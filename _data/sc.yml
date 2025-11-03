@@ -222,21 +222,21 @@ nominations:
   #         - Organise all Steering Committee meetings, including the preparation and distribution of agendas.
   #         - Ensure timely follow-up on action items and tracking progress.
   #         - Document activities, decisions, and correspondence to ensure transparency and continuity.
-   - title: Student Representative
-     term: 2025-2030
-     overview: The Student Representative is a PhD student who will serve as a vital member of the Steering Committee, providing insights from the student community and those in the early stages of their careers.<br><br>Note that this position is only open to individuals currently studying towards an academic qualification.
-     responsibilities:
-       - title: Student Advocacy
-         tasks: 
-           - Represent the interests and concerns of students, particularly PhD candidates, ensuring their perspectives are considered in all aspects.
-       - title: Communication and Outreach
-         tasks: 
-           - Serve as the liaison between the Steering Committee and the student community members, engaging with students to gather feedback and disseminating information.
-           - Assist in developing and executing outreach strategies to encourage student participation in the conference, e.g., roundtable discussions/mentoring. 
-       - title: Evaluation
-         tasks: Provide the Steering Committee with actionable insights to improve future conferences from the student perspective.
-       - title: Personal Development
-         tasks: Leverage the position to develop leadership, communication, and organisational skills through active participation in committee meetings and conference planning activities.
+  #  - title: Student Representative
+  #    term: 2025-2030
+  #    overview: The Student Representative is a PhD student who will serve as a vital member of the Steering Committee, providing insights from the student community and those in the early stages of their careers.<br><br>Note that this position is only open to individuals currently studying towards an academic qualification.
+  #    responsibilities:
+  #      - title: Student Advocacy
+  #        tasks: 
+  #          - Represent the interests and concerns of students, particularly PhD candidates, ensuring their perspectives are considered in all aspects.
+  #      - title: Communication and Outreach
+  #        tasks: 
+  #          - Serve as the liaison between the Steering Committee and the student community members, engaging with students to gather feedback and disseminating information.
+  #          - Assist in developing and executing outreach strategies to encourage student participation in the conference, e.g., roundtable discussions/mentoring. 
+  #      - title: Evaluation
+  #        tasks: Provide the Steering Committee with actionable insights to improve future conferences from the student perspective.
+  #      - title: Personal Development
+  #        tasks: Leverage the position to develop leadership, communication, and organisational skills through active participation in committee meetings and conference planning activities.
   # - title: Technical Chair
   #   term: 2024-2029
   #   overview: The Technical Chair is responsible for managing all technical aspects of the conference and workshop series, including the development and maintenance of the  communitywebsite and providing essential technical support to other chairs and the organising committees of conferences and workshops. This role is pivotal in ensuring the seamless operation of all technical systems and platforms, which are essential for the success of CUI.
