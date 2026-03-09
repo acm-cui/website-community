@@ -388,34 +388,28 @@
     - name: Stephan Schlogl
       website: https://www.mci.edu/en/faculty/stephan.schloegl
   awards:
-    track_links:
-      hon_mentions:
-        - papers
-        - provocations
-      best_papers:
-        - papers
-        - provocations
-    hon_mentions:
+    best_paper:
+      - title: Mental Workload and Language Production in Non-Native Speaker IPA Interaction
+        authors:  Yunhan Wu, Justin Edwards, Orla Cooney, Anna Bleakley, Philip R Doyle, Leigh Clark, Daniel Rough, and Benjamin R Cowan 
+        dl: https://doi.org/10.1145/3405755.3406118
+    best_paper_honorable_mention:
       - title: What Can I Say? Effects of Discoverability in VUIs on Task Performance and User Experience
         authors: Philipp Kirschthaler, Martin Porcheron, and Joel E Fischer
         dl: https://doi.org/10.1145/3405755.3406119
       - title: "Persuasive Synthetic Speech: Voice Perception and User Behaviour"
         authors: Mateusz Dubiel, Pilar Oplustil, Martin Halvey, and Simon King
         dl: https://doi.org/10.1145/3405755.3406120
+    best_provocation:
+      - title: "The Lord of the (speaking) Rings: An interdisciplinary Fellowship to deal with 7 legal issues"
+        authors: Gianluigi Maria Riva and Marguerite Barry
+        dl: https://doi.org/abs/10.1145/3405755.3406132
+    best_provocation_honorable_mention:
       - title: Is your chatbot GDPR compliant? Open issues in agent design
         authors: Rahime Belen Sağlam and Jason Nurse
         dl: https://doi.org/abs/10.1145/3405755.3406131
       - title: Decision Trees as Sociotechnical Objects in Chatbot Design
         authors: Teresa Castle-Green, Stuart Reeves, Joel E Fischer, and Boriana Koleva
         dl: https://doi.org/abs/10.1145/3405755.3406133
-    best_papers:
-      - title: Mental Workload and Language Production in Non-Native Speaker IPA Interaction
-        authors:  Yunhan Wu, Justin Edwards, Orla Cooney, Anna Bleakley, Philip R Doyle, Leigh Clark, Daniel Rough, and Benjamin R Cowan 
-        dl: https://doi.org/10.1145/3405755.3406118
-      - title: "The Lord of the (speaking) Rings: An interdisciplinary Fellowship to deal with 7 legal issues"
-        authors: Gianluigi Maria Riva and Marguerite Barry
-        dl: https://doi.org/abs/10.1145/3405755.3406132
-
 2019:
   slug: cui2019
   name: CUI 2019
@@ -462,33 +456,28 @@
     - name: SIGCHI
       link: https://www.sigchi.org/
   awards:
-    track_links:
-      hon_mentions:
-        - papers
-        - provocations
-      best_papers:
-        - papers
-        - provocations
-    hon_mentions:
+    best_paper:
+      - title: Progressivity for Voice Interface Design
+        authors: Joel E Fischer, Stuart Reeves, Martin Porcheron, and Rein Sikveland
+        dl: https://doi.org/10.1145/3342775.3342788
+    best_paper_honorable_mention:
       - title: Crowdsourcing a self-evolving dialog graph
         authors: Patrik Jonell, Per Fallgren, Fethiye Irmak Doğan, José Lopes, Ulme Wennberg, and Gabriel Skantze
         dl: https://doi.org/abs/10.1145/3342775.3342790
       - title: What’s in an accent? The impact of accented synthetic speech on lexical choice in human-machine dialogue
         authors: Benjamin R Cowan, Philip Doyle, Justin Edwards, Diego Garaialde, Ali Hayes-Brady, Holly P Branigan, João Cabral, and Leigh Clark
         dl: https://doi.org/10.1145/3342775.3342786
+    best_provocation:
+      - title: Shoehorning in the Name of Science
+        authors: Jens Edlund
+        dl: https://doi.org/10.1145/3342775.3342794
+    best_provocation_honorable_mention:
       - title: Who owns your voice? Ethically sourced voices for non-commercial TTS applications
         authors: Kristen Scott, Simone Ashby, David Braude, and Matthew Aylett
         dl: https://doi.org/10.1145/3342775.3342793
       - title: I Don’t Know What You’re Talking About, HALexa
         authors: Christine Murad and Cosmin Muntenau
         dl: https://doi.org/10.1145/3342775.3342795
-    best_papers:
-      - title: Progressivity for Voice Interface Design
-        authors: Joel E Fischer, Stuart Reeves, Martin Porcheron, and Rein Sikveland
-        dl: https://doi.org/10.1145/3342775.3342788
-      - title: Shoehorning in the Name of Science
-        authors: Jens Edlund
-        dl: https://doi.org/10.1145/3342775.3342794
   listdetails:
     preamble: >
       Where it all began!
