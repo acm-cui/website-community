@@ -202,47 +202,38 @@
     - name: SIGCHI
       link: https://www.sigchi.org/
   awards:
-    track_links:
-      hon_mentions:
-        - papers
-        - posters
-        - provocations
-      best_papers:
-        - papers
-        - posters
-        - provocations
-    hon_mentions:
-      - title: "From Writing Dialogue to Designing Conversation: Considering the potential of Conversation Analysis for Voice User Interfaces"
-        authors: Adam Brandt, Spencer Hazel, Rory McKinnon, Kleopatra Sideridou, Joe Tindale, and Nikoletta Ventoura
-        dl: https://doi.org/10.1145/3571884.3603758
-      - title: Enabling Semi-Structured Knowledge Access via a Question-Answering Module in Task-oriented Dialogue Systems
-        authors: Norbert Braunschweiler, Rama Sanand Doddipatla, Simon Keizer, and Svetlana Stoyanchev
-        dl: https://doi.org/10.1145/3571884.3597138
-      - title: "Developing a Conversational Interface for an ACT-based Online Program: Understanding Adolescents’ Expectations of Conversational Style"
-        authors: Johanna Peltola, Kirsikka Kaipainen, Katariina Keinonen,  Noona Kiuru, and Markku Turunen
-        dl: https://doi.org/10.1145/3571884.3597142
-    best_papers:
+    best_paper:
       - title: Voice Assistant Use in Long-Term Care
         authors: Bruna Oewel, Tawfiq Ammari, and Robin N Brewer
         dl: https://doi.org/10.1145/3571884.3597135
       - title: Self-imposed Filter Bubble Model for Argumentative Dialogues
         authors: Annalena Bea Aicher, Daniel Kornmüller, Wolfgang Minker, and Stefan Ultes
         dl: https://doi.org/10.1145/3571884.3597131
-      - title: Who are CUIs Really For? Representation and Accessibility in the Conversational User Interface Literature
-        authors: William Seymour, Xiao Zhan, Mark Cote, and Jose Such
-        dl: https://doi.org/10.1145/3571884.3603760
       - title: Unified Conversational Models with System-Initiated Transitions between Chit-Chat and Task-Oriented Dialogues
         authors: Ye Liu, Stefan Ultes, Wolfgang Minker, and Wolfgang Maier
         dl: https://doi.org/10.1145/3571884.3597125
-    outstanding_service:
+    best_paper_honorable_mention:
+      - title: Enabling Semi-Structured Knowledge Access via a Question-Answering Module in Task-oriented Dialogue Systems
+        authors: Norbert Braunschweiler, Rama Sanand Doddipatla, Simon Keizer, and Svetlana Stoyanchev
+        dl: https://doi.org/10.1145/3571884.3597138
+      - title: "Developing a Conversational Interface for an ACT-based Online Program: Understanding Adolescents’ Expectations of Conversational Style"
+        authors: Johanna Peltola, Kirsikka Kaipainen, Katariina Keinonen,  Noona Kiuru, and Markku Turunen
+        dl: https://doi.org/10.1145/3571884.3597142
+    best_provocation:
+      - title: Who are CUIs Really For? Representation and Accessibility in the Conversational User Interface Literature
+        authors: William Seymour, Xiao Zhan, Mark Cote, and Jose Such
+        dl: https://doi.org/10.1145/3571884.3603760
+    best_poster_honorable_mention:
+      - title: "From Writing Dialogue to Designing Conversation: Considering the potential of Conversation Analysis for Voice User Interfaces"
+        authors: Adam Brandt, Spencer Hazel, Rory McKinnon, Kleopatra Sideridou, Joe Tindale, and Nikoletta Ventoura
+        dl: https://doi.org/10.1145/3571884.3603758
+    community_recognition:
       - recipient: Justin Edwards
         role: Hybrid Chair
         explanation: The CUI 2023 General Chairs awarded Justin Edwards an Outstanding Service award for his unparalleled commitment to supporting and running the conference audio-video as well as all hybrid and virtual attendance activities. Justin went above and beyond to make CUI 2023 a success and we are ever so grateful to his kindness and dedication.
-
   listdetails:
     preamble: >
       From 2023 onwards, CUI officially joined the ACM SIGCHI family of conferences.
-
 2022:
   slug: cui2022
   name: CUI 2022
