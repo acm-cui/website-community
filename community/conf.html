@@ -57,10 +57,11 @@ menus:
       {%- assign has_bp_awards = conference.awards.best_paper | size -%}
       {%- assign has_bphm_awards = conference.awards.best_paper_honorable_mention | size -%}
       {%- assign has_prov_awards = conference.awards.best_provocation | size -%}
+      {%- assign has_provhm_awards = conference.awards.best_provocation_honorable_mention | size -%}
       {%- assign has_poster_awards = conference.awards.best_poster | size -%}
       {%- assign has_gcs = conference.general_chairs | size -%}
       <div class="d-flex flex-column w-100 accordion-item conference-year" id="cui{{ year }}">
-        {%- if has_bp_awards > 0 or has_bphm_awards > 0 or has_prov_awards > 0 or has_poster_awards > 0 or has_gcs > 0 or site.data.stats.years contains year -%}
+        {%- if has_bp_awards > 0 or has_bphm_awards > 0 or has_prov_awards > 0 or has_provhm_awards > 0 or has_poster_awards > 0 or has_gcs > 0 or site.data.stats.years contains year -%}
           <a id="cui{{ year }}-link" href="#cui{{ year }}-info" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="cui{{ conference.year }}-info" class="d-flex flex-row justify-content-start flex-fill p-md-4 p-3  streched-link text-decoration-none text-black">
             <div class="flex-shrink-0 align-self-start">
               {%- assign image_url = "/community/assets/img/conference/" | append: conference.logo -%}
@@ -80,7 +81,7 @@ menus:
                     About
                   </button>
                 </li>
-                {%- if has_bp_awards > 0 or has_bphm_awards > 0 or has_prov_awards > 0 or has_poster_awards > 0 -%}                
+                {%- if has_bp_awards > 0 or has_bphm_awards > 0 or has_prov_awards > 0 or has_provhm_awards > 0 or has_poster_awards > 0 -%}                
                   <li class="nav-item mt-lg-2 m-lg-0 m-1">
                     <button class="nav-link w-100 link-primary shadow-sm" id="cui{{ year }}-awards-tab" data-bs-toggle="pill" data-bs-target="#cui{{ year }}-awards" type="button" role="tab" aria-controls="cui{{ year }}-awards" aria-selected="false">
                       Awards
@@ -193,7 +194,7 @@ menus:
                     {%- endif -%}
                   </p>
                 </div>
-                {%- if has_bp_awards > 0 or has_bphm_awards > 0 or has_prov_awards > 0 or has_poster_awards > 0 -%}
+                {%- if has_bp_awards > 0 or has_bphm_awards > 0 or has_prov_awards > 0 or has_provhm_awards > 0 or has_poster_awards > 0 -%}
                 <div class="tab-pane fade" id="cui{{ year }}-awards" role="tabpanel" aria-labelledby="cui{{ year }}-awards-tab" tabindex="0">
                   {% if conference.awards.best_paper %}
                   <h4 class="fw-medium">Best Paper Award</h4>
@@ -234,6 +235,19 @@ menus:
                     {%- endfor -%}
                   </ul>
                   {% endif %}
+                  {% if conference.awards.best_provocation_honorable_mention %}
+                  <h4 class="pt-4 fw-medium">Best Provocation Honorable Mention</h4>
+                  <ul>
+                    {%- assign data = conference.awards.best_provocation_honorable_mention | sort: "title" -%}
+                    {%- for award in data -%}
+                    <li class="mb-1">
+                    <a href="{{ award.dl }}" title="View '{{ award.title | escape }}' in the ACM Digital Library" rel="external" target="_blank" class="text-decoration-none">
+                    <span class="text-decoration-underline">{{ award.title }}</span>&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+                    </a><br>{{ award.authors }}
+                    </li>
+                    {%- endfor -%}
+                  </ul>
+                  {% endif %}                  
                   {% if conference.awards.best_poster %}
                   <h4 class="pt-4 fw-medium">Best Poster Award</h4>
                   <ul>
