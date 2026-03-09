@@ -13,7 +13,7 @@
     - name: Thomas Eßmeyer
       website: https://thomasmildner.me/
     - name: Nima Zargham
-      website: https://www.uni-bremen.de/dmlab/team/dr-ing-nima-zargham 
+      website: https://nimazargham.com/
   urls:
     website:
       name: Website
@@ -51,6 +51,47 @@
   sponsors:
     - name: SIGCHI
       link: https://www.sigchi.org/
+  awards:
+    best_paper:
+      - title: "Chat with the 'For You' Algorithm: An LLM-Enhanced Chatbot for Controlling Video Recommendation Flow"
+        authors: Shuo Niu, Dikshith Vishnuvardhan, Venkata Sai Reddy Punnam
+        dl: https://doi.org/10.1145/3719160.3736628
+    best_paper_honorable_mention:
+      - title: "The Art of Talking Machines: A Comprehensive Literature Review of Conversational User Interfaces"
+        authors: Mohammad (Matt) Namvarpour, Afsaneh Razi
+        dl: https://doi.org/10.1145/3719160.3736621
+    best_provocation:
+      - title: "Fake Friends and Sponsored Ads:The Risks of Advertising in Conversational Search"
+        authors: Jacob Erickson
+        dl: https://doi.org/10.1145/3719160.3737613
+    best_poster:
+      - title: "An Embodied Conversational Assistant For Community Repair Cafés"
+        authors: Teresa Castle-Green, Simon Castle-Green, Joseph Lindley, Neelima Sailaja, Susan Lechelt
+        dl: https://doi.org/10.1145/3719160.3737627
+    best_poster_honorable_mention:
+      - title: "Un-trusting the Chat: Designing for Calibrated Trust in Retrieval-Augmented Conversations"
+        authors: Timo von Reeken, Mazen Salous,Larbi Abdenebaoui
+        dl: https://doi.org/10.1145/3719160.3737620
+    five_year_impact:
+      - title: "Gender Ambiguous, not Genderless: Designing Gender in Voice User Interfaces (VUIs) with Sensitivity"
+        authors: Selina Jeanne Sutton
+        dl: https://doi.org/10.1145/3405755.3406123
+    community_recognition:
+      - recipient: Martin Porcheron
+        role: Community Builder
+        explanation: Recognized for longstanding contributions to the CUI community.
+    exceptional_reviewer:
+      - recipient: Geneva Smith
+      - recipient: Manveer Kalirai
+    reviewer_recognition:
+      - recipient: Stefano Valtolina
+      - recipient: Ali Rizvi
+      - recipient: Martin Halvey
+      - recipient: Emma Nicol
+      - recipient: Samuel Cox
+      - recipient: Matthew Aylett
+      - recipient: Selina Sutton
+      - recipient: Alex Williams
   listdetails:
     preamble: >
       2025 marks the year that CUI is first hosted outside of Europe!
