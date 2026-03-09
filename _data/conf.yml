@@ -61,7 +61,7 @@
         authors: Mohammad (Matt) Namvarpour, Afsaneh Razi
         dl: https://doi.org/10.1145/3719160.3736621
     best_provocation:
-      - title: "Fake Friends and Sponsored Ads:The Risks of Advertising in Conversational Search"
+      - title: "Fake Friends and Sponsored Ads: The Risks of Advertising in Conversational Search"
         authors: Jacob Erickson
         dl: https://doi.org/10.1145/3719160.3737613
     best_poster:
@@ -70,7 +70,7 @@
         dl: https://doi.org/10.1145/3719160.3737627
     best_poster_honorable_mention:
       - title: "Un-trusting the Chat: Designing for Calibrated Trust in Retrieval-Augmented Conversations"
-        authors: Timo von Reeken, Mazen Salous,Larbi Abdenebaoui
+        authors: Timo von Reeken, Mazen Salous, Larbi Abdenebaoui
         dl: https://doi.org/10.1145/3719160.3737620
     five_year_impact:
       - title: "Gender Ambiguous, not Genderless: Designing Gender in Voice User Interfaces (VUIs) with Sensitivity"
