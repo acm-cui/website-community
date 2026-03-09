@@ -134,42 +134,36 @@
     - name: SIGCHI
       link: https://www.sigchi.org/
   awards:
-    track_links:
-      hon_mentions:
-        - papers
-        - posters
-        - provocations
-      best_papers:
-        - papers
-        - posters
-        - provocations
-    hon_mentions:
-      - title: "Explaining the Wait: How Justifying Chatbot Response Delays Impact User Trust"
-        authors: Zhengquan Zhang, Konstantinos Tsiakas, and Christina Schneegass
-        dl: https://doi.org/10.1145/3640794.3665550
-      - title: "Towards Interactive Guidance for Writing Training Utterances for Conversational Agents"
-        authors: David Piorkowski, Rachel Ostrand, Kristina Brimijoin, Jessica He, Erica Albert, and Stephanie Houde
-        dl: https://doi.org/10.1145/3640794.3665553
-      - title: "Findings from Studies on English-Based Conversational AI Agents (including ChatGPT) Are Not Universal"
-        authors: Casey C. Bennett
-        dl: https://doi.org/10.1145/3640794.3665879
-      - title: "A Not So Chatty “Chatbot”: Co-designing to support First-Time Parents in South Africa and Portugal"
-        authors: Leina Meoli, Francisco Nunes, Beatriz Félix, Joana Couto da Silva, Xolani Ntinga, and Melissa Densmore
-        dl: https://doi.org/10.1145/3640794.3665571
-    best_papers:
+    best_paper:
       - title: "System and User Strategies to Repair Conversational Breakdowns of Spoken Dialogue Systems: A Scoping Review"
         authors: Essam Alghamdi, Martin Halvey, and Emma Nicol
         dl: https://doi.org/10.1145/3640794.3665558
       - title: "The Impact of Perceived Tone, Age, and Gender on Voice Assistant Persuasiveness in the Context of Product Recommendations"
         authors: Sabid Bin Habib Pias, Ran Huang, Donald S. Williamson, Minjeong Kim, and Apu Kapadia
         dl: https://doi.org/10.1145/3640794.3665545
+    best_paper_honorable_mention:
+      - title: "Explaining the Wait: How Justifying Chatbot Response Delays Impact User Trust"
+        authors: Zhengquan Zhang, Konstantinos Tsiakas, and Christina Schneegass
+        dl: https://doi.org/10.1145/3640794.3665550
+      - title: "Towards Interactive Guidance for Writing Training Utterances for Conversational Agents"
+        authors: David Piorkowski, Rachel Ostrand, Kristina Brimijoin, Jessica He, Erica Albert, and Stephanie Houde
+        dl: https://doi.org/10.1145/3640794.3665553
+    best_provocation:
       - title: "Building Better AI Agents: A Provocation on the Utilisation of Persona in LLM-based Conversational Agents"
         authors: Guangzhi Sun, Xiao Zhan, and Jose Such
         dl: https://doi.org/10.1145/3640794.3665887
+    best_provocation_honorable_mention:
+      - title: "Findings from Studies on English-Based Conversational AI Agents (including ChatGPT) Are Not Universal"
+        authors: Casey C. Bennett
+        dl: https://doi.org/10.1145/3640794.3665879
+    best_poster:
       - title: '"¿Te vienes? Sure!" Joint Fine-tuning of Language Detection and Transcription Improves Automatic Recognition of Code-Switching Speech'
         authors: Leopold Hillah, Mateusz Dubiel, and Luis A. Leiva
         dl: https://doi.org/10.1145/3640794.3665579
-
+    best_poster_honorable_mention:
+      - title: "A Not So Chatty “Chatbot”: Co-designing to support First-Time Parents in South Africa and Portugal"
+        authors: Leina Meoli, Francisco Nunes, Beatriz Félix, Joana Couto da Silva, Xolani Ntinga, and Melissa Densmore
+        dl: https://doi.org/10.1145/3640794.3665571
 2023:
   slug: cui2023
   name: ACM CUI 2023
