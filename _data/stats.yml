@@ -39,9 +39,6 @@ registrations:
   2025:
     total: 134
     virtual: 24
-  2026:
-    total: TBA
-    virtual: TBA
     
 tracks:
   papers:
