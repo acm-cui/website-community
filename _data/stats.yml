@@ -1,4 +1,5 @@
 years:
+  - 2026
   - 2025
   - 2024
   - 2023
@@ -38,7 +39,10 @@ registrations:
   2025:
     total: 134
     virtual: 24
-
+  2026:
+    total: TBA
+    virtual: TBA
+    
 tracks:
   papers:
     title: Papers
@@ -67,7 +71,10 @@ tracks:
       2025:
         submissions: 103
         acceptances: 35
-  
+      2025:
+        submissions: 142
+        acceptances: 37
+        
   provocations:
     title: Provocations
     lang:
@@ -95,6 +102,9 @@ tracks:
       2025:
         submissions: 8
         acceptances: 5
+      2026:
+        submissions: 47
+        acceptances: 18
   
   posters:
     title: Short Papers
@@ -120,6 +130,9 @@ tracks:
       2025:
         submissions: 55
         acceptances: 27
+      2026:
+        submissions: 73
+        acceptances: 37
         
   demos:
     title: Demonstrations
@@ -145,6 +158,9 @@ tracks:
       2025:
         submissions: 4
         acceptances: 4
+      2026:
+        submissions: 5
+        acceptances: 3
   
   workshops:
     title: SIGs/Workshops
@@ -164,7 +180,10 @@ tracks:
       2025:
         submissions: 5
         acceptances: 5
-
+      2026:
+        submissions: 4
+        acceptances: 4
+        
   tutorials:
     title: Tutorials
     lang:
@@ -190,3 +209,6 @@ tracks:
       2025:
         submissions: 8
         acceptances: 8
+      2026:
+        submissions: 9
+        acceptances: 9
