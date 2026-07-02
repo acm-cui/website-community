@@ -24,6 +24,10 @@
   sponsors:
     - name: SIGCHI
       link: https://www.sigchi.org/
+    - name: münch IT solutions 
+      link: https://muench-its.de/
+    - name: Interaction Design Foundation
+      link: https://ixdf.org/
       
 2025:
   slug: cui2025
