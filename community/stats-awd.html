@@ -2,13 +2,51 @@
 permalink: /community/assets/csv/statistics/awards.csv
 layout: none
 ---
-Conference,Honourable mentions,Honourable mention eligible,Honourable mention %,Best papers,Best papers eligible,Best papers %,Total,Total eligible,Total %
-{%- for year in site.data.stats.years -%}{%- assign conference = site.data.conf[year] %}{% if conference.awards %}
-{{ conference.name -}},
-{%- assign num_hom_mentions = conference.awards.hon_mentions | size | times: 1.0 -%}{{ conference.awards.hon_mentions | size }},{% assign total_possible = 0 -%}{%- for track in conference.awards.track_links.hon_mentions -%}{%- assign total_possible = total_possible | plus: site.data.stats.tracks[track]['data'][year]['acceptances'] -%}{%- endfor -%}{{ total_possible }},{{ num_hom_mentions | divided_by: total_possible | times: 100 | round: 1 }}%,
-{%- assign num_best_papers = conference.awards.best_papers | size | times: 1.0 -%}{{ conference.awards.best_papers | size }},{% assign total_possible = 0 -%}{%- for track in conference.awards.track_links.best_papers -%}{%- assign total_possible = total_possible | plus: site.data.stats.tracks[track]['data'][year]['acceptances'] -%}{%- endfor -%}{{ total_possible }},{{ num_best_papers | divided_by: total_possible | times: 100 | round: 1 }}%,
-{%- assign counted_tracks = conference.awards.track_links.hon_mentions -%}
-{%- for count_track in conference.awards.track_lists.best_papers -%}
-    {%- assign counted_tracks = counted_tracks | concat: count_track -%}
+Conference,Honourable mentions,Honourable mention eligible,Honourable mention %,Best awards,Best awards eligible,Best awards %,Total,Total eligible,Total %
+{% for year in site.data.stats.years -%}{%- assign conference = site.data.conf[year] %}{% if conference.awards.statistics %}
+{%- assign hm_stats = conference.awards.statistics.honorable_mentions -%}
+{%- assign best_stats = conference.awards.statistics.best_awards -%}
+{%- assign num_hon_mentions = 0 -%}
+{%- for award_key in hm_stats.award_keys -%}
+  {%- assign award_count = conference.awards[award_key] | size -%}
+  {%- assign num_hon_mentions = num_hon_mentions | plus: award_count -%}
 {%- endfor -%}
-{%- assign num_total = num_best_papers | plus: num_hom_mentions  -%}{{ num_best_papers | plus: num_hom_mentions | replace: ".0","" }},{% assign total_possible = 0 -%}{%- for track in counted_tracks -%}{%- assign total_possible = total_possible | plus: site.data.stats.tracks[track]['data'][year]['acceptances'] -%}{%- endfor -%}{{ total_possible }},{{ num_total | divided_by: total_possible | times: 100 | round: 1 }}%{%- endif -%}{% endfor -%}
+{%- assign num_best_awards = 0 -%}
+{%- for award_key in best_stats.award_keys -%}
+  {%- assign award_count = conference.awards[award_key] | size -%}
+  {%- assign num_best_awards = num_best_awards | plus: award_count -%}
+{%- endfor -%}
+{%- assign hon_mention_eligible = 0 -%}
+{%- for track in hm_stats.tracks -%}
+  {%- assign hon_mention_eligible = hon_mention_eligible | plus: site.data.stats.tracks[track].data[year].acceptances -%}
+{%- endfor -%}
+{%- assign best_award_eligible = 0 -%}
+{%- for track in best_stats.tracks -%}
+  {%- assign best_award_eligible = best_award_eligible | plus: site.data.stats.tracks[track].data[year].acceptances -%}
+{%- endfor -%}
+{%- assign counted_tracks = "" -%}
+{%- for track in hm_stats.tracks -%}
+  {%- capture track_marker -%}|{{ track }}|{%- endcapture -%}
+  {%- unless counted_tracks contains track_marker -%}
+    {%- assign counted_tracks = counted_tracks | append: track_marker -%}
+  {%- endunless -%}
+{%- endfor -%}
+{%- for track in best_stats.tracks -%}
+  {%- capture track_marker -%}|{{ track }}|{%- endcapture -%}
+  {%- unless counted_tracks contains track_marker -%}
+    {%- assign counted_tracks = counted_tracks | append: track_marker -%}
+  {%- endunless -%}
+{%- endfor -%}
+{%- assign total_eligible = 0 -%}
+{%- assign counted_tracks_list = counted_tracks | split: "|" -%}
+{%- for track in counted_tracks_list -%}
+  {%- if track != "" -%}
+    {%- assign total_eligible = total_eligible | plus: site.data.stats.tracks[track].data[year].acceptances -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign num_hon_mentions_float = num_hon_mentions | times: 1.0 -%}
+{%- assign num_best_awards_float = num_best_awards | times: 1.0 -%}
+{%- assign num_total = num_best_awards | plus: num_hon_mentions -%}
+{%- assign num_total_float = num_total | times: 1.0 -%}
+{{ conference.name -}},{{ num_hon_mentions }},{{ hon_mention_eligible }},{{ num_hon_mentions_float | divided_by: hon_mention_eligible | times: 100 | round: 1 }}%,{{ num_best_awards }},{{ best_award_eligible }},{{ num_best_awards_float | divided_by: best_award_eligible | times: 100 | round: 1 }}%,{{ num_total }},{{ total_eligible }},{{ num_total_float | divided_by: total_eligible | times: 100 | round: 1 }}%
+{% endif -%}{% endfor -%}

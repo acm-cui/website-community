@@ -55,6 +55,25 @@
     - name: SIGCHI
       link: https://www.sigchi.org/
   awards:
+    statistics:
+      best_awards:
+        tracks:
+          - papers
+          - provocations
+          - posters
+        award_keys:
+          - best_paper
+          - best_provocation
+          - best_poster
+      honorable_mentions:
+        tracks:
+          - papers
+          - provocations
+          - posters
+        award_keys:
+          - best_paper_honorable_mention
+          - best_provocation_honorable_mention
+          - best_poster_honorable_mention
     best_paper:
       - title: "Chat with the 'For You' Algorithm: An LLM-Enhanced Chatbot for Controlling Video Recommendation Flow"
         authors: Shuo Niu, Dikshith Vishnuvardhan, Venkata Sai Reddy Punnam
@@ -137,6 +156,25 @@
     - name: SIGCHI
       link: https://www.sigchi.org/
   awards:
+    statistics:
+      best_awards:
+        tracks:
+          - papers
+          - provocations
+          - posters
+        award_keys:
+          - best_paper
+          - best_provocation
+          - best_poster
+      honorable_mentions:
+        tracks:
+          - papers
+          - provocations
+          - posters
+        award_keys:
+          - best_paper_honorable_mention
+          - best_provocation_honorable_mention
+          - best_poster_honorable_mention
     best_paper:
       - title: "System and User Strategies to Repair Conversational Breakdowns of Spoken Dialogue Systems: A Scoping Review"
         authors: Essam Alghamdi, Martin Halvey, and Emma Nicol
@@ -205,6 +243,23 @@
     - name: SIGCHI
       link: https://www.sigchi.org/
   awards:
+    statistics:
+      best_awards:
+        tracks:
+          - papers
+          - provocations
+        award_keys:
+          - best_paper
+          - best_provocation
+      honorable_mentions:
+        tracks:
+          - papers
+          - provocations
+          - posters
+        award_keys:
+          - best_paper_honorable_mention
+          - best_provocation_honorable_mention
+          - best_poster_honorable_mention
     best_paper:
       - title: Voice Assistant Use in Long-Term Care
         authors: Bruna Oewel, Tawfiq Ammari, and Robin N Brewer
@@ -269,6 +324,23 @@
     - name: SIGCHI
       link: https://www.sigchi.org/
   awards:
+    statistics:
+      best_awards:
+        tracks:
+          - papers
+          - provocations
+        award_keys:
+          - best_paper
+          - best_provocation
+      honorable_mentions:
+        tracks:
+          - papers
+          - provocations
+          - posters
+        award_keys:
+          - best_paper_honorable_mention
+          - best_provocation_honorable_mention
+          - best_poster_honorable_mention
     best_paper:
       - title: Where is Vincent? Expanding our emotional selves with AI 
         authors: Minha Lee, Lily Frank, Yvonne De Kort, and Wijnand IJsselsteijn
@@ -332,6 +404,21 @@
     - name: SIGCHI
       link: https://www.sigchi.org/
   awards:
+    statistics:
+      best_awards:
+        tracks:
+          - papers
+          - provocations
+        award_keys:
+          - best_paper
+          - best_provocation
+      honorable_mentions:
+        tracks:
+          - papers
+          - provocations
+        award_keys:
+          - best_paper_honorable_mention
+          - best_provocation_honorable_mention
     best_paper:
       - title: "VUI Influencers: How the Media Portrays Voice User Interfaces for Older Adults"
         authors: Jaisie Sin, Cosmin Munteanu, Numrita Ramanand, and Yi Rong Tan
@@ -391,6 +478,21 @@
     - name: Stephan Schlogl
       website: https://www.mci.edu/en/faculty/stephan.schloegl
   awards:
+    statistics:
+      best_awards:
+        tracks:
+          - papers
+          - provocations
+        award_keys:
+          - best_paper
+          - best_provocation
+      honorable_mentions:
+        tracks:
+          - papers
+          - provocations
+        award_keys:
+          - best_paper_honorable_mention
+          - best_provocation_honorable_mention
     best_paper:
       - title: Mental Workload and Language Production in Non-Native Speaker IPA Interaction
         authors:  Yunhan Wu, Justin Edwards, Orla Cooney, Anna Bleakley, Philip R Doyle, Leigh Clark, Daniel Rough, and Benjamin R Cowan 
@@ -459,6 +561,21 @@
     - name: SIGCHI
       link: https://www.sigchi.org/
   awards:
+    statistics:
+      best_awards:
+        tracks:
+          - papers
+          - provocations
+        award_keys:
+          - best_paper
+          - best_provocation
+      honorable_mentions:
+        tracks:
+          - papers
+          - provocations
+        award_keys:
+          - best_paper_honorable_mention
+          - best_provocation_honorable_mention
     best_paper:
       - title: Progressivity for Voice Interface Design
         authors: Joel E Fischer, Stuart Reeves, Martin Porcheron, and Rein Sikveland
