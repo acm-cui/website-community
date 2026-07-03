@@ -86,6 +86,14 @@ membership:
     roles:
       - role: Invited member
         term: 2025–2030
+        
+  - name: Yohan Hmaiti
+    photo: yohan.jpeg
+    url: https://scholar.google.com/citations?user=TOcB9VEAAAAJ&hl=en
+    roles:
+      - role: Student Representative
+        term: 2026–2031
+
 
   - name: Christine Murad
     photo: christine-murad.jpg
