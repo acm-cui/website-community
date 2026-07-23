@@ -18,6 +18,9 @@
     website:
       name: Website
       link: https://cui.acm.org/2026/
+    proceedings:
+      name: Proceedings
+      link: https://dl.acm.org/doi/proceedings/10.1145/3816046
     programme: 
       name: Programme
       link: https://programs.sigchi.org/cui/2026
