@@ -1,3 +1,24 @@
+2027:
+  slug: cui2027
+  name: ACM CUI 2027
+  type: a SIGCHI specialised conference
+  location: Swansea, Wales, UK
+  dates:
+    start: 2027-06-26
+    end: 2027-07-28
+  logo: cui2027.png
+  general_chairs:
+    - name: Muneeb Ahmad
+      website: https://www.swansea.ac.uk/staff/m.i.ahmad/ 
+    - name: Jennifer Pearson
+      website: https://www.swansea.ac.uk/staff/j.pearson/
+    - name: Thomas Reitmaier
+      website: https://reitmaier.xyz/
+  urls:
+    website:
+      name: Website
+      link: https://cui.acm.org/2027/
+    
 2026:
   slug: cui2026
   name: ACM CUI 2026
