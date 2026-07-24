@@ -39,7 +39,10 @@ registrations:
   2025:
     total: 134
     virtual: 24
-    
+  2025:
+    total: 170
+    virtual: 25
+
 tracks:
   papers:
     title: Papers
