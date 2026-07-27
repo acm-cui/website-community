@@ -287,6 +287,19 @@ menus:
                     {%- endfor -%}
                   </ul>
                   {% endif %}
+                  {% if conference.awards.inspiring_industry_paper %}
+                  <h4 class="pt-4 fw-medium">Inspiring Industry Paper</h4>
+                  <ul>
+                    {%- assign data = conference.awards.inspiring_industry_paper | sort: "title" -%}
+                    {%- for award in data -%}
+                    <li class="mb-1">
+                    <a href="{{ award.dl }}" rel="external" target="_blank" class="text-decoration-none">
+                    <span class="text-decoration-underline">{{ award.title }}</span>&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+                    </a><br>{{ award.authors }}
+                    </li>
+                    {%- endfor -%}
+                  </ul>
+                  {% endif %}
                   {% if conference.awards.community_recognition %}
                   <h4 class="pt-4 fw-medium">CUI Community Contribution Award</h4>
                   <ul>
