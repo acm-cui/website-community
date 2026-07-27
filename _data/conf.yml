@@ -4,12 +4,12 @@
   type: a SIGCHI specialised conference
   location: Swansea, Wales, UK
   dates:
-    start: 2027-06-26
+    start: 2027-07-26
     end: 2027-07-28
   logo: cui2027.png
   general_chairs:
     - name: Muneeb Ahmad
-      website: https://www.swansea.ac.uk/staff/m.i.ahmad/ 
+      website: https://www.swansea.ac.uk/staff/m.i.ahmad/
     - name: Jennifer Pearson
       website: https://www.swansea.ac.uk/staff/j.pearson/
     - name: Thomas Reitmaier
@@ -81,7 +81,7 @@
       - title: Empathy through the Lens of Conversational Agents: A Systematic Review
         authors: Supriya Khadka, Smit Desai
         dl: https://dl.acm.org/doi/full/10.1145/3816046.3816220
-    best_paper_honorable_mention:
+        
       - title: Sruthi: What Becomes Sayable Through Peer-Mode Reflective Scaffolding in Fieldwork Communication
         authors: Srividya Sheshadri, Manju Balakrishna Pillai, Apoorv Gupta, Balu Mohandas Menon, Unnikrishnan Radhakrishnan, Megha TM, Pavithra P M Nair, Renuka Kumar, Bhavani Rao R.
         dl: https://dl.acm.org/doi/full/10.1145/3816046.3816219
@@ -98,8 +98,8 @@
         authors: Jacob Erickson
         dl: https://dl.acm.org/doi/full/10.1145/3816046.3816299
     best_poster:
-      - title: Minseo Cho, Martina Di Simplicio, Rafael A Calvo
-        authors: The Role of Generative Summarisation in Agent-Mediated Reflection for Youth Social Prescribing
+      - title: The Role of Generative Summarisation in Agent-Mediated Reflection for Youth Social Prescribing
+        authors: Minseo Cho, Martina Di Simplicio, Rafael A Calvo
         dl: https://dl.acm.org/doi/full/10.1145/3816046.3816262
     best_poster_honorable_mention:
       - title: Towards a Typology of User Engagement in Conversational Agent Voting Advice Applications
