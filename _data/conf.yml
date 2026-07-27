@@ -70,6 +70,7 @@
           - posters
         award_keys:
           - best_paper_honorable_mention
+          - inspiring_industry_paper
           - best_provocation_honorable_mention
           - best_poster_honorable_mention
     best_paper:
