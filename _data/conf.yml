@@ -52,6 +52,63 @@
       link: https://muench-its.de/
     - name: Interaction Design Foundation
       link: https://ixdf.org/
+  awards:
+    statistics:
+      best_awards:
+        tracks:
+          - papers
+          - provocations
+          - posters
+        award_keys:
+          - best_paper
+          - best_provocation
+          - best_poster
+      honorable_mentions:
+        tracks:
+          - papers
+          - provocations
+          - posters
+        award_keys:
+          - best_paper_honorable_mention
+          - inspiring_industry_paper
+          - best_provocation_honorable_mention
+          - best_poster_honorable_mention
+    best_paper:
+      - title: Designing a Feedback Loop Between a Human and Their AI Clones for Science Communication in Museums
+        authors: Shutaro Aoyama, Kiyoshi Suganuma, He Jiang
+        dl: https://dl.acm.org/doi/full/10.1145/3816046.3816205
+    best_paper_honorable_mention:
+      - title: Empathy through the Lens of Conversational Agents: A Systematic Review
+        authors: Supriya Khadka, Smit Desai
+        dl: https://dl.acm.org/doi/full/10.1145/3816046.3816220
+    best_paper_honorable_mention:
+      - title: Sruthi: What Becomes Sayable Through Peer-Mode Reflective Scaffolding in Fieldwork Communication
+        authors: Srividya Sheshadri, Manju Balakrishna Pillai, Apoorv Gupta, Balu Mohandas Menon, Unnikrishnan Radhakrishnan, Megha TM, Pavithra P M Nair, Renuka Kumar, Bhavani Rao R.
+        dl: https://dl.acm.org/doi/full/10.1145/3816046.3816219
+    inspiring_industry_paper:
+      - title: AI Interviews the Interviewers: Practitioner Experience and Evaluation of Conversational AI Interviewing
+        authors: Nhi Dam, Leonhard Glomann
+        dl: https://dl.acm.org/doi/full/10.1145/3816046.3816218
+    best_provocation:
+      - title: Intelligence Is Not All You Need: A Case for Artificial Wisdom in Conversational Agents
+        authors: Matthias Kraus
+        dl: https://dl.acm.org/doi/full/10.1145/3816046.3816316
+    best_provocation_honorable_mention:
+      - title: Who Does Your AI Work For? Designing Conversational Agents as Digital Fiduciaries
+        authors: Jacob Erickson
+        dl: https://dl.acm.org/doi/full/10.1145/3816046.3816299
+    best_poster:
+      - title: Minseo Cho, Martina Di Simplicio, Rafael A Calvo
+        authors: The Role of Generative Summarisation in Agent-Mediated Reflection for Youth Social Prescribing
+        dl: https://dl.acm.org/doi/full/10.1145/3816046.3816262
+    best_poster_honorable_mention:
+      - title: Towards a Typology of User Engagement in Conversational Agent Voting Advice Applications
+        authors: Daan van der Weijden, Thilo Ignaz Dieing, Fynn Bachmann
+        dl: https://dl.acm.org/doi/full/10.1145/3816046.3816272
+    five_year_impact:
+      - title: Hey Google, Do You Have a Personality? Designing Personality and Personas for Conversational Agents
+        authors: Alisha Pradhan, Amanda Lazar
+        dl: https://dl.acm.org/doi/abs/10.1145/3469595.3469607
       
 2025:
   slug: cui2025
