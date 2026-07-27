@@ -70,7 +70,6 @@
           - posters
         award_keys:
           - best_paper_honorable_mention
-          - inspiring_industry_paper
           - best_provocation_honorable_mention
           - best_poster_honorable_mention
     best_paper:
@@ -81,7 +80,6 @@
       - title: Empathy through the Lens of Conversational Agents: A Systematic Review
         authors: Supriya Khadka, Smit Desai
         dl: https://dl.acm.org/doi/full/10.1145/3816046.3816220
-        
       - title: Sruthi: What Becomes Sayable Through Peer-Mode Reflective Scaffolding in Fieldwork Communication
         authors: Srividya Sheshadri, Manju Balakrishna Pillai, Apoorv Gupta, Balu Mohandas Menon, Unnikrishnan Radhakrishnan, Megha TM, Pavithra P M Nair, Renuka Kumar, Bhavani Rao R.
         dl: https://dl.acm.org/doi/full/10.1145/3816046.3816219
