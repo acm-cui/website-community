@@ -133,12 +133,27 @@ membership:
 
   - name: Nima Zargham
     photo: nima-zargham.jpg
+    url: https://www.nimazargham.com/
     roles:
       - role: Technical Support Chair
         term: 2025–2030
-    url: https://www.nimazargham.com/
+      - role: ACM CUI 2026 General Chair
+        term: 2026–2029
 
 
+  - name: Thomas Eßmeyer
+    photo: thomas.jpg
+    roles:
+      - role: ACM CUI 2026 General Chair
+        term: 2026–2029
+
+  - name: Effie Law
+    photo: effie.jpg
+    roles:
+      - role: ACM CUI 2026 General Chair
+        term: 2026–2029
+
+        
 past_membership:
   - name: Leigh Clark
     photo: leigh-clark.jpg
